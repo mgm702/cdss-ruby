@@ -16,4 +16,4 @@ VCR.configure do |config|
   config.ignore_localhost = true
 end
 
-WaterGauges.config.user_agent = -> { "Cdss Test" }
+Cdss.config.user_agent = -> { "Cdss Test" }

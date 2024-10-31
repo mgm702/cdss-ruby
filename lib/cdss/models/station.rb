@@ -1,6 +1,6 @@
 module Cdss
   module Models
-    module Station
+    class Station
       attr_accessor :id, :name, :agency, :latitude, :longitude, :parameters, :metadata
 
       def initialize(id:, name:, agency:, latitude:, longitude:, parameters:, metadata: {})

@@ -4,7 +4,7 @@ require_relative "lib/cdss/version"
 
 Gem::Specification.new do |spec|
   spec.name = "cdss-ruby"
-  spec.version = Cdss::Ruby::VERSION
+  spec.version = Cdss::VERSION
   spec.authors = ["Matt Michnal "]
   spec.email = ["mattm3646@gmail.com"]
 
