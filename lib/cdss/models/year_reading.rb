@@ -5,13 +5,16 @@ module Cdss
   module Models
     class YearReading < BaseReading
       include FlowStatistics
+      ATTRIBUTES = %i[water_year]
 
-      attr_accessor :water_year
+      attr_accessor(*ATTRIBUTES, :flags)
 
       def initialize(**attrs)
         super
-        @water_year = attrs[:water_year]
+        attrs[:flags] ||= {}
+        ATTRIBUTES.each { |attr| instance_variable_set(:"@#{attr}", attrs[attr]) if attrs.key?(attr) }
         initialize_flow_statistics(attrs)
+        @flags = attrs[:flags]
       end
     end
   end

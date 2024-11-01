@@ -10,7 +10,7 @@ module Cdss
       private
 
       def initialize_flow_statistics(stats)
-        FLOW_ATTRIBUTES.each { |attr| instance_variable_set(:"@#{attr}", stats[attr]) }
+        FLOW_ATTRIBUTES.each { |attr| instance_variable_set(:"@#{attr}", stats[attr]) if attrs.key?(attr) }
       end
     end
   end

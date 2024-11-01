@@ -7,7 +7,7 @@ module Cdss
 
       def initialize(**attrs)
         attrs[:metadata] ||= {}
-        BASIC_ATTRIBUTES.each { |attr| instance_variable_set(:"@#{attr}", attrs[attr]) }
+        BASIC_ATTRIBUTES.each { |attr| instance_variable_set(:"@#{attr}", attrs[attr]) if attrs.key?(attr) }
       end
     end
   end
