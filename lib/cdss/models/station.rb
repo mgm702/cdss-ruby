@@ -1,16 +1,36 @@
 module Cdss
   module Models
     class Station
-      attr_accessor :id, :name, :agency, :latitude, :longitude, :parameters, :metadata
+      ATTRIBUTES = %i[
+        station_num
+        abbrev
+        usgs_site_id
+        name
+        agency
+        latitude
+        longitude
+        division
+        water_district
+        county
+        state
+        utm_x
+        utm_y
+        location_accuracy
+        start_date
+        end_date
+        modified
+        more_information
+        meas_unit
+        metadata
+      ]
 
-      def initialize(id:, name:, agency:, latitude:, longitude:, parameters:, metadata: {})
-        @id = id
-        @name = name
-        @agency = agency
-        @latitude = latitude
-        @longitude = longitude
-        @parameters = parameters
-        @metadata = metadata
+      attr_accessor(*ATTRIBUTES)
+
+      def initialize(**attrs)
+        attrs[:metadata] ||= {}
+        ATTRIBUTES.each do |attr|
+          instance_variable_set(:"@#{attr}", attrs[attr])
+        end
       end
     end
   end
