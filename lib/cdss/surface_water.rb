@@ -106,7 +106,7 @@ module Cdss
         })
 
         data = handle_response(response)
-        readings = Parser.parse_readings(data)
+        readings = Parser.parse_readings(data, timescale: :day)
 
         break if readings.empty?
 
@@ -145,7 +145,7 @@ module Cdss
         })
 
         data = handle_response(response)
-        readings = Parser.parse_readings(data)
+        readings = Parser.parse_readings(data, timescale: :month)
 
         break if readings.empty?
 
@@ -184,7 +184,7 @@ module Cdss
         })
 
         data = handle_response(response)
-        readings = Parser.parse_readings(data)
+        readings = Parser.parse_readings(data, timescale: :year)
 
         break if readings.empty?
 

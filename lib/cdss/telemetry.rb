@@ -122,7 +122,7 @@ module Cdss
         })
 
         data = handle_response(response)
-        readings = Parser.parse_readings(data)
+        readings = Parser.parse_readings(data, timescale: timescale.to_sym)
 
         break if readings.empty?
 

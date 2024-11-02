@@ -28,6 +28,7 @@ module Cdss
 
       def initialize(**attrs)
         attrs[:metadata] ||= {}
+
         ATTRIBUTES.each do |attr|
           instance_variable_set(:"@#{attr}", attrs[attr]) if attrs.key?(attr)
         end
