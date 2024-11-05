@@ -78,6 +78,24 @@ module Cdss
       def parse_water_rights(response, type:)
         Parsers::WaterRightsParser.parse_water_rights(response, type: type)
       end
+
+      # Parses climate station data from the API response.
+      #
+      # @param response [Hash] The API response containing climate station data.
+      # @return [Array<ClimateStation>] Array of climate station objects.
+      def parse_climate_stations(response)
+        Parsers::ClimateParser.parse_climate_stations(response)
+      end
+
+      # Parses climate reading data from the API response.
+      #
+      # @param response [Hash] The API response containing climate readings.
+      # @param type [Symbol] The type of climate reading (:frost_dates, :daily, or :monthly).
+      # @return [Array<Reading>] Array of climate reading objects.
+      # @raise [ArgumentError] If an invalid reading type is provided.
+      def parse_climate_readings(response, type:)
+        Parsers::ClimateParser.parse_climate_readings(response, type: type)
+      end
     end
   end
 end

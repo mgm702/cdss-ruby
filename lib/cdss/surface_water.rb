@@ -1,5 +1,27 @@
 module Cdss
+  # Provides methods for accessing surface water data from the CDSS API.
+  #
+  # This module includes functionality for retrieving surface water stations and their
+  # associated time series data at various time scales (daily, monthly, yearly).
   module SurfaceWater
+    # Fetches surface water stations based on various filtering criteria.
+    #
+    # @param [Hash, Array, nil] aoi Area of interest for spatial searches. If hash, must contain :latitude and :longitude keys.
+    #   If array, must contain [longitude, latitude].
+    # @param [Integer, nil] radius Radius in miles for spatial search around aoi. Defaults to 20 if aoi is provided.
+    # @param [String, nil] abbrev Station abbreviation to filter by.
+    # @param [String, nil] county County name to filter stations.
+    # @param [Integer, nil] division Water division number to filter stations.
+    # @param [String, nil] station_name Name of the station to filter by.
+    # @param [String, nil] usgs_id USGS site ID to filter by.
+    # @param [Integer, nil] water_district Water district number to filter by.
+    # @param [String, nil] api_key Optional API key for authentication.
+    # @return [Array<Station>] Array of matching surface water station objects.
+    # @raise [ArgumentError] If aoi parameter is provided but invalid.
+    # @example Fetch stations in Denver county
+    #   get_sw_stations(county: 'DENVER')
+    # @example Fetch stations within 10 miles of a point
+    #   get_sw_stations(aoi: { latitude: 39.7392, longitude: -104.9903 }, radius: 10)
     def get_sw_stations(aoi: nil, radius: nil, abbrev: nil, county: nil, division: nil, station_name: nil, usgs_id: nil, water_district: nil, api_key: nil)
       query = {
         format: 'json',
@@ -54,6 +76,22 @@ module Cdss
       results
     end
 
+    # Fetches surface water time series data for specified stations.
+    #
+    # @param [String, nil] abbrev Station abbreviation.
+    # @param [String, nil] station_number Station number.
+    # @param [String, nil] usgs_id USGS site ID.
+    # @param [Date, nil] start_date Start date for time series data.
+    # @param [Date, nil] end_date End date for time series data.
+    # @param [String, nil] timescale Time interval for data aggregation. Valid values:
+    #   - day, days, daily, d
+    #   - month, months, monthly, mon, m
+    #   - wyear, water_year, wyears, water_years, wateryear, wateryears, wy, year, years, yearly, annual, annually, yr, y
+    # @param [String, nil] api_key Optional API key for authentication.
+    # @return [Array<Reading>] Array of time series reading objects.
+    # @raise [ArgumentError] If an invalid timescale is provided.
+    # @example Fetch daily readings for a station
+    #   get_sw_ts(abbrev: 'PLAKERCO', timescale: 'day', start_date: Date.new(2023, 1, 1))
     def get_sw_ts(abbrev: nil, station_number: nil, usgs_id: nil, start_date: nil, end_date: nil, timescale: nil, api_key: nil)
       timescale ||= 'day'
 
@@ -81,6 +119,15 @@ module Cdss
 
     private
 
+    # Fetches daily surface water time series data.
+    #
+    # @param [String, nil] abbrev Station abbreviation.
+    # @param [String, nil] station_number Station number.
+    # @param [String, nil] usgs_id USGS site ID.
+    # @param [Date, nil] start_date Start date for time series data.
+    # @param [Date, nil] end_date End date for time series data.
+    # @param [String, nil] api_key Optional API key for authentication.
+    # @return [Array<Reading>] Array of daily reading objects.
     def get_sw_ts_day(abbrev: nil, station_number: nil, usgs_id: nil, start_date: nil, end_date: nil, api_key: nil)
       query = {
         format: 'json',
@@ -120,6 +167,15 @@ module Cdss
       results
     end
 
+    # Fetches monthly surface water time series data.
+    #
+    # @param [String, nil] abbrev Station abbreviation.
+    # @param [String, nil] station_number Station number.
+    # @param [String, nil] usgs_id USGS site ID.
+    # @param [Date, nil] start_date Start date for time series data (only year is used).
+    # @param [Date, nil] end_date End date for time series data (only year is used).
+    # @param [String, nil] api_key Optional API key for authentication.
+    # @return [Array<Reading>] Array of monthly reading objects.
     def get_sw_ts_month(abbrev: nil, station_number: nil, usgs_id: nil, start_date: nil, end_date: nil, api_key: nil)
       query = {
         format: 'json',
@@ -159,6 +215,15 @@ module Cdss
       results
     end
 
+    # Fetches water year surface water time series data.
+    #
+    # @param [String, nil] abbrev Station abbreviation.
+    # @param [String, nil] station_number Station number.
+    # @param [String, nil] usgs_id USGS site ID.
+    # @param [Date, nil] start_date Start date for time series data (only year is used).
+    # @param [Date, nil] end_date End date for time series data (only year is used).
+    # @param [String, nil] api_key Optional API key for authentication.
+    # @return [Array<Reading>] Array of water year reading objects.
     def get_sw_ts_wyear(abbrev: nil, station_number: nil, usgs_id: nil, start_date: nil, end_date: nil, api_key: nil)
       query = {
         format: 'json',

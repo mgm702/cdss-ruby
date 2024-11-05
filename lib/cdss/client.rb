@@ -2,6 +2,7 @@ require_relative 'telemetry'
 require_relative 'surface_water'
 require_relative 'ground_water'
 require_relative 'water_rights'
+require_relative 'climate'
 
 module Cdss
   class Client
@@ -13,6 +14,7 @@ module Cdss
     include SurfaceWater
     include GroundWater
     include WaterRights
+    include Climate
 
     attr_reader :options
 
