@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrystation/?county=Denver&dateFormat=spaceSepToSeconds&format=json&includeThirdParty=true&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-10-30T00:00:00-06:00"'
+      X-Rate-Row-Remaining:
+      - '591409'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '996'
+      X-Result-Count:
+      - '8'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Thu, 31 Oct 2024 04:38:57 GMT
+      Content-Length:
+      - '6988'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":8,"ResultDateTime":"2024-10-30
+        22:38:57","ResultList":[{"division":1,"waterDistrict":8,"county":"DENVER","stationName":"EPPERSON
+        DITCH PUMP","dataSourceAbbrev":"DWR","dataSource":"Co. Division of Water Resources","waterSource":"SOUTH
+        PLATTE RIVER","gnisId":"00201759","streamMile":246.66,"abbrev":"0801015A","usgsStationId":null,"stationStatus":"Active","stationType":"Diversion
+        Structure","structureType":"Pump","measDateTime":"2024-05-31 12:45:00","parameter":"DISCHRG","stage":null,"measValue":0.00,"units":"CFS","flagA":"O","flagB":null,"contrArea":null,"drainArea":null,"huc10":null,"utmX":499974.3,"utmY":4393159.3,"latitude":39.688275,"longitude":-105.000313,"locationAccuracy":"GPS","wdid":"0801015","modified":"2024-05-31
+        12:53:23","moreInformation":"https://dwr.state.co.us/Tools/Stations/0801015A","stationPorStart":"2022-11-14
+        00:00:00","stationPorEnd":"2024-05-31 00:00:00","thirdParty":false},{"division":1,"waterDistrict":9,"county":"DENVER","stationName":"JOHNSON
+        LATERAL PINEHURST INFLOW","dataSourceAbbrev":"DWR","dataSource":"Co. Division
+        of Water Resources","waterSource":"BEAR CREEK","gnisId":"00182308","streamMile":null,"abbrev":"0902251A","usgsStationId":null,"stationStatus":"Active","stationType":"Stream
+        Gage","structureType":"Measuring Point","measDateTime":"2024-10-30 21:30:00","parameter":"DISCHRG","stage":null,"measValue":0.60,"units":"CFS","flagA":"O","flagB":null,"contrArea":null,"drainArea":null,"huc10":null,"utmX":494553.9,"utmY":4387632.1,"latitude":39.638457,"longitude":-105.063477,"locationAccuracy":"Digitized","wdid":"0902251","modified":"2024-10-30
+        22:21:17","moreInformation":"https://dwr.state.co.us/Tools/Stations/0902251A","stationPorStart":"2021-11-01
+        00:00:00","stationPorEnd":"2024-10-30 00:00:00","thirdParty":false},{"division":1,"waterDistrict":9,"county":"DENVER","stationName":"BOWLES
+        RESERVOIR OUTLET","dataSourceAbbrev":"DWR","dataSource":"Co. Division of Water
+        Resources","waterSource":"BEAR CREEK","gnisId":"00182308","streamMile":null,"abbrev":"0904281B","usgsStationId":null,"stationStatus":"Active","stationType":"Stream
+        Gage","structureType":"Reservoir","measDateTime":"2024-10-30 21:15:00","parameter":"DISCHRG","stage":null,"measValue":0.00,"units":"CFS","flagA":"O","flagB":null,"contrArea":null,"drainArea":null,"huc10":null,"utmX":494430.7,"utmY":4385700.4,"latitude":39.621049,"longitude":-105.064894,"locationAccuracy":"Digitized","wdid":"0904281","modified":"2024-10-30
+        22:25:14","moreInformation":"https://dwr.state.co.us/Tools/Stations/0904281B","stationPorStart":"2024-04-09
+        00:00:00","stationPorEnd":"2024-10-30 00:00:00","thirdParty":false},{"division":1,"waterDistrict":8,"county":"DENVER","stationName":"CHERRY
+        CREEK BELOW CHERRY CREEK LAKE, CO.","dataSourceAbbrev":"USGS","dataSource":"U.S.
+        Geological Survey","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":11.46,"abbrev":"CHEBELCO","usgsStationId":"06713000","stationStatus":"Active","stationType":"Stream
+        Gage","structureType":"Stream Gage","measDateTime":"2024-10-30 22:15:00","parameter":"DISCHRG","stage":null,"measValue":0.44,"units":"CFS","flagA":"U","flagB":null,"contrArea":0.0,"drainArea":385.0,"huc10":"10190003","utmX":511750.0,"utmY":4389320.0,"latitude":39.653604,"longitude":-104.863047,"locationAccuracy":"User
+        supplied","wdid":"0801804","modified":"2024-10-30 22:36:38","moreInformation":"https://dwr.state.co.us/Tools/Stations/CHEBELCO","stationPorStart":"2000-01-15
+        00:00:00","stationPorEnd":"2024-10-30 00:00:00","thirdParty":true},{"division":1,"waterDistrict":8,"county":"DENVER","stationName":"CHERRY
+        CREEK AT DENVER, CO.","dataSourceAbbrev":"USGS","dataSource":"U.S. Geological
+        Survey","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":1.01,"abbrev":"CHEDENCO","usgsStationId":"06713500","stationStatus":"Active","stationType":"Stream
+        Gage","structureType":"Stream Gage","measDateTime":"2024-10-30 21:55:00","parameter":"DISCHRG","stage":null,"measValue":8.24,"units":"CFS","flagA":"U","flagB":null,"contrArea":0.0,"drainArea":409.0,"huc10":"10190003","utmX":500001.5,"utmY":4399176.4,"latitude":39.742490,"longitude":-104.999987,"locationAccuracy":"User
+        supplied","wdid":"0801803","modified":"2024-10-30 22:06:36","moreInformation":"https://dwr.state.co.us/Tools/Stations/CHEDENCO","stationPorStart":"2002-07-08
+        00:00:00","stationPorEnd":"2024-10-30 00:00:00","thirdParty":true},{"division":1,"waterDistrict":9,"county":"DENVER","stationName":"MCBROOM
+        DITCH","dataSourceAbbrev":"DWR","dataSource":"Co. Division of Water Resources","waterSource":"BEAR
+        CREEK","gnisId":"00182308","streamMile":1.81,"abbrev":"MCBDITCO","usgsStationId":null,"stationStatus":"Active","stationType":"Diversion
+        Structure","structureType":"Ditch","measDateTime":"2024-10-30 22:00:00","parameter":"DISCHRG","stage":null,"measValue":0.00,"units":"CFS","flagA":"O","flagB":null,"contrArea":null,"drainArea":null,"huc10":null,"utmX":496394.0,"utmY":4389191.0,"latitude":39.652514,"longitude":-105.042043,"locationAccuracy":"Digitized","wdid":"0900816","modified":"2024-10-30
+        22:11:16","moreInformation":"https://dwr.state.co.us/Tools/Stations/MCBDITCO","stationPorStart":"2015-09-20
+        00:00:00","stationPorEnd":"2024-10-30 00:00:00","thirdParty":false},{"division":1,"waterDistrict":8,"county":"DENVER","stationName":"SOUTH
+        PLATTE RIVER AT DENVER","dataSourceAbbrev":"DWR","dataSource":"Co. Division
+        of Water Resources","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":240.83,"abbrev":"PLADENCO","usgsStationId":"06714000","stationStatus":"Active","stationType":"Stream
+        Gage","structureType":"Stream Gage","measDateTime":"2024-10-30 21:45:00","parameter":"DISCHRG","stage":2.82,"measValue":111.00,"units":"CFS","flagA":"O","flagB":null,"contrArea":0.0,"drainArea":3861.0,"huc10":"10190003","utmX":499658.0,"utmY":4401059.0,"latitude":39.759456,"longitude":-105.004003,"locationAccuracy":"User
+        supplied","wdid":"0801811","modified":"2024-10-30 22:00:41","moreInformation":"https://dwr.state.co.us/Tools/Stations/PLADENCO","stationPorStart":"1985-04-29
+        00:00:00","stationPorEnd":"2024-10-30 00:00:00","thirdParty":false},{"division":1,"waterDistrict":8,"county":"DENVER","stationName":"RIVIERA
+        LAKE INLET FROM AG DITCH","dataSourceAbbrev":"DWR","dataSource":"Co. Division
+        of Water Resources","waterSource":"BEAR CREEK","gnisId":"00182308","streamMile":null,"abbrev":"RIVLAKCO","usgsStationId":null,"stationStatus":"Active","stationType":"Stream
+        Gage","structureType":"Reservoir","measDateTime":"2024-10-30 22:00:00","parameter":"DISCHRG","stage":null,"measValue":0.00,"units":"CFS","flagA":"O","flagB":null,"contrArea":null,"drainArea":null,"huc10":null,"utmX":495458.6,"utmY":4391477.5,"latitude":39.673116,"longitude":-105.052957,"locationAccuracy":"GPS","wdid":"0803051","modified":"2024-10-30
+        22:15:16","moreInformation":"https://dwr.state.co.us/Tools/Stations/RIVLAKCO","stationPorStart":"2020-07-13
+        00:00:00","stationPorEnd":"2024-10-30 00:00:00","thirdParty":false}]}'
+  recorded_at: Thu, 31 Oct 2024 04:38:05 GMT
+recorded_with: VCR 6.3.1

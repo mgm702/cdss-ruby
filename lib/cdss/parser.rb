@@ -1,69 +1,82 @@
 module Cdss
+  # The Parser class handles parsing of response data from the CDSS API into domain objects.
+  # It delegates the actual parsing work to specialized parser modules for each data type.
   class Parser
     class << self
-      def parse_station(response)
-        return nil unless response["ResultList"]&.first
-
-        data = response["ResultList"].first
-        build_station(data)
-      end
-
+      # Parses station data from the API response.
+      #
+      # @param response [Hash] The API response containing station data.
+      # @return [Array<Station>] Array of Station objects representing telemetry or surface water stations.
+      # @example Parse stations from API response
+      #   stations = Parser.parse_stations(response_data)
       def parse_stations(response)
-        return [] unless response["ResultList"]
-
-        response["ResultList"].map { |data| build_station(data) }
+        Parsers::StationParser.parse_stations(response)
       end
 
-      def parse_readings(response)
-        return [] unless response["ResultList"]
-
-        response["ResultList"].map do |reading|
-          Cdss::Models::Reading.new(
-            timestamp: parse_timestamp(reading["measDateTime"] || reading["measDate"]),
-            value: reading["measValue"].to_f,
-            unit: reading["units"],
-            parameter: reading["parameter"],
-            quality: reading["flagA"],
-            metadata: {
-              stage: reading["stage"],
-              flag_b: reading["flagB"]
-            }
-          )
-        end
+      # Parses time series readings from the API response.
+      #
+      # @param response [Hash] The API response containing reading data.
+      # @param timescale [Symbol] The timescale of the readings (:day, :month, :year, :raw, :hour).
+      # @return [Array<Reading>] Array of Reading objects with time series data.
+      # @raise [ArgumentError] If an invalid timescale is provided.
+      # @example Parse daily readings
+      #   readings = Parser.parse_readings(response_data, timescale: :day)
+      def parse_readings(response, timescale:)
+        Parsers::ReadingParser.parse_readings(response, timescale: timescale)
       end
 
-      private
-
-      def build_station(data)
-        Cdss::Models::Station.new(
-          id: data["abbrev"],
-          name: data["stationName"],
-          agency: "DWR",
-          latitude: data["latitude"],
-          longitude: data["longitude"],
-          parameters: extract_parameters(data),
-          metadata: {
-            county: data["county"],
-            division: data["division"],
-            water_source: data["waterSource"],
-            usgs_id: data["usgsStationId"],
-            status: data["stationStatus"],
-            por_start: data["stationPorStart"],
-            por_end: data["stationPorEnd"]
-          }
-        )
+      # Parses well data from the API response.
+      #
+      # @param response [Hash] The API response containing well data.
+      # @return [Array<Well>] Array of Well objects with basic well information.
+      # @example Parse wells from response
+      #   wells = Parser.parse_wells(response_data)
+      def parse_wells(response)
+        Parsers::WellParser.parse_wells(response)
       end
 
-      def parse_timestamp(datetime_str)
-        Time.parse(datetime_str)
-      rescue
-        nil
+      # Parses well measurement data from the API response.
+      #
+      # @param response [Hash] The API response containing well measurement data.
+      # @return [Array<Reading>] Array of Reading objects containing well measurements.
+      # @example Parse well measurements
+      #   measurements = Parser.parse_well_measurements(response_data)
+      def parse_well_measurements(response)
+        Parsers::WellParser.parse_well_measurements(response)
       end
 
-      def extract_parameters(data)
-        ["DISCHRG", "GAGE_HT"].select do |param|
-          data[param.downcase]
-        end
+      # Parses geophysical well data from the API response.
+      #
+      # @param response [Hash] The API response containing geophysical well data.
+      # @return [Array<Well>] Array of Well objects with geophysical well information.
+      # @example Parse geophysical wells
+      #   geo_wells = Parser.parse_geophysical_wells(response_data)
+      def parse_geophysical_wells(response)
+        Parsers::WellParser.parse_geophysical_wells(response)
+      end
+
+      # Parses geophysical log pick data from the API response.
+      #
+      # @param response [Hash] The API response containing log pick data.
+      # @return [Array<Reading>] Array of Reading objects containing log pick information.
+      # @example Parse log picks for a well
+      #   picks = Parser.parse_log_picks(response_data)
+      def parse_log_picks(response)
+        Parsers::WellParser.parse_log_picks(response)
+      end
+
+      # Parses water rights data from the API response.
+      #
+      # @param response [Hash] The API response containing water rights data.
+      # @param type [Symbol] The type of water rights data to parse (:net_amount or :transaction).
+      # @return [Array<WaterRight>] Array of WaterRight objects.
+      # @raise [ArgumentError] If an invalid water rights type is provided.
+      # @example Parse net amounts
+      #   rights = Parser.parse_water_rights(response_data, type: :net_amount)
+      # @example Parse transactions
+      #   transactions = Parser.parse_water_rights(response_data, type: :transaction)
+      def parse_water_rights(response, type:)
+        Parsers::WaterRightsParser.parse_water_rights(response, type: type)
       end
     end
   end

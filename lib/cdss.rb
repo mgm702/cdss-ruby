@@ -9,6 +9,14 @@ module Cdss
 
   extend Dry::Configurable
 
+  setting :user_agent, default: -> { "Cdss Ruby Gem/#{VERSION}" }
+  setting :timeout, default: 30
   setting :base_url, default: "https://dwr.state.co.us/Rest/GET/api/v2"
   setting :default_parameter, default: "DISCHRG"
+
+  class << self
+    def client(**options)
+      Cdss::Client.new(**options)
+    end
+  end
 end

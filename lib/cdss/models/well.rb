@@ -1,26 +1,29 @@
 module Cdss
   module Models
-    class Station
+    class Well
       ATTRIBUTES = %i[
-        station_num
-        abbrev
-        usgs_site_id
-        name
-        agency
+        well_id
+        well_name
         latitude
         longitude
+        location_accuracy
+        county
+        designated_basin
+        management_district
         division
         water_district
-        county
-        state
-        utm_x
-        utm_y
-        location_accuracy
+        depth
+        elevation
         start_date
         end_date
         modified
+        data_source
         more_information
-        meas_unit
+        total_depth
+        ground_elevation
+        utm_x
+        utm_y
+        state
         metadata
       ]
 

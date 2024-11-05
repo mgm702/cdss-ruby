@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/surfacewater/surfacewaterstations/?county=Denver&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-10-30T00:00:00-06:00"'
+      X-Rate-Row-Remaining:
+      - '591026'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '994'
+      X-Result-Count:
+      - '18'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Thu, 31 Oct 2024 04:43:14 GMT
+      Content-Length:
+      - '9271'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":18,"ResultDateTime":"2024-10-30
+        22:43:14","ResultList":[{"stationNum":465,"abbrev":"CHEGLECO","usgsSiteId":"06713300","stationName":"CHERRY
+        CREEK AT GLENDALE, CO","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":505359.4,"utmY":4395139.6,"latitude":39.706107,"longitude":-104.937496,"locationAccuracy":"User
+        supplied","startDate":"1985-01-01 00:00:00","endDate":"2003-09-30 00:00:00","modified":"2015-06-17
+        11:53:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":637,"abbrev":"PLADENCO","usgsSiteId":"06714000","stationName":"SOUTH
+        PLATTE RIVER AT DENVER","dataSource":"DWR","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":499658.0,"utmY":4401059.0,"latitude":39.759456,"longitude":-105.004003,"locationAccuracy":"User
+        supplied","startDate":"1895-07-01 00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30
+        00:00:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":748,"abbrev":"PLAFIFCO","usgsSiteId":"06714130","stationName":"SOUTH
+        PLATTE RIVER AT 50TH AVENUE AT DENVER, CO.","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":502142.3,"utmY":4404109.3,"latitude":39.786934,"longitude":-104.974994,"locationAccuracy":"User
+        supplied","startDate":"1980-03-01 00:00:00","endDate":"1981-12-31 00:00:00","modified":"2015-06-17
+        11:53:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":1078,"abbrev":"THISIXCO","usgsSiteId":"06714100","stationName":"THIRTY-SIXTH
+        STREET STORM SEWER AT DENVER, CO.","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501738.2,"utmY":4402567.7,"latitude":39.773050,"longitude":-104.979716,"locationAccuracy":"User
+        supplied","startDate":"1975-12-01 00:00:00","endDate":"1977-06-30 00:00:00","modified":"2015-06-17
+        11:53:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":1170,"abbrev":"PLAFLOCO","usgsSiteId":"06711590","stationName":"SOUTH
+        PLATTE RIVER AT FLORIDA AVE AT DENVER, CO.","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":500025.3,"utmY":4393318.8,"latitude":39.689717,"longitude":-104.999719,"locationAccuracy":"User
+        supplied","startDate":"1981-04-01 00:00:00","endDate":"1981-12-31 00:00:00","modified":"2015-06-17
+        11:53:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":1274,"abbrev":"CHEDENCO","usgsSiteId":"06713500","stationName":"CHERRY
+        CREEK AT DENVER, CO.","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":500001.5,"utmY":4399176.4,"latitude":39.742490,"longitude":-104.999987,"locationAccuracy":"User
+        supplied","startDate":"1942-08-11 00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30
+        00:07:25","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":1484,"abbrev":"CHEBELCO","usgsSiteId":"06713000","stationName":"CHERRY
+        CREEK BELOW CHERRY CREEK LAKE, CO.","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":511750.0,"utmY":4389320.0,"latitude":39.653604,"longitude":-104.863047,"locationAccuracy":"User
+        supplied","startDate":"1950-06-30 00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30
+        00:27:19","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":3086,"abbrev":null,"usgsSiteId":"06711570","stationName":"HARVARD
+        GULCH AT COLORADO BLVD. AT DENVER, CO","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":504931.0,"utmY":4391044.6,"latitude":39.669213,"longitude":-104.942519,"locationAccuracy":"User
+        supplied","startDate":"2012-04-01 00:00:00","endDate":"2024-09-30 00:00:00","modified":"2024-10-16
+        01:43:19","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":3592,"abbrev":null,"usgsSiteId":"06711575","stationName":"HARVARD
+        GULCH AT HARVARD PARK AT DENVER, CO","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501970.2,"utmY":4391322.8,"latitude":39.671730,"longitude":-104.977041,"locationAccuracy":"User
+        supplied","startDate":"1994-04-29 00:00:00","endDate":"2024-09-30 00:00:00","modified":"2024-10-16
+        01:43:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":3808,"abbrev":"CHERTNCO","usgsSiteId":null,"stationName":"CHEROKEE
+        POWER PLANT RETURN TO SOUTH PLATTE RIVER","dataSource":"DWR","division":1,"waterDistrict":2,"county":"DENVER","state":"CO","utmX":503366.6,"utmY":4406548.4,"latitude":39.808906,"longitude":-104.960675,"locationAccuracy":"GPS","startDate":"2012-11-29
+        00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30 00:45:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":3809,"abbrev":"GDRDITCO","usgsSiteId":null,"stationName":"GARDENER
+        DITCH TO CHEROKEE POWER PLANT","dataSource":"DWR","division":1,"waterDistrict":2,"county":"DENVER","state":"CO","utmX":503032.5,"utmY":4406896.6,"latitude":39.812052,"longitude":-104.964587,"locationAccuracy":"GPS","startDate":"2012-12-10
+        00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30 00:45:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":3810,"abbrev":"DWRDECCO","usgsSiteId":null,"stationName":"DENVER
+        WATER REUSE DELIVERY TO CHEROKEE POWER PLANT","dataSource":"DWR","division":1,"waterDistrict":2,"county":"DENVER","state":"CO","utmX":503421.9,"utmY":4406894.5,"latitude":39.812023,"longitude":-104.960030,"locationAccuracy":"Digitized
+        off map","startDate":"2012-11-29 00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30
+        00:45:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":3811,"abbrev":"FISCOPCO","usgsSiteId":null,"stationName":"FISHER
+        DITCH DELIVERY TO CHEROKEE POWER PLANT","dataSource":"DWR","division":1,"waterDistrict":7,"county":"DENVER","state":"CO","utmX":502734.5,"utmY":4406834.0,"latitude":39.811485,"longitude":-104.968069,"locationAccuracy":"GPS","startDate":"2012-11-29
+        00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30 00:45:15","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":3812,"abbrev":"SPPUMPCO","usgsSiteId":null,"stationName":"SOUTH
+        PLATTE PUMP STATION DELIVERY TO CHEROKEE POWER PLANT","dataSource":"DWR","division":1,"waterDistrict":2,"county":"DENVER","state":"CO","utmX":503421.9,"utmY":4406894.5,"latitude":39.812023,"longitude":-104.960030,"locationAccuracy":"GPS","startDate":"2012-11-29
+        00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30 00:45:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":5787,"abbrev":null,"usgsSiteId":"06711780","stationName":"LAKEWOOD
+        GULCH AT DENVER, CO","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":497313.0,"utmY":4398367.0,"latitude":39.735196,"longitude":-105.031368,"locationAccuracy":"User
+        supplied","startDate":"2013-04-01 00:00:00","endDate":"2024-09-30 00:00:00","modified":"2024-10-16
+        01:43:27","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":5820,"abbrev":null,"usgsSiteId":"06711618","stationName":"WEIR
+        GULCH UPSTREAM FROM 1ST AVE. AT DENVER, CO","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":496399.2,"utmY":4396376.0,"latitude":39.717253,"longitude":-105.042024,"locationAccuracy":"User
+        supplied","startDate":"2013-04-01 00:00:00","endDate":"2024-09-30 00:00:00","modified":"2024-10-16
+        01:43:22","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":5966,"abbrev":null,"usgsSiteId":"06711770","stationName":"DRY
+        GULCH AT DENVER, CO","dataSource":"USGS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":496610.0,"utmY":4398277.0,"latitude":39.734383,"longitude":-105.039572,"locationAccuracy":"User
+        supplied","startDate":"2013-05-23 00:00:00","endDate":"2024-09-30 00:00:00","modified":"2024-10-16
+        01:43:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"},{"stationNum":6519,"abbrev":"SANABDCO","usgsSiteId":null,"stationName":"SAND
+        CREEK ABOVE BURLINGTON DITCH NEAR COMMERCE CITY, CO","dataSource":"USGS","division":1,"waterDistrict":2,"county":"DENVER","state":"CO","utmX":504244.4,"utmY":4406677.5,"latitude":39.810073,"longitude":-104.950428,"locationAccuracy":"User
+        supplied","startDate":"2024-03-01 00:00:00","endDate":"2024-10-29 00:00:00","modified":"2024-10-30
+        00:38:35","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx","measUnit":"cfs"}]}'
+  recorded_at: Thu, 31 Oct 2024 04:42:22 GMT
+recorded_with: VCR 6.3.1
