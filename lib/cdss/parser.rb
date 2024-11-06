@@ -106,6 +106,32 @@ module Cdss
       def parse_admin_calls(response)
         Parsers::AdminCallsParser.parse_admin_calls(response)
       end
+
+      # Parses call analysis data from the API response.
+      #
+      # @param response [Hash] The API response containing call analysis data.
+      # @param type [Symbol] The type of analysis (:wdid or :gnis).
+      # @return [Array<CallAnalysis>] Array of call analysis objects.
+      # @raise [ArgumentError] If an invalid analysis type is provided.
+      def parse_call_analyses(response, type:)
+        Parsers::AnalysisParser.parse_call_analyses(response, type: type)
+      end
+
+      # Parses source route framework data from the API response.
+      #
+      # @param response [Hash] The API response containing source route data.
+      # @return [Array<SourceRoute>] Array of source route objects.
+      def parse_source_routes(response)
+        Parsers::AnalysisParser.parse_source_routes(response)
+      end
+
+      # Parses route analysis data from the API response.
+      #
+      # @param response [Hash] The API response containing route analysis data.
+      # @return [Array<RouteAnalysis>] Array of route analysis objects.
+      def parse_route_analyses(response)
+        Parsers::AnalysisParser.parse_route_analyses(response)
+      end
     end
   end
 end

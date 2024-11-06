@@ -4,6 +4,7 @@ require_relative 'ground_water'
 require_relative 'water_rights'
 require_relative 'climate'
 require_relative 'admin_calls'
+require_relative 'analysis'
 
 module Cdss
   class Client
