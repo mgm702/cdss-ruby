@@ -78,6 +78,93 @@ module Cdss
       def parse_water_rights(response, type:)
         Parsers::WaterRightsParser.parse_water_rights(response, type: type)
       end
+
+      # Parses climate station data from the API response.
+      #
+      # @param response [Hash] The API response containing climate station data.
+      # @return [Array<ClimateStation>] Array of climate station objects.
+      def parse_climate_stations(response)
+        Parsers::ClimateParser.parse_climate_stations(response)
+      end
+
+      # Parses climate reading data from the API response.
+      #
+      # @param response [Hash] The API response containing climate readings.
+      # @param type [Symbol] The type of climate reading (:frost_dates, :daily, or :monthly).
+      # @return [Array<Reading>] Array of climate reading objects.
+      # @raise [ArgumentError] If an invalid reading type is provided.
+      def parse_climate_readings(response, type:)
+        Parsers::ClimateParser.parse_climate_readings(response, type: type)
+      end
+
+      # Parses administrative calls data from the API response.
+      #
+      # @param response [Hash] The API response containing administrative calls data.
+      # @return [Array<AdminCall>] Array of administrative call objects.
+      # @example Parse admin calls from response
+      #   calls = Parser.parse_admin_calls(response_data)
+      def parse_admin_calls(response)
+        Parsers::AdminCallsParser.parse_admin_calls(response)
+      end
+
+      # Parses call analysis data from the API response.
+      #
+      # @param response [Hash] The API response containing call analysis data.
+      # @param type [Symbol] The type of analysis (:wdid or :gnis).
+      # @return [Array<CallAnalysis>] Array of call analysis objects.
+      # @raise [ArgumentError] If an invalid analysis type is provided.
+      def parse_call_analyses(response, type:)
+        Parsers::AnalysisParser.parse_call_analyses(response, type: type)
+      end
+
+      # Parses source route framework data from the API response.
+      #
+      # @param response [Hash] The API response containing source route data.
+      # @return [Array<SourceRoute>] Array of source route objects.
+      def parse_source_routes(response)
+        Parsers::AnalysisParser.parse_source_routes(response)
+      end
+
+      # Parses route analysis data from the API response.
+      #
+      # @param response [Hash] The API response containing route analysis data.
+      # @return [Array<RouteAnalysis>] Array of route analysis objects.
+      def parse_route_analyses(response)
+        Parsers::AnalysisParser.parse_route_analyses(response)
+      end
+
+      # Parses structure data from the API response.
+      #
+      # @param response [Hash] The API response containing structure data.
+      # @return [Array<Cdss::Models::Structure>] Array of structure objects.
+      def parse_structures(response)
+        Parsers::StructuresParser.parse_structures(response)
+      end
+
+      # Parses diversion record data from the API response.
+      #
+      # @param response [Hash] The API response containing diversion record data.
+      # @param type [Symbol] The type of record (:day, :month, :year, or :stage_volume).
+      # @return [Array<Cdss::Models::DiversionRecord>] Array of diversion record objects.
+      def parse_diversion_records(response, type:)
+        Parsers::StructuresParser.parse_diversion_records(response, type: type)
+      end
+
+      # Parses water class data from the API response.
+      #
+      # @param response [Hash] The API response containing water class data.
+      # @return [Array<Cdss::Models::WaterClass>] Array of water class objects.
+      def parse_water_classes(response)
+        Parsers::StructuresParser.parse_water_classes(response)
+      end
+
+      # Parses reference table data from the API response.
+      #
+      # @param response [Hash] The API response containing reference table data.
+      # @return [Array<Cdss::Models::ReferenceTable>] Array of reference table objects.
+      def parse_reference_table(response)
+        Parsers::ReferenceTablesParser.parse_reference_table(response)
+      end
     end
   end
 end
