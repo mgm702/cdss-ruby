@@ -132,6 +132,39 @@ module Cdss
       def parse_route_analyses(response)
         Parsers::AnalysisParser.parse_route_analyses(response)
       end
+
+      # Parses structure data from the API response.
+      #
+      # @param response [Hash] The API response containing structure data.
+      # @return [Array<Cdss::Models::Structure>] Array of structure objects.
+      def parse_structures(response)
+        Parsers::StructuresParser.parse_structures(response)
+      end
+
+      # Parses diversion record data from the API response.
+      #
+      # @param response [Hash] The API response containing diversion record data.
+      # @param type [Symbol] The type of record (:day, :month, :year, or :stage_volume).
+      # @return [Array<Cdss::Models::DiversionRecord>] Array of diversion record objects.
+      def parse_diversion_records(response, type:)
+        Parsers::StructuresParser.parse_diversion_records(response, type: type)
+      end
+
+      # Parses water class data from the API response.
+      #
+      # @param response [Hash] The API response containing water class data.
+      # @return [Array<Cdss::Models::WaterClass>] Array of water class objects.
+      def parse_water_classes(response)
+        Parsers::StructuresParser.parse_water_classes(response)
+      end
+
+      # Parses reference table data from the API response.
+      #
+      # @param response [Hash] The API response containing reference table data.
+      # @return [Array<Cdss::Models::ReferenceTable>] Array of reference table objects.
+      def parse_reference_table(response)
+        Parsers::ReferenceTablesParser.parse_reference_table(response)
+      end
     end
   end
 end

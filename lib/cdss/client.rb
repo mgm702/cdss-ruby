@@ -5,6 +5,7 @@ require_relative 'water_rights'
 require_relative 'climate'
 require_relative 'admin_calls'
 require_relative 'analysis'
+require_relative 'structures'
 
 module Cdss
   class Client
@@ -12,12 +13,13 @@ module Cdss
 
     base_uri Cdss.config.base_url
 
-    include Telemetry
-    include SurfaceWater
-    include GroundWater
-    include WaterRights
-    include Climate
     include AdminCalls
+    include Climate
+    include GroundWater
+    include Structures
+    include SurfaceWater
+    include Telemetry
+    include WaterRights
 
     attr_reader :options
 
