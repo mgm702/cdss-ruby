@@ -96,6 +96,16 @@ module Cdss
       def parse_climate_readings(response, type:)
         Parsers::ClimateParser.parse_climate_readings(response, type: type)
       end
+
+      # Parses administrative calls data from the API response.
+      #
+      # @param response [Hash] The API response containing administrative calls data.
+      # @return [Array<AdminCall>] Array of administrative call objects.
+      # @example Parse admin calls from response
+      #   calls = Parser.parse_admin_calls(response_data)
+      def parse_admin_calls(response)
+        Parsers::AdminCallsParser.parse_admin_calls(response)
+      end
     end
   end
 end

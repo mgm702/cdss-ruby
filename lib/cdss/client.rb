@@ -3,6 +3,7 @@ require_relative 'surface_water'
 require_relative 'ground_water'
 require_relative 'water_rights'
 require_relative 'climate'
+require_relative 'admin_calls'
 
 module Cdss
   class Client
@@ -15,6 +16,7 @@ module Cdss
     include GroundWater
     include WaterRights
     include Climate
+    include AdminCalls
 
     attr_reader :options
 
