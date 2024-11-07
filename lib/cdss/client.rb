@@ -6,6 +6,7 @@ require_relative 'climate'
 require_relative 'admin_calls'
 require_relative 'analysis'
 require_relative 'structures'
+require_relative 'reference_tables'
 
 module Cdss
   class Client
@@ -20,6 +21,7 @@ module Cdss
     include SurfaceWater
     include Telemetry
     include WaterRights
+    include ReferenceTables
 
     attr_reader :options
 
