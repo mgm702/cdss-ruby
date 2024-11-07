@@ -57,7 +57,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/surfacewater/surfacewaterstations/", {
+        response = get("/surfacewater/surfacewaterstations/", {
           query: query
         })
 
@@ -148,7 +148,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/surfacewater/surfacewatertsday/", {
+        response = get("/surfacewater/surfacewatertsday/", {
           query: query
         })
 
@@ -196,7 +196,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/surfacewater/surfacewatertsmonth/", {
+        response = get("/surfacewater/surfacewatertsmonth/", {
           query: query
         })
 
@@ -244,7 +244,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/surfacewater/surfacewatertswateryear/", {
+        response = get("/surfacewater/surfacewatertswateryear/", {
           query: query
         })
 
