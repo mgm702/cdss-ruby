@@ -5,14 +5,12 @@ module Cdss
 
       class << self
         def parse_readings(response, timescale:)
-          parse_collection(response) do |data|
-            build_reading(data, timescale)
-          end
+          parse_collection(response) {|data| build_reading(data, timescale)}
         end
 
         private
 
-        def build_resource(data, timescale)
+        def build_reading(data, timescale)
           params = build_base_params(data)
           add_timescale_params(params, data, timescale)
           Cdss::Models::Reading.new(**params)
