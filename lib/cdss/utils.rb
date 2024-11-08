@@ -68,5 +68,29 @@ module Cdss
     rescue TypeError, ArgumentError
       nil
     end
+
+    def fetch_paginated_data(endpoint:, query:)
+     page_size = 50000
+     page_index = 1
+     results = []
+
+     loop do
+       query = query.merge(pageSize: page_size, pageIndex: page_index)
+
+       response = get(endpoint, query: query)
+       data = handle_response(response)
+       records = yield(data)
+
+       break if records.empty?
+
+       results.concat(records)
+
+       break if records.size < page_size
+
+       page_index += 1
+     end
+
+     results
+    end
   end
 end

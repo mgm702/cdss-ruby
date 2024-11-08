@@ -50,7 +50,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/climatedata/climatestations/", {
+        response = get("/climatedata/climatestations/", {
           query: query
         })
 
@@ -93,7 +93,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/climatedata/climatestationfrostdates/", {
+        response = get("/climatedata/climatestationfrostdates/", {
           query: query
         })
 
@@ -166,7 +166,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/climatedata/climatestationtsday/", {
+        response = get("/climatedata/climatestationtsday/", {
           query: query
         })
 
@@ -205,7 +205,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/climatedata/climatestationtsmonth/", {
+        response = get("/climatedata/climatestationtsmonth/", {
           query: query
         })
 

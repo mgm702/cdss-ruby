@@ -58,7 +58,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/telemetrystations/telemetrystation/", {
+        response = get("/telemetrystations/telemetrystation/", {
           query: query
         })
 
@@ -117,7 +117,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/telemetrystations/telemetrytimeseries#{timescale}/", {
+        response = get("/telemetrystations/telemetrytimeseries#{timescale}/", {
           query: query
         })
 

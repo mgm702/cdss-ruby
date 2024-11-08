@@ -109,7 +109,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/analysisservices/watersourcerouteframework/", {
+        response = get("/analysisservices/watersourcerouteframework/", {
           query: query
         })
 
@@ -153,7 +153,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/analysisservices/watersourcerouteanalysis/", {
+        response = get("/analysisservices/watersourcerouteanalysis/", {
           query: query
         })
 
@@ -193,7 +193,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/analysisservices/callanalysisbywdid/", {
+        response = get("/analysisservices/callanalysisbywdid/", {
           query: query
         })
 
@@ -232,7 +232,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/analysisservices/callanalysisbygnisid/", {
+        response = get("/analysisservices/callanalysisbygnisid/", {
           query: query
         })
 

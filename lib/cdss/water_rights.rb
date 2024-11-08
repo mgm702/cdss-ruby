@@ -48,7 +48,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/waterrights/netamount/", {
+        response = get("/waterrights/netamount/", {
           query: query
         })
 
@@ -111,7 +111,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/waterrights/transaction/", {
+        response = get("/waterrights/transaction/", {
           query: query
         })
 

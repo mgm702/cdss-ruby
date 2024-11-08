@@ -1,5 +1,5 @@
 module Cdss
-  module Groundwater
+  module GroundWater
     # Fetches groundwater water level wells based on filters.
     #
     # @param [String, nil] county County to filter wells
@@ -32,7 +32,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/groundwater/waterlevels/wells/", {
+        response = get("/groundwater/waterlevels/wells/", {
           query: query
         })
 
@@ -77,7 +77,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/groundwater/waterlevels/wellmeasurements/", {
+        response = get("/groundwater/waterlevels/wellmeasurements/", {
           query: query
         })
 
@@ -128,7 +128,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/groundwater/geophysicallogs/wells/", {
+        response = get("/groundwater/geophysicallogs/wells/", {
           query: query
         })
 
@@ -171,7 +171,7 @@ module Cdss
         query[:pageSize] = page_size
         query[:pageIndex] = page_index
 
-        response = self.class.get("/groundwater/geophysicallogs/geoplogpicks/", {
+        response = get("/groundwater/geophysicallogs/geoplogpicks/", {
           query: query
         })
 
