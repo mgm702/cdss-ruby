@@ -1,7 +1,10 @@
 module Cdss
   module Models
     class Reading
-      ATTRIBUTES = %i[
+      include Cdss::Concerns::WellReadingAttributes
+      include Cdss::Concerns::LogReadingAttributes
+
+      BASE_ATTRIBUTES = %i[
         station_num
         abbrev
         parameter
@@ -26,12 +29,13 @@ module Cdss
         meas_count
       ].freeze
 
+      ATTRIBUTES = (BASE_ATTRIBUTES + WELL_ATTRIBUTES + LOG_ATTRIBUTES).freeze
+
       attr_accessor(*ATTRIBUTES)
 
       def initialize(**attrs)
         attrs[:metadata] ||= {}
         attrs[:flags] ||= {}
-
         ATTRIBUTES.each do |attr|
           instance_variable_set(:"@#{attr}", attrs[attr]) if attrs.key?(attr) && attrs[attr]
         end

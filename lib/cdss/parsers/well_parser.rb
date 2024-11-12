@@ -42,14 +42,20 @@ module Cdss
         def build_measurement(data)
           Cdss::Models::Reading.new(
             well_id: data['wellId'],
+            well_name: data['wellName'],
+            division: data['division'],
+            water_district: data['waterDistrict'],
+            county: data['county'],
+            management_district: data['managementDistrict'],
+            designated_basin: data['designatedBasin'],
+            publication: data['publication'],
             measurement_date: parse_timestamp(data['measurementDate']),
-            value: safe_float(data['waterLevel']),
-            units: data['units'],
+            depth_to_water: safe_float(data['depthToWater']),
+            measuring_point_above_land_surface: safe_float(data['measuringPointAboveLandSurface']),
+            depth_water_below_land_surface: safe_float(data['depthWaterBelowLandSurface']),
+            elevation_of_water: safe_float(data['elevationOfWater']),
+            delta: safe_float(data['delta']),
             data_source: data['dataSource'],
-            collection_method: data['collectionMethod'],
-            data_reliability: data['dataReliability'],
-            measurement_method: data['measurementMethod'],
-            modified: parse_timestamp(data['modified']),
             metadata: {}
           )
         end
@@ -82,6 +88,13 @@ module Cdss
             pick_quality: data['pickQuality'],
             comments: data['comments'],
             modified: parse_timestamp(data['modified']),
+            aquifer: data['aquifer'],
+            g_log_top_depth: safe_float(data['gLogTopDepth']),
+            g_log_base_depth: safe_float(data['gLogBaseDepth']),
+            g_log_top_elev: safe_float(data['gLogTopElev']),
+            g_log_base_elev: safe_float(data['gLogBaseElev']),
+            g_log_thickness: safe_float(data['gLogThickness']),
+            comment: data['comment'],
             metadata: {}
           )
         end
