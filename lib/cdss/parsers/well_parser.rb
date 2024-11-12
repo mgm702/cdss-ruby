@@ -55,6 +55,7 @@ module Cdss
             depth_water_below_land_surface: safe_float(data['depthWaterBelowLandSurface']),
             elevation_of_water: safe_float(data['elevationOfWater']),
             delta: safe_float(data['delta']),
+            modified: parse_timestamp(data['modified']),
             data_source: data['dataSource'],
             metadata: {}
           )

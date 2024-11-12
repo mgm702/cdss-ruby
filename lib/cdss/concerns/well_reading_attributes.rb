@@ -12,6 +12,7 @@ module Cdss
         publication
         depth_to_water
         measuring_point_above_land_surface
+        measurement_date
         depth_water_below_land_surface
         elevation_of_water
         delta
