@@ -1,0 +1,529 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/geophysicallogs/wells/?county=DENVER&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-11-07T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '513278'
+      X-Rate-Row-Limit:
+      - 'null'
+      X-Rate-Request-Limit:
+      - 'null'
+      X-Rate-Request-Remaining:
+      - 'null'
+      X-Result-Count:
+      - '100'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Fri, 08 Nov 2024 02:27:45 GMT
+      Content-Length:
+      - '89952'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":100,"ResultDateTime":"2024-11-07
+        19:27:45","ResultList":[{"wellId":3173,"wellName":"CHAMP 125 AMOCO E-1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":1960,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206503CC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"3","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":990,"coordsnsDir":"S","utmX":529447.3,"utmY":4416956.3,"latitude":39.902177,"longitude":-104.655526,"locationAccuracy":"Spotted
+        from section lines","elevation":5439.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3173"},{"wellId":3178,"wellName":"CHAMP
+        117  AMOCO 2","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2498,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206507CA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"7","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1780,"coordsewDir":"W","coordsns":1980,"coordsnsDir":"S","utmX":524927.0,"utmY":4415669.0,"latitude":39.890726,"longitude":-104.708451,"locationAccuracy":"Spotted
+        from section lines","elevation":5294.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3178"},{"wellId":3179,"wellName":"CHAMP
+        117-AMOCO 5","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2400,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206507DA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SE","section":"7","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":660,"coordsewDir":"E","coordsns":1980,"coordsnsDir":"S","utmX":525714.8,"utmY":4415674.2,"latitude":39.890748,"longitude":-104.699235,"locationAccuracy":"Spotted
+        from section lines","elevation":5338.0,"elevationAccuracy":null,"modified":"2006-12-01
+        13:34:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3179"},{"wellId":3180,"wellName":"MORRIS
+        32-7","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2000,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206507AC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"7","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1980,"coordsewDir":"E","coordsns":1980,"coordsnsDir":"N","utmX":525310.5,"utmY":4416071.0,"latitude":39.894337,"longitude":-104.703945,"locationAccuracy":"Spotted
+        from section lines","elevation":5332.0,"elevationAccuracy":null,"modified":"2006-12-01
+        13:34:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3180"},{"wellId":3181,"wellName":"CHAMP
+        117-AMOCO 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2750,"logSwl":null,"aquiferPicks":"LOWER
+        ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206507DC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"7","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1980,"coordsewDir":"E","coordsns":660,"coordsnsDir":"S","utmX":525314.5,"utmY":4415269.2,"latitude":39.887111,"longitude":-104.703929,"locationAccuracy":"Spotted
+        from section lines","elevation":5295.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3181"},{"wellId":3182,"wellName":"CHAMP
+        117-AMOCO 3","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2800,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS, LOWER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206507CC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"7","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":660,"coordsewDir":"W","coordsns":660,"coordsnsDir":"S","utmX":524586.7,"utmY":4415264.5,"latitude":39.887087,"longitude":-104.712443,"locationAccuracy":"Spotted
+        from section lines","elevation":5253.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3182"},{"wellId":3183,"wellName":"JEFFERY
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206508AC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"8","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1650,"coordsewDir":"E","coordsns":1650,"coordsnsDir":"N","utmX":527017.8,"utmY":4416176.2,"latitude":39.895230,"longitude":-104.683973,"locationAccuracy":"Spotted
+        from section lines","elevation":5326.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3183"},{"wellId":3184,"wellName":"STUKERT","receipt":"0208036
+        ","permit":"25365-F","ecmcId":null,"logDate":null,"logType":",R,G,","logTop":null,"logBottom":800,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":"0205296","locnum":"SC00206508CC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"8","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":700,"coordsewDir":"W","coordsns":700,"coordsnsDir":"S","utmX":526131.3,"utmY":4415283.5,"latitude":39.887221,"longitude":-104.694384,"locationAccuracy":"Spotted
+        from section lines","elevation":5350.0,"elevationAccuracy":null,"modified":"2006-12-01
+        13:34:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3184"},{"wellId":3185,"wellName":"CHAMP
+        125","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206509CC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"9","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":990,"coordsnsDir":"S","utmX":527820.5,"utmY":4415357.9,"latitude":39.887834,"longitude":-104.674627,"locationAccuracy":"Spotted
+        from section lines","elevation":5353.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3185"},{"wellId":3186,"wellName":"MONAGHAN
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206510CC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"10","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":990,"coordsnsDir":"S","utmX":529443.3,"utmY":4415349.4,"latitude":39.887699,"longitude":-104.655645,"locationAccuracy":"Spotted
+        from section lines","elevation":5273.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3186"},{"wellId":3187,"wellName":"BOX
+        ELDER C 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":1950,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206511CC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"11","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":990,"coordsnsDir":"S","utmX":531051.8,"utmY":4415348.5,"latitude":39.887632,"longitude":-104.636827,"locationAccuracy":"Spotted
+        from section lines","elevation":5266.0,"elevationAccuracy":null,"modified":"2008-04-30
+        10:47:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3187"},{"wellId":3188,"wellName":"BOX
+        ELDER L","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206512CA","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"12","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1650,"coordsewDir":"W","coordsns":1650,"coordsnsDir":"S","utmX":532860.0,"utmY":4415545.6,"latitude":39.889348,"longitude":-104.615671,"locationAccuracy":"Spotted
+        from section lines","elevation":5248.0,"elevationAccuracy":null,"modified":"2006-12-01
+        13:34:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3188"},{"wellId":3189,"wellName":"PUGH
+        32-13","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,G,","logTop":null,"logBottom":2575,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206513AC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"13","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1880,"coordsewDir":"E","coordsns":1980,"coordsnsDir":"N","utmX":533405.2,"utmY":4414430.9,"latitude":39.879281,"longitude":-104.609354,"locationAccuracy":"Spotted
+        from section lines","elevation":5260.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3189"},{"wellId":3191,"wellName":"BOX
+        ELDER D","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":3048,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206514CB","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"14","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":1650,"coordsnsDir":"S","utmX":531058.9,"utmY":4413948.0,"latitude":39.875018,"longitude":-104.636812,"locationAccuracy":"Spotted
+        from section lines","elevation":5284.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3191"},{"wellId":3192,"wellName":"AMES
+        CONSTRUCTION","receipt":null,"permit":"41597-F","ecmcId":null,"logDate":null,"logType":",SP,R,G,","logTop":null,"logBottom":695,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206514DD","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SE","section":"14","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":400,"coordsewDir":"E","coordsns":400,"coordsnsDir":"S","utmX":532242.9,"utmY":4413555.1,"latitude":39.871433,"longitude":-104.622986,"locationAccuracy":"Spotted
+        from section lines","elevation":5285.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3192"},{"wellId":3193,"wellName":"CHAMP
+        75 AMOCO A1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206515CB","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"15","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":1650,"coordsnsDir":"S","utmX":529461.7,"utmY":4413950.1,"latitude":39.875093,"longitude":-104.655486,"locationAccuracy":"Spotted
+        from section lines","elevation":5326.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3193"},{"wellId":3194,"wellName":"CHAMP
+        75 AMOCO E","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206515AC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"15","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1980,"coordsewDir":"E","coordsns":1980,"coordsnsDir":"N","utmX":530150.9,"utmY":4414443.2,"latitude":39.879511,"longitude":-104.647407,"locationAccuracy":"Spotted
+        from section lines","elevation":5318.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3194"},{"wellId":3195,"wellName":"MONAGHAN-STATE
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206516AA","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NE","section":"16","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"E","coordsns":990,"coordsnsDir":"N","utmX":528843.6,"utmY":4414748.1,"latitude":39.882304,"longitude":-104.662678,"locationAccuracy":"Spotted
+        from section lines","elevation":5299.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3195"},{"wellId":3196,"wellName":"ANDERSON
+        STATE 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206516CC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"16","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":660,"coordsewDir":"W","coordsns":660,"coordsnsDir":"S","utmX":527738.4,"utmY":4413656.1,"latitude":39.872502,"longitude":-104.675659,"locationAccuracy":"Spotted
+        from section lines","elevation":5381.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3196"},{"wellId":3197,"wellName":"CHAMP
+        125 AMOCO 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2834,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206517BC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NW","section":"17","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":660,"coordsewDir":"W","coordsns":1980,"coordsnsDir":"N","utmX":526122.4,"utmY":4414466.7,"latitude":39.879861,"longitude":-104.694522,"locationAccuracy":"Spotted
+        from section lines","elevation":5283.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3197"},{"wellId":3198,"wellName":"KALLSEN
+        5","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206518CA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"18","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1780,"coordsewDir":"W","coordsns":1980,"coordsnsDir":"S","utmX":524928.9,"utmY":4414059.8,"latitude":39.876230,"longitude":-104.708489,"locationAccuracy":"Spotted
+        from section lines","elevation":5232.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3198"},{"wellId":3199,"wellName":"KALLSEN
+        4","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2093,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206518BC","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NW","section":"18","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":600,"coordsewDir":"W","coordsns":1980,"coordsnsDir":"N","utmX":524569.5,"utmY":4414459.7,"latitude":39.879844,"longitude":-104.712673,"locationAccuracy":"Spotted
+        from section lines","elevation":5225.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3199"},{"wellId":3200,"wellName":"CHAMP
+        125 AMOCO B","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2732,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206519BA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"19","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1800,"coordsewDir":"W","coordsns":660,"coordsnsDir":"N","utmX":524931.6,"utmY":4413255.1,"latitude":39.868977,"longitude":-104.708485,"locationAccuracy":"Spotted
+        from section lines","elevation":5230.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3200"},{"wellId":3201,"wellName":"BOX
+        ELDER E-1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206520AA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NE","section":"20","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"E","coordsns":990,"coordsnsDir":"N","utmX":527239.2,"utmY":4413155.7,"latitude":39.868014,"longitude":-104.681514,"locationAccuracy":"Spotted
+        from section lines","elevation":5339.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3201"},{"wellId":3202,"wellName":"BOX
+        ELDER 2 E","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206520CA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"20","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1650,"coordsewDir":"W","coordsns":1650,"coordsnsDir":"S","utmX":526434.1,"utmY":4412349.8,"latitude":39.860777,"longitude":-104.690959,"locationAccuracy":"Spotted
+        from section lines","elevation":5291.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3202"},{"wellId":3203,"wellName":"WWEM1","receipt":"0302576
+        ","permit":"35354-M","ecmcId":null,"logDate":null,"logType":",G,SP,R,","logTop":null,"logBottom":600,"logSwl":120.00,"aquiferPicks":"UPPER
+        ARAPAHOE","wellDepth":600,"topPerforatedCasing":77,"bottomPerforatedCasing":600,"baseOfGrout":null,"wdid":null,"locnum":"SC00206521DA","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SE","section":"21","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":870,"coordsewDir":"E","coordsns":2600,"coordsnsDir":"S","utmX":528901.8,"utmY":4412625.0,"latitude":39.863174,"longitude":-104.662093,"locationAccuracy":"Spotted
+        from section lines","elevation":5415.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3203"},{"wellId":3204,"wellName":"CHAMP
+        125-C1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206521AC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"21","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":1650,"coordsewDir":"E","coordsns":1650,"coordsnsDir":"N","utmX":528664.8,"utmY":4412946.9,"latitude":39.866084,"longitude":-104.664850,"locationAccuracy":"Spotted
+        from section lines","elevation":5401.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3204"},{"wellId":3205,"wellName":"BOX
+        ELDER 2","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2000,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS, LOWER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206522AA","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NE","section":"22","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"E","coordsns":990,"coordsnsDir":"N","utmX":530459.9,"utmY":4413146.1,"latitude":39.867814,"longitude":-104.643853,"locationAccuracy":"Spotted
+        from section lines","elevation":5330.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3205"},{"wellId":3206,"wellName":"BOX
+        ELDER 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206522BB","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"NW","section":"22","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":660,"coordsewDir":"W","coordsns":660,"coordsnsDir":"N","utmX":529369.7,"utmY":4413246.0,"latitude":39.868753,"longitude":-104.656594,"locationAccuracy":"Spotted
+        from section lines","elevation":5380.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3206"},{"wellId":3208,"wellName":"CHAMP
+        75 AMOCO B","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":1763,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206527CC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"27","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":990,"coordsnsDir":"S","utmX":529465.9,"utmY":4410515.0,"latitude":39.844144,"longitude":-104.655594,"locationAccuracy":"Spotted
+        from section lines","elevation":5401.0,"elevationAccuracy":null,"modified":"2006-12-01
+        13:34:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3208"},{"wellId":3209,"wellName":"BOX
+        ELDER FARMS 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2404,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206530AD","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"NE","section":"30","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":710,"coordsewDir":"E","coordsns":1980,"coordsnsDir":"N","utmX":525725.1,"utmY":4411246.9,"latitude":39.850861,"longitude":-104.699292,"locationAccuracy":"Spotted
+        from section lines","elevation":5312.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3209"},{"wellId":3227,"wellName":"KOCH","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":1575,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206612DA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SE","section":"12","township":"2.0
+        S","range":"66.0 W","pm":"S","coordsew":660,"coordsewDir":"E","coordsns":1980,"coordsnsDir":"S","utmX":524183.3,"utmY":4415664.5,"latitude":39.890712,"longitude":-104.717154,"locationAccuracy":"Spotted
+        from section lines","elevation":5261.0,"elevationAccuracy":null,"modified":"2006-12-01
+        13:34:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3227"},{"wellId":3241,"wellName":"BOX
+        ELDER-AMOCO 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206635BB","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"NW","section":"35","township":"2.0
+        S","range":"66.0 W","pm":"S","coordsew":660,"coordsewDir":"W","coordsns":660,"coordsnsDir":"N","utmX":521331.9,"utmY":4410018.8,"latitude":39.839918,"longitude":-104.750684,"locationAccuracy":"Spotted
+        from section lines","elevation":5263.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3241"},{"wellId":3671,"wellName":"PAC
+        WEST","receipt":"9002129","permit":"16178-F","ecmcId":null,"logDate":null,"logType":",G,SP,R,","logTop":null,"logBottom":1201,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306609DA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SE","section":"9","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":519302.4,"utmY":4405987.7,"latitude":39.803645,"longitude":-104.774525,"locationAccuracy":"Spotted
+        from quarters","elevation":5335.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3671"},{"wellId":3672,"wellName":"EASTWOOD","receipt":null,"permit":"16051-F","ecmcId":null,"logDate":null,"logType":",G,","logTop":null,"logBottom":1700,"logSwl":null,"aquiferPicks":null,"wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306609CA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"9","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":518497.7,"utmY":4405984.0,"latitude":39.803630,"longitude":-104.783925,"locationAccuracy":"Spotted
+        from quarters","elevation":null,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3672"},{"wellId":3673,"wellName":"EASTWOOD","receipt":null,"permit":"16050-F","ecmcId":null,"logDate":null,"logType":",G,SP,","logTop":null,"logBottom":1503,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306609CB
+        DWR1","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"9","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":518094.1,"utmY":4405982.2,"latitude":39.803622,"longitude":-104.788640,"locationAccuracy":"Spotted
+        from quarters","elevation":5500.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3673"},{"wellId":3674,"wellName":"EASTWOOD
+        ESTATES - KA","receipt":"9002130","permit":"16179-F","ecmcId":null,"logDate":null,"logType":",G,","logTop":null,"logBottom":1700,"logSwl":310.00,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":1200,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":505,"wdid":"0205721","locnum":"SC00306609CB
+        DWR2","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"9","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":517925.0,"utmY":4406052.0,"latitude":39.804254,"longitude":-104.790613,"locationAccuracy":"GPS","elevation":5310.0,"elevationAccuracy":null,"modified":"2019-08-01
+        09:22:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3674"},{"wellId":3675,"wellName":"EASTWOOD","receipt":"9002131","permit":"16180-F","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1178,"logSwl":170.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, UPPER ARAPAHOE","wellDepth":1182,"topPerforatedCasing":630,"bottomPerforatedCasing":1170,"baseOfGrout":null,"wdid":"0205726","locnum":"SC00306609CD","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SW","section":"9","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":518496.1,"utmY":4405581.7,"latitude":39.800005,"longitude":-104.783955,"locationAccuracy":"Spotted
+        from quarters","elevation":5320.0,"elevationAccuracy":null,"modified":"2016-08-19
+        10:51:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3675"},{"wellId":3677,"wellName":"DAVIDSON
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306614AC
+        DWR1","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"14","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":1980,"coordsewDir":"E","coordsns":1980,"coordsnsDir":"N","utmX":522134.1,"utmY":4404792.0,"latitude":39.792803,"longitude":-104.741487,"locationAccuracy":"Spotted
+        from section lines","elevation":5417.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3677"},{"wellId":3678,"wellName":"HOYT
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":2805,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306615AA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NE","section":"15","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":660,"coordsewDir":"E","coordsns":660,"coordsnsDir":"N","utmX":520914.3,"utmY":4405195.2,"latitude":39.796465,"longitude":-104.755724,"locationAccuracy":"Spotted
+        from section lines","elevation":5388.0,"elevationAccuracy":null,"modified":"2006-09-28
+        14:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3678"},{"wellId":3679,"wellName":"MILLER
+        1","receipt":null,"permit":null,"ecmcId":"03105024","logDate":null,"logType":null,"logTop":null,"logBottom":null,"logSwl":null,"aquiferPicks":"LARAMIE-FOX
+        HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306619CA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"19","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":1650,"coordsewDir":"W","coordsns":1650,"coordsnsDir":"S","utmX":515215.2,"utmY":4402651.4,"latitude":39.773664,"longitude":-104.822350,"locationAccuracy":"Spotted
+        from section lines","elevation":5358.0,"elevationAccuracy":null,"modified":"2015-12-14
+        17:07:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3679"},{"wellId":3716,"wellName":"CAPITOL
+        PKG","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":749,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306814CB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"14","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":502063.4,"utmY":4404361.6,"latitude":39.789210,"longitude":-104.975911,"locationAccuracy":"Spotted
+        from quarters","elevation":5140.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3716"},{"wellId":3717,"wellName":"HARRIS
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":816,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306825DC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"25","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":504476.0,"utmY":4400730.4,"latitude":39.756483,"longitude":-104.947759,"locationAccuracy":"Spotted
+        from quarters","elevation":5290.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3717"},{"wellId":3718,"wellName":"DEEP
+        ROCK 3","receipt":"9015992","permit":"16216-F","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":805,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":562,"bottomPerforatedCasing":805,"baseOfGrout":null,"wdid":"0814335","locnum":"SC00306827DD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SE","section":"27","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":501663.4,"utmY":4400727.3,"latitude":39.756466,"longitude":-104.980592,"locationAccuracy":"Spotted
+        from quarters","elevation":5225.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3718"},{"wellId":3719,"wellName":"BROADWAY
+        BREWING","receipt":"0024896 ","permit":"44362-F","ecmcId":null,"logDate":"1995-03-14
+        00:00:00","logType":",G,R,SP,","logTop":null,"logBottom":782,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":765,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306827CD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SW","section":"27","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":2590,"coordsewDir":"W","coordsns":1000,"coordsnsDir":"S","utmX":501050.4,"utmY":4400832.8,"latitude":39.757419,"longitude":-104.987752,"locationAccuracy":"Spotted
+        from section lines","elevation":5200.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3719"},{"wellId":3720,"wellName":"PETRO.
+        CLUB 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1610,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306834CD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SW","section":"34","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":500867.6,"utmY":4399123.9,"latitude":39.742020,"longitude":-104.989884,"locationAccuracy":"Spotted
+        from quarters","elevation":5240.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3720"},{"wellId":4004,"wellName":"VA
+        HOSP 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1090,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406706CB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"6","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":505269.5,"utmY":4397902.6,"latitude":39.731000,"longitude":-104.938518,"locationAccuracy":"Spotted
+        from quarters","elevation":5360.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4004"},{"wellId":4005,"wellName":"LOWERY
+        2 FH","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1200,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406709AA","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NE","section":"9","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":509679.1,"utmY":4397095.4,"latitude":39.723688,"longitude":-104.887072,"locationAccuracy":"Spotted
+        from quarters","elevation":5375.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4005"},{"wellId":4006,"wellName":"GULF
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":748,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406710CB","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"10","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":510084.5,"utmY":4396292.1,"latitude":39.716445,"longitude":-104.882354,"locationAccuracy":"Spotted
+        from quarters","elevation":5365.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4006"},{"wellId":4011,"wellName":"FAIRMONT
+        CEM","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1150,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406716DC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"16","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":509301.0,"utmY":4394278.3,"latitude":39.698309,"longitude":-104.891524,"locationAccuracy":"Spotted
+        from quarters","elevation":5485.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4011"},{"wellId":4012,"wellName":"THURMON-GULF
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":299,"logSwl":null,"aquiferPicks":null,"wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406717CB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"17","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":506869.3,"utmY":4394686.5,"latitude":39.702011,"longitude":-104.919882,"locationAccuracy":"Spotted
+        from quarters","elevation":5365.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4012"},{"wellId":4013,"wellName":"CELEBRITY
+        LANES","receipt":"9005492","permit":"2721-F","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":950,"logSwl":180.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":875,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406718CB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"18","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":505274.0,"utmY":4394679.3,"latitude":39.701957,"longitude":-104.938491,"locationAccuracy":"Spotted
+        from quarters","elevation":5370.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4013"},{"wellId":4014,"wellName":"GLEND
+        LFH-1","receipt":null,"permit":"32363-F","ecmcId":null,"logDate":null,"logType":",G,SP,R,C,N,D,","logTop":null,"logBottom":1910,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406718BC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NW","section":"18","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":505271.9,"utmY":4395081.6,"latitude":39.705582,"longitude":-104.938512,"locationAccuracy":"Spotted
+        from quarters","elevation":5335.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4014"},{"wellId":4015,"wellName":"DEPT
+        HIGHWAYS","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1050,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406719BC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NW","section":"19","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":505277.6,"utmY":4393468.9,"latitude":39.691051,"longitude":-104.938459,"locationAccuracy":"Spotted
+        from quarters","elevation":5450.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4015"},{"wellId":4016,"wellName":"SKYLINE
+        ACRES 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1116,"logSwl":null,"aquiferPicks":null,"wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406720DC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"20","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":507678.0,"utmY":4392671.9,"latitude":39.683852,"longitude":-104.910473,"locationAccuracy":"Spotted
+        from quarters","elevation":5415.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4016"},{"wellId":4023,"wellName":"SC00406728BA","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",G,R,D,","logTop":null,"logBottom":440,"logSwl":null,"aquiferPicks":null,"wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406728BA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"28","township":"4.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":508909.7,"utmY":4392267.6,"latitude":39.680196,"longitude":-104.896115,"locationAccuracy":"Spotted
+        from quarters","elevation":5430.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4023"},{"wellId":4025,"wellName":"DEN
+        BOTANIC GARD","receipt":"0086318 ","permit":"23512-F","ecmcId":null,"logDate":null,"logType":",SP,R,G,","logTop":null,"logBottom":960,"logSwl":450.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":915,"topPerforatedCasing":575,"bottomPerforatedCasing":915,"baseOfGrout":null,"wdid":null,"locnum":"SC00406802DA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SE","section":"2","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":503273.9,"utmY":4397895.9,"latitude":39.730949,"longitude":-104.961805,"locationAccuracy":"Spotted
+        from quarters","elevation":5385.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4025"},{"wellId":4026,"wellName":"DEN
+        GEN","receipt":"0105557","permit":"24453-F","ecmcId":null,"logDate":null,"logType":",SP,R,C,G,N,D,","logTop":null,"logBottom":788,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":618,"bottomPerforatedCasing":765,"baseOfGrout":null,"wdid":"0805830","locnum":"SC00406803CD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SW","section":"3","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":500873.7,"utmY":4397505.1,"latitude":39.727434,"longitude":-104.989815,"locationAccuracy":"Spotted
+        from quarters","elevation":5235.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4026"},{"wellId":4027,"wellName":"PLUMBER
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":500,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406807AA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NE","section":"7","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":496839.6,"utmY":4397110.0,"latitude":39.723868,"longitude":-105.036887,"locationAccuracy":"Spotted
+        from quarters","elevation":5330.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4027"},{"wellId":4028,"wellName":"DENVER
+        COUNTRY CLUB","receipt":null,"permit":"40957-F","ecmcId":null,"logDate":null,"logType":",SP,R,G","logTop":null,"logBottom":660,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406811CA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"11","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":502481.1,"utmY":4396286.3,"latitude":39.716449,"longitude":-104.971063,"locationAccuracy":"Spotted
+        from quarters","elevation":5300.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4028"},{"wellId":4029,"wellName":"FULLENWIDER
+        LFH-1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,G,","logTop":null,"logBottom":1861,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406813BA
+        DWR1","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"13","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":504078.3,"utmY":4395482.6,"latitude":39.709201,"longitude":-104.952434,"locationAccuracy":"Spotted
+        from quarters","elevation":5250.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4029"},{"wellId":4030,"wellName":"FULLENWIDER
+        A-1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,G,","logTop":null,"logBottom":1100,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406813BA
+        DWR2","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"13","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":504078.3,"utmY":4395482.6,"latitude":39.709201,"longitude":-104.952434,"locationAccuracy":"Spotted
+        from quarters","elevation":5250.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4030"},{"wellId":4031,"wellName":"SILEO
+        TRUST #1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",G,N,","logTop":null,"logBottom":800,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406815BA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"15","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":500876.8,"utmY":4395492.8,"latitude":39.709302,"longitude":-104.989781,"locationAccuracy":"Spotted
+        from quarters","elevation":5255.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4031"},{"wellId":4032,"wellName":"WRIGHT
+        2","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":460,"logSwl":null,"aquiferPicks":"DENVER","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406822BD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"NW","section":"22","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":500870.8,"utmY":4393478.2,"latitude":39.691151,"longitude":-104.989854,"locationAccuracy":"Spotted
+        from quarters","elevation":5266.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4032"},{"wellId":4033,"wellName":"DAVIS
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":223,"logSwl":null,"aquiferPicks":null,"wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406825DA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SE","section":"25","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":504892.6,"utmY":4391457.5,"latitude":39.672930,"longitude":-104.942964,"locationAccuracy":"Spotted
+        from quarters","elevation":5410.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4033"},{"wellId":4034,"wellName":"PORTER
+        SAN FH-1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1741,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406826CC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"26","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":502076.9,"utmY":4391072.1,"latitude":39.669469,"longitude":-104.975795,"locationAccuracy":"Spotted
+        from quarters","elevation":5325.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4034"},{"wellId":4036,"wellName":"GULF
+        2","receipt":null,"permit":"7771-F","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":509,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406828BA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"28","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":499240.8,"utmY":4392288.0,"latitude":39.680426,"longitude":-105.008863,"locationAccuracy":"Spotted
+        from quarters","elevation":5320.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4036"},{"wellId":4037,"wellName":"MC
+        GUFFIN 1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":551,"logSwl":null,"aquiferPicks":"UPPER
+        ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406829DA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SE","section":"29","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":498454.2,"utmY":4391488.9,"latitude":39.673225,"longitude":-105.018033,"locationAccuracy":"Spotted
+        from quarters","elevation":5400.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4037"},{"wellId":4039,"wellName":"CHERRY
+        CR III","receipt":"9015998 ","permit":"16751-F","ecmcId":null,"logDate":null,"logType":",SP,R,G,","logTop":null,"logBottom":1825,"logSwl":70.00,"aquiferPicks":"LARAMIE-FOX
+        HILLS, LOWER ARAPAHOE","wellDepth":1830,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":"0805657","locnum":"SC00406836BB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"NW","section":"36","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":503683.5,"utmY":4390653.6,"latitude":39.665693,"longitude":-104.957066,"locationAccuracy":"Spotted
+        from quarters","elevation":5365.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4039"},{"wellId":4040,"wellName":"WILSHIRE
+        CC FH-1","receipt":"9015987","permit":"15241-R","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":2025,"logSwl":300.00,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406836DD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SE","section":"36","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":504892.3,"utmY":4389442.1,"latitude":39.654770,"longitude":-104.942983,"locationAccuracy":"Spotted
+        from quarters","elevation":5485.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4040"},{"wellId":4050,"wellName":"CARTER
+        OIL","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":508,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406925AA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NE","section":"25","township":"4.0
+        S","range":"69.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":495236.8,"utmY":4392285.7,"latitude":39.680393,"longitude":-105.055553,"locationAccuracy":"Spotted
+        from quarters","elevation":5450.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4050"},{"wellId":4058,"wellName":"MEYER
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":652,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406936CB","division":1,"waterDistrict":9,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"36","township":"4.0
+        S","range":"69.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":494024.4,"utmY":4389869.7,"latitude":39.658617,"longitude":-105.069669,"locationAccuracy":"Spotted
+        from quarters","elevation":5375.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4058"},{"wellId":4059,"wellName":"NIELSEN
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":719,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406936DC","division":1,"waterDistrict":9,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"36","township":"4.0
+        S","range":"69.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":494829.3,"utmY":4389467.7,"latitude":39.654999,"longitude":-105.060283,"locationAccuracy":"Spotted
+        from quarters","elevation":5350.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4059"},{"wellId":4332,"wellName":"JOHNSON
+        1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":2100,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00506705BD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"NW","section":"5","township":"5.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":507255.8,"utmY":4388657.5,"latitude":39.647684,"longitude":-104.915441,"locationAccuracy":"Spotted
+        from quarters","elevation":5575.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4332"},{"wellId":4341,"wellName":"DEN
+        TECH","receipt":"9006232 ","permit":"16582-F","ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":1550,"logSwl":170.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, LOWER DAWSON, UPPER ARAPAHOE","wellDepth":1550,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":"0806225","locnum":"SC00506709DC
+        DWR1","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"9","township":"5.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":509231.2,"utmY":4386230.4,"latitude":39.625796,"longitude":-104.892450,"locationAccuracy":"Spotted
+        from quarters","elevation":5630.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4341"},{"wellId":4419,"wellName":"SDA
+        CHURCH","receipt":"0069426 ","permit":"21014-F","ecmcId":null,"logDate":null,"logType":",G,SP,R,","logTop":null,"logBottom":700,"logSwl":null,"aquiferPicks":"LOWER
+        ARAPAHOE, UPPER ARAPAHOE","wellDepth":698,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00506901BA","division":1,"waterDistrict":9,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"1","township":"5.0
+        S","range":"69.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":494425.1,"utmY":4389065.9,"latitude":39.651377,"longitude":-105.064991,"locationAccuracy":"Spotted
+        from quarters","elevation":5430.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4419"},{"wellId":4421,"wellName":"VON
+        FRELLICK A-1","receipt":"9027119","permit":"17443-F","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":638,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00506902DD","division":1,"waterDistrict":9,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SE","section":"2","township":"5.0
+        S","range":"69.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":493605.3,"utmY":4387859.3,"latitude":39.640499,"longitude":-105.074535,"locationAccuracy":"Spotted
+        from quarters","elevation":5450.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/4421"},{"wellId":5422,"wellName":"C
+        & H RANCH","receipt":"0471948 ","permit":"55266-F","ecmcId":null,"logDate":null,"logType":"SP,R,G,D","logTop":null,"logBottom":960,"logSwl":497.00,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":903,"topPerforatedCasing":721,"bottomPerforatedCasing":883,"baseOfGrout":null,"wdid":"0210148","locnum":"SC00306614AC
+        DWR3","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"14","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":1730,"coordsewDir":"E","coordsns":2250,"coordsnsDir":"N","utmX":522210.3,"utmY":4404709.5,"latitude":39.792053,"longitude":-104.740602,"locationAccuracy":"Spotted
+        from section lines","elevation":5420.0,"elevationAccuracy":null,"modified":"2001-10-31
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5422"},{"wellId":5461,"wellName":"C&H
+        RANCH TCMD #6","receipt":null,"permit":"55863-F","ecmcId":null,"logDate":"2001-09-21
+        00:00:00","logType":"SP,R,G,Ca,D","logTop":null,"logBottom":1840,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306614AC
+        DWR2","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"14","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":1770,"coordsewDir":"E","coordsns":2210,"coordsnsDir":"N","utmX":522198.1,"utmY":4404721.7,"latitude":39.792170,"longitude":-104.740742,"locationAccuracy":"Spotted
+        from section lines","elevation":5415.0,"elevationAccuracy":null,"modified":"2001-11-23
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5461"},{"wellId":5509,"wellName":"C&H
+        RNCH TCDM-2 UKA","receipt":"0458784 ","permit":"53883-F","ecmcId":null,"logDate":null,"logType":"SP,R,G,D,Ca","logTop":null,"logBottom":930,"logSwl":394.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, UPPER ARAPAHOE","wellDepth":910,"topPerforatedCasing":710,"bottomPerforatedCasing":880,"baseOfGrout":null,"wdid":"0210145","locnum":"SC00306614BC
+        DWR4","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NW","section":"14","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":750,"coordsewDir":"W","coordsns":1790,"coordsnsDir":"N","utmX":521345.0,"utmY":4404851.8,"latitude":39.793363,"longitude":-104.750701,"locationAccuracy":"Spotted
+        from section lines","elevation":5405.0,"elevationAccuracy":null,"modified":"2000-12-05
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5509"},{"wellId":5510,"wellName":"C&H
+        RNCH TCDM-4 UKA","receipt":"0458786 ","permit":"53884-F","ecmcId":null,"logDate":"2000-07-12
+        00:00:00","logType":"SP,R,G,D,Ca","logTop":null,"logBottom":921,"logSwl":465.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, UPPER ARAPAHOE","wellDepth":896,"topPerforatedCasing":605,"bottomPerforatedCasing":856,"baseOfGrout":null,"wdid":"0210147","locnum":"SC00306614CA
+        DWR1","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"14","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":1550,"coordsewDir":"W","coordsns":2020,"coordsnsDir":"S","utmX":521589.9,"utmY":4404407.6,"latitude":39.789357,"longitude":-104.747854,"locationAccuracy":"Spotted
+        from section lines","elevation":5380.0,"elevationAccuracy":null,"modified":"2000-12-05
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5510"},{"wellId":5511,"wellName":"C&H
+        RNCH TCMD-3 LKA","receipt":null,"permit":"53882-F","ecmcId":null,"logDate":"2000-06-29
+        00:00:00","logType":"SP,R,G,D,Ca","logTop":null,"logBottom":1255,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306614CA
+        DWR2","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"14","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":1550,"coordsewDir":"W","coordsns":2040,"coordsnsDir":"S","utmX":521589.9,"utmY":4404413.7,"latitude":39.789411,"longitude":-104.747853,"locationAccuracy":"Spotted
+        from section lines","elevation":5380.0,"elevationAccuracy":null,"modified":"2000-12-05
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5511"},{"wellId":5512,"wellName":"C&H
+        RNCH TCMD-1 LKA","receipt":"0458783 ","permit":"53881-F","ecmcId":null,"logDate":null,"logType":"SP,R,G","logTop":null,"logBottom":1270,"logSwl":428.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":1246,"topPerforatedCasing":1055,"bottomPerforatedCasing":1226,"baseOfGrout":null,"wdid":"0210144","locnum":"SC00306614BC
+        DWR5","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NW","section":"14","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":760,"coordsewDir":"W","coordsns":1770,"coordsnsDir":"N","utmX":521348.0,"utmY":4404857.9,"latitude":39.793417,"longitude":-104.750665,"locationAccuracy":"Spotted
+        from section lines","elevation":5405.0,"elevationAccuracy":null,"modified":"2000-12-05
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5512"},{"wellId":5528,"wellName":"CITY
+        & CTY OF DENVER","receipt":"0451990 ","permit":"53104-F","ecmcId":null,"logDate":null,"logType":"SP,R,G,Ca","logTop":null,"logBottom":685,"logSwl":null,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":0,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206507CD","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SW","section":"7","township":"2.0
+        S","range":"65.0 W","pm":"S","coordsew":2300,"coordsewDir":"W","coordsns":350,"coordsnsDir":"S","utmX":525086.8,"utmY":4415173.3,"latitude":39.886253,"longitude":-104.706599,"locationAccuracy":"Spotted
+        from section lines","elevation":5290.0,"elevationAccuracy":null,"modified":"2001-01-09
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5528"},{"wellId":5634,"wellName":"PINEHURST
+        CC LFH","receipt":"0497973 ","permit":"58258-F","ecmcId":null,"logDate":null,"logType":"SP,R,G,Ca,D","logTop":null,"logBottom":1725,"logSwl":325.00,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":1386,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":"0811148","locnum":"SC00506901DC","division":1,"waterDistrict":9,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"1","township":"5.0
+        S","range":"69.0 W","pm":"S","coordsew":2450,"coordsewDir":"E","coordsns":600,"coordsnsDir":"S","utmX":494676.4,"utmY":4387842.0,"latitude":39.640350,"longitude":-105.062057,"locationAccuracy":"Spotted
+        from section lines","elevation":5490.0,"elevationAccuracy":null,"modified":"2003-04-11
+        00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5634"},{"wellId":5686,"wellName":"TOWN
+        CENTER METRO #7","receipt":null,"permit":"59200-F","ecmcId":null,"logDate":"2003-04-23
+        00:00:00","logType":"SP,R,G,CA,C","logTop":null,"logBottom":1813,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+        DENVER, LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306615AD","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"NE","section":"15","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":740,"coordsewDir":"E","coordsns":2530,"coordsnsDir":"N","utmX":520891.4,"utmY":4404625.0,"latitude":39.791329,"longitude":-104.756011,"locationAccuracy":"Spotted
+        from section lines","elevation":5370.0,"elevationAccuracy":null,"modified":"2005-01-18
+        10:32:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5686"},{"wellId":13214,"wellName":"REGIS
+        UNIV UKA NO. 1","receipt":"0523633 ","permit":"61543-F","ecmcId":null,"logDate":"2005-02-22
+        00:00:00","logType":"SP,G,R,CA","logTop":null,"logBottom":622,"logSwl":383.00,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":596,"topPerforatedCasing":323,"bottomPerforatedCasing":576,"baseOfGrout":null,"wdid":null,"locnum":"SC00306817CA
+        DWR1","division":1,"waterDistrict":7,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"SW","section":"17","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":497561.0,"utmY":4404282.0,"latitude":39.788492,"longitude":-105.028496,"locationAccuracy":"GPS","elevation":5360.0,"elevationAccuracy":null,"modified":"2005-05-23
+        09:02:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/13214"},{"wellId":13234,"wellName":"GOLDSMITH
+        METRO DIST DTC NORTH R","receipt":"0503186 ","permit":"16582-F-R","ecmcId":null,"logDate":"2003-04-14
+        00:00:00","logType":"SP,G,R","logTop":null,"logBottom":1519,"logSwl":989.00,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":1499,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00506709DC
+        DWR2","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"9","township":"5.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":509053.0,"utmY":4386260.0,"latitude":39.626065,"longitude":-104.894526,"locationAccuracy":"GPS","elevation":5636.0,"elevationAccuracy":null,"modified":"2005-05-23
+        11:24:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/13234"},{"wellId":13269,"wellName":"C
+        & H WATER CO. WELL #8","receipt":"0519832 ","permit":"60703-F","ecmcId":null,"logDate":"2004-07-16
+        00:00:00","logType":"SP,G,R","logTop":null,"logBottom":1225,"logSwl":567.00,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":1228,"topPerforatedCasing":980,"bottomPerforatedCasing":1208,"baseOfGrout":null,"wdid":"0210239","locnum":"SC00306615CB","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"15","township":"3.0
+        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":519747.0,"utmY":4404205.0,"latitude":39.787573,"longitude":-104.769385,"locationAccuracy":"GPS","elevation":5370.0,"elevationAccuracy":null,"modified":"2011-05-13
+        14:05:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/13269"},{"wellId":13270,"wellName":"DENVER
+        WELLS LLC","receipt":"0525019 ","permit":"61200-F","ecmcId":null,"logDate":"2004-08-20
+        00:00:00","logType":"SP,G,R,C","logTop":null,"logBottom":722,"logSwl":263.00,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":690,"topPerforatedCasing":200,"bottomPerforatedCasing":690,"baseOfGrout":null,"wdid":"0208522","locnum":"SC00306814CD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SW","section":"14","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":502484.0,"utmY":4404043.0,"latitude":39.786338,"longitude":-104.971000,"locationAccuracy":"GPS","elevation":5150.0,"elevationAccuracy":null,"modified":"2005-05-23
+        14:12:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/13270"},{"wellId":13272,"wellName":"REGIS
+        UNIV LOWER ARAP #1","receipt":"0527896 ","permit":"61544-F","ecmcId":null,"logDate":"2005-02-17
+        00:00:00","logType":"SP,G,R,CA","logTop":null,"logBottom":895,"logSwl":388.00,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":804,"topPerforatedCasing":637,"bottomPerforatedCasing":804,"baseOfGrout":null,"wdid":null,"locnum":"SC00306817CA
+        DWR2","division":1,"waterDistrict":7,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"17","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":497042.0,"utmY":4404458.0,"latitude":39.790076,"longitude":-105.034558,"locationAccuracy":"GPS","elevation":5340.0,"elevationAccuracy":null,"modified":"2005-05-23
+        14:19:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/13272"},{"wellId":13273,"wellName":"HIGH
+        PLAINS A & M LLC","receipt":"0520413B","permit":"60802-F","ecmcId":null,"logDate":"2004-08-12
+        00:00:00","logType":"SP,G,R,CA,C","logTop":null,"logBottom":701,"logSwl":264.00,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":680,"topPerforatedCasing":267,"bottomPerforatedCasing":658,"baseOfGrout":null,"wdid":null,"locnum":"SC00306823BB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"NW","section":"23","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":502195.0,"utmY":4403550.0,"latitude":39.781897,"longitude":-104.974377,"locationAccuracy":"GPS","elevation":5515.0,"elevationAccuracy":null,"modified":"2005-05-23
+        14:23:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/13273"},{"wellId":48696,"wellName":"D.U.
+        WELL-UPPER ARAPAHOE","receipt":"0517092 ","permit":"60396-F","ecmcId":null,"logDate":"2003-08-08
+        00:00:00","logType":",G,S,R","logTop":null,"logBottom":849,"logSwl":393.00,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":830,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406826AB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"NE","section":"26","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":503064.0,"utmY":4392328.0,"latitude":39.680782,"longitude":-104.964281,"locationAccuracy":"User
+        supplied","elevation":5340.0,"elevationAccuracy":null,"modified":"2006-11-02
+        17:08:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/48696"},{"wellId":49431,"wellName":"D.U.
+        WELL-LOWER ARAPAHOE","receipt":"0512712 ","permit":"60155-F","ecmcId":null,"logDate":"2003-10-24
+        00:00:00","logType":",G,SP,R,CAL","logTop":null,"logBottom":1139,"logSwl":null,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":1115,"topPerforatedCasing":938,"bottomPerforatedCasing":1115,"baseOfGrout":null,"wdid":null,"locnum":"SC00406826AB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"NE","section":"26","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":503065.0,"utmY":4392313.0,"latitude":39.680647,"longitude":-104.964269,"locationAccuracy":"User
+        supplied","elevation":5340.0,"elevationAccuracy":null,"modified":"2006-11-02
+        11:31:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/49431"},{"wellId":149734,"wellName":"SEC
+        ICE HOUSE","receipt":"3601554A","permit":"64306-F","ecmcId":null,"logDate":"2008-03-10
+        00:00:00","logType":",SP,R,G,C,CD","logTop":null,"logBottom":1549,"logSwl":null,"aquiferPicks":"DENVER,
+        LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00406804BA","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NE","q160":"NW","section":"4","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":1445,"coordsewDir":"W","coordsns":768,"coordsnsDir":"N","utmX":499067.4,"utmY":4398716.5,"latitude":39.738344,"longitude":-105.010899,"locationAccuracy":"Spotted
+        from section lines","elevation":5200.0,"elevationAccuracy":null,"modified":"2008-06-17
+        09:33:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/149734"},{"wellId":149806,"wellName":"IDEAL
+        WELL REPLACEMENT","receipt":"3600470 ","permit":"63971-F","ecmcId":null,"logDate":"2007-08-28
+        00:00:00","logType":",G,R,SP,CAL,CD","logTop":null,"logBottom":801,"logSwl":312.00,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":795,"topPerforatedCasing":329,"bottomPerforatedCasing":784,"baseOfGrout":null,"wdid":null,"locnum":"SC00306827DD","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SE","section":"27","township":"3.0
+        S","range":"68.0 W","pm":"S","coordsew":1207,"coordsewDir":"E","coordsns":483,"coordsnsDir":"S","utmX":501496.7,"utmY":4400674.1,"latitude":39.755985,"longitude":-104.982535,"locationAccuracy":"Spotted
+        from section lines","elevation":5215.0,"elevationAccuracy":null,"modified":"2009-07-02
+        14:36:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/149806"},{"wellId":149947,"wellName":"STATE
+        CAPITOL A-1","receipt":"3647050 ","permit":"283870-","ecmcId":null,"logDate":"2010-10-28
+        00:00:00","logType":",R,SP,G,N,CAL","logTop":null,"logBottom":862,"logSwl":332.00,"aquiferPicks":"DENVER,
+        LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":864,"topPerforatedCasing":320,"bottomPerforatedCasing":844,"baseOfGrout":null,"wdid":null,"locnum":"SC00406803AB","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"NE","section":"3","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":1736,"coordsewDir":"E","coordsns":466,"coordsnsDir":"N","utmX":501346.3,"utmY":4398780.3,"latitude":39.738920,"longitude":-104.984301,"locationAccuracy":"Spotted
+        from section lines","elevation":5276.0,"elevationAccuracy":null,"modified":"2011-07-07
+        09:20:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/149947"},{"wellId":154186,"wellName":"HARVEY
+        PARK WELL","receipt":"10004217","permit":"84572-F","ecmcId":null,"logDate":"2021-07-10
+        00:00:00","logType":"GR, RES, SP","logTop":null,"logBottom":629,"logSwl":374.00,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":630,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":442,"wdid":null,"locnum":"SC00406830AC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"30","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":1430,"coordsewDir":"E","coordsns":1480,"coordsnsDir":"N","utmX":496616.0,"utmY":4392031.0,"latitude":39.678105,"longitude":-105.039469,"locationAccuracy":"User
+        supplied","elevation":5440.0,"elevationAccuracy":"USGS 24k Topo Quad","modified":"2021-08-11
+        22:03:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/154186"},{"wellId":154186,"wellName":"HARVEY
+        PARK WELL","receipt":"10004217","permit":"84572-F","ecmcId":null,"logDate":"2021-07-10
+        00:00:00","logType":"GR, RES, SP","logTop":null,"logBottom":629,"logSwl":374.10,"aquiferPicks":"DENVER,
+        UPPER ARAPAHOE","wellDepth":630,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":442,"wdid":null,"locnum":"SC00406830AC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"NE","section":"30","township":"4.0
+        S","range":"68.0 W","pm":"S","coordsew":1430,"coordsewDir":"E","coordsns":1480,"coordsnsDir":"N","utmX":496616.0,"utmY":4392031.0,"latitude":39.678105,"longitude":-105.039469,"locationAccuracy":"User
+        supplied","elevation":5440.0,"elevationAccuracy":"USGS 24k Topo Quad","modified":"2021-08-11
+        22:03:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/154186"},{"wellId":155330,"wellName":"GOLDSMITH
+        MD NORTH WELL 2RR","receipt":"10022210","permit":"16582-FR","ecmcId":null,"logDate":"2023-01-24
+        00:00:00","logType":"GR,RES,SP","logTop":null,"logBottom":1581,"logSwl":1075.00,"aquiferPicks":null,"wellDepth":1575,"topPerforatedCasing":986,"bottomPerforatedCasing":1380,"baseOfGrout":937,"wdid":null,"locnum":"SC00506709DC","division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SE","section":"9","township":"5.0
+        S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":509067.0,"utmY":4386243.0,"latitude":39.625911,"longitude":-104.894363,"locationAccuracy":"User
+        supplied","elevation":5633.0,"elevationAccuracy":"USGS 3DEP","modified":"2023-05-04
+        13:51:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/155330"}]}'
+  recorded_at: Fri, 08 Nov 2024 02:26:41 GMT
+recorded_with: VCR 6.3.1

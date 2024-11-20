@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/geophysicallogs/geoplogpicks/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wellId=5419
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-11-11T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '599943'
+      X-Rate-Row-Limit:
+      - 'null'
+      X-Rate-Request-Limit:
+      - 'null'
+      X-Rate-Request-Remaining:
+      - 'null'
+      X-Result-Count:
+      - '4'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Tue, 12 Nov 2024 04:07:10 GMT
+      Content-Length:
+      - '909'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":4,"ResultDateTime":"2024-11-11
+        21:07:10","ResultList":[{"wellId":5419,"wellName":"JEFFCO OPEN SPACE","aquifer":"ARAPAHOE","gLogTopDepth":null,"gLogBaseDepth":null,"gLogTopElev":null,"gLogBaseElev":null,"gLogThickness":213,"comment":null,"modified":null},{"wellId":5419,"wellName":"JEFFCO
+        OPEN SPACE","aquifer":"DENVER","gLogTopDepth":50.0,"gLogBaseDepth":206.0,"gLogTopElev":5510,"gLogBaseElev":5354,"gLogThickness":18,"comment":null,"modified":null},{"wellId":5419,"wellName":"JEFFCO
+        OPEN SPACE","aquifer":"LOWER ARAPAHOE","gLogTopDepth":536.0,"gLogBaseDepth":786.0,"gLogTopElev":5024,"gLogBaseElev":4774,"gLogThickness":144,"comment":null,"modified":null},{"wellId":5419,"wellName":"JEFFCO
+        OPEN SPACE","aquifer":"UPPER ARAPAHOE","gLogTopDepth":279.0,"gLogBaseDepth":464.0,"gLogTopElev":5281,"gLogBaseElev":5096,"gLogThickness":69,"comment":null,"modified":null}]}'
+  recorded_at: Tue, 12 Nov 2024 04:06:00 GMT
+recorded_with: VCR 6.3.1

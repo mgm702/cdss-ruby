@@ -14,6 +14,17 @@ VCR.configure do |config|
   config.cassette_library_dir = 'test/fixtures/vcr_cassettes'
   config.hook_into :webmock
   config.ignore_localhost = true
+
+  # Automatically delete cassettes if response is 404 or body is empty
+  config.after_http_request do |request, response|
+    if response&.status&.code == 404 || response&.body.nil? || response&.body.empty?
+      cassette_path = VCR.current_cassette&.file
+      if cassette_path && File.exist?(cassette_path)
+        File.delete(cassette_path)
+        puts "Deleted cassette: #{cassette_path} (due to 404 or empty response)"
+      end
+    end
+  end
 end
 
 Cdss.config.user_agent = -> { "Cdss Test" }

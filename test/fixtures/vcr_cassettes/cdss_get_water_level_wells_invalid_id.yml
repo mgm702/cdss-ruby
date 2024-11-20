@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/waterlevels/wells/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wellId=NONEXISTENT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-11-07T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '511957'
+      X-Rate-Row-Limit:
+      - 'null'
+      X-Rate-Request-Limit:
+      - 'null'
+      X-Rate-Request-Remaining:
+      - 'null'
+      X-Result-Count:
+      - '0'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Fri, 08 Nov 2024 02:36:26 GMT
+      Content-Length:
+      - '171'
+    body:
+      encoding: ASCII-8BIT
+      string: '"Error: (wellId or division or waterDistrict or county or designatedBasin
+        or managementDistrict or publicationName or modified or locationSearch) required
+        for this search"'
+  recorded_at: Fri, 08 Nov 2024 02:35:23 GMT
+recorded_with: VCR 6.3.1
