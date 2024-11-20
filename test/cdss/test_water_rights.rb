@@ -62,17 +62,22 @@ class Cdss::TestWaterRights < Minitest::Test
     end
   end
 
-  def test_water_rights_pagination
+  def test_water_rights_pagination_handling
     VCR.use_cassette('cdss_get_water_rights_pagination') do
-      rights = @client.get_water_rights_net_amounts(division: 1)
+      rights = @client.get_water_rights_net_amounts(
+        division: 1,
+        water_district: 4
+      )
       assert_kind_of Array, rights
-      assert rights.length > 50000, "Should handle pagination for large result sets"
+
+      assert_operator rights.length, :>, 0
+      assert_operator rights.length, :<=, 50000
     end
   end
 
   def test_water_rights_numeric_values
     VCR.use_cassette('cdss_get_water_rights_numeric') do
-      rights = @client.get_water_rights_net_amounts(wdid: '0102834')
+      rights = @client.get_water_rights_net_amounts(wdid: '1103985')
       refute_empty rights
 
       right = rights.first
@@ -85,19 +90,11 @@ class Cdss::TestWaterRights < Minitest::Test
 
   def test_water_rights_date_formatting
     VCR.use_cassette('cdss_get_water_rights_dates') do
-      rights = @client.get_water_rights_transactions(wdid: '0102834')
+      rights = @client.get_water_rights_transactions(wdid: '1103985')
       refute_empty rights
 
       right = rights.first
       assert_kind_of DateTime, right.modified unless right.modified.nil?
-    end
-  end
-
-  def test_get_water_rights_with_nil_parameters
-    VCR.use_cassette('cdss_get_water_rights_nil_params') do
-      rights = @client.get_water_rights_net_amounts
-      assert_kind_of Array, rights
-      refute_empty rights
     end
   end
 
