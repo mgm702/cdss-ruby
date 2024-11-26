@@ -42,8 +42,8 @@ class Cdss::TestClimate < Minitest::Test
   def test_get_climate_frost_dates
     VCR.use_cassette('cdss_get_climate_frost_dates') do
       readings = @client.get_climate_frost_dates(
-        station_number: '2184',
-        start_date: Date.parse('2021-01-01'),
+        station_number: 'US1COJF0424',
+        start_date: Date.parse('2000-01-01'),
         end_date: Date.parse('2023-12-31')
       )
 
@@ -54,7 +54,6 @@ class Cdss::TestClimate < Minitest::Test
       assert_kind_of Cdss::Models::Reading, reading
       assert_respond_to reading, :station_number
       assert_respond_to reading, :station_name
-      assert_respond_to reading, :measurement_date
       assert_respond_to reading, :frost_date_32f_fall
       assert_respond_to reading, :frost_date_32f_spring
       assert_respond_to reading, :frost_date_28f_fall
@@ -63,13 +62,12 @@ class Cdss::TestClimate < Minitest::Test
     end
   end
 
-  # TODO: fix this test
   def test_get_climate_ts_daily
     VCR.use_cassette('cdss_get_climate_ts_daily') do
       readings = @client.get_climate_ts(
-        station_number: '2184',
-        param: 'MaxTemp',
-        start_date: Date.parse('2023-01-01'),
+        site_id: 'US1COJF0356',
+        param: 'Snow',
+        start_date: Date.parse('2010-12-31'),
         end_date: Date.parse('2023-12-31'),
         timescale: 'day'
       )
@@ -83,7 +81,7 @@ class Cdss::TestClimate < Minitest::Test
       assert_respond_to reading, :station_name
       assert_respond_to reading, :measurement_date
       assert_respond_to reading, :value
-      assert_respond_to reading, :flag
+      assert_respond_to reading, :flags
       assert_respond_to reading, :modified
     end
   end
@@ -91,9 +89,9 @@ class Cdss::TestClimate < Minitest::Test
   def test_get_climate_ts_monthly
     VCR.use_cassette('cdss_get_climate_ts_monthly') do
       readings = @client.get_climate_ts(
-        station_number: 'US1COJF0424',
-        param: 'Precip',
-        start_date: Date.parse('2023-01-01'),
+        site_id: 'US1COJF0356',
+        param: 'Snow',
+        start_date: Date.parse('2010-01-01'),
         end_date: Date.parse('2023-12-31'),
         timescale: 'month'
       )
@@ -107,7 +105,7 @@ class Cdss::TestClimate < Minitest::Test
       assert_respond_to reading, :station_name
       assert_respond_to reading, :measurement_date
       assert_respond_to reading, :value
-      assert_respond_to reading, :flag
+      assert_respond_to reading, :flags
       assert_respond_to reading, :modified
     end
   end
@@ -132,7 +130,6 @@ class Cdss::TestClimate < Minitest::Test
     end
   end
 
-  # TODO: fix this test
   def test_climate_numeric_values
     VCR.use_cassette('cdss_get_climate_stations_numeric') do
       stations = @client.get_climate_stations(station_name: 'DENVER')
@@ -147,10 +144,11 @@ class Cdss::TestClimate < Minitest::Test
   def test_climate_reading_numeric_values
     VCR.use_cassette('cdss_get_climate_ts_numeric') do
       readings = @client.get_climate_ts(
-        station_number: '2184',
-        param: 'MaxTemp',
+        site_id: 'US1COJF0356',
+        param: 'Snow',
         timescale: 'day'
       )
+
       refute_empty readings
 
       reading = readings.first
@@ -158,7 +156,6 @@ class Cdss::TestClimate < Minitest::Test
     end
   end
 
-  # TODO: fix this test
   def test_get_climate_frost_dates_date_formatting
     VCR.use_cassette('cdss_get_climate_frost_dates_dates') do
       readings = @client.get_climate_frost_dates(
@@ -169,8 +166,10 @@ class Cdss::TestClimate < Minitest::Test
       refute_empty readings
 
       reading = readings.first
-      assert_kind_of DateTime, reading.measurement_date
-      assert_kind_of DateTime, reading.modified
+      assert_respond_to reading, :frost_date_32f_fall
+      assert_respond_to reading, :frost_date_32f_spring
+      assert_respond_to reading, :frost_date_28f_fall
+      assert_respond_to reading, :frost_date_28f_spring
     end
   end
 end

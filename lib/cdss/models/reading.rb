@@ -6,6 +6,9 @@ module Cdss
 
       BASE_ATTRIBUTES = %i[
         station_num
+        station_number
+        station_name
+        site_id
         abbrev
         parameter
         usgs_site_id
