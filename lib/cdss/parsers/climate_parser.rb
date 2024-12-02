@@ -53,7 +53,11 @@ module Cdss
             base_params.merge!(
               cal_year: data['calYear']&.to_i,
               spring_frost_date: parse_timestamp(data['springFrostDate']),
-              fall_frost_date: parse_timestamp(data['fallFrostDate'])
+              fall_frost_date: parse_timestamp(data['fallFrostDate']),
+              frost_date_28f_spring: parse_timestamp(data["l28s"]),
+              frost_date_28f_fall: parse_timestamp(data["f28s"]),
+              frost_date_32f_spring: parse_timestamp(data["l32s"]),
+              frost_date_32f_fall: parse_timestamp(data["f32f"]),
             )
           when :daily
             base_params.merge!(

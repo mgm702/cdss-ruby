@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/climatedata/climatestations/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&stationName=DENVER&units=miles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-11-23T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '599150'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '994'
+      X-Result-Count:
+      - '8'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sun, 24 Nov 2024 06:03:28 GMT
+      Content-Length:
+      - '3588'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":8,"ResultDateTime":"2024-11-23
+        23:03:28","ResultList":[{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-01-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-10-25 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-10-25 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-10-25 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-10-25 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-10-25 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-10-25 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":13778,"siteId":"DEN01","stationName":"DENVER","dataSource":"COAGMET","division":1,"waterDistrict":8,"county":null,"state":"CO","utmX":502227.2,"utmY":4403739.0,"latitude":39.783600,"longitude":-104.974000,"locationAccuracy":"User
+        supplied","startDate":"2023-10-25 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15
+        20:08:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"}]}'
+  recorded_at: Sun, 24 Nov 2024 06:02:01 GMT
+recorded_with: VCR 6.3.1

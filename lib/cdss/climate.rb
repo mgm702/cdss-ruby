@@ -122,7 +122,7 @@ module Cdss
     # @param [String, nil] timescale Time interval for data ('day' or 'month'). Defaults to 'day'.
     # @return [Array<Reading>] Array of climate reading objects.
     # @raise [ArgumentError] If an invalid parameter or timescale is provided.
-    def get_climate_ts(station_number: nil, site_id: nil, param:, start_date: nil, end_date: nil, timescale: 'day')
+    def get_climate_ts(station_number: nil, site_id: nil, param: nil, start_date: nil, end_date: nil, timescale: 'day')
       valid_params = %w[Evap FrostDate MaxTemp MeanTemp MinTemp Precip Snow SnowDepth SnowSWE Solar VP Wind]
       unless valid_params.include?(param)
         raise ArgumentError, "Invalid parameter: '#{param}'. Valid values are: #{valid_params.join(', ')}"

@@ -6,6 +6,9 @@ module Cdss
 
       BASE_ATTRIBUTES = %i[
         station_num
+        station_number
+        station_name
+        site_id
         abbrev
         parameter
         usgs_site_id
@@ -27,6 +30,10 @@ module Cdss
         avg_q_cfs
         total_q_af
         meas_count
+        frost_date_32f_fall
+        frost_date_32f_spring
+        frost_date_28f_fall
+        frost_date_28f_spring
       ].freeze
 
       ATTRIBUTES = (BASE_ATTRIBUTES + WELL_ATTRIBUTES + LOG_ATTRIBUTES).freeze
