@@ -14,6 +14,7 @@ VCR.configure do |config|
   config.cassette_library_dir = 'test/fixtures/vcr_cassettes'
   config.hook_into :webmock
   config.ignore_localhost = true
+  config.allow_http_connections_when_no_cassette = false
 
   # Automatically delete cassettes if response is 404 or body is empty
   config.after_http_request do |request, response|

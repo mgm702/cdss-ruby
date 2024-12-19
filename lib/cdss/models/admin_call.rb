@@ -3,31 +3,30 @@ module Cdss
     class AdminCall
       ATTRIBUTES = %i[
         call_number
-        call_sequence
-        division
-        division_name
-        district
-        district_name
-        water_source
+        call_type
         date_time_set
         date_time_released
-        set_by_user
-        released_by_user
+        water_source_name
         location_wdid
-        location_name
-        location_stream_mile
-        source_wdid
-        source_name
-        source_stream_mile
-        admin_number
-        decreed_amount
-        decreed_unit
-        comments
+        location_wdid_streammile
+        location_structure_name
+        priority_wdid
+        priority_structure_name
+        priority_admin_number
+        priority_order_number
+        priority_date
         priority_number
-        appropriation_date
-        adjudication_date
-        status
+        bounding_wdid
+        bounding_structure_name
+        set_comments
+        release_comment
+        division
+        location_structure_latitude
+        location_structure_longitude
+        bounding_structure_latitude
+        bounding_structure_longitude
         modified
+        more_information
         metadata
       ]
 
@@ -35,7 +34,6 @@ module Cdss
 
       def initialize(**attrs)
         attrs[:metadata] ||= {}
-
         ATTRIBUTES.each do |attr|
           instance_variable_set(:"@#{attr}", attrs[attr]) if attrs.key?(attr)
         end
