@@ -7,7 +7,7 @@ module Cdss
     # Fetches administrative calls based on various filtering criteria.
     #
     # @param [Integer, nil] division Water division to filter calls.
-    # @param [String, Array<String>, nil] location_wdid WDID of the call location structure.
+    # @param [String, nil] location_wdid WDID of the call location structure.
     # @param [Integer, nil] call_number Unique call identifier to query.
     # @param [Date, nil] start_date Start date for calls data.
     # @param [Date, nil] end_date End date for calls data.
@@ -27,7 +27,7 @@ module Cdss
       query[:'max-dateTimeSet'] = end_date.strftime('%m-%d-%Y') if end_date
 
       if location_wdid
-        query[:locationWdid] = Array(location_wdid).join('%2C+')
+        query[:locationWdid] = location_wdid
       end
 
       endpoint = active ? "administrativecalls/active/" : "administrativecalls/historical/"

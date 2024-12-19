@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/administrativecalls/active/?dateFormat=spaceSepToSeconds&format=json&locationWdid=0600564&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-12-18T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '599999'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '998'
+      X-Result-Count:
+      - '1'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Thu, 19 Dec 2024 02:15:56 GMT
+      Content-Length:
+      - '894'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2024-12-18
+        19:15:57","ResultList":[{"callNumber":34585,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"SOUTH BOULDER CREEK","locationWdid":"0600564","locationWdidStreammile":9.76,"locationStructureName":"COMMUNITY
+        DITCH","priorityWdid":"0600564","priorityStructureName":"COMMUNITY DITCH","priorityAdminNumber":12941.00000,"priorityOrderNumber":0,"priorityDate":"1885-06-06
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
+        DISTRICT 6","releaseComment":null,"division":1,"locationStructureLatitude":39.932406,"locationStructureLongitude":-105.280686,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        06:35:37","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34585"}]}'
+  recorded_at: Thu, 19 Dec 2024 02:14:29 GMT
+recorded_with: VCR 6.3.1

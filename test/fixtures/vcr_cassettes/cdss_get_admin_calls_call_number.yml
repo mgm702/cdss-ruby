@@ -1,0 +1,382 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/administrativecalls/active/?callNumber=21974.0&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-12-18T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '599668'
+      X-Rate-Row-Limit:
+      - 'null'
+      X-Rate-Request-Limit:
+      - 'null'
+      X-Rate-Request-Remaining:
+      - 'null'
+      X-Result-Count:
+      - '64'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Thu, 19 Dec 2024 03:09:12 GMT
+      Content-Length:
+      - '50808'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":64,"ResultDateTime":"2024-12-18
+        20:09:12","ResultList":[{"callNumber":19646,"callType":"CALL","dateTimeSet":"2014-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"GARNER CREEK","locationWdid":"2500571","locationWdidStreammile":5.67,"locationStructureName":"GARNER
+        D 1","priorityWdid":"2500571","priorityStructureName":"GARNER D 1","priorityAdminNumber":7396.00000,"priorityOrderNumber":0,"priorityDate":"1870-04-01
+        00:00:00","priorityNumber":"8","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":38.173541,"locationStructureLongitude":-105.809536,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2017-02-17
+        12:02:49","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/19646"},{"callNumber":19644,"callType":"CALL","dateTimeSet":"2014-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"HOT SPRINGS CREEK","locationWdid":"2500606","locationWdidStreammile":0.96,"locationStructureName":"HOT
+        SPRING CR D","priorityWdid":"2500606","priorityStructureName":"HOT SPRING
+        CR D","priorityAdminNumber":7791.00000,"priorityOrderNumber":0,"priorityDate":"1871-05-01
+        00:00:00","priorityNumber":"18","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":38.180636,"locationStructureLongitude":-105.868541,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2017-02-17
+        11:58:48","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/19644"},{"callNumber":19647,"callType":"CALL","dateTimeSet":"2014-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"MAJOR CREEK","locationWdid":"2500617","locationWdidStreammile":1.82,"locationStructureName":"MAJOR
+        CR D","priorityWdid":"2500617","priorityStructureName":"MAJOR CR D","priorityAdminNumber":7365.00000,"priorityOrderNumber":0,"priorityDate":"1870-03-01
+        00:00:00","priorityNumber":"6","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":38.159321,"locationStructureLongitude":-105.792653,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2017-02-17
+        12:04:38","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/19647"},{"callNumber":19645,"callType":"FUTILE
+        CALL","dateTimeSet":"2014-11-01 08:00:00","dateTimeReleased":null,"waterSourceName":"RASPBERRY
+        CREEK (AKA SPRING CREEK)","locationWdid":"2500636","locationWdidStreammile":0.83,"locationStructureName":"ROBINSON
+        D","priorityWdid":"2500636","priorityStructureName":"ROBINSON D","priorityAdminNumber":11428.00000,"priorityOrderNumber":0,"priorityDate":"1881-04-15
+        00:00:00","priorityNumber":"75","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":38.313934,"locationStructureLongitude":-105.957327,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2017-02-17
+        12:01:07","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/19645"},{"callNumber":29596,"callType":"NONCONSUMPTIVE
+        CALL","dateTimeSet":"2021-04-15 08:00:00","dateTimeReleased":null,"waterSourceName":"CONEJOS
+        RIVER","locationWdid":"2200541","locationWdidStreammile":18.77,"locationStructureName":"EPHRAIM
+        D","priorityWdid":"2200541","priorityStructureName":"EPHRAIM D","priorityAdminNumber":11410.00000,"priorityOrderNumber":0,"priorityDate":"1881-03-28
+        00:00:00","priorityNumber":"56","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.187637,"locationStructureLongitude":-105.901867,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2021-09-02
+        09:22:32","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/29596"},{"callNumber":28118,"callType":"AUTHORIZED
+        DIVERSION","dateTimeSet":"2021-04-15 08:00:00","dateTimeReleased":null,"waterSourceName":"CONEJOS
+        RIVER","locationWdid":"2299999","locationWdidStreammile":1.04,"locationStructureName":"RIO
+        GRANDE COMPACT - LA SAUSES","priorityWdid":"2200510","priorityStructureName":"BALL
+        BROS OVERFLOW NO 2","priorityAdminNumber":12348.12164,"priorityOrderNumber":14,"priorityDate":"1883-10-22
+        00:00:00","priorityNumber":"80","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.300844,"locationStructureLongitude":-105.747531,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2021-04-15
+        10:57:09","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/28118"},{"callNumber":28181,"callType":"CALL","dateTimeSet":"2021-04-21
+        08:00:00","dateTimeReleased":null,"waterSourceName":"BIG SPRING CREEK","locationWdid":"3500528","locationWdidStreammile":8.79,"locationStructureName":"HULL
+        D","priorityWdid":"3500528","priorityStructureName":"HULL D","priorityAdminNumber":9983.00000,"priorityOrderNumber":0,"priorityDate":"1877-05-01
+        00:00:00","priorityNumber":"4A","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.734150,"locationStructureLongitude":-105.673673,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2021-04-21
+        07:04:09","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/28181"},{"callNumber":28180,"callType":"CALL","dateTimeSet":"2021-04-21
+        08:00:00","dateTimeReleased":null,"waterSourceName":"LITTLE SPRING CREEK","locationWdid":"3500575","locationWdidStreammile":4.98,"locationStructureName":"SOUTH
+        D 1","priorityWdid":"3500575","priorityStructureName":"SOUTH D 1","priorityAdminNumber":11110.00000,"priorityOrderNumber":0,"priorityDate":"1880-06-01
+        00:00:00","priorityNumber":"6A","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.701763,"locationStructureLongitude":-105.672653,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2021-04-21
+        07:03:00","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/28180"},{"callNumber":30087,"callType":"FUTILE
+        CALL","dateTimeSet":"2022-04-01 08:00:00","dateTimeReleased":null,"waterSourceName":"COSTILLA
+        CREEK","locationWdid":"2400507","locationWdidStreammile":14.20,"locationStructureName":"ACEQUIACITA
+        D","priorityWdid":"2400507","priorityStructureName":"ACEQUIACITA D","priorityAdminNumber":1946.00000,"priorityOrderNumber":0,"priorityDate":"1855-04-30
+        00:00:00","priorityNumber":"7","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":36.996391,"locationStructureLongitude":-105.532901,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-04-05
+        12:07:11","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/30087"},{"callNumber":30096,"callType":"FUTILE
+        CALL","dateTimeSet":"2022-04-01 08:00:00","dateTimeReleased":null,"waterSourceName":"SAN
+        FRANCISCO CREEK","locationWdid":"2400583","locationWdidStreammile":4.15,"locationStructureName":"SAN
+        FRANCISCO D","priorityWdid":"2400583","priorityStructureName":"SAN FRANCISCO
+        D","priorityAdminNumber":3804.00000,"priorityOrderNumber":0,"priorityDate":"1860-05-31
+        00:00:00","priorityNumber":"14","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.100946,"locationStructureLongitude":-105.345773,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-04-05
+        12:34:21","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/30096"},{"callNumber":30103,"callType":"FUTILE
+        CALL","dateTimeSet":"2022-04-01 08:00:00","dateTimeReleased":null,"waterSourceName":"VALLEJOS
+        CREEK","locationWdid":"2400594","locationWdidStreammile":2.14,"locationStructureName":"VALLEJOS
+        D","priorityWdid":"2400594","priorityStructureName":"VALLEJOS D","priorityAdminNumber":1551.00000,"priorityOrderNumber":0,"priorityDate":"1854-03-31
+        00:00:00","priorityNumber":"5","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.132558,"locationStructureLongitude":-105.375549,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-04-05
+        13:08:20","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/30103"},{"callNumber":30439,"callType":"CALL","dateTimeSet":"2022-05-10
+        08:00:00","dateTimeReleased":null,"waterSourceName":"RITO ALTO CREEK","locationWdid":"2500678","locationWdidStreammile":2.64,"locationStructureName":"WALES
+        SHELLABARGER D 2","priorityWdid":"2500649","priorityStructureName":"SHELLABARGER
+        EATON D","priorityAdminNumber":8541.00000,"priorityOrderNumber":0,"priorityDate":"1873-05-20
+        00:00:00","priorityNumber":"34","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":38.029154,"locationStructureLongitude":-105.836293,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-05-16
+        10:57:59","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/30439"},{"callNumber":31089,"callType":"FUTILE
+        CALL","dateTimeSet":"2022-07-06 08:00:00","dateTimeReleased":null,"waterSourceName":"KERBER
+        CREEK","locationWdid":"2500680","locationWdidStreammile":4.47,"locationStructureName":"WELLS
+        KERBER D","priorityWdid":"2500541","priorityStructureName":"CLAYTON D D","priorityAdminNumber":8120.00000,"priorityOrderNumber":0,"priorityDate":"1872-03-25
+        00:00:00","priorityNumber":"19","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":38.232739,"locationStructureLongitude":-105.985669,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-07-15
+        11:33:25","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/31089"},{"callNumber":31772,"callType":"CALL","dateTimeSet":"2022-10-31
+        08:00:00","dateTimeReleased":null,"waterSourceName":"SAN LUIS CREEK","locationWdid":"2500661","locationWdidStreammile":54.65,"locationStructureName":"STEEL
+        D 2","priorityWdid":"2500647","priorityStructureName":"SCHULTZ DITTRICH D","priorityAdminNumber":6330.00000,"priorityOrderNumber":0,"priorityDate":"1867-05-01
+        00:00:00","priorityNumber":"2","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":38.221645,"locationStructureLongitude":-105.899268,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-11-02
+        13:37:20","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/31772"},{"callNumber":31917,"callType":"FUTILE
+        CALL","dateTimeSet":"2022-11-01 08:00:00","dateTimeReleased":null,"waterSourceName":"CULEBRA
+        CREEK","locationWdid":"2403576","locationWdidStreammile":26.12,"locationStructureName":"SANCHEZ
+        RES","priorityWdid":"2403576","priorityStructureName":"SANCHEZ RES","priorityAdminNumber":21393.00000,"priorityOrderNumber":0,"priorityDate":"1908-07-28
+        00:00:00","priorityNumber":"1934-4","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.113846,"locationStructureLongitude":-105.410597,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2023-04-10
+        10:01:55","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/31917"},{"callNumber":31827,"callType":"FUTILE
+        CALL","dateTimeSet":"2022-11-02 00:00:00","dateTimeReleased":null,"waterSourceName":"SAN
+        LUIS CREEK","locationWdid":"2500505","locationWdidStreammile":68.32,"locationStructureName":"ARTHUR
+        YOUNG D","priorityWdid":"2500505","priorityStructureName":"ARTHUR YOUNG D","priorityAdminNumber":58804.09588,"priorityOrderNumber":0,"priorityDate":"2010-12-31
+        00:00:00","priorityNumber":"","boundingWdid":null,"boundingStructureName":null,"setComments":"WINTER
+        ICING","releaseComment":null,"division":3,"locationStructureLatitude":38.331075,"locationStructureLongitude":-106.005397,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2023-01-04
+        12:56:09","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/31827"},{"callNumber":31826,"callType":"CALL","dateTimeSet":"2022-11-02
+        08:00:00","dateTimeReleased":null,"waterSourceName":"SAGUACHE CREEK","locationWdid":"2600511","locationWdidStreammile":19.27,"locationStructureName":"CAMPBELL
+        D 5","priorityWdid":"2600511","priorityStructureName":"CAMPBELL D 5","priorityAdminNumber":58804.09010,"priorityOrderNumber":0,"priorityDate":"2010-12-31
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"ALSO
+        CAMPBELL # 4 FOR WINTER ICING","releaseComment":null,"division":3,"locationStructureLatitude":38.036089,"locationStructureLongitude":-106.023719,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2023-01-04
+        09:57:54","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/31826"},{"callNumber":31771,"callType":"CALL","dateTimeSet":"2022-11-02
+        08:00:00","dateTimeReleased":null,"waterSourceName":"LA GARITA CREEK","locationWdid":"2700522","locationWdidStreammile":22.60,"locationStructureName":"HOME
+        D NO 1","priorityWdid":"2700522","priorityStructureName":"HOME D NO 1","priorityAdminNumber":52595.46326,"priorityOrderNumber":0,"priorityDate":"1993-12-31
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.815615,"locationStructureLongitude":-106.281297,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-11-02
+        13:34:39","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/31771"},{"callNumber":31770,"callType":"CALL","dateTimeSet":"2022-11-02
+        08:00:00","dateTimeReleased":null,"waterSourceName":"CARNERO CREEK","locationWdid":"2700538","locationWdidStreammile":4.09,"locationStructureName":"OMNIBUS
+        D","priorityWdid":"2700538","priorityStructureName":"OMNIBUS D","priorityAdminNumber":52595.46326,"priorityOrderNumber":0,"priorityDate":"1993-12-31
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.854195,"locationStructureLongitude":-106.272417,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2022-11-02
+        13:31:54","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/31770"},{"callNumber":34337,"callType":"AUTHORIZED
+        DIVERSION","dateTimeSet":"2024-04-01 08:00:00","dateTimeReleased":null,"waterSourceName":"ARKANSAS
+        RIVER","locationWdid":"1100539","locationWdidStreammile":319.29,"locationStructureName":"SUNNYSIDE
+        PARK DITCH","priorityWdid":"1100539","priorityStructureName":"SUNNYSIDE PARK
+        DITCH","priorityAdminNumber":15249.00000,"priorityOrderNumber":0,"priorityDate":"1891-10-01
+        00:00:00","priorityNumber":"190A","boundingWdid":null,"boundingStructureName":null,"setComments":"AUTHORIZED
+        DIVERSION AS PREVIOUSLY ADMINISTERED","releaseComment":null,"division":2,"locationStructureLatitude":38.622631,"locationStructureLongitude":-106.057012,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-08-30
+        10:31:27","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34337"},{"callNumber":33313,"callType":"CALL","dateTimeSet":"2024-04-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"STUBBS GULCH","locationWdid":"2800569","locationWdidStreammile":0.39,"locationStructureName":"GRAHAM
+        DITCH","priorityWdid":"2800569","priorityStructureName":"GRAHAM DITCH","priorityAdminNumber":38822.36311,"priorityOrderNumber":0,"priorityDate":"1956-04-16
+        00:00:00","priorityNumber":"393","boundingWdid":null,"boundingStructureName":null,"setComments":"
+        THERE IS A CALL UPSTREAM FROM THIS DITCH, IT IS THE BEVER D","releaseComment":null,"division":4,"locationStructureLatitude":38.495360,"locationStructureLongitude":-106.927385,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-04-10
+        09:49:14","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33313"},{"callNumber":33287,"callType":"CALL","dateTimeSet":"2024-04-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"STUBBS GULCH","locationWdid":"2800720","locationWdidStreammile":1.57,"locationStructureName":"BEVER
+        DITCH","priorityWdid":"2800720","priorityStructureName":"BEVER DITCH","priorityAdminNumber":35168.29015,"priorityOrderNumber":0,"priorityDate":"1946-04-15
+        00:00:00","priorityNumber":"351","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.482835,"locationStructureLongitude":-106.920242,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-03-29
+        11:49:55","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33287"},{"callNumber":33339,"callType":"AUTHORIZED
+        DIVERSION","dateTimeSet":"2024-04-13 08:00:00","dateTimeReleased":null,"waterSourceName":"ARKANSAS
+        RIVER","locationWdid":"1100536","locationWdidStreammile":320.13,"locationStructureName":"NEW
+        SALIDA DITCH","priorityWdid":"1100536","priorityStructureName":"NEW SALIDA
+        DITCH","priorityAdminNumber":22722.11809,"priorityOrderNumber":0,"priorityDate":"1912-03-18
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AUTHORIZED
+        DIVERSION AS PREVIOUSLY ADMINISTERED","releaseComment":null,"division":2,"locationStructureLatitude":38.631141,"locationStructureLongitude":-106.062606,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-04-16
+        13:33:47","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33339"},{"callNumber":33703,"callType":"CALL","dateTimeSet":"2024-04-26
+        08:00:00","dateTimeReleased":null,"waterSourceName":"ALFALFA RUN","locationWdid":"4000788","locationWdidStreammile":2.87,"locationStructureName":"ALFALFA
+        RUN SEEP DITCH","priorityWdid":"4000820","priorityStructureName":"STELL BUTTES
+        ENLG DITCH","priorityAdminNumber":25807.23345,"priorityOrderNumber":0,"priorityDate":"1920-08-28
+        00:00:00","priorityNumber":"G79","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.804887,"locationStructureLongitude":-107.962396,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-12
+        17:00:05","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33703"},{"callNumber":33435,"callType":"NONCONSUMPTIVE
+        CALL","dateTimeSet":"2024-05-06 07:00:00","dateTimeReleased":null,"waterSourceName":"TRINCHERA
+        CREEK","locationWdid":"3503529","locationWdidStreammile":27.87,"locationStructureName":"MOUNTAIN
+        HOME RESERVOIR","priorityWdid":"3503529","priorityStructureName":"MOUNTAIN
+        HOME RESERVOIR","priorityAdminNumber":22377.00000,"priorityOrderNumber":0,"priorityDate":"1911-04-08
+        00:00:00","priorityNumber":"95","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.392876,"locationStructureLongitude":-105.394219,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-05-06
+        07:59:29","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33435"},{"callNumber":34339,"callType":"AUTHORIZED
+        DIVERSION","dateTimeSet":"2024-05-14 08:00:00","dateTimeReleased":null,"waterSourceName":"LAKE
+        FORK","locationWdid":"1100512","locationWdidStreammile":4.28,"locationStructureName":"LAKE
+        CREEK DITCH","priorityWdid":"1100512","priorityStructureName":"LAKE CREEK
+        DITCH","priorityAdminNumber":22888.10774,"priorityOrderNumber":0,"priorityDate":"1912-08-31
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AUTHORIZED
+        DIVERSION AS PREVIOUSLY ADMINISTERED  WDID # 1100766 (COLORADO GULCH DITCH
+        HAVE THE SAME ADMIN # AND PRIORITY.  IT WILL BE ADMINISTERED AS AN AUTHORIZED
+        DIVERSION WITH THIS CALL CHANGE.","releaseComment":null,"division":2,"locationStructureLatitude":39.235074,"locationStructureLongitude":-106.381441,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-08-30
+        10:43:07","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34339"},{"callNumber":34338,"callType":"AUTHORIZED
+        DIVERSION","dateTimeSet":"2024-05-15 08:00:00","dateTimeReleased":null,"waterSourceName":"LAKE
+        FORK","locationWdid":"1100510","locationWdidStreammile":5.23,"locationStructureName":"JOSEPH
+        DUNN DITCH","priorityWdid":"1100510","priorityStructureName":"JOSEPH DUNN
+        DITCH","priorityAdminNumber":21008.18047,"priorityOrderNumber":0,"priorityDate":"1907-07-09
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AUTHORIZED
+        DIVERSION AS PREVIOUSLY ADMINISTERED","releaseComment":null,"division":2,"locationStructureLatitude":39.246168,"locationStructureLongitude":-106.378993,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-08-30
+        10:34:10","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34338"},{"callNumber":33620,"callType":"AUTHORIZED
+        DIVERSION","dateTimeSet":"2024-05-15 08:00:00","dateTimeReleased":null,"waterSourceName":"ROCK
+        CREEK","locationWdid":"1100755","locationWdidStreammile":1.35,"locationStructureName":"ROCK
+        CREEK DITCH","priorityWdid":"1100755","priorityStructureName":"ROCK CREEK
+        DITCH","priorityAdminNumber":22888.10774,"priorityOrderNumber":0,"priorityDate":"1912-08-31
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AUTHORIZED
+        DIVERSION AS PREVIOUSLY ADMINISTERED","releaseComment":null,"division":2,"locationStructureLatitude":39.215896,"locationStructureLongitude":-106.397571,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-05-31
+        13:46:04","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33620"},{"callNumber":33721,"callType":"CALL","dateTimeSet":"2024-06-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"WEST ELK CREEK","locationWdid":"3900661","locationWdidStreammile":3.81,"locationStructureName":"SAINT
+        NO 2 DITCH","priorityWdid":"3900661","priorityStructureName":"SAINT NO 2 DITCH","priorityAdminNumber":14046.00000,"priorityOrderNumber":0,"priorityDate":"1888-06-15
+        00:00:00","priorityNumber":"141","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.643647,"locationStructureLongitude":-107.618923,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-14
+        16:32:13","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33721"},{"callNumber":33806,"callType":"CALL","dateTimeSet":"2024-06-10
+        08:00:00","dateTimeReleased":null,"waterSourceName":"YOUNGS CREEK","locationWdid":"4000632","locationWdidStreammile":3.07,"locationStructureName":"CHILDS
+        DITCH","priorityWdid":"4000630","priorityStructureName":"BRONCHO DITCH","priorityAdminNumber":13254.00000,"priorityOrderNumber":0,"priorityDate":"1886-04-15
+        00:00:00","priorityNumber":"6","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.949820,"locationStructureLongitude":-107.920742,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-25
+        09:19:53","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33806"},{"callNumber":33735,"callType":"CALL","dateTimeSet":"2024-06-13
+        08:00:00","dateTimeReleased":null,"waterSourceName":"TERROR CREEK","locationWdid":"4001208","locationWdidStreammile":2.03,"locationStructureName":"TERROR
+        DITCH","priorityWdid":"4001208","priorityStructureName":"TERROR DITCH","priorityAdminNumber":14413.12764,"priorityOrderNumber":0,"priorityDate":"1889-06-17
+        00:00:00","priorityNumber":"14","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.926876,"locationStructureLongitude":-107.573326,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-17
+        13:20:23","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33735"},{"callNumber":33805,"callType":"CALL","dateTimeSet":"2024-06-17
+        08:00:00","dateTimeReleased":null,"waterSourceName":"KISER CREEK","locationWdid":"4002414","locationWdidStreammile":3.03,"locationStructureName":"LAKE
+        FORK DITCH","priorityWdid":"4000643","priorityStructureName":"KISER DITCH","priorityAdminNumber":13377.00000,"priorityOrderNumber":0,"priorityDate":"1886-08-16
+        00:00:00","priorityNumber":"9","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.924226,"locationStructureLongitude":-107.927199,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-25
+        09:14:24","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33805"},{"callNumber":33746,"callType":"CALL","dateTimeSet":"2024-06-18
+        08:00:00","dateTimeReleased":null,"waterSourceName":"APISHAPA RIVER","locationWdid":"1800503","locationWdidStreammile":109.78,"locationStructureName":"GONZALES
+        DITCH","priorityWdid":"1800503","priorityStructureName":"GONZALES DITCH","priorityAdminNumber":6148.00000,"priorityOrderNumber":0,"priorityDate":"1866-10-31
+        00:00:00","priorityNumber":"EXC-1","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":2,"locationStructureLatitude":37.387594,"locationStructureLongitude":-104.665110,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-18
+        08:41:53","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33746"},{"callNumber":33808,"callType":"CALL","dateTimeSet":"2024-06-18
+        08:15:00","dateTimeReleased":null,"waterSourceName":"DIRTY GEORGE CREEK","locationWdid":"4000697","locationWdidStreammile":4.29,"locationStructureName":"BLAKE
+        DITCH","priorityWdid":"4000946","priorityStructureName":"GRANBY DITCH","priorityAdminNumber":20501.16192,"priorityOrderNumber":0,"priorityDate":"1906-02-17
+        00:00:00","priorityNumber":"35","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.920336,"locationStructureLongitude":-108.001238,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-25
+        09:34:56","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33808"},{"callNumber":33807,"callType":"CALL","dateTimeSet":"2024-06-25
+        08:00:00","dateTimeReleased":null,"waterSourceName":"WARD CREEK","locationWdid":"4000741","locationWdidStreammile":4.23,"locationStructureName":"SANDSTONE
+        BLUFF DITCH","priorityWdid":"4000661","priorityStructureName":"SURFACE CREEK
+        DITCH (WARD)","priorityAdminNumber":13356.00000,"priorityOrderNumber":0,"priorityDate":"1886-07-26
+        00:00:00","priorityNumber":"8","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.928538,"locationStructureLongitude":-107.977501,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-06-25
+        09:31:22","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33807"},{"callNumber":33961,"callType":"CALL","dateTimeSet":"2024-07-10
+        08:00:00","dateTimeReleased":null,"waterSourceName":"BEAVER CREEK","locationWdid":"4500793","locationWdidStreammile":3.35,"locationStructureName":"TAUGHENBAUGH
+        DITCH","priorityWdid":"4500793","priorityStructureName":"TAUGHENBAUGH DITCH","priorityAdminNumber":12993.00000,"priorityOrderNumber":0,"priorityDate":"1885-07-28
+        00:00:00","priorityNumber":"34","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.487075,"locationStructureLongitude":-107.831373,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-07-12
+        11:29:41","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33961"},{"callNumber":33952,"callType":"CALL","dateTimeSet":"2024-07-11
+        08:00:00","dateTimeReleased":null,"waterSourceName":"BELL CREEK","locationWdid":"4001025","locationWdidStreammile":6.50,"locationStructureName":"NORTH
+        FORK ORCHARD COMPANY DITCH","priorityWdid":"4001025","priorityStructureName":"NORTH
+        FORK ORCHARD COMPANY DITCH","priorityAdminNumber":12174.00000,"priorityOrderNumber":0,"priorityDate":"1883-05-01
+        00:00:00","priorityNumber":"1","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.813787,"locationStructureLongitude":-107.586361,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-07-11
+        17:08:00","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33952"},{"callNumber":34001,"callType":"FUTILE
+        CALL","dateTimeSet":"2024-07-16 12:00:00","dateTimeReleased":null,"waterSourceName":"CHERRY
+        CREEK","locationWdid":"3300558","locationWdidStreammile":3.18,"locationStructureName":"JOHN
+        F REIT DITCH","priorityWdid":"3300558","priorityStructureName":"JOHN F REIT
+        DITCH","priorityAdminNumber":22019.00000,"priorityOrderNumber":0,"priorityDate":"1910-04-15
+        00:00:00","priorityNumber":"#76","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":7,"locationStructureLatitude":37.147867,"locationStructureLongitude":-108.216000,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-07-16
+        13:30:42","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34001"},{"callNumber":34029,"callType":"CALL","dateTimeSet":"2024-07-17
+        08:00:00","dateTimeReleased":null,"waterSourceName":"COTTONWOOD CREEK","locationWdid":"5200770","locationWdidStreammile":5.12,"locationStructureName":"BAIR
+        PIPELINE","priorityWdid":"5200770","priorityStructureName":"BAIR PIPELINE","priorityAdminNumber":14701.00000,"priorityOrderNumber":0,"priorityDate":"1890-04-01
+        00:00:00","priorityNumber":"26","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.587216,"locationStructureLongitude":-107.053263,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-07-22
+        07:23:34","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34029"},{"callNumber":34080,"callType":"CALL","dateTimeSet":"2024-07-25
+        08:00:00","dateTimeReleased":null,"waterSourceName":"SMITH FORK","locationWdid":"4000590","locationWdidStreammile":17.59,"locationStructureName":"PRESTON
+        DITCH","priorityWdid":"4000500","priorityStructureName":"CRAWFORD CLIPPER
+        DITCH","priorityAdminNumber":13076.00000,"priorityOrderNumber":0,"priorityDate":"1885-10-19
+        00:00:00","priorityNumber":"3","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.700356,"locationStructureLongitude":-107.609390,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-07-26
+        17:35:39","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34080"},{"callNumber":34075,"callType":"CALL","dateTimeSet":"2024-07-26
+        10:00:00","dateTimeReleased":null,"waterSourceName":"LA PLATA RIVER","locationWdid":"3300000","locationWdidStreammile":0.01,"locationStructureName":"LA
+        PLATA RIVER BASIN","priorityWdid":"3300501","priorityStructureName":"LA PLATA
+        IRG DITCH","priorityAdminNumber":11110.00000,"priorityOrderNumber":0,"priorityDate":"1880-06-01
+        00:00:00","priorityNumber":"#1","boundingWdid":null,"boundingStructureName":null,"setComments":"NO
+        PRIORITY WATER AVAILABLE","releaseComment":null,"division":7,"locationStructureLatitude":36.999672,"locationStructureLongitude":-108.188677,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-07-26
+        09:53:31","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34075"},{"callNumber":34090,"callType":"NONCONSUMPTIVE
+        CALL","dateTimeSet":"2024-07-28 08:00:00","dateTimeReleased":null,"waterSourceName":"BLUE
+        RIVER","locationWdid":"3600881","locationWdidStreammile":15.56,"locationStructureName":"GREEN
+        MTN HYDRO-ELECTRIC","priorityWdid":"3600881","priorityStructureName":"GREEN
+        MTN HYDRO-ELECTRIC","priorityAdminNumber":35237.00000,"priorityOrderNumber":0,"priorityDate":"1946-06-23
+        00:00:00","priorityNumber":"","boundingWdid":null,"boundingStructureName":null,"setComments":"HYDROPOWER
+        PLANT PUT BACK ONLINE LAST NIGHT","releaseComment":null,"division":5,"locationStructureLatitude":39.878686,"locationStructureLongitude":-106.332830,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-07-28
+        08:41:45","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34090"},{"callNumber":34237,"callType":"FUTILE
+        CALL","dateTimeSet":"2024-08-11 08:00:00","dateTimeReleased":null,"waterSourceName":"LA
+        PLATA RIVER","locationWdid":"3300504","locationWdidStreammile":30.19,"locationStructureName":"HAY
+        GULCH DITCH","priorityWdid":"3300508","priorityStructureName":"LA PLATA R
+        & CHERRY CR D","priorityAdminNumber":14763.00000,"priorityOrderNumber":0,"priorityDate":"1890-06-02
+        00:00:00","priorityNumber":"#10","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":7,"locationStructureLatitude":37.285787,"locationStructureLongitude":-108.040242,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-08-16
+        09:58:45","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34237"},{"callNumber":34238,"callType":"FUTILE
+        CALL","dateTimeSet":"2024-08-11 08:00:00","dateTimeReleased":null,"waterSourceName":"LA
+        PLATA RIVER","locationWdid":"3300550","locationWdidStreammile":13.99,"locationStructureName":"WARREN-VOSBURGH
+        DITCH","priorityWdid":"3300549","priorityStructureName":"TREANOR DITCH","priorityAdminNumber":19844.00000,"priorityOrderNumber":0,"priorityDate":"1904-05-01
+        00:00:00","priorityNumber":"#58","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":7,"locationStructureLatitude":37.139108,"locationStructureLongitude":-108.162169,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-08-16
+        10:00:41","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34238"},{"callNumber":34325,"callType":"CALL","dateTimeSet":"2024-08-29
+        08:00:00","dateTimeReleased":null,"waterSourceName":"COLORADO RIVER","locationWdid":"5300584","locationWdidStreammile":147.54,"locationStructureName":"SHOSHONE
+        POWER PLANT","priorityWdid":"5300584","priorityStructureName":"SHOSHONE POWER
+        PLANT","priorityAdminNumber":20427.18999,"priorityOrderNumber":0,"priorityDate":"1905-12-05
+        00:00:00","priorityNumber":"2P","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.587911,"locationStructureLongitude":-107.193675,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-08-29
+        09:44:58","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34325"},{"callNumber":34378,"callType":"CALL","dateTimeSet":"2024-09-04
+        08:00:00","dateTimeReleased":null,"waterSourceName":"WOODY CREEK","locationWdid":"3801132","locationWdidStreammile":0.40,"locationStructureName":"WALTHEN
+        DITCH","priorityWdid":"3801132","priorityStructureName":"WALTHEN DITCH","priorityAdminNumber":12183.00000,"priorityOrderNumber":0,"priorityDate":"1883-05-10
+        00:00:00","priorityNumber":"65","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.276958,"locationStructureLongitude":-106.885276,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-09-05
+        19:53:16","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34378"},{"callNumber":34399,"callType":"CALL","dateTimeSet":"2024-09-06
+        11:45:00","dateTimeReleased":null,"waterSourceName":"MIDDLE HUNT CREEK","locationWdid":"5800863","locationWdidStreammile":5.31,"locationStructureName":"SIMON
+        DITCH","priorityWdid":"5800863","priorityStructureName":"SIMON DITCH","priorityAdminNumber":14032.00000,"priorityOrderNumber":0,"priorityDate":"1888-06-01
+        00:00:00","priorityNumber":"(51)52","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":6,"locationStructureLatitude":40.174287,"locationStructureLongitude":-107.029635,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-09-10
+        07:58:36","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34399"},{"callNumber":34402,"callType":"CALL","dateTimeSet":"2024-09-09
+        08:00:00","dateTimeReleased":null,"waterSourceName":"LEROUX CREEK","locationWdid":"4000932","locationWdidStreammile":8.04,"locationStructureName":"MIDKIFF
+        & ARNOLD D","priorityWdid":"4000919","priorityStructureName":"CURRANT CREEK
+        DITCH","priorityAdminNumber":12269.00000,"priorityOrderNumber":0,"priorityDate":"1883-08-04
+        00:00:00","priorityNumber":"2","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.878630,"locationStructureLongitude":-107.784827,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-09-10
+        17:29:19","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34402"},{"callNumber":34476,"callType":"CALL","dateTimeSet":"2024-09-13
+        08:00:00","dateTimeReleased":null,"waterSourceName":"MINNESOTA CREEK","locationWdid":"4001020","locationWdidStreammile":5.31,"locationStructureName":"MINNESOTA
+        CANAL","priorityWdid":"4001020","priorityStructureName":"MINNESOTA CANAL","priorityAdminNumber":12178.00000,"priorityOrderNumber":0,"priorityDate":"1883-05-05
+        00:00:00","priorityNumber":"1","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":4,"locationStructureLatitude":38.863880,"locationStructureLongitude":-107.535881,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-09-25
+        12:10:47","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34476"},{"callNumber":34509,"callType":"CALL","dateTimeSet":"2024-10-08
+        08:00:00","dateTimeReleased":null,"waterSourceName":"CACHE CREEK","locationWdid":"4500694","locationWdidStreammile":1.04,"locationStructureName":"MOCKING
+        BIRD DITCH","priorityWdid":"4500689","priorityStructureName":"MARTIN AND KENNEDY
+        DITCH","priorityAdminNumber":20515.13722,"priorityOrderNumber":0,"priorityDate":"1906-03-03
+        00:00:00","priorityNumber":"DOM9","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.480961,"locationStructureLongitude":-107.918241,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-10-08
+        10:51:30","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34509"},{"callNumber":34593,"callType":"CALL","dateTimeSet":"2024-11-01
+        00:00:00","dateTimeReleased":null,"waterSourceName":"ARKANSAS RIVER","locationWdid":"6703512","locationWdidStreammile":67.45,"locationStructureName":"JOHN
+        MARTIN RESERVOIR","priorityWdid":"6703512","priorityStructureName":"JOHN MARTIN
+        RESERVOIR","priorityAdminNumber":36310.00000,"priorityOrderNumber":0,"priorityDate":"1949-05-31
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"THIS
+        STRUCTURE AND CALL CHANGE REPRESENTS THE CO/KS COMPACT AND CONSERVATION STORAGE
+        IN JOHN MARTIN","releaseComment":null,"division":2,"locationStructureLatitude":38.070534,"locationStructureLongitude":-102.938910,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-15
+        09:01:20","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34593"},{"callNumber":34589,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"CACHE LA POUDRE RIVER","locationWdid":"0303775","locationWdidStreammile":42.39,"locationStructureName":"CACHE
+        LA POUDRE RESERVOIR","priorityWdid":"0303775","priorityStructureName":"CACHE
+        LA POUDRE RESERVOIR","priorityAdminNumber":20066.19327,"priorityOrderNumber":0,"priorityDate":"1904-12-09
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":1,"locationStructureLatitude":40.549056,"locationStructureLongitude":-104.959855,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        07:41:35","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34589"},{"callNumber":34585,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"SOUTH BOULDER CREEK","locationWdid":"0600564","locationWdidStreammile":9.76,"locationStructureName":"COMMUNITY
+        DITCH","priorityWdid":"0600564","priorityStructureName":"COMMUNITY DITCH","priorityAdminNumber":12941.00000,"priorityOrderNumber":0,"priorityDate":"1885-06-06
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
+        DISTRICT 6","releaseComment":null,"division":1,"locationStructureLatitude":39.932406,"locationStructureLongitude":-105.280686,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        06:35:37","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34585"},{"callNumber":34582,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"CLEAR CREEK","locationWdid":"0700553","locationWdidStreammile":15.19,"locationStructureName":"CROKE
+        CANAL","priorityWdid":"0700553","priorityStructureName":"CROKE CANAL","priorityAdminNumber":19055.00000,"priorityOrderNumber":0,"priorityDate":"1902-03-04
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
+        DISTRICT 7","releaseComment":null,"division":1,"locationStructureLatitude":39.768620,"locationStructureLongitude":-105.193642,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        06:18:51","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34582"},{"callNumber":34581,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"RALSTON CREEK","locationWdid":"0704459","locationWdidStreammile":9.91,"locationStructureName":"TUCKER
+        RES","priorityWdid":"0704459","priorityStructureName":"TUCKER RES","priorityAdminNumber":7092.00000,"priorityOrderNumber":0,"priorityDate":"1869-06-01
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
+        DISTRICT 7","releaseComment":null,"division":1,"locationStructureLatitude":39.828313,"locationStructureLongitude":-105.197970,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        06:18:03","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34581"},{"callNumber":34579,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"RIO GRANDE","locationWdid":"2499999","locationWdidStreammile":9.66,"locationStructureName":"RIO
+        GRANDE COMPACT - LOBATOS","priorityWdid":"2003536","priorityStructureName":"CONTINENTAL
+        RES","priorityAdminNumber":24362.20942,"priorityOrderNumber":1,"priorityDate":"1916-09-13
+        00:00:00","priorityNumber":"1934-4","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.078617,"locationStructureLongitude":-105.756954,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        05:42:33","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34579"},{"callNumber":34591,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"RIFLE CREEK","locationWdid":"3900645","locationWdidStreammile":10.31,"locationStructureName":"RIFLE
+        CREEK CANON DITCH","priorityWdid":"3903508","priorityStructureName":"RIFLE
+        GAP RESERVOIR","priorityAdminNumber":37503.36899,"priorityOrderNumber":0,"priorityDate":"1952-09-05
+        00:00:00","priorityNumber":"307","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.616877,"locationStructureLongitude":-107.764059,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        10:24:22","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34591"},{"callNumber":34594,"callType":"CALL","dateTimeSet":"2024-11-01
+        08:00:00","dateTimeReleased":null,"waterSourceName":"LEON CREEK","locationWdid":"7200746","locationWdidStreammile":2.54,"locationStructureName":"LEON
+        PARK FEEDER CANAL","priorityWdid":"7200746","priorityStructureName":"LEON
+        PARK FEEDER CANAL","priorityAdminNumber":37486.00000,"priorityOrderNumber":0,"priorityDate":"1952-08-19
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":5,"locationStructureLatitude":39.199939,"locationStructureLongitude":-107.820740,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-01
+        14:40:37","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34594"},{"callNumber":34615,"callType":"CALL","dateTimeSet":"2024-11-10
+        12:00:00","dateTimeReleased":null,"waterSourceName":"BIG THOMPSON RIVER","locationWdid":"0400524","locationWdidStreammile":36.05,"locationStructureName":"HOME
+        SUPPLY DITCH","priorityWdid":"0400524","priorityStructureName":"HOME SUPPLY
+        DITCH","priorityAdminNumber":11355.00000,"priorityOrderNumber":0,"priorityDate":"1881-02-01
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
+        BIG THOMPSON U/S OF HOME SUPPLY HEADGATE","releaseComment":null,"division":1,"locationStructureLatitude":40.424582,"locationStructureLongitude":-105.210717,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-10
+        13:13:07","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34615"},{"callNumber":34621,"callType":"CALL","dateTimeSet":"2024-11-15
+        00:00:00","dateTimeReleased":null,"waterSourceName":"ARKANSAS RIVER","locationWdid":"1700648","locationWdidStreammile":142.79,"locationStructureName":"FORT
+        LYON STORAGE CANAL","priorityWdid":"1700648","priorityStructureName":"FORT
+        LYON STORAGE CANAL","priorityAdminNumber":21974.00000,"priorityOrderNumber":0,"priorityDate":"1910-03-01
+        00:00:00","priorityNumber":"R50","boundingWdid":null,"boundingStructureName":null,"setComments":"THIS
+        STRUCTURE AND CALL CHANGE REPRESENTS (PWWSP) PUEBLO WIN","releaseComment":null,"division":2,"locationStructureLatitude":38.117701,"locationStructureLongitude":-103.808532,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-15
+        09:02:33","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34621"},{"callNumber":34624,"callType":"CALL","dateTimeSet":"2024-11-19
+        08:00:00","dateTimeReleased":null,"waterSourceName":"CUCHARAS RIVER","locationWdid":"1603718","locationWdidStreammile":28.23,"locationStructureName":"MARIA
+        STEVENS RESERVOIR","priorityWdid":"1603718","priorityStructureName":"MARIA
+        STEVENS RESERVOIR","priorityAdminNumber":13734.00000,"priorityOrderNumber":0,"priorityDate":"1887-08-08
+        00:00:00","priorityNumber":"1, R1","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":2,"locationStructureLatitude":37.668128,"locationStructureLongitude":-104.678744,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-19
+        10:39:41","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34624"},{"callNumber":34625,"callType":"CALL","dateTimeSet":"2024-11-20
+        08:00:00","dateTimeReleased":null,"waterSourceName":"HARDSCRABBLE CREEK","locationWdid":"1200654","locationWdidStreammile":15.14,"locationStructureName":"COLEMAN
+        DITCH","priorityWdid":"1200654","priorityStructureName":"COLEMAN DITCH","priorityAdminNumber":6516.00000,"priorityOrderNumber":0,"priorityDate":"1867-11-03
+        00:00:00","priorityNumber":"36","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":2,"locationStructureLatitude":38.230382,"locationStructureLongitude":-105.089473,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-20
+        09:12:29","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34625"},{"callNumber":34627,"callType":"CALL","dateTimeSet":"2024-11-26
+        12:00:00","dateTimeReleased":null,"waterSourceName":"SOUTH PLATTE RIVER","locationWdid":"0100687","locationWdidStreammile":99.24,"locationStructureName":"NORTH
+        STERLING CANAL","priorityWdid":"0100687","priorityStructureName":"NORTH STERLING
+        CANAL","priorityAdminNumber":26302.23953,"priorityOrderNumber":0,"priorityDate":"1922-01-05
+        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"
+        AFFECTS DISTRICTS 1,2,3,4,5,6,7,8,9,8,23,80","releaseComment":null,"division":1,"locationStructureLatitude":40.352467,"locationStructureLongitude":-103.540766,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-26
+        09:10:15","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34627"},{"callNumber":34628,"callType":"CALL","dateTimeSet":"2024-12-02
+        08:00:00","dateTimeReleased":null,"waterSourceName":"PURGATOIRE RIVER","locationWdid":"1900590","locationWdidStreammile":164.07,"locationStructureName":"CHILILI
+        DITCH","priorityWdid":"1900590","priorityStructureName":"CHILILI DITCH","priorityAdminNumber":4503.00000,"priorityOrderNumber":0,"priorityDate":"1862-04-30
+        00:00:00","priorityNumber":"7","boundingWdid":null,"boundingStructureName":null,"setComments":"PRWCD_MODEL
+        STORAGE 1908 IRRIGATION POOL ","releaseComment":null,"division":2,"locationStructureLatitude":37.172820,"locationStructureLongitude":-104.499011,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-12-02
+        12:33:35","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34628"}]}'
+  recorded_at: Thu, 19 Dec 2024 03:07:44 GMT
+recorded_with: VCR 6.3.1

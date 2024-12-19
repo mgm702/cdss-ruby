@@ -2,7 +2,6 @@ module Cdss
   module Parsers
     module AdminCallsParser
       extend BaseParser
-
       class << self
         def parse_admin_calls(response)
           parse_collection(response) { |data| build_call(data) }
@@ -13,31 +12,30 @@ module Cdss
         def build_call(data)
           Cdss::Models::AdminCall.new(
             call_number: data['callNumber']&.to_i,
-            call_sequence: data['callSequence']&.to_i,
-            division: data['division']&.to_i,
-            division_name: data['divisionName'],
-            district: data['district']&.to_i,
-            district_name: data['districtName'],
-            water_source: data['waterSource'],
+            call_type: data['callType'],
             date_time_set: parse_timestamp(data['dateTimeSet']),
             date_time_released: parse_timestamp(data['dateTimeReleased']),
-            set_by_user: data['setByUser'],
-            released_by_user: data['releasedByUser'],
+            water_source_name: data['waterSourceName'],
             location_wdid: data['locationWdid'],
-            location_name: data['locationName'],
-            location_stream_mile: data['locationStreamMile']&.to_f,
-            source_wdid: data['sourceWdid'],
-            source_name: data['sourceName'],
-            source_stream_mile: data['sourceStreamMile']&.to_f,
-            admin_number: data['adminNumber']&.to_f,
-            decreed_amount: data['decreedAmount']&.to_f,
-            decreed_unit: data['decreedUnit'],
-            comments: data['comments'],
+            location_wdid_streammile: data['locationWdidStreammile']&.to_f,
+            location_structure_name: data['locationStructureName'],
+            priority_wdid: data['priorityWdid'],
+            priority_structure_name: data['priorityStructureName'],
+            priority_admin_number: data['priorityAdminNumber']&.to_f,
+            priority_order_number: data['priorityOrderNumber']&.to_i,
+            priority_date: parse_timestamp(data['priorityDate']),
             priority_number: data['priorityNumber']&.to_i,
-            appropriation_date: parse_timestamp(data['appropriationDate']),
-            adjudication_date: parse_timestamp(data['adjudicationDate']),
-            status: data['status'],
+            bounding_wdid: data['boundingWdid'],
+            bounding_structure_name: data['boundingStructureName'],
+            set_comments: data['setComments'],
+            release_comment: data['releaseComment'],
+            division: data['division']&.to_i,
+            location_structure_latitude: data['locationStructureLatitude']&.to_f,
+            location_structure_longitude: data['locationStructureLongitude']&.to_f,
+            bounding_structure_latitude: data['boundingStructureLatitude']&.to_f,
+            bounding_structure_longitude: data['boundingStructureLongitude']&.to_f,
             modified: parse_timestamp(data['modified']),
+            more_information: data['moreInformation'],
             metadata: {}
           )
         end
