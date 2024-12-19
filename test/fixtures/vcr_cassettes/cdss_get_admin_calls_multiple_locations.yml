@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/administrativecalls/active/?dateFormat=spaceSepToSeconds&format=json&locationWdid=0100929%252C%2B0100930&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '67'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2024-11-25T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '578218'
+      X-Rate-Row-Limit:
+      - 'null'
+      X-Rate-Request-Limit:
+      - 'null'
+      X-Rate-Request-Remaining:
+      - 'null'
+      X-Result-Count:
+      - '0'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Tue, 26 Nov 2024 04:18:38 GMT
+    body:
+      encoding: UTF-8
+      string: This URL is properly formatted, but returns zero records from CDSS.
+  recorded_at: Tue, 26 Nov 2024 04:17:08 GMT
+recorded_with: VCR 6.3.1
