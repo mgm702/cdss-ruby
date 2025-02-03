@@ -19,11 +19,10 @@ module Cdss
         end
       end
 
-      def initialize(**attrs)
-        attrs[:metadata] ||= {}
-
+      def initialize(**kwargs)
+        kwargs[:metadata] ||= {}
         self.class.attribute_list.each do |attr|
-          instance_variable_set(:"@#{attr}", attrs[attr]) if attrs.key?(attr)
+          instance_variable_set(:"@#{attr}", kwargs[attr]) if kwargs.key?(attr)
         end
       end
     end
