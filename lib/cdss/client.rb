@@ -4,6 +4,7 @@ module Cdss
     base_uri Cdss.config.base_url
 
     include AdminCalls
+    include Analysis
     include Climate
     include GroundWater
     include Structures
