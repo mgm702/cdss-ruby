@@ -21,7 +21,8 @@ module Cdss
 
        def parse_route_analyses(response)
          parse_collection(response) do |data|
-           Cdss::Models::RouteAnalysis.new(build_route_analysis_params(data))
+           params = build_route_analysis_params(data)
+           Cdss::Models::RouteAnalysis.new(**params)
          end
        end
 
@@ -85,14 +86,13 @@ module Cdss
          {
            gnis_id: data['gnisId'],
            gnis_name: data['gnisName'],
-           stream_name: data['streamName'],
            division: safe_integer(data['division']),
            water_district: safe_integer(data['waterDistrict']),
-           county: data['county'],
-           start_mile: safe_float(data['startMile']),
-           end_mile: safe_float(data['endMile']),
-           total_length: safe_float(data['totalLength']),
-           modified: parse_timestamp(data['modified']),
+           stream_length: safe_float(data['streamLength']),
+           tributary_to_level: safe_integer(data['tributaryToLevel']),
+           tributary_to_gnis_id: data['TributaryToGnisId'],
+           tributary_gnis_name: data['tribGnisName'],
+           tributary_to_stream_mile: safe_float(data['tributaryToStreamMile']),
            metadata: {}
          }.compact
        end
