@@ -6,7 +6,6 @@ module Cdss
      class << self
        def parse_call_analyses(response, type:)
          parse_collection(response) do |data|
-           # Cdss::Models::CallAnalysis.new(build_call_analysis_params(data, type))
            params = build_call_analysis_params(data, type)
            Cdss::Models::CallAnalysis.new(**params)
          end

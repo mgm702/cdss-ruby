@@ -48,7 +48,7 @@ class Cdss::TestAnalysisApi < Minitest::Test
   def test_get_call_analysis_gnisid
     VCR.use_cassette('cdss_get_call_analysis_gnisid') do
       analyses = @client.get_call_analysis_gnisid(
-        gnis_id: '123456',
+        gnis_id: '00010001',
         admin_no: '12941.00000',
         stream_mile: 9.76,
         start_date: Date.parse('2023-01-01'),
@@ -60,16 +60,20 @@ class Cdss::TestAnalysisApi < Minitest::Test
 
       analysis = analyses.first
       assert_kind_of Cdss::Models::CallAnalysis, analysis
-      assert_equal '123456', analysis.gnis_id
-      assert_kind_of Float, analysis.stream_mile
       assert_kind_of DateTime, analysis.analysis_date
+      assert_kind_of Float, analysis.admin_number
+      assert_kind_of Float, analysis.percent_time_out_of_priority
+      assert_kind_of Float, analysis.downstream_call_stream_mile
+      assert_kind_of Float, analysis.downstream_call_admin_number
+
+      assert_equal 12941.0, analysis.admin_number
     end
   end
 
   def test_get_call_analysis_gnisid_with_batching
     VCR.use_cassette('cdss_get_call_analysis_gnisid_batch') do
       analyses = @client.get_call_analysis_gnisid(
-        gnis_id: '123456',
+        gnis_id: '00010001',
         admin_no: '12941.00000',
         stream_mile: 9.76,
         start_date: Date.parse('2022-01-01'),
@@ -90,16 +94,17 @@ class Cdss::TestAnalysisApi < Minitest::Test
   def test_get_source_route_framework
     VCR.use_cassette('cdss_get_source_route_framework') do
       routes = @client.get_source_route_framework(division: 1)
-
       assert_kind_of Array, routes
       refute_empty routes
 
       route = routes.first
       assert_kind_of Cdss::Models::SourceRoute, route
       assert_kind_of Integer, route.division
-      assert_kind_of String, route.stream_name
-      assert_kind_of Float, route.start_mile unless route.start_mile.nil?
-      assert_kind_of Float, route.end_mile unless route.end_mile.nil?
+      assert_kind_of Integer, route.water_district
+      assert_kind_of String, route.gnis_name
+      assert_kind_of Float, route.stream_length unless route.stream_length.nil?
+      assert_kind_of Integer, route.tributary_to_level unless route.tributary_to_level.nil?
+      assert_kind_of Float, route.tributary_to_stream_mile unless route.tributary_to_stream_mile.nil?
     end
   end
 
@@ -107,7 +112,7 @@ class Cdss::TestAnalysisApi < Minitest::Test
     VCR.use_cassette('cdss_get_source_route_framework_filtered') do
       routes = @client.get_source_route_framework(
         division: 1,
-        gnis_name: 'SOUTH BOULDER CREEK',
+        gnis_name: 'South Boulder Creek',
         water_district: 6
       )
 
@@ -116,7 +121,7 @@ class Cdss::TestAnalysisApi < Minitest::Test
 
       route = routes.first
       assert_equal 1, route.division
-      assert_equal 'SOUTH BOULDER CREEK', route.gnis_name
+      assert_equal 'South Boulder Creek', route.gnis_name
       assert_equal 6, route.water_district
     end
   end
@@ -124,9 +129,9 @@ class Cdss::TestAnalysisApi < Minitest::Test
   def test_get_source_route_analysis
     VCR.use_cassette('cdss_get_source_route_analysis') do
       analyses = @client.get_source_route_analysis(
-        lt_gnis_id: '123456',
+        lt_gnis_id: '00180489',
         lt_stream_mile: 0.0,
-        ut_gnis_id: '789012',
+        ut_gnis_id: '00010001',
         ut_stream_mile: 10.5
       )
 
