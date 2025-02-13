@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/waterclasses/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wcIdentifier=*diversion*&wdid=0100578
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2025-02-11T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '528341'
+      X-Rate-Row-Limit:
+      - 'null'
+      X-Rate-Request-Limit:
+      - 'null'
+      X-Rate-Request-Remaining:
+      - 'null'
+      X-Result-Count:
+      - '1'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Wed, 12 Feb 2025 02:43:55 GMT
+      Content-Length:
+      - '1330'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2025-02-11
+        19:43:56","ResultList":[{"divrectype":"DivTotal","waterclassNum":10100578,"wcIdentifier":"0100578
+        Total (Diversions)","wdid":"0100578","wdidAcctId":null,"structureName":"GEORGE
+        WOOD DITCH","wdidAcctName":null,"sourceCode":null,"sourceDescr":null,"fromWdid":null,"fromWdidAcctId":null,"fromStructureName":null,"fromWdidAcctName":null,"useCode":null,"useDescr":null,"typeCode":null,"typeDescr":null,"groupWdid":null,"groupStructureName":null,"toWdid":null,"toWdidAcctId":null,"toStructureName":null,"toWdidAcctName":null,"wcDescr":null,"porStart":"2017-10-31
+        00:00:00","porEnd":"2023-06-30 00:00:00","porLastModified":"2024-04-23 21:44:00","division":1,"waterDistrict":1,"county":"ELBERT","modified":"2018-02-28
+        13:51:00","availableTimesteps":"Month,Year","waterSource":"KIOWA CREEK","streamMile":99.66,"structureType":"DITCH","gnisId":"00201758","ciuCode":"A","ciuCodeLong":"Active
+        Structure with contemporary diversion records","subdistrict":null,"designatedBasinName":"KIOWA-BIJOU","managementDistrictName":null,"pm":"S","township":"9.0
+        S","range":"63.0 W","section":"6","q10":null,"q40":"NW","q160":"NW","coordsew":526,"coordsewDir":"W","coordsns":1008,"coordsnsDir":"N","utmX":543592.3,"utmY":4350221.0,"latdecdeg":39.300281,"longdecdeg":-104.494448}]}'
+  recorded_at: Wed, 12 Feb 2025 02:42:31 GMT
+recorded_with: VCR 6.3.1

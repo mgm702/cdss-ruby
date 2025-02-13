@@ -44,18 +44,17 @@ module Cdss
 
     class DiversionRecord < Structure
       ATTRIBUTES = %i[
-        meas_date
-        meas_count
-        amt_cfs
-        amt_af
-        data_source
-        modified
-        div_type
+        wdid
+        water_class_num
         wc_identifier
-        stage
-        volume
-        start_date
-        end_date
+        meas_interval
+        meas_count
+        data_meas_date
+        data_value
+        meas_units
+        obs_code
+        approval_status
+        modified
         metadata
       ]
 
@@ -64,7 +63,6 @@ module Cdss
       def initialize(**attrs)
         super
         attrs[:metadata] ||= {}
-
         ATTRIBUTES.each do |attr|
           instance_variable_set(:"@#{attr}", attrs[attr]) if attrs.key?(attr)
         end
