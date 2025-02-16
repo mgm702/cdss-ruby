@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/referencetables/waterdistrict/?dateFormat=spaceSepToSeconds&division=1&format=json&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2025-02-15T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '598237'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '981'
+      X-Result-Count:
+      - '16'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sun, 16 Feb 2025 01:09:42 GMT
+      Content-Length:
+      - '1325'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":16,"ResultDateTime":"2025-02-15
+        18:09:42","ResultList":[{"division":1,"waterDistrict":1,"waterDistrictName":"South
+        Platte: Greeley to Balzac"},{"division":1,"waterDistrict":2,"waterDistrictName":"South
+        Platte: Denver Gage to Greeley"},{"division":1,"waterDistrict":3,"waterDistrictName":"Cache
+        La Poudre River"},{"division":1,"waterDistrict":4,"waterDistrictName":"Big
+        Thompson River"},{"division":1,"waterDistrict":5,"waterDistrictName":"St.
+        Vrain Creek"},{"division":1,"waterDistrict":6,"waterDistrictName":"Boulder
+        Creek"},{"division":1,"waterDistrict":7,"waterDistrictName":"Clear Creek"},{"division":1,"waterDistrict":8,"waterDistrictName":"South
+        Platte Cheesman to Denver Gage"},{"division":1,"waterDistrict":9,"waterDistrictName":"Bear
+        Creek"},{"division":1,"waterDistrict":23,"waterDistrictName":"Upper South
+        Platte"},{"division":1,"waterDistrict":48,"waterDistrictName":"Laramie River"},{"division":1,"waterDistrict":49,"waterDistrictName":"Republican
+        River"},{"division":1,"waterDistrict":64,"waterDistrictName":"South Platte:
+        Balzac to Stateline"},{"division":1,"waterDistrict":65,"waterDistrictName":"Arikaree
+        River"},{"division":1,"waterDistrict":76,"waterDistrictName":"Sand Creek"},{"division":1,"waterDistrict":80,"waterDistrictName":"North
+        Fork of South Platte"}]}'
+  recorded_at: Sun, 16 Feb 2025 01:08:11 GMT
+recorded_with: VCR 6.3.1

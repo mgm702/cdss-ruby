@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/referencetables/divrectypes/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2025-02-15T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '598166'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '979'
+      X-Result-Count:
+      - '6'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sun, 16 Feb 2025 01:09:42 GMT
+      Content-Length:
+      - '1033'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJQYWdlTnVtYmVyIjoxLCJQYWdlQ291bnQiOjEsIlJlc3VsdENvdW50Ijo2LCJSZXN1bHREYXRlVGltZSI6IjIwMjUtMDItMTUgMTg6MDk6NDIiLCJSZXN1bHRMaXN0IjpbeyJkaXZSZWNUeXBlIjoiRGl2Q29tbWVudCIsImRpdlJlY1R5cGVMb25nIjoiQSBEaXZlcnNpb24gQ29tbWVudCBwb3RlbnRpYWxseSBjb250YWlucyB0aGUgZm9sbG93aW5nIGluZm9ybWF0aW9uOiBhIFxyXG7igJxub3QgdXNlZOKAnSBjb2RlIChOVUMpOyBhbmQvb3IsXHJcbmEgZ2VuZXJhbCBjb21tZW50IHJlZ2FyZGluZyB0aGUgc3RydWN0dXJlLiBcclxuIn0seyJkaXZSZWNUeXBlIjoiRGl2VG90YWwiLCJkaXZSZWNUeXBlTG9uZyI6IlRvdGFsIGFtb3VudCBvZiB3YXRlciBkaXZlcnRlZCBieSBzdHJ1Y3R1cmUifSx7ImRpdlJlY1R5cGUiOiJSZWxDb21tZW50IiwiZGl2UmVjVHlwZUxvbmciOiJBIFJlbGVhc2UgQ29tbWVudCBwb3RlbnRpYWxseSBjb250YWlucyB0aGUgZm9sbG93aW5nIGluZm9ybWF0aW9uOiBcclxuYSDigJxub3QgcmVsZWFzZWTigJ0gY29kZSAoTlJDKTsgYW5kL29yLFxyXG5hIGdlbmVyYWwgY29tbWVudCByZWdhcmRpbmcgdGhlIHN0cnVjdHVyZS4gXHJcbiJ9LHsiZGl2UmVjVHlwZSI6IlJlbFRvbGFsIiwiZGl2UmVjVHlwZUxvbmciOiJUb3RhbCBhbW91bnQgb2Ygd2F0ZXIgcmVsZWFzZWQgYnkgc3RydWN0dXJlIn0seyJkaXZSZWNUeXBlIjoiU3RhZ2VWb2x1bWUiLCJkaXZSZWNUeXBlTG9uZyI6IlN0b3JhZ2Ugc3RydWN0dXJlIHN0YWdlL3ZvbHVtZSByZWFkaW5ncyJ9LHsiZGl2UmVjVHlwZSI6IldhdGVyQ2xhc3MiLCJkaXZSZWNUeXBlTG9uZyI6IkEgV2F0ZXIgQ2xhc3MgY29uc2lzdHMgb2YgYSBzZXJpZXMgb2YgY29kZXMgdGhhdCBwcm92aWRlIHRoZSBsb2NhdGlvbiBvZiB0aGUgZGl2ZXJzaW9uLCB0aGUgU09VUkNFIG9mIHdhdGVyLCB0aGUgVVNFIG9mIHRoZSB3YXRlciBhbmQgdGhlIGFkbWluaXN0cmF0aXZlIG9wZXJhdGlvbiByZXF1aXJlZCB0byBtYWtlIGEgZGl2ZXJzaW9uIG9yIHJlbGVhc2UuIn1dfQ==
+  recorded_at: Sun, 16 Feb 2025 01:08:11 GMT
+recorded_with: VCR 6.3.1
