@@ -43,38 +43,20 @@ module Cdss
         end
 
         def build_diversion_record(data, type)
-          params = {
+          Models::DiversionRecord.new(
             wdid: data['wdid'],
-            div_type: data['divrectype'],
+            water_class_num: safe_integer(data['waterClassNum']),
             wc_identifier: data['wcIdentifier'],
-            data_source: data['dataSource'],
+            meas_interval: data['measInterval'],
+            meas_count: safe_integer(data['measCount']),
+            data_meas_date: parse_data_meas_date(data['dataMeasDate'], type),
+            data_value: safe_float(data['dataValue']),
+            meas_units: data['measUnits'],
+            obs_code: data['obsCode'],
+            approval_status: data['approvalStatus'],
             modified: parse_timestamp(data['modified']),
             metadata: {}
-          }
-
-          case type
-          when :day
-            params.merge!(
-              meas_date: parse_timestamp(data['dataMeasDate']),
-              amt_cfs: safe_float(data['amtCfs']),
-              amt_af: safe_float(data['amtAf'])
-            )
-          when :month, :year
-            params.merge!(
-              start_date: parse_timestamp(data['startDate']),
-              end_date: parse_timestamp(data['endDate']),
-              amt_af: safe_float(data['amtAf']),
-              meas_count: safe_integer(data['measCount'])
-            )
-          when :stage_volume
-            params.merge!(
-              meas_date: parse_timestamp(data['dataMeasDate']),
-              stage: safe_float(data['stage']),
-              volume: safe_float(data['volume'])
-            )
-          end
-
-          Models::DiversionRecord.new(**params)
+          )
         end
 
         def build_water_class(data)
@@ -92,6 +74,19 @@ module Cdss
             modified: parse_timestamp(data['modified']),
             metadata: {}
           )
+        end
+
+        def parse_data_meas_date(date_str, type)
+          return nil if date_str.nil?
+
+          case type
+          when :year
+            parse_timestamp("#{date_str}-01-01 00:00:00")
+          when :month
+            parse_timestamp("#{date_str}-01 00:00:00")
+          else
+            parse_timestamp(date_str)
+          end
         end
       end
     end

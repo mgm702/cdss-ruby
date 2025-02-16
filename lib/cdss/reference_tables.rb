@@ -25,11 +25,10 @@ module Cdss
     #   managementdistricts, telemetryparams, climateparams, divrectypes, flags
     # @return [Array<Cdss::Models::ReferenceTable>] Array of reference table records.
     # @raise [ArgumentError] If an invalid table name is provided.
-    def get_reference_table(table_name)
+    def get_reference_table(table_name, **params)
       validate_table_name!(table_name)
-
       method_name = "fetch_#{table_name}_reference"
-      send(method_name)
+      send(method_name, **params)
     end
 
     private

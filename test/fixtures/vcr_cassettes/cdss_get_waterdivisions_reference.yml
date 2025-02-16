@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/referencetables/waterdivision/?dateFormat=spaceSepToSeconds&division=1&format=json&pageIndex=1&pageSize=50000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2025-02-15T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '598402'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '985'
+      X-Result-Count:
+      - '1'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sun, 16 Feb 2025 01:09:41 GMT
+      Content-Length:
+      - '145'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2025-02-15
+        18:09:42","ResultList":[{"division":1,"divisionName":"South Platte"}]}'
+  recorded_at: Sun, 16 Feb 2025 01:08:10 GMT
+recorded_with: VCR 6.3.1

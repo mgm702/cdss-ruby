@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/watersourcerouteframework/?dateFormat=spaceSepToSeconds&division=1&format=json&gnisName=South%20Boulder%20Creek&pageIndex=1&pageSize=50000&waterDistrict=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2025-02-10T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '599999'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '998'
+      X-Result-Count:
+      - '1'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Tue, 11 Feb 2025 03:29:23 GMT
+      Content-Length:
+      - '320'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2025-02-10
+        20:29:23","ResultList":[{"division":1,"waterDistrict":6,"gnisId":"00180974","gnisName":"South
+        Boulder Creek","streamLength":40.06,"tributaryToLevel":3,"TributaryToGnisId":"00178354","tribGnisName":"Boulder
+        Creek","tributaryToStreamMile":17.88}]}'
+  recorded_at: Tue, 11 Feb 2025 03:27:59 GMT
+recorded_with: VCR 6.3.1

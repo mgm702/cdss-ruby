@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/callanalysisbygnisid/?adminNo=12941.00000&dateFormat=spaceSepToSeconds&format=json&gnisId=INVALID&pageIndex=1&pageSize=50000&streamMile=9.76
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2025-02-04T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '599999'
+      X-Rate-Row-Limit:
+      - '600000'
+      X-Rate-Request-Limit:
+      - '1000'
+      X-Rate-Request-Remaining:
+      - '997'
+      X-Result-Count:
+      - '0'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Wed, 05 Feb 2025 02:30:41 GMT
+      Content-Length:
+      - '95'
+    body:
+      encoding: ASCII-8BIT
+      string: '"Error: (gnisId and streamMile and adminNo and startDate and endDate)
+        required for this search"'
+  recorded_at: Wed, 05 Feb 2025 02:29:26 GMT
+recorded_with: VCR 6.3.1

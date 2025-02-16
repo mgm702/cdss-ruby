@@ -49,14 +49,13 @@ module Cdss
     class SourceRoute < Analysis
       attributes :gnis_id,
                 :gnis_name,
-                :stream_name,
                 :division,
                 :water_district,
-                :county,
-                :start_mile,
-                :end_mile,
-                :total_length,
-                :modified,
+                :stream_length,
+                :tributary_to_level,
+                :tributary_to_gnis_id,
+                :tributary_gnis_name,
+                :tributary_to_stream_mile,
                 :metadata
     end
 

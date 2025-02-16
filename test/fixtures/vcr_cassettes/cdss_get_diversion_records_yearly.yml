@@ -1,0 +1,178 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/structures/divrec/divrecyear/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wcIdentifier=*diversion*&wdid=0100504
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Cdss Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Vary:
+      - Content-Encoding
+      X-Rate-Reset-Date:
+      - '"2025-02-12T00:00:00-07:00"'
+      X-Rate-Row-Remaining:
+      - '478285'
+      X-Rate-Row-Limit:
+      - 'null'
+      X-Rate-Request-Limit:
+      - 'null'
+      X-Rate-Request-Remaining:
+      - 'null'
+      X-Result-Count:
+      - '61'
+      X-Version-Number:
+      - '"07-30-2024_1308"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Thu, 13 Feb 2025 02:23:38 GMT
+      Content-Length:
+      - '16198'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":61,"ResultDateTime":"2025-02-12
+        19:23:38","ResultList":[{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":164,"dataMeasDate":"1950","dataValue":5674.7935,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":139,"dataMeasDate":"1951","dataValue":5984.2195,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":157,"dataMeasDate":"1952","dataValue":6482.0780,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":166,"dataMeasDate":"1953","dataValue":6791.5040,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":191,"dataMeasDate":"1954","dataValue":8152.1850,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":173,"dataMeasDate":"1955","dataValue":6134.9655,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":177,"dataMeasDate":"1956","dataValue":7116.7980,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":106,"dataMeasDate":"1957","dataValue":3068.4745,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":131,"dataMeasDate":"1958","dataValue":5557.7670,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":121,"dataMeasDate":"1959","dataValue":2632.1045,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":118,"dataMeasDate":"1960","dataValue":2655.9065,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":45,"dataMeasDate":"1961","dataValue":1263.4895,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":108,"dataMeasDate":"1962","dataValue":3137.8970,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":153,"dataMeasDate":"1963","dataValue":3475.0920,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":53,"dataMeasDate":"1964","dataValue":1533.2455,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":70,"dataMeasDate":"1965","dataValue":1870.4405,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":111,"dataMeasDate":"1966","dataValue":2526.9790,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":84,"dataMeasDate":"1967","dataValue":2134.2460,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":125,"dataMeasDate":"1968","dataValue":4758.4165,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":107,"dataMeasDate":"1969","dataValue":4443.0400,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":93,"dataMeasDate":"1970","dataValue":3897.5775,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":110,"dataMeasDate":"1971","dataValue":4327.9970,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":137,"dataMeasDate":"1972","dataValue":6053.6420,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":87,"dataMeasDate":"1973","dataValue":3951.1320,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":130,"dataMeasDate":"1974","dataValue":5480.4105,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":131,"dataMeasDate":"1975","dataValue":4564.0335,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":137,"dataMeasDate":"1976","dataValue":5246.3575,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":160,"dataMeasDate":"1977","dataValue":5210.6545,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":177,"dataMeasDate":"1978","dataValue":5278.0935,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":101,"dataMeasDate":"1979","dataValue":2959.3820,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":121,"dataMeasDate":"1980","dataValue":3669.4750,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":166,"dataMeasDate":"1981","dataValue":5879.0940,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":202,"dataMeasDate":"1982","dataValue":7380.6035,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":79,"dataMeasDate":"1983","dataValue":2749.1310,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":146,"dataMeasDate":"1984","dataValue":5216.6050,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":193,"dataMeasDate":"1985","dataValue":7253.6595,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":153,"dataMeasDate":"1986","dataValue":5412.9715,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":144,"dataMeasDate":"1987","dataValue":5180.9020,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":166,"dataMeasDate":"1988","dataValue":5559.7505,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":150,"dataMeasDate":"1989","dataValue":4994.4530,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":174,"dataMeasDate":"1990","dataValue":5706.5295,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":213,"dataMeasDate":"1991","dataValue":7761.8322,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":196,"dataMeasDate":"1992","dataValue":7124.7320,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":202,"dataMeasDate":"1993","dataValue":7122.7485,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":170,"dataMeasDate":"1994","dataValue":4393.4525,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":105,"dataMeasDate":"1995","dataValue":2963.3490,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":178,"dataMeasDate":"1996","dataValue":4464.8585,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":202,"dataMeasDate":"1997","dataValue":4385.5185,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":196,"dataMeasDate":"1998","dataValue":4368.2621,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":211,"dataMeasDate":"1999","dataValue":5454.6250,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":242,"dataMeasDate":"2000","dataValue":6888.6955,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2001-08-14
+        18:04:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":217,"dataMeasDate":"2001","dataValue":6652.6590,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2002-05-29
+        15:57:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":226,"dataMeasDate":"2002","dataValue":4993.0646,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2003-08-08
+        15:15:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":200,"dataMeasDate":"2003","dataValue":6731.0073,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2004-04-20
+        17:08:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":193,"dataMeasDate":"2004","dataValue":7455.8178,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2005-04-06
+        11:37:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":143,"dataMeasDate":"2005","dataValue":4369.6505,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2006-06-22
+        11:13:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":197,"dataMeasDate":"2006","dataValue":6893.7138,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2008-01-30
+        18:26:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":131,"dataMeasDate":"2007","dataValue":2168.4019,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2008-04-07
+        13:21:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":125,"dataMeasDate":"2008","dataValue":3598.6442,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2009-04-17
+        15:51:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":148,"dataMeasDate":"2009","dataValue":5450.2018,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2010-04-08
+        10:41:00"},{"wdid":"0100504","waterClassNum":10100504,"wcIdentifier":"0100504
+        Total (Diversion)","measInterval":"Daily","measCount":230,"dataMeasDate":"2010","dataValue":6840.1989,"measUnits":"ACFT","obsCode":"*","approvalStatus":"Approved","modified":"2011-03-30
+        10:41:00"}]}'
+  recorded_at: Thu, 13 Feb 2025 02:22:11 GMT
+recorded_with: VCR 6.3.1
