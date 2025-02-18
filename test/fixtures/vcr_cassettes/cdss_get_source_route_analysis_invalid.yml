@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/watersourcerouteanalysis/?dateFormat=spaceSepToSeconds&format=json&ltGnisId=INVALID&ltStreamMile=0.0&pageIndex=1&pageSize=50000&utGnisId=INVALID&utStreamMile=10.5
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/watersourcerouteanalysis/?format=json&ltGnisId=INVALID&ltStreamMile=0.0&pageIndex=1&pageSize=50000&utGnisId=INVALID&utStreamMile=10.5
     body:
       encoding: US-ASCII
       string: ''
@@ -31,15 +31,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2025-02-11T00:00:00-07:00"'
+      - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '598128'
+      - '580133'
       X-Rate-Row-Limit:
       - '600000'
       X-Rate-Request-Limit:
       - '1000'
       X-Rate-Request-Remaining:
-      - '990'
+      - '951'
       X-Result-Count:
       - '0'
       X-Version-Number:
@@ -47,9 +47,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Wed, 12 Feb 2025 02:33:49 GMT
+      - Tue, 18 Feb 2025 05:39:09 GMT
     body:
       encoding: UTF-8
       string: This URL is properly formatted, but returns zero records from CDSS.
-  recorded_at: Wed, 12 Feb 2025 02:32:24 GMT
+  recorded_at: Tue, 18 Feb 2025 05:37:35 GMT
 recorded_with: VCR 6.3.1

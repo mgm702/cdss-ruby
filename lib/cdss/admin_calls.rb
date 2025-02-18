@@ -19,12 +19,15 @@ module Cdss
     #   get_admin_calls(division: 1, active: true)
     def get_admin_calls(division: nil, location_wdid: nil, call_number: nil, start_date: nil, end_date: nil, active: true)
       query = build_query(
-        dateFormat: 'spaceSepToSeconds',
-        division: division,
-        callNumber: call_number,
-        'min-dateTimeSet': format_date(start_date),
-        'max-dateTimeSet': format_date(end_date),
-        locationWdid: location_wdid
+        {
+          dateFormat: 'spaceSepToSeconds',
+          division: division,
+          callNumber: call_number,
+          'min-dateTimeSet': format_date(start_date),
+          'max-dateTimeSet': format_date(end_date),
+          locationWdid: location_wdid
+        },
+        encode: true
       )
 
       endpoint = active ? "administrativecalls/active/" : "administrativecalls/historical/"

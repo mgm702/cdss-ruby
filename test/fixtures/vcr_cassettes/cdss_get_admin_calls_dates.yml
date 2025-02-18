@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/administrativecalls/active/?dateFormat=spaceSepToSeconds&division=1&format=json&max-dateTimeSet=11%25252F30%25252F2024&min-dateTimeSet=11%25252F01%25252F2024&pageIndex=1&pageSize=50000
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/administrativecalls/active/?dateFormat=spaceSepToSeconds&division=1&format=json&max-dateTimeSet=11-30-2024&min-dateTimeSet=11-01-2024&pageIndex=1&pageSize=50000
     body:
       encoding: US-ASCII
       string: ''
@@ -31,27 +31,27 @@ http_interactions:
       X-Rate-Reset-Date:
       - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '598781'
+      - '580133'
       X-Rate-Row-Limit:
       - '600000'
       X-Rate-Request-Limit:
       - '1000'
       X-Rate-Request-Remaining:
-      - '989'
+      - '952'
       X-Result-Count:
-      - '8'
+      - '5'
       X-Version-Number:
       - '"07-30-2024_1308"'
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 18 Feb 2025 05:11:44 GMT
+      - Tue, 18 Feb 2025 05:29:26 GMT
       Content-Length:
-      - '6524'
+      - '4079'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":8,"ResultDateTime":"2025-02-17
-        22:11:45","ResultList":[{"callNumber":34589,"callType":"CALL","dateTimeSet":"2024-11-01
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":5,"ResultDateTime":"2025-02-17
+        22:29:27","ResultList":[{"callNumber":34589,"callType":"CALL","dateTimeSet":"2024-11-01
         08:00:00","dateTimeReleased":null,"waterSourceName":"CACHE LA POUDRE RIVER","locationWdid":"0303775","locationWdidStreammile":42.39,"locationStructureName":"CACHE
         LA POUDRE RESERVOIR","priorityWdid":"0303775","priorityStructureName":"CACHE
         LA POUDRE RESERVOIR","priorityAdminNumber":20066.19327,"priorityOrderNumber":0,"priorityDate":"1904-12-09
@@ -77,24 +77,6 @@ http_interactions:
         DITCH","priorityAdminNumber":11355.00000,"priorityOrderNumber":0,"priorityDate":"1881-02-01
         00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
         BIG THOMPSON U/S OF HOME SUPPLY HEADGATE","releaseComment":null,"division":1,"locationStructureLatitude":40.424582,"locationStructureLongitude":-105.210717,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2024-11-10
-        13:13:07","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34615"},{"callNumber":34641,"callType":"CALL","dateTimeSet":"2025-01-08
-        12:00:00","dateTimeReleased":null,"waterSourceName":"SOUTH PLATTE RIVER","locationWdid":"0200802","locationWdidStreammile":237.77,"locationStructureName":"BURLINGTON
-        D RIVER HEADGATE","priorityWdid":"0200802","priorityStructureName":"BURLINGTON
-        D RIVER HEADGATE","priorityAdminNumber":21562.00000,"priorityOrderNumber":0,"priorityDate":"1909-01-13
-        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
-        DISTRICTS 8,9","releaseComment":null,"division":1,"locationStructureLatitude":39.790185,"locationStructureLongitude":-104.969410,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2025-01-11
-        06:19:52","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34641"},{"callNumber":34645,"callType":"CALL","dateTimeSet":"2025-01-22
-        08:00:00","dateTimeReleased":null,"waterSourceName":"SOUTH PLATTE RIVER","locationWdid":"0801017","locationWdidStreammile":270.22,"locationStructureName":"DENVER
-        FOOTHILLS PL 26","priorityWdid":"0801017","priorityStructureName":"DENVER
-        FOOTHILLS PL 26","priorityAdminNumber":18018.00000,"priorityOrderNumber":0,"priorityDate":"1899-05-01
-        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
-        DISTRICTS 8,23,80","releaseComment":null,"division":1,"locationStructureLatitude":39.431939,"locationStructureLongitude":-105.126546,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2025-01-22
-        07:19:06","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34645"},{"callNumber":34646,"callType":"CALL","dateTimeSet":"2025-01-23
-        16:00:00","dateTimeReleased":null,"waterSourceName":"BOULDER CREEK","locationWdid":"0600516","locationWdidStreammile":22.27,"locationStructureName":"BOULDER
-        WHITE ROCK DITCH","priorityWdid":"0600516","priorityStructureName":"BOULDER
-        WHITE ROCK DITCH","priorityAdminNumber":20890.19874,"priorityOrderNumber":0,"priorityDate":"1907-03-13
-        00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
-        DISTRICT 6","releaseComment":null,"division":1,"locationStructureLatitude":40.015049,"locationStructureLongitude":-105.278716,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2025-01-23
-        16:21:28","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34646"}]}'
-  recorded_at: Tue, 18 Feb 2025 05:10:11 GMT
+        13:13:07","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/34615"}]}'
+  recorded_at: Tue, 18 Feb 2025 05:27:52 GMT
 recorded_with: VCR 6.3.1

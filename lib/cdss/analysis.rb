@@ -1,5 +1,3 @@
-require_relative 'utils'
-
 module Cdss
   # Provides methods for accessing analysis services from the CDSS API including
   # call analysis and water source route frameworks.
@@ -23,7 +21,7 @@ module Cdss
         results = []
         date_ranges = batch_dates(start_date, end_date)
 
-        date_ranges.each_with_index do |range, index|
+        date_ranges.each_with_index do |range, _index|
           results.concat(
             fetch_call_analysis_wdid(
               wdid: wdid,
@@ -61,7 +59,7 @@ module Cdss
         results = []
         date_ranges = batch_dates(start_date, end_date)
 
-        date_ranges.each_with_index do |range, index|
+        date_ranges.each_with_index do |range, _index|
           results.concat(
             fetch_call_analysis_gnisid(
               gnis_id: gnis_id,
@@ -92,40 +90,19 @@ module Cdss
     # @param [Integer, nil] water_district Water district to filter by.
     # @return [Array<SourceRoute>] Array of source route framework records.
     def get_source_route_framework(division: nil, gnis_name: nil, water_district: nil)
-      query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds'
-      }
+      query = build_query(
+        {
+          dateFormat: 'spaceSepToSeconds',
+          division: division,
+          gnisName: gnis_name,
+          waterDistrict: water_district
+        }
+      )
 
-      query[:division] = division if division
-      query[:gnisName] = gnis_name if gnis_name
-      query[:waterDistrict] = water_district if water_district
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/analysisservices/watersourcerouteframework/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        routes = Parser.parse_source_routes(data)
-
-        break if routes.empty?
-
-        results.concat(routes)
-
-        break if routes.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/analysisservices/watersourcerouteframework/",
+        query: query
+      ) { |data| Parser.parse_source_routes(data) }
     end
 
     # Analyzes water source routes between two points.
@@ -136,119 +113,54 @@ module Cdss
     # @param [Float] ut_stream_mile Upper terminus stream mile.
     # @return [Array<RouteAnalysis>] Array of route analysis records.
     def get_source_route_analysis(lt_gnis_id:, lt_stream_mile:, ut_gnis_id:, ut_stream_mile:)
-      query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        ltGnisId: lt_gnis_id,
-        ltStreamMile: lt_stream_mile,
-        utGnisId: ut_gnis_id,
-        utStreamMile: ut_stream_mile
-      }
+      query = build_query(
+        {
+          ltGnisId: lt_gnis_id,
+          ltStreamMile: lt_stream_mile,
+          utGnisId: ut_gnis_id,
+          utStreamMile: ut_stream_mile
+        }
+      )
 
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/analysisservices/watersourcerouteanalysis/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        analyses = Parser.parse_route_analyses(data)
-
-        break if analyses.empty?
-
-        results.concat(analyses)
-
-        break if analyses.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/analysisservices/watersourcerouteanalysis/",
+        query: query
+      ) { |data| Parser.parse_route_analyses(data) }
     end
 
     private
 
     def fetch_call_analysis_wdid(wdid:, admin_no:, start_date:, end_date:)
-      query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        wdid: wdid,
-        adminNo: admin_no
-      }
+      query = build_query(
+        {
+          wdid: wdid,
+          adminNo: admin_no,
+          startDate: format_date(start_date),
+          endDate: format_date(end_date)
+        }
+      )
 
-      query[:'startDate'] = start_date.strftime('%m-%d-%Y') if start_date
-      query[:'endDate'] = end_date.strftime('%m-%d-%Y') if end_date
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/analysisservices/callanalysisbywdid/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        analyses = Parser.parse_call_analyses(data, type: :wdid)
-
-        break if analyses.empty?
-
-        results.concat(analyses)
-
-        break if analyses.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/analysisservices/callanalysisbywdid/",
+        query: query
+      ) { |data| Parser.parse_call_analyses(data, type: :wdid) }
     end
 
     def fetch_call_analysis_gnisid(gnis_id:, admin_no:, stream_mile:, start_date:, end_date:)
-      query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        gnisId: gnis_id,
-        adminNo: admin_no,
-        streamMile: stream_mile
-      }
+      query = build_query(
+        {
+          gnisId: gnis_id,
+          adminNo: admin_no,
+          streamMile: stream_mile,
+          startDate: format_date(start_date),
+          endDate: format_date(end_date)
+        }
+      )
 
-      query[:'startDate'] = start_date.strftime('%m-%d-%Y') if start_date
-      query[:'endDate'] = end_date.strftime('%m-%d-%Y') if end_date
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/analysisservices/callanalysisbygnisid/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        analyses = Parser.parse_call_analyses(data, type: :gnis)
-
-        break if analyses.empty?
-
-        results.concat(analyses)
-
-        break if analyses.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/analysisservices/callanalysisbygnisid/",
+        query: query
+      ) { |data| Parser.parse_call_analyses(data, type: :gnis) }
     end
   end
 end

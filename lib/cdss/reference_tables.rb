@@ -1,5 +1,3 @@
-require_relative 'utils'
-
 module Cdss
   # Provides access to reference tables from the CDSS API.
   # These tables provide metadata and lookup information for various CDSS resources.
@@ -41,50 +39,52 @@ module Cdss
     end
 
     def fetch_county_reference(county: nil)
-      query = build_query(county: county)
+      query = build_query({ county: county })
       fetch_reference_data("/referencetables/county/", query)
     end
 
     def fetch_waterdistricts_reference(division: nil, water_district: nil)
       query = build_query(
-        division: division,
-        waterDistrict: water_district
+        {
+          division: division,
+          waterDistrict: water_district
+        }
       )
       fetch_reference_data("/referencetables/waterdistrict/", query)
     end
 
     def fetch_waterdivisions_reference(division: nil)
-      query = build_query(division: division)
+      query = build_query({ division: division })
       fetch_reference_data("/referencetables/waterdivision/", query)
     end
 
     def fetch_managementdistricts_reference(management_district: nil)
-      query = build_query(managementDistrictName: management_district)
+      query = build_query({ managementDistrictName: management_district })
       fetch_reference_data("/referencetables/managementdistrict/", query)
     end
 
     def fetch_designatedbasins_reference(designated_basin: nil)
-      query = build_query(designatedBasinName: designated_basin)
+      query = build_query({ designatedBasinName: designated_basin })
       fetch_reference_data("/referencetables/designatedbasin/", query)
     end
 
     def fetch_telemetryparams_reference(param: nil)
-      query = build_query(parameter: param)
+      query = build_query({ parameter: param })
       fetch_reference_data("/referencetables/telemetryparams/", query)
     end
 
     def fetch_climateparams_reference(param: nil)
-      query = build_query(measType: param)
+      query = build_query({ measType: param })
       fetch_reference_data("/referencetables/climatestationmeastype/", query)
     end
 
     def fetch_divrectypes_reference(divrectype: nil)
-      query = build_query(divRecType: divrectype)
+      query = build_query({ divRecType: divrectype })
       fetch_reference_data("/referencetables/divrectypes/", query)
     end
 
     def fetch_flags_reference(flag: nil)
-      query = build_query(flag: flag)
+      query = build_query({ flag: flag })
       fetch_reference_data("/referencetables/stationflags/", query)
     end
 

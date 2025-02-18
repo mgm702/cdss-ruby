@@ -29,17 +29,18 @@ module Cdss
       return nil if value.nil?
       return value.join(',') if value.is_a?(Array)
       value = value.to_s
-      URI.encode_www_form_component(value)
     end
 
-    def build_query(params = {})
+    def build_query(params = {}, encode: false)
       base_query = {
         format: 'json'
       }
 
       params.each do |key, value|
         formatted_value = format_query_param(value)
-        base_query[key] = formatted_value if formatted_value
+        if formatted_value
+          base_query[key] = encode ? URI.encode_www_form_component(formatted_value) : formatted_value
+        end
       end
 
       base_query
@@ -47,7 +48,7 @@ module Cdss
 
     def format_date(date, format = '%m-%d-%Y')
       return nil unless date
-      date.strftime(format).gsub('-', '%2F')
+      date.strftime(format)
     end
 
     def parse_timestamp(datetime_str)
