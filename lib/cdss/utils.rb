@@ -27,15 +27,14 @@ module Cdss
 
     def format_query_param(value)
       return nil if value.nil?
-      return value.join('%2C+') if value.is_a?(Array)
+      return value.join(',') if value.is_a?(Array)
       value = value.to_s
-      value.include?(' ') ? value.split(' ').join('+') : value
+      URI.encode_www_form_component(value)
     end
 
     def build_query(params = {})
       base_query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds'
+        format: 'json'
       }
 
       params.each do |key, value|

@@ -4,6 +4,8 @@ module Cdss
   # This module includes functionality for retrieving active and historical administrative
   # calls based on various criteria such as division, location, and date ranges.
   module AdminCalls
+    include Utils
+
     # Fetches administrative calls based on various filtering criteria.
     #
     # @param [Integer, nil] division Water division to filter calls.
@@ -16,46 +18,21 @@ module Cdss
     # @example Fetch active calls for a division
     #   get_admin_calls(division: 1, active: true)
     def get_admin_calls(division: nil, location_wdid: nil, call_number: nil, start_date: nil, end_date: nil, active: true)
-      query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds'
-      }
-
-      query[:division] = division if division
-      query[:callNumber] = call_number if call_number
-      query[:'min-dateTimeSet'] = start_date.strftime('%m-%d-%Y') if start_date
-      query[:'max-dateTimeSet'] = end_date.strftime('%m-%d-%Y') if end_date
-
-      if location_wdid
-        query[:locationWdid] = location_wdid
-      end
+      query = build_query(
+        dateFormat: 'spaceSepToSeconds',
+        division: division,
+        callNumber: call_number,
+        'min-dateTimeSet': format_date(start_date),
+        'max-dateTimeSet': format_date(end_date),
+        locationWdid: location_wdid
+      )
 
       endpoint = active ? "administrativecalls/active/" : "administrativecalls/historical/"
-      page_size = 50000
-      page_index = 1
-      results = []
 
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = self.class.get("/#{endpoint}", {
-          query: query
-        })
-
-        data = handle_response(response)
-        calls = Parser.parse_admin_calls(data)
-
-        break if calls.empty?
-
-        results.concat(calls)
-
-        break if calls.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/#{endpoint}",
+        query: query
+      ) { |data| Parser.parse_admin_calls(data) }
     end
   end
 end
