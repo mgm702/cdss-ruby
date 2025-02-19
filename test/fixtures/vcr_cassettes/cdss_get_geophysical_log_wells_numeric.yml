@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/geophysicallogs/wells/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wellId=5419
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/geophysicallogs/wells/?county=&dateFormat=spaceSepToSeconds&designatedBasin=&division=&format=json&managementDistrict=&pageIndex=1&pageSize=50000&waterDistrict=&wellId=5419
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-11T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '599876'
+      - '589823'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '984'
       X-Result-Count:
       - '1'
       X-Version-Number:
@@ -45,17 +45,17 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 12 Nov 2024 04:38:49 GMT
+      - Wed, 19 Feb 2025 05:08:59 GMT
       Content-Length:
       - '1025'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2024-11-11
-        21:38:49","ResultList":[{"wellId":5419,"wellName":"JEFFCO OPEN SPACE","receipt":"0457070
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2025-02-18
+        22:09:00","ResultList":[{"wellId":5419,"wellName":"JEFFCO OPEN SPACE","receipt":"0457070
         ","permit":"54809-F","ecmcId":null,"logDate":null,"logType":"SP,R,G,Ca","logTop":null,"logBottom":852,"logSwl":512.00,"aquiferPicks":"ARAPAHOE,
         DENVER, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":852,"topPerforatedCasing":566,"bottomPerforatedCasing":786,"baseOfGrout":null,"wdid":null,"locnum":"SC00306927DC","division":1,"waterDistrict":7,"county":"JEFFERSON","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SE","section":"27","township":"3.0
         S","range":"69.0 W","pm":"S","coordsew":2000,"coordsewDir":"E","coordsns":1320,"coordsnsDir":"S","utmX":491605.6,"utmY":4400944.6,"latitude":39.758387,"longitude":-105.098002,"locationAccuracy":"Spotted
         from section lines","elevation":5560.0,"elevationAccuracy":null,"modified":"2001-10-31
         00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/5419"}]}'
-  recorded_at: Tue, 12 Nov 2024 04:37:39 GMT
+  recorded_at: Wed, 19 Feb 2025 05:07:24 GMT
 recorded_with: VCR 6.3.1

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/waterlevels/wellmeasurements/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wellId=149733
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/waterlevels/wellmeasurements/?dateFormat=spaceSepToSeconds&format=json&max-measurementDate=&min-measurementDate=&pageIndex=1&pageSize=50000&wellId=149733
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-11T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '599877'
+      - '589371'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '980'
       X-Result-Count:
       - '31'
       X-Version-Number:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 12 Nov 2024 04:32:11 GMT
+      - Wed, 19 Feb 2025 05:09:02 GMT
       Content-Length:
       - '13205'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":31,"ResultDateTime":"2024-11-11
-        21:32:11","ResultList":[{"wellId":149733,"wellName":"DB-110  ECCV L-12","division":1,"waterDistrict":2,"county":"ARAPAHOE","managementDistrict":null,"designatedBasin":null,"publication":"DENVER
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":31,"ResultDateTime":"2025-02-18
+        22:09:02","ResultList":[{"wellId":149733,"wellName":"DB-110  ECCV L-12","division":1,"waterDistrict":2,"county":"ARAPAHOE","managementDistrict":null,"designatedBasin":null,"publication":"DENVER
         BASIN","measurementDate":"2000-03-30 00:00:00","depthToWater":1138.0,"measuringPointAboveLandSurface":0.0,"depthWaterBelowLandSurface":1138.00,"elevationOfWater":4742.00,"delta":null,"dataSource":"DWR","published":"Yes","modified":"2008-06-13
         13:36:19"},{"wellId":149733,"wellName":"DB-110  ECCV L-12","division":1,"waterDistrict":2,"county":"ARAPAHOE","managementDistrict":null,"designatedBasin":null,"publication":"DENVER
         BASIN","measurementDate":"2007-07-01 00:00:00","depthToWater":1550.72,"measuringPointAboveLandSurface":0.0,"depthWaterBelowLandSurface":1550.72,"elevationOfWater":4329.28,"delta":412.72,"dataSource":"DWR","published":"Yes","modified":"2008-06-13
@@ -114,5 +114,5 @@ http_interactions:
         15:53:32"},{"wellId":149733,"wellName":"DB-110  ECCV L-12","division":1,"waterDistrict":2,"county":"ARAPAHOE","managementDistrict":null,"designatedBasin":null,"publication":"DENVER
         BASIN","measurementDate":"2023-03-31 00:00:00","depthToWater":null,"measuringPointAboveLandSurface":0.0,"depthWaterBelowLandSurface":null,"elevationOfWater":null,"delta":null,"dataSource":"DWR","published":"Yes","modified":"2023-10-06
         15:53:37"}]}'
-  recorded_at: Tue, 12 Nov 2024 04:31:01 GMT
+  recorded_at: Wed, 19 Feb 2025 05:07:26 GMT
 recorded_with: VCR 6.3.1

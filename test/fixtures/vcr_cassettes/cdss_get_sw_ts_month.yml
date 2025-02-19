@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/surfacewater/surfacewatertsmonth/?abbrev=PLACHECO&dateFormat=spaceSepToSeconds&format=json&max-calYear=2021&min-calYear=2021&pageIndex=1&pageSize=50000
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/surfacewater/surfacewatertsmonth/?abbrev=PLACHECO&dateFormat=spaceSepToSeconds&format=json&max-calYear=2021&min-calYear=2021&pageIndex=1&pageSize=50000&stationNum=&usgsSiteId=
     body:
       encoding: US-ASCII
       string: ''
@@ -29,9 +29,9 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-06T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '599250'
+      - '588264'
       X-Rate-Row-Limit:
       - 'null'
       X-Rate-Request-Limit:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Thu, 07 Nov 2024 03:37:24 GMT
+      - Wed, 19 Feb 2025 05:11:32 GMT
       Content-Length:
       - '3136'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":12,"ResultDateTime":"2024-11-06
-        20:37:24","ResultList":[{"stationNum":1482,"abbrev":"PLACHECO","usgsSiteId":"06701500","measType":"Streamflow","calYear":2021,"calMonNum":1,"minQCfs":51.00,"maxQCfs":72.00,"avgQCfs":61.87,"totalQAf":3804.35,"measCount":31,"dataSource":"DWR","modified":"2022-02-08
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":12,"ResultDateTime":"2025-02-18
+        22:11:33","ResultList":[{"stationNum":1482,"abbrev":"PLACHECO","usgsSiteId":"06701500","measType":"Streamflow","calYear":2021,"calMonNum":1,"minQCfs":51.00,"maxQCfs":72.00,"avgQCfs":61.87,"totalQAf":3804.35,"measCount":31,"dataSource":"DWR","modified":"2022-02-08
         12:46:36"},{"stationNum":1482,"abbrev":"PLACHECO","usgsSiteId":"06701500","measType":"Streamflow","calYear":2021,"calMonNum":2,"minQCfs":39.00,"maxQCfs":67.00,"avgQCfs":49.82,"totalQAf":2766.98,"measCount":28,"dataSource":"DWR","modified":"2022-02-08
         12:46:36"},{"stationNum":1482,"abbrev":"PLACHECO","usgsSiteId":"06701500","measType":"Streamflow","calYear":2021,"calMonNum":3,"minQCfs":39.00,"maxQCfs":41.00,"avgQCfs":40.06,"totalQAf":2463.51,"measCount":31,"dataSource":"DWR","modified":"2022-02-08
         12:46:36"},{"stationNum":1482,"abbrev":"PLACHECO","usgsSiteId":"06701500","measType":"Streamflow","calYear":2021,"calMonNum":4,"minQCfs":41.00,"maxQCfs":45.00,"avgQCfs":43.10,"totalQAf":2564.67,"measCount":30,"dataSource":"DWR","modified":"2022-02-08
@@ -64,5 +64,5 @@ http_interactions:
         17:21:21"},{"stationNum":1482,"abbrev":"PLACHECO","usgsSiteId":"06701500","measType":"Streamflow","calYear":2021,"calMonNum":11,"minQCfs":54.00,"maxQCfs":107.00,"avgQCfs":83.43,"totalQAf":4964.70,"measCount":30,"dataSource":"DWR","modified":"2023-12-08
         17:21:21"},{"stationNum":1482,"abbrev":"PLACHECO","usgsSiteId":"06701500","measType":"Streamflow","calYear":2021,"calMonNum":12,"minQCfs":137.00,"maxQCfs":262.00,"avgQCfs":192.26,"totalQAf":11821.66,"measCount":31,"dataSource":"DWR","modified":"2023-12-08
         17:21:21"}]}'
-  recorded_at: Thu, 07 Nov 2024 03:36:22 GMT
+  recorded_at: Wed, 19 Feb 2025 05:09:56 GMT
 recorded_with: VCR 6.3.1

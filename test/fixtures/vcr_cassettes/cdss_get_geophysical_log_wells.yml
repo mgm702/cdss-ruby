@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/geophysicallogs/wells/?county=DENVER&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/geophysicallogs/wells/?county=DENVER&dateFormat=spaceSepToSeconds&designatedBasin=&division=&format=json&managementDistrict=&pageIndex=1&pageSize=50000&waterDistrict=&wellId=
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-07T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '513278'
+      - '589402'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '981'
       X-Result-Count:
       - '100'
       X-Version-Number:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Fri, 08 Nov 2024 02:27:45 GMT
+      - Wed, 19 Feb 2025 05:09:02 GMT
       Content-Length:
-      - '89952'
+      - '89962'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":100,"ResultDateTime":"2024-11-07
-        19:27:45","ResultList":[{"wellId":3173,"wellName":"CHAMP 125 AMOCO E-1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":1960,"logSwl":null,"aquiferPicks":"ARAPAHOE,
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":100,"ResultDateTime":"2025-02-18
+        22:09:02","ResultList":[{"wellId":3173,"wellName":"CHAMP 125 AMOCO E-1","receipt":null,"permit":null,"ecmcId":null,"logDate":null,"logType":",SP,R,C,","logTop":null,"logBottom":1960,"logSwl":null,"aquiferPicks":"ARAPAHOE,
         LARAMIE-FOX HILLS, LOWER ARAPAHOE, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00206503CC","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SW","q160":"SW","section":"3","township":"2.0
         S","range":"65.0 W","pm":"S","coordsew":990,"coordsewDir":"W","coordsns":990,"coordsnsDir":"S","utmX":529447.3,"utmY":4416956.3,"latitude":39.902177,"longitude":-104.655526,"locationAccuracy":"Spotted
         from section lines","elevation":5439.0,"elevationAccuracy":null,"modified":"2006-09-28
@@ -222,12 +222,12 @@ http_interactions:
         DENVER, UPPER ARAPAHOE","wellDepth":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locnum":"SC00306609CB
         DWR1","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"9","township":"3.0
         S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":518094.1,"utmY":4405982.2,"latitude":39.803622,"longitude":-104.788640,"locationAccuracy":"Spotted
-        from quarters","elevation":5500.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3673"},{"wellId":3674,"wellName":"EASTWOOD
-        ESTATES - KA","receipt":"9002130","permit":"16179-F","ecmcId":null,"logDate":null,"logType":",G,","logTop":null,"logBottom":1700,"logSwl":310.00,"aquiferPicks":"DENVER,
+        from quarters","elevation":5500.0,"elevationAccuracy":null,"modified":null,"moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3673"},{"wellId":3674,"wellName":"DB-022
+        C  EASTWOOD ESTATES - KA","receipt":"9002130","permit":"16179-F","ecmcId":null,"logDate":null,"logType":",G,","logTop":null,"logBottom":1700,"logSwl":310.00,"aquiferPicks":"DENVER,
         UPPER ARAPAHOE","wellDepth":1200,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":505,"wdid":"0205721","locnum":"SC00306609CB
         DWR2","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"9","township":"3.0
-        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":517925.0,"utmY":4406052.0,"latitude":39.804254,"longitude":-104.790613,"locationAccuracy":"GPS","elevation":5310.0,"elevationAccuracy":null,"modified":"2019-08-01
-        09:22:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3674"},{"wellId":3675,"wellName":"EASTWOOD","receipt":"9002131","permit":"16180-F","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1178,"logSwl":170.00,"aquiferPicks":"ARAPAHOE,
+        S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":517925.0,"utmY":4406052.0,"latitude":39.804254,"longitude":-104.790613,"locationAccuracy":"GPS","elevation":5310.0,"elevationAccuracy":null,"modified":"2024-12-19
+        15:04:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/3674"},{"wellId":3675,"wellName":"EASTWOOD","receipt":"9002131","permit":"16180-F","ecmcId":null,"logDate":null,"logType":",SP,R,","logTop":null,"logBottom":1178,"logSwl":170.00,"aquiferPicks":"ARAPAHOE,
         DENVER, UPPER ARAPAHOE","wellDepth":1182,"topPerforatedCasing":630,"bottomPerforatedCasing":1170,"baseOfGrout":null,"wdid":"0205726","locnum":"SC00306609CD","division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"SE","q160":"SW","section":"9","township":"3.0
         S","range":"66.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":518496.1,"utmY":4405581.7,"latitude":39.800005,"longitude":-104.783955,"locationAccuracy":"Spotted
         from quarters","elevation":5320.0,"elevationAccuracy":null,"modified":"2016-08-19
@@ -525,5 +525,5 @@ http_interactions:
         S","range":"67.0 W","pm":"S","coordsew":null,"coordsewDir":null,"coordsns":null,"coordsnsDir":null,"utmX":509067.0,"utmY":4386243.0,"latitude":39.625911,"longitude":-104.894363,"locationAccuracy":"User
         supplied","elevation":5633.0,"elevationAccuracy":"USGS 3DEP","modified":"2023-05-04
         13:51:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/GeophysicalLogs/155330"}]}'
-  recorded_at: Fri, 08 Nov 2024 02:26:41 GMT
+  recorded_at: Wed, 19 Feb 2025 05:07:26 GMT
 recorded_with: VCR 6.3.1

@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-11T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '599943'
+      - '589829'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '987'
       X-Result-Count:
       - '4'
       X-Version-Number:
@@ -45,15 +45,15 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 12 Nov 2024 04:07:10 GMT
+      - Wed, 19 Feb 2025 05:08:59 GMT
       Content-Length:
       - '909'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":4,"ResultDateTime":"2024-11-11
-        21:07:10","ResultList":[{"wellId":5419,"wellName":"JEFFCO OPEN SPACE","aquifer":"ARAPAHOE","gLogTopDepth":null,"gLogBaseDepth":null,"gLogTopElev":null,"gLogBaseElev":null,"gLogThickness":213,"comment":null,"modified":null},{"wellId":5419,"wellName":"JEFFCO
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":4,"ResultDateTime":"2025-02-18
+        22:08:59","ResultList":[{"wellId":5419,"wellName":"JEFFCO OPEN SPACE","aquifer":"ARAPAHOE","gLogTopDepth":null,"gLogBaseDepth":null,"gLogTopElev":null,"gLogBaseElev":null,"gLogThickness":213,"comment":null,"modified":null},{"wellId":5419,"wellName":"JEFFCO
         OPEN SPACE","aquifer":"DENVER","gLogTopDepth":50.0,"gLogBaseDepth":206.0,"gLogTopElev":5510,"gLogBaseElev":5354,"gLogThickness":18,"comment":null,"modified":null},{"wellId":5419,"wellName":"JEFFCO
         OPEN SPACE","aquifer":"LOWER ARAPAHOE","gLogTopDepth":536.0,"gLogBaseDepth":786.0,"gLogTopElev":5024,"gLogBaseElev":4774,"gLogThickness":144,"comment":null,"modified":null},{"wellId":5419,"wellName":"JEFFCO
         OPEN SPACE","aquifer":"UPPER ARAPAHOE","gLogTopDepth":279.0,"gLogBaseDepth":464.0,"gLogTopElev":5281,"gLogBaseElev":5096,"gLogThickness":69,"comment":null,"modified":null}]}'
-  recorded_at: Tue, 12 Nov 2024 04:06:00 GMT
+  recorded_at: Wed, 19 Feb 2025 05:07:23 GMT
 recorded_with: VCR 6.3.1
