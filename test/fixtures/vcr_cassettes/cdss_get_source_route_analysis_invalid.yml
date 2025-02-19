@@ -33,13 +33,13 @@ http_interactions:
       X-Rate-Reset-Date:
       - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '580133'
+      - '476442'
       X-Rate-Row-Limit:
-      - '600000'
+      - 'null'
       X-Rate-Request-Limit:
-      - '1000'
+      - 'null'
       X-Rate-Request-Remaining:
-      - '951'
+      - 'null'
       X-Result-Count:
       - '0'
       X-Version-Number:
@@ -47,9 +47,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 18 Feb 2025 05:39:09 GMT
+      - Tue, 18 Feb 2025 05:48:46 GMT
     body:
       encoding: UTF-8
       string: This URL is properly formatted, but returns zero records from CDSS.
-  recorded_at: Tue, 18 Feb 2025 05:37:35 GMT
+  recorded_at: Tue, 18 Feb 2025 05:47:11 GMT
 recorded_with: VCR 6.3.1

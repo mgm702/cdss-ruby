@@ -1,5 +1,3 @@
-require_relative 'utils'
-
 module Cdss
   module Structures
     include Utils

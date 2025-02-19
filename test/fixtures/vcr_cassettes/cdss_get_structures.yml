@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/structures/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&units=miles&wdid=0100578
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/structures/?format=json&pageIndex=1&pageSize=50000&units=miles&wdid=0100578
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2025-02-12T00:00:00-07:00"'
+      - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '511799'
+      - '580132'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '950'
       X-Result-Count:
       - '1'
       X-Version-Number:
@@ -45,17 +45,15 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Thu, 13 Feb 2025 02:22:35 GMT
+      - Tue, 18 Feb 2025 05:43:22 GMT
       Content-Length:
-      - '932'
+      - '946'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2025-02-12
-        19:22:35","ResultList":[{"wdid":"0100578","structureName":"GEORGE WOOD DITCH","associatedAkas":null,"ciuCode":"A","structureType":"DITCH","waterSource":"KIOWA
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2025-02-17T22:43:22.9825633-07:00","ResultList":[{"wdid":"0100578","structureName":"GEORGE
+        WOOD DITCH","associatedAkas":null,"ciuCode":"A","structureType":"DITCH","waterSource":"KIOWA
         CREEK","gnisId":"00201758","streamMile":99.66,"associatedCaseNumbers":"CA0433","associatedPermits":null,"associatedMeters":null,"associatedContacts":"HARMONY
-        LAND & CATTLE LLC (SPILLER, DECKY)","porStart":"2017-10-31 00:00:00","porEnd":"2023-06-30
-        00:00:00","division":1,"waterDistrict":1,"subdistrict":null,"county":"ELBERT","designatedBasinName":"KIOWA-BIJOU","managementDistrictName":null,"pm":"S","township":"9.0
-        S","range":"63.0 W","section":"6","q10":null,"q40":"NW","q160":"NW","coordsew":526,"coordsewDir":"W","coordsns":1008,"coordsnsDir":"N","utmX":543592.3,"utmY":4350221.0,"latdecdeg":39.300281,"longdecdeg":-104.494448,"locationAccuracy":"Digitized","modified":"2010-03-04
-        07:36:20"}]}'
-  recorded_at: Thu, 13 Feb 2025 02:21:08 GMT
+        LAND & CATTLE LLC (SPILLER, DECKY)","porStart":"2017-10-31T00:00:00","porEnd":"2023-06-30T00:00:00","division":1,"waterDistrict":1,"subdistrict":null,"county":"ELBERT","designatedBasinName":"KIOWA-BIJOU","managementDistrictName":null,"pm":"S","township":"9.0
+        S","range":"63.0 W","section":"6","q10":null,"q40":"NW","q160":"NW","coordsew":526,"coordsewDir":"W","coordsns":1008,"coordsnsDir":"N","utmX":543592.3,"utmY":4350221.0,"latdecdeg":39.300281,"longdecdeg":-104.494448,"locationAccuracy":"Digitized","modified":"2010-03-04T07:36:20"}]}'
+  recorded_at: Tue, 18 Feb 2025 05:41:48 GMT
 recorded_with: VCR 6.3.1

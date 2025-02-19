@@ -1,9 +1,11 @@
 require 'test_helper'
-require 'pry'
 
 class Cdss::TestStructuresApi < Minitest::Test
   def setup
     @client = Cdss::Client.new
+    Cdss::Models::Structure
+    Cdss::Models::DiversionRecord
+    Cdss::Models::WaterClass
   end
 
   def test_get_structures
@@ -147,7 +149,6 @@ class Cdss::TestStructuresApi < Minitest::Test
     VCR.use_cassette('cdss_get_water_classes') do
       classes = @client.get_water_classes(wdid: '0100578')
 
-      binding.pry
       assert_kind_of Array, classes
       refute_empty classes
 

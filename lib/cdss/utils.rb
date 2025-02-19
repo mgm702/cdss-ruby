@@ -46,9 +46,10 @@ module Cdss
       base_query
     end
 
-    def format_date(date, format = '%m-%d-%Y')
+    def format_date(date, special_format: false)
       return nil unless date
-      date.strftime(format)
+      date = date.strftime('%m-%d-%Y')
+      special_format ? date.gsub('-', '%2F') : date
     end
 
     def parse_timestamp(datetime_str)
