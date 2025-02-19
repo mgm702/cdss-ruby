@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/waterrights/transaction/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&units=miles&wdid=1103985
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/waterrights/transaction/?county=&dateFormat=spaceSepToSeconds&division=&format=json&pageIndex=1&pageSize=50000&units=miles&waterDistrict=&wdid=1103985
     body:
       encoding: US-ASCII
       string: ''
@@ -29,9 +29,9 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-19T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '359532'
+      - '585287'
       X-Rate-Row-Limit:
       - 'null'
       X-Rate-Request-Limit:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Wed, 20 Nov 2024 02:12:27 GMT
+      - Wed, 19 Feb 2025 05:26:30 GMT
       Content-Length:
       - '1365'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2024-11-19
-        19:12:28","ResultList":[{"WaterRightNum":71874,"wdid":"1103985","waterRightName":"LOWER
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":1,"ResultDateTime":"2025-02-18
+        22:26:31","ResultList":[{"WaterRightNum":71874,"wdid":"1103985","waterRightName":"LOWER
         W TENNESSEE LAKE","structureType":"Reservoir","permit":null,"waterSource":"WEST
         TENNESSEE CREEK","streamMile":7.64,"gnisId":"00179809","division":2,"waterDistrict":11,"county":"LAKE","q10":null,"q40":"NE","q160":"SW","section":"15","township":"8.0
         S","range":"81.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":376673.7,"utmY":4356898.7,"latitude":39.352747,"longitude":-106.431342,"locationAccuracy":"Spotted
@@ -59,5 +59,5 @@ http_interactions:
         00:00:00","appropriationDate":"1975-09-10 00:00:00","signatureDate":null,"adminNumber":45908.00000,"orderNumber":0,"priorityNumber":null,"caseNumber":"W4354","caseNumberUrl":"https://dnrweblink.state.co.us/dwr/Search.aspx?searchcommand={[Water
         Court]:[case number]=\"W4354\"}&{[Water Court]:[division]=2}","decreedUses":"M","maxDecreedRate":null,"totalVolumetricLimit":22.0000,"seasonalLimitation":"No","associatedWdid":null,"planType":null,"planWdid":null,"comments":"CWCB
         MINIMUM LAKE LEVEL","lastModified":"1996-12-03 00:00:00","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/Transactions/71874"}]}'
-  recorded_at: Wed, 20 Nov 2024 02:11:07 GMT
+  recorded_at: Wed, 19 Feb 2025 05:24:55 GMT
 recorded_with: VCR 6.3.1

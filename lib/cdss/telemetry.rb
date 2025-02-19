@@ -1,5 +1,7 @@
 module Cdss
   module Telemetry
+    include Utils
+
     # Fetches telemetry station data based on filters.
     #
     # This method allows querying telemetry stations by various attributes,
@@ -25,24 +27,21 @@ module Cdss
       query = {
         format: 'json',
         dateFormat: 'spaceSepToSeconds',
-        includeThirdParty: true
+        includeThirdParty: true,
+        abbrev: abbrev,
+        county: county,
+        division: division,
+        gnisId: gnis_id,
+        usgsStationId: usgs_id,
+        waterDistrict: water_district,
+        wdid: wdid
       }
-
-      query[:abbrev] = abbrev if abbrev
-      query[:county] = county if county
-      query[:division] = division if division
-      query[:gnisId] = gnis_id if gnis_id
-      query[:usgsStationId] = usgs_id if usgs_id
-      query[:waterDistrict] = water_district if water_district
-      query[:wdid] = wdid if wdid
 
       if aoi
         if aoi.is_a?(Hash) && aoi[:latitude] && aoi[:longitude]
-          query[:longitude] = aoi[:longitude]
-          query[:latitude] = aoi[:latitude]
+          query.merge!(longitude: aoi[:longitude], latitude: aoi[:latitude])
         elsif aoi.is_a?(Array) && aoi.count == 2
-          query[:longitude] = aoi[0]
-          query[:latitude] = aoi[1]
+          query.merge!(longitude: aoi[0], latitude: aoi[1])
         else
           raise ArgumentError, "Invalid 'aoi' parameter"
         end
@@ -50,31 +49,10 @@ module Cdss
         query[:units] = 'miles'
       end
 
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/telemetrystations/telemetrystation/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        stations = Parser.parse_stations(data)
-
-        break if stations.empty?
-
-        results.concat(stations)
-
-        break if stations.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/telemetrystations/telemetrystation/",
+        query: query
+      ) { |data| Parser.parse_stations(data) }
     end
 
     # Fetches telemetry time series data for a specific station.
@@ -106,34 +84,13 @@ module Cdss
         includeThirdParty: include_third_party.to_s
       }
 
-      query[:startDate] = start_date.strftime('%m-%d-%Y') if start_date
-      query[:endDate] = end_date.strftime('%m-%d-%Y') if end_date
+      query[:startDate] = start_date&.strftime('%m-%d-%Y') if start_date
+      query[:endDate] = end_date&.strftime('%m-%d-%Y') if end_date
 
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/telemetrystations/telemetrytimeseries#{timescale}/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        readings = Parser.parse_readings(data, timescale: timescale.to_sym)
-
-        break if readings.empty?
-
-        results.concat(readings)
-
-        break if readings.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/telemetrystations/telemetrytimeseries#{timescale}/",
+        query: query
+      ) { |data| Parser.parse_readings(data, timescale: timescale.to_sym) }
     end
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/waterrights/netamount/?dateFormat=spaceSepToSeconds&format=json&latitude=39.7392&longitude=-104.9903&pageIndex=1&pageSize=50000&radius=10&units=miles
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/waterrights/netamount/?county=&dateFormat=spaceSepToSeconds&division=&format=json&latitude=39.7392&longitude=-104.9903&pageIndex=1&pageSize=50000&radius=10&units=miles&waterDistrict=&wdid=
     body:
       encoding: US-ASCII
       string: ''
@@ -29,9 +29,9 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-19T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '417752'
+      - '585288'
       X-Rate-Row-Limit:
       - 'null'
       X-Rate-Request-Limit:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Wed, 20 Nov 2024 02:00:02 GMT
+      - Wed, 19 Feb 2025 05:26:30 GMT
       Content-Length:
-      - '3320643'
+      - '3320855'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":2950,"ResultDateTime":"2024-11-19
-        19:00:03","ResultList":[{"waterRightNetAmtNum":1468175,"wdid":"0200504","structureName":"CHEROKEE
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":2950,"ResultDateTime":"2025-02-18
+        22:26:30","ResultList":[{"waterRightNetAmtNum":1468175,"wdid":"0200504","structureName":"CHEROKEE
         EXCHANGE PIPELINE","structureType":"Pipeline","waterSource":"SOUTH PLATTE
         RIVER","gnisId":"00201759","streamMile":235.68,"division":1,"waterDistrict":2,"county":"ADAMS","q10":"SW","q40":"SE","q160":"SW","section":"1","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":503993.0,"utmY":4407078.0,"latitude":39.813678,"longitude":-104.953358,"locationAccuracy":"Digitized","adjudicationDate":"2002-12-31
@@ -261,38 +261,38 @@ http_interactions:
         00:00:00","priorAdjudicationDate":"1930-06-16 00:00:00","appropriationDate":"1921-07-04
         00:00:00","adminNumber":29386.26117,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA3635","decreedUses":"1238AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":24.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"591
         DENVER SYS EXCH SEE DECREE FOR LIMITS; EXCH DOESN''T HAVE TO BE FROM METRO
-        SEWER","lastModified":"2021-07-02 13:47:44","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1804602"},{"waterRightNetAmtNum":1935205,"wdid":"0200802","structureName":"BURLINGTON
+        SEWER","lastModified":"2021-07-02 13:47:44","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1804602"},{"waterRightNetAmtNum":1974208,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1861-06-29
         00:00:00","adminNumber":4198.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":4.5360,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO FISHER D THORNTON CHNG USE 11/07/1990","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935205"},{"waterRightNetAmtNum":1935206,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO FISHER D THORNTON CHNG USE 11/07/1990","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974208"},{"waterRightNetAmtNum":1974209,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1861-11-01
         00:00:00","adminNumber":4323.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":20.9704,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO CLEAR CR PLATTE RIVER D; AMOUNTS CORRECTED IN 02CW0266","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935206"},{"waterRightNetAmtNum":1935207,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO CLEAR CR PLATTE RIVER D; AMOUNTS CORRECTED IN 02CW0266","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974209"},{"waterRightNetAmtNum":1974210,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-14
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1862-06-02
         00:00:00","adminNumber":4536.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA45791","decreedUses":"1","netAbsolute":3.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"111ASP
-        210 REITHMAN DITCH WTR","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935207"},{"waterRightNetAmtNum":1935208,"wdid":"0200802","structureName":"BURLINGTON
+        210 REITHMAN DITCH WTR","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974210"},{"waterRightNetAmtNum":1974211,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1883-04-28
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1863-03-15
         00:00:00","adminNumber":4822.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0084","decreedUses":"2A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":2.6500,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"Yes","comments":"ALTERNATE
-        POINT TO FARMERS GARDNERS DITCH","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935208"},{"waterRightNetAmtNum":1935209,"wdid":"0200802","structureName":"BURLINGTON
+        POINT TO FARMERS GARDNERS DITCH","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974211"},{"waterRightNetAmtNum":1974212,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1883-04-28
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1863-03-15
         00:00:00","adminNumber":4822.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0084","decreedUses":"2A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":698.8500,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"Yes","comments":"ALTERNATE
-        POINT TO FARMERS GARDNERS DITCH","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935209"},{"waterRightNetAmtNum":1935210,"wdid":"0200802","structureName":"BURLINGTON
+        POINT TO FARMERS GARDNERS DITCH","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974212"},{"waterRightNetAmtNum":1974213,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1863-11-05
         00:00:00","adminNumber":5057.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":5.6447,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO COLO AG D; THORNTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935210"},{"waterRightNetAmtNum":1935211,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO COLO AG D; THORNTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974213"},{"waterRightNetAmtNum":1974214,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1883-04-28
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1864-04-01
@@ -317,17 +317,17 @@ http_interactions:
         OF USE (WELLINGTON RESERVOIR COMPANY SHARES), SACWSD CHANGE OF USE (WELLINGTON
         RESERVOIR COMPANY SHARES), BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE
         OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE
-        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935211"},{"waterRightNetAmtNum":1935212,"wdid":"0200802","structureName":"BURLINGTON
+        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974214"},{"waterRightNetAmtNum":1974215,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1867-03-05
         00:00:00","adminNumber":6273.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":8.2914,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO COLO AG D; THORNTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935212"},{"waterRightNetAmtNum":1935215,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO COLO AG D; THORNTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974215"},{"waterRightNetAmtNum":1974218,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1874-04-05
         00:00:00","adminNumber":8861.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":8.7307,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO COLO AG D; THORNTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935215"},{"waterRightNetAmtNum":1935226,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO COLO AG D; THORNTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974218"},{"waterRightNetAmtNum":1974229,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1893-07-08
         00:00:00","priorAdjudicationDate":"1883-04-28 00:00:00","appropriationDate":"1885-11-20
@@ -346,13 +346,13 @@ http_interactions:
         OF USE, THORNTON CHANGE OF USE, SACWSD CHANGE OF USE (BURLINGTON DITCH, RESERVOIR
         & LAND COMPANY SHARES), SACWSD CHANGE OF USE (BURLINGTON DITCH, RESERVOIR
         & LAND COMPANY SHARES), BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE
-        OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, ABANDONED","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935226"},{"waterRightNetAmtNum":1935235,"wdid":"0200802","structureName":"BURLINGTON
+        OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, ABANDONED","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974229"},{"waterRightNetAmtNum":1974238,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1907-11-28
         00:00:00","adminNumber":21150.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"1","netAbsolute":300.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"288
-        DENVER HUDSON CNL WTR","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935235"},{"waterRightNetAmtNum":1935236,"wdid":"0200802","structureName":"BURLINGTON
+        DENVER HUDSON CNL WTR","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974238"},{"waterRightNetAmtNum":1974239,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1908-03-09
@@ -360,7 +360,7 @@ http_interactions:
         03CW0320, 02CW0403, CA54658","decreedUses":"12ARX","netAbsolute":565.2000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"289
         86CW402/403 O BRIAN DITCH WTR, CHNG USE & LOC 5/11/2009 ECCV WSD ET AL, CHNG
         USE & LOC 5/11/2009 ECCV WSD ET AL, BRIGHTON CHANGE OF USE, BRIGHTON CHANGE
-        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935236"},{"waterRightNetAmtNum":1935238,"wdid":"0200802","structureName":"BURLINGTON
+        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974239"},{"waterRightNetAmtNum":1974241,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1909-01-13
@@ -369,117 +369,117 @@ http_interactions:
         STORAGE IN BARR LK ENL AND REFILL, CHNG USE & LOC 5/11/2009 ECCV WSD ET AL,
         CHNG USE & LOC 5/11/2009 ECCV WSD ET AL, BRIGHTON CHANGE OF USE, BRIGHTON
         CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE
-        OF USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935238"},{"waterRightNetAmtNum":1935239,"wdid":"0200802","structureName":"BURLINGTON
+        OF USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974241"},{"waterRightNetAmtNum":1974242,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1909-05-29
         00:00:00","adminNumber":21698.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":200.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"406
-        STORAGE IN MILTON RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935239"},{"waterRightNetAmtNum":1935240,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN MILTON RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974242"},{"waterRightNetAmtNum":1974243,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1910-11-21
         00:00:00","adminNumber":22239.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":500.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"325
-        STORAGE IN PROSPECT RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935240"},{"waterRightNetAmtNum":1935241,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN PROSPECT RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974243"},{"waterRightNetAmtNum":1974244,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1911-03-17
         00:00:00","adminNumber":22355.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":400.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"326
-        STORAGE IN HORSE CREEK RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935241"},{"waterRightNetAmtNum":1935243,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN HORSE CREEK RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974244"},{"waterRightNetAmtNum":1974246,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1918-01-28
         00:00:00","adminNumber":25050.24864,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":150.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"423
-        STORAGE IN OLDS RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935243"},{"waterRightNetAmtNum":1935244,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN OLDS RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974246"},{"waterRightNetAmtNum":1974247,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1919-06-01
         00:00:00","adminNumber":25353.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":20.2500,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"426
-        STORAGE IN IRELAND NO 1 RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935244"},{"waterRightNetAmtNum":1935245,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN IRELAND NO 1 RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974247"},{"waterRightNetAmtNum":1974248,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1921-06-05
         00:00:00","adminNumber":26088.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":20.2500,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"428
-        STORAGE IN IRELAND NO 5 RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935245"},{"waterRightNetAmtNum":1935247,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN IRELAND NO 5 RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974248"},{"waterRightNetAmtNum":1974250,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1922-06-15
         00:00:00","adminNumber":26463.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":150.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"423
-        STORAGE IN OLDS RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935247"},{"waterRightNetAmtNum":1935248,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN OLDS RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974250"},{"waterRightNetAmtNum":1974251,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1922-07-20
         00:00:00","adminNumber":26498.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":450.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"409
-        STORAGE IN HORSE CREEK RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935248"},{"waterRightNetAmtNum":1935250,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN HORSE CREEK RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974251"},{"waterRightNetAmtNum":1974253,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1979-12-31
         00:00:00","priorAdjudicationDate":"1978-12-31 00:00:00","appropriationDate":"1979-12-31
         00:00:00","adminNumber":47481.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0164,
         99CW0078, 79CW0374","decreedUses":"2Q","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":13.0000,"netApexConditional":187.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"METRO
         SEWER EX 88CW401/02/03/87CW322, METRO SEWER EXCH MADE ABS 07/01/03, METRO
-        PUMPS EX 88CW401/02/03/87CW322, METRO SEWER EXCH MADE ABSOLUTE","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935250"},{"waterRightNetAmtNum":1935252,"wdid":"0200802","structureName":"BURLINGTON
+        PUMPS EX 88CW401/02/03/87CW322, METRO SEWER EXCH MADE ABSOLUTE","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974253"},{"waterRightNetAmtNum":1974255,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1984-12-31
         00:00:00","priorAdjudicationDate":"1983-12-31 00:00:00","appropriationDate":"1984-02-01
         00:00:00","adminNumber":48974.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"20CW3129,
         05CW0238, 84CW0090","decreedUses":"123458AR","netAbsolute":648.9000,"netConditional":251.1000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"O
         BRIAN DITCH WTR 94CW272, MADE ABSOLUTE; CLERICAL ERRORS CORRECTED IN AMENDED
-        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935252"},{"waterRightNetAmtNum":1935253,"wdid":"0200802","structureName":"BURLINGTON
+        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974255"},{"waterRightNetAmtNum":1974256,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1984-12-31
         00:00:00","priorAdjudicationDate":"1983-12-31 00:00:00","appropriationDate":"1984-02-01
         00:00:00","adminNumber":48974.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"20CW3129,
         05CW0238, 84CW0090","decreedUses":"123458AR","netAbsolute":10000.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"O
         BRIAN DITCH WTR 94CW272, MADE ABSOLUTE; CLERICAL ERRORS CORRECTED IN AMENDED
-        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935253"},{"waterRightNetAmtNum":1935254,"wdid":"0200802","structureName":"BURLINGTON
+        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974256"},{"waterRightNetAmtNum":1974257,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1986-12-31
         00:00:00","priorAdjudicationDate":"1985-12-31 00:00:00","appropriationDate":"1984-11-24
         00:00:00","adminNumber":49673.49271,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"W8440","decreedUses":"0","netAbsolute":20.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN FORD WATER RECHARGE AREA","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935254"},{"waterRightNetAmtNum":1935255,"wdid":"0200802","structureName":"BURLINGTON
+        IN FORD WATER RECHARGE AREA","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974257"},{"waterRightNetAmtNum":1974258,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1988-12-31
         00:00:00","priorAdjudicationDate":"1987-12-31 00:00:00","appropriationDate":"1979-12-31
         00:00:00","adminNumber":50403.47481,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"88CW0261","decreedUses":"2Q","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":200.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"METRO
-        SEWER EX 88CW401/02/03/87CW322, METRO PUMPS EX 88CW401/02/03/87CW322","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935255"},{"waterRightNetAmtNum":1935256,"wdid":"0200802","structureName":"BURLINGTON
+        SEWER EX 88CW401/02/03/87CW322, METRO PUMPS EX 88CW401/02/03/87CW322","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974258"},{"waterRightNetAmtNum":1974259,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1992-12-31
         00:00:00","priorAdjudicationDate":"1991-12-31 00:00:00","appropriationDate":"1988-10-10
         00:00:00","adminNumber":51864.50687,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"92CW0164,
         02CW0051","decreedUses":"02X","netAbsolute":80.0000,"netConditional":35.0000,"netApexAbsolute":0.0000,"netApexConditional":100.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN DAHLIA PIT, DAHLIA PIT EXCH, STORAGE IN DAHLIA PIT MADE ABS 12/01/05","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935256"},{"waterRightNetAmtNum":1935257,"wdid":"0200802","structureName":"BURLINGTON
+        IN DAHLIA PIT, DAHLIA PIT EXCH, STORAGE IN DAHLIA PIT MADE ABS 12/01/05","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974259"},{"waterRightNetAmtNum":1974260,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1994-12-31
         00:00:00","priorAdjudicationDate":"1993-12-31 00:00:00","appropriationDate":"1907-04-12
         00:00:00","adminNumber":52595.20920,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"94CW0299","decreedUses":"0","netAbsolute":60.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN LORD RES NO 4","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935257"},{"waterRightNetAmtNum":1935258,"wdid":"0200802","structureName":"BURLINGTON
+        IN LORD RES NO 4","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974260"},{"waterRightNetAmtNum":1974261,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1995-12-31
         00:00:00","priorAdjudicationDate":"1994-12-31 00:00:00","appropriationDate":"1995-11-27
         00:00:00","adminNumber":53291.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"95CW0226","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":50.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
-        FM AURORA SAND CR SEWER, EXCH FM METRO SEWER","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935258"},{"waterRightNetAmtNum":1935259,"wdid":"0200802","structureName":"BURLINGTON
+        FM AURORA SAND CR SEWER, EXCH FM METRO SEWER","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974261"},{"waterRightNetAmtNum":1974262,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1991-12-31
         00:00:00","priorAdjudicationDate":"1990-12-31 00:00:00","appropriationDate":"1996-08-19
         00:00:00","adminNumber":53557.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"91CW0126","decreedUses":"0","netAbsolute":0.0000,"netConditional":400.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN NORTH DAHILA PIT, STORAGE IN SPRAT-PLATTE EAST PIT","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935259"},{"waterRightNetAmtNum":1935261,"wdid":"0200802","structureName":"BURLINGTON
+        IN NORTH DAHILA PIT, STORAGE IN SPRAT-PLATTE EAST PIT","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974262"},{"waterRightNetAmtNum":1974264,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2001-12-31
         00:00:00","priorAdjudicationDate":"2000-12-31 00:00:00","appropriationDate":"2001-12-28
         00:00:00","adminNumber":55514.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"01CW0286,
         01CW0285","decreedUses":"2","netAbsolute":0.0000,"netConditional":70.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"NO
-        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935261"},{"waterRightNetAmtNum":1935262,"wdid":"0200802","structureName":"BURLINGTON
+        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974264"},{"waterRightNetAmtNum":1974265,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2001-12-31
         00:00:00","priorAdjudicationDate":"2000-12-31 00:00:00","appropriationDate":"2001-12-28
         00:00:00","adminNumber":55514.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"01CW0286,
         01CW0285","decreedUses":"2","netAbsolute":0.0000,"netConditional":5000.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"NO
-        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935262"},{"waterRightNetAmtNum":1935263,"wdid":"0200802","structureName":"BURLINGTON
+        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974265"},{"waterRightNetAmtNum":1974266,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2002-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"2002-05-30
@@ -488,13 +488,13 @@ http_interactions:
         FM METRO SEWER LTD 3000 AF, EXCH FM CAT/MILLER RES LTD 3000 AF, EXCH FM HAZELTINE/TANABE
         RES LTD 3000 AF, MADE ABSOLUTE; EXCH FM METRO SEWER 558.7 AF ABSOLUTE, MADE
         ABSOLUTE; EXCH FM CAT/MILLER RES 558.7 AF ABSOLUTE, MADE ABSOLUTE; EXCH FM
-        HAZELTINE/TANABE RES 558.7 AF ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935263"},{"waterRightNetAmtNum":1935264,"wdid":"0200802","structureName":"BURLINGTON
+        HAZELTINE/TANABE RES 558.7 AF ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974266"},{"waterRightNetAmtNum":1974267,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2003-12-31
         00:00:00","priorAdjudicationDate":"2002-12-31 00:00:00","appropriationDate":"2002-05-30
         00:00:00","adminNumber":55882.55667,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"15CW3065,
         02CW0403","decreedUses":"1234589AR","netAbsolute":462.5000,"netConditional":437.5000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"MADE
-        ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935264"},{"waterRightNetAmtNum":1935265,"wdid":"0200802","structureName":"BURLINGTON
+        ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974267"},{"waterRightNetAmtNum":1974268,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1996-12-31
         00:00:00","priorAdjudicationDate":"1995-12-31 00:00:00","appropriationDate":"2003-05-23
@@ -503,13 +503,13 @@ http_interactions:
         OF THORNTON POUDRE WTR, EXCH FM N DAHLIA PIT, EXCH FM WEST SPRATT PIT, EXCH
         FM COOLEY WEST PIT, EXCH FM COOLEY EAST PIT, EXCH FM HAMMER PIT, EXCH FM ROGERS
         PIT, EXCH FM DOREINGSFLED PIT, EXCH FM FT LUPTON PIT, EXCH FM COOLEY WEST
-        PIT","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935265"},{"waterRightNetAmtNum":1935266,"wdid":"0200802","structureName":"BURLINGTON
+        PIT","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974268"},{"waterRightNetAmtNum":1974269,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2004-12-31
         00:00:00","priorAdjudicationDate":"2003-12-31 00:00:00","appropriationDate":"2004-12-29
         00:00:00","adminNumber":56611.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"04CW0350","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":100.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
-        FM METRO SEWER, EXCH FM CONFLUENCE OF SOUTH PLATTE & SAND CREEK","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935266"},{"waterRightNetAmtNum":1935267,"wdid":"0200802","structureName":"BURLINGTON
+        FM METRO SEWER, EXCH FM CONFLUENCE OF SOUTH PLATTE & SAND CREEK","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974269"},{"waterRightNetAmtNum":1974270,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2007-12-31
         00:00:00","priorAdjudicationDate":"2006-12-31 00:00:00","appropriationDate":"2007-05-31
@@ -517,7 +517,7 @@ http_interactions:
         FM FARMERS IND D FRICO/ECCV RETURN, EXCH FM GILCREST RESERVOIR, EXCH FM HEWES
         COOK D FRICO/ECCV RETURN, EXCH FM CONFLUENCE SOUTH PLATTE & CACHE LA POUDRE,
         EXCH FM 70 RANCH AUG IMPACT REACH, EXCH FM WELDON VALLEY CNL FRICO/ECCV RETURN,
-        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935267"},{"waterRightNetAmtNum":1935268,"wdid":"0200802","structureName":"BURLINGTON
+        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974270"},{"waterRightNetAmtNum":1974271,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2007-12-31
         00:00:00","priorAdjudicationDate":"2006-12-31 00:00:00","appropriationDate":"2007-05-31
@@ -525,7 +525,7 @@ http_interactions:
         FM FARMERS IND D FRICO/ECCV RETURN, EXCH FM GILCREST RESERVOIR, EXCH FM HEWES
         COOK D FRICO/ECCV RETURN, EXCH FM CONFLUENCE SOUTH PLATTE & CACHE LA POUDRE,
         EXCH FM 70 RANCH AUG IMPACT REACH, EXCH FM WELDON VALLEY CNL FRICO/ECCV RETURN,
-        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935268"},{"waterRightNetAmtNum":1935269,"wdid":"0200802","structureName":"BURLINGTON
+        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974271"},{"waterRightNetAmtNum":1974272,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-02-27
@@ -533,7 +533,7 @@ http_interactions:
         03CW0320","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":132.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"EXCH
         FM BRIGHTON N STORM DRAIN OUTFALL, EXCH FM BRIGHTON SEWER, EXCH FM BRIGHTON
         S STORM DRAIN OUTFALL, EXCH FM KEN MITCHELL LAKES OUTFALL, EXCH FM CONFLUENCE
-        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935269"},{"waterRightNetAmtNum":1935270,"wdid":"0200802","structureName":"BURLINGTON
+        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974272"},{"waterRightNetAmtNum":1974273,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-02-27
@@ -541,33 +541,33 @@ http_interactions:
         03CW0320","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":120.6000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
         FM BRIGHTON N STORM DRAIN OUTFALL, EXCH FM BRIGHTON SEWER, EXCH FM BRIGHTON
         S STORM DRAIN OUTFALL, EXCH FM KEN MITCHELL LAKES OUTFALL, EXCH FM CONFLUENCE
-        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935270"},{"waterRightNetAmtNum":1935271,"wdid":"0200802","structureName":"BURLINGTON
+        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974273"},{"waterRightNetAmtNum":1974274,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-08-31
         00:00:00","adminNumber":58317.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"19CW3180,
         09CW0123","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":34.5100,"netApexConditional":115.4900,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
         FM METRO SEWER, EXCH FM NORTH RESERVOIR COMPLEX, EXCH FM LUPTON LAKES RES
-        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935271"},{"waterRightNetAmtNum":1935272,"wdid":"0200802","structureName":"BURLINGTON
+        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974274"},{"waterRightNetAmtNum":1974275,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-08-31
         00:00:00","adminNumber":58317.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"19CW3180,
         09CW0123","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":9900.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"EXCH
         FM METRO SEWER, EXCH FM NORTH RESERVOIR COMPLEX, EXCH FM LUPTON LAKES RES
-        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935272"},{"waterRightNetAmtNum":1935273,"wdid":"0200802","structureName":"BURLINGTON
+        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974275"},{"waterRightNetAmtNum":1974276,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-10-19
         00:00:00","adminNumber":58366.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"15CW3170,
         04CW0174","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":90.2000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
         FM BRIGHTON S STORM DRAIN OUTFALL, EXCH FM BRIGHTON SEWER, EXCH FM BRIGHTON
-        124TH AVE RES, EXCH FM BRIGHTON POINT H-2","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935273"},{"waterRightNetAmtNum":1935274,"wdid":"0200802","structureName":"BURLINGTON
+        124TH AVE RES, EXCH FM BRIGHTON POINT H-2","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974276"},{"waterRightNetAmtNum":1974277,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-12-29
         00:00:00","adminNumber":58437.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0264","decreedUses":"2","netAbsolute":0.0000,"netConditional":50.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"NO
-        AGRICULTURAL USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935274"},{"waterRightNetAmtNum":1935275,"wdid":"0200802","structureName":"BURLINGTON
+        AGRICULTURAL USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974277"},{"waterRightNetAmtNum":1974278,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-12-31
@@ -579,12 +579,13 @@ http_interactions:
         VRAIN PIPELINE; 07CW335 & 11CW0285, EXCH FM ECCV AUG SPR4 IMPACT REACH VIA
         ST VRAIN PIPELINE; 07CW335 & 11CW0285, EXCH FM ECCV AUG SPR3 IMPACT REACH
         VIA ST VRAIN PIPELINE; 07CW335 & 11CW0285, EXCH FM ECCV AUG SPR2 IMPACT REACH
-        VIA ST VRAIN PIPELINE; 07CW335 & 11CW0285","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935275"},{"waterRightNetAmtNum":1935276,"wdid":"0200802","structureName":"BURLINGTON
+        VIA ST VRAIN PIPELINE; 07CW335 & 11CW0285","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974278"},{"waterRightNetAmtNum":1974279,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2011-12-31
         00:00:00","priorAdjudicationDate":"2010-12-31 00:00:00","appropriationDate":"2011-09-21
-        00:00:00","adminNumber":59068.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"11CW0280","decreedUses":"2AC","netAbsolute":0.0000,"netConditional":250.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935276"},{"waterRightNetAmtNum":1935277,"wdid":"0200802","structureName":"BURLINGTON
+        00:00:00","adminNumber":59068.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"20CW3161,
+        11CW0280","decreedUses":"2AC","netAbsolute":24.5000,"netConditional":225.5000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"MADE
+        ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974279"},{"waterRightNetAmtNum":1974280,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2011-12-31
         00:00:00","priorAdjudicationDate":"2010-12-31 00:00:00","appropriationDate":"2011-12-29
@@ -596,12 +597,12 @@ http_interactions:
         VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335, EXCH FM ECCV AUG SPR4 IMPACT REACH
         VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335, EXCH FM ECCV AUG SPR3 IMPACT REACH
         VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335, EXCH FM ECCV AUG SPR2 IMPACT REACH
-        VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935277"},{"waterRightNetAmtNum":1935278,"wdid":"0200802","structureName":"BURLINGTON
+        VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974280"},{"waterRightNetAmtNum":1974281,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2014-12-31
         00:00:00","priorAdjudicationDate":"2013-12-31 00:00:00","appropriationDate":"2014-12-30
-        00:00:00","adminNumber":60264.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"14CW3164","decreedUses":"2AR","netAbsolute":0.0000,"netConditional":900.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ECCV","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935278"},{"waterRightNetAmtNum":1935279,"wdid":"0200802","structureName":"BURLINGTON
+        00:00:00","adminNumber":60264.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"14CW3164","decreedUses":"2AR","netAbsolute":0.0000,"netConditional":900.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ECCV","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974281"},{"waterRightNetAmtNum":1974282,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2016-12-31
         00:00:00","priorAdjudicationDate":"2015-12-31 00:00:00","appropriationDate":"2016-04-29
@@ -609,7 +610,7 @@ http_interactions:
         FM UNITED RESERVOIR NO 3, EXCH FM BRIGHTON LATERAL RESERVOIR, EXCH FM ST VRAIN
         PIPELINE DISCHARGE, EXCH FM MILLIKEN RESERVOIR, EXCH FM CENTRAL GMS REACH
         C IMPACT REACH OF HAREN RECHARGE AREA ACCRETIONS, EXCH FM 70 RANCH RESERVOIR,
-        EXCH FM 70 RANCH LIRF QUANTIFICATION POINT","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935279"},{"waterRightNetAmtNum":1935280,"wdid":"0200802","structureName":"BURLINGTON
+        EXCH FM 70 RANCH LIRF QUANTIFICATION POINT","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974282"},{"waterRightNetAmtNum":1974283,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2016-12-31
         00:00:00","priorAdjudicationDate":"2015-12-31 00:00:00","appropriationDate":"2016-12-15
@@ -617,14 +618,14 @@ http_interactions:
         STORAGE IN BINDER RESERVOIR; CAN ALSO BE DIVERTED AT UNITED #3 & BINDER PIPELINE;
         ACWWA, ALTERNATE POINT OF DIVERSION TO  UNITED NO 3; ACWWA BRIGHTON LATERAL
         RECHARGE RIGHT, ALTERNATE POINT OF DIVERSION TO  UNITED NO 3; ACWWA BRIGHTON
-        LATERAL RECHARGE SITE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935280"},{"waterRightNetAmtNum":1935281,"wdid":"0200802","structureName":"BURLINGTON
+        LATERAL RECHARGE SITE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974283"},{"waterRightNetAmtNum":1974284,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2016-12-31
         00:00:00","priorAdjudicationDate":"2015-12-31 00:00:00","appropriationDate":"2017-11-30
         00:00:00","adminNumber":61330.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"16CW3195","decreedUses":"2AR","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":1065.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"FOR
         STORAGE IN BARR LAKE; CAN ALSO BE DIVERTED AT UNITED DIVERSION FACILITY 3;
         ACWWA, ACWWA SPR 1 WATER RIGHT; CAN ALSO BE DIVERTED AT UNITED DIVERSION FACILITY
-        NO 3; ACWWA","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935281"},{"waterRightNetAmtNum":1935282,"wdid":"0200802","structureName":"BURLINGTON
+        NO 3; ACWWA","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974284"},{"waterRightNetAmtNum":1974285,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2018-12-31
         00:00:00","priorAdjudicationDate":"2017-12-31 00:00:00","appropriationDate":"2018-11-30
@@ -632,7 +633,7 @@ http_interactions:
         FM BRIGHTON POINT B; CITY OF BRIGHTON, EXCH FM BRIGHTON POINT C; CITY OF BRIGHTON,
         EXCH FM BRIGHTON POINT H-1; CITY OF BRIGHTON, EXCH FM BRIGHTON POINT H-2;
         CITY OF BRIGHTON, EXCH FM BRIGHTON POINT J; CITY OF BRIGHTON, EXCH FM BRIGHTON
-        POINT N; CITY OF BRIGHTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935282"},{"waterRightNetAmtNum":1875361,"wdid":"0200806","structureName":"GARDENERS
+        POINT N; CITY OF BRIGHTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974285"},{"waterRightNetAmtNum":1875361,"wdid":"0200806","structureName":"GARDENERS
         DITCH","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":236.84,"division":1,"waterDistrict":2,"county":"ADAMS","q10":"NE","q40":"SE","q160":"SE","section":"11","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":503416.4,"utmY":4405686.4,"latitude":39.801139,"longitude":-104.960107,"locationAccuracy":"Digitized","adjudicationDate":"1907-09-19
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1861-05-01
@@ -3303,13 +3304,13 @@ http_interactions:
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":508060.6,"utmY":4406789.6,"latitude":39.811051,"longitude":-104.905838,"locationAccuracy":"Spotted
         from quarters","adjudicationDate":"1999-12-31 00:00:00","priorAdjudicationDate":"0001-01-01
         00:00:00","appropriationDate":"1957-10-02 00:00:00","adminNumber":39356.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"99CW0013","decreedUses":"1","netAbsolute":0.0330,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"NYLIN
-        SUBDIVISION LOT 9 BLK 2","lastModified":"2001-01-10 00:00:00","permit":"191165-","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1475360"},{"waterRightNetAmtNum":1475401,"wdid":"0209551","structureName":"SACWSD
+        SUBDIVISION LOT 9 BLK 2","lastModified":"2001-01-10 00:00:00","permit":"191165-","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1475360"},{"waterRightNetAmtNum":1971274,"wdid":"0209551","structureName":"SACWSD
         WELL NO 80","structureType":"Well","waterSource":"GROUNDWATER: SOUTH PLATTE
         RIVER","gnisId":"00201759","streamMile":null,"division":1,"waterDistrict":2,"county":"ADAMS","q10":"NE","q40":"SW","q160":"SE","section":"29","township":"2.0
         S","range":"67.0 W","pm":"S","coordinatesEw":1640,"coordinatesEwDir":"E","coordinatesNs":916,"coordinatesNsDir":"S","utmX":507770.7,"utmY":4410470.8,"latitude":39.844223,"longitude":-104.909178,"locationAccuracy":"Spotted
         from section lines","adjudicationDate":"2000-12-31 00:00:00","priorAdjudicationDate":"1999-12-31
         00:00:00","appropriationDate":"1996-05-30 00:00:00","adminNumber":54786.53476,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"00CW0102","decreedUses":"2X","netAbsolute":0.0000,"netConditional":4.4560,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"LTD
-        1600AF","lastModified":"2016-09-19 07:24:00","permit":"14372-AD, 58906-F","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1475401"},{"waterRightNetAmtNum":1475757,"wdid":"0209912","structureName":"CONOCO
+        1600AF","lastModified":"2024-12-31 13:21:02","permit":"14372-AD, 58906-F","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971274"},{"waterRightNetAmtNum":1475757,"wdid":"0209912","structureName":"CONOCO
         WELL R-1-37174-F","structureType":"Well","waterSource":"GROUNDWATER: SOUTH
         PLATTE RIVER","gnisId":"00201759","streamMile":null,"division":1,"waterDistrict":2,"county":"ADAMS","q10":null,"q40":"SW","q160":"NE","section":"12","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":504389.0,"utmY":4406320.0,"latitude":39.806847,"longitude":-104.948737,"locationAccuracy":"GPS","adjudicationDate":"1972-12-31
@@ -13174,154 +13175,154 @@ http_interactions:
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":503357.0,"utmY":4387715.0,"latitude":39.639216,"longitude":-104.960888,"locationAccuracy":"GPS","adjudicationDate":"1930-06-16
         00:00:00","priorAdjudicationDate":"1924-06-09 00:00:00","appropriationDate":"1921-12-12
         00:00:00","adminNumber":27188.26278,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA0807","decreedUses":"1","netAbsolute":25.6200,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"550","lastModified":"2012-01-11
-        16:04:23","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1495493"},{"waterRightNetAmtNum":1932212,"wdid":"0803532","structureName":"CHERRY
+        16:04:23","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1495493"},{"waterRightNetAmtNum":1971964,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1883-12-10
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1862-05-01
         00:00:00","adminNumber":4504.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":24.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO LOYD WELLS 1 AND 2","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932212"},{"waterRightNetAmtNum":1932213,"wdid":"0803532","structureName":"CHERRY
+        PT TO LOYD WELLS 1 AND 2","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971964"},{"waterRightNetAmtNum":1971965,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1883-12-10
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1869-07-30
         00:00:00","adminNumber":7151.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":197.3450,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
         PT TO RICH WELLS 1 & 2, MEE WELLS 1 & 2 AND HODGE W 1, ALT PT TO LOYD WELL
-        5","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932213"},{"waterRightNetAmtNum":1932214,"wdid":"0803532","structureName":"CHERRY
+        5","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971965"},{"waterRightNetAmtNum":1971966,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1883-12-10
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1874-06-30
         00:00:00","adminNumber":8947.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":43.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO RICH WELLS 1 & 2","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932214"},{"waterRightNetAmtNum":1932215,"wdid":"0803532","structureName":"CHERRY
+        PT TO RICH WELLS 1 & 2","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971966"},{"waterRightNetAmtNum":1971967,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1883-12-10
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1875-02-20
         00:00:00","adminNumber":9182.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":64.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO WEST CHERRY CR D","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932215"},{"waterRightNetAmtNum":1932216,"wdid":"0803532","structureName":"CHERRY
+        PT TO WEST CHERRY CR D","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971967"},{"waterRightNetAmtNum":1971968,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1883-12-10
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1875-06-30
         00:00:00","adminNumber":9312.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":38.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO CLEONA DITCH","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932216"},{"waterRightNetAmtNum":1932217,"wdid":"0803532","structureName":"CHERRY
+        PT TO CLEONA DITCH","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971968"},{"waterRightNetAmtNum":1971969,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1883-12-10
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1880-02-28
         00:00:00","adminNumber":11016.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":5.3220,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO LOYD WELL 5","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932217"},{"waterRightNetAmtNum":1932218,"wdid":"0803532","structureName":"CHERRY
+        PT TO LOYD WELL 5","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971969"},{"waterRightNetAmtNum":1971970,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1939-05-03
         00:00:00","adminNumber":32629.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":124.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO RACE WELL 1","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932218"},{"waterRightNetAmtNum":1932219,"wdid":"0803532","structureName":"CHERRY
+        PT TO RACE WELL 1","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971970"},{"waterRightNetAmtNum":1971971,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-05-18
         00:00:00","priorAdjudicationDate":"1930-06-16 00:00:00","appropriationDate":"1948-12-31
         00:00:00","adminNumber":36159.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":61.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO GILLEN WELL 1","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932219"},{"waterRightNetAmtNum":1932220,"wdid":"0803532","structureName":"CHERRY
+        PT TO GILLEN WELL 1","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971971"},{"waterRightNetAmtNum":1971972,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1950-05-12
         00:00:00","adminNumber":36656.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":124.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO RACE WELL 2","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932220"},{"waterRightNetAmtNum":1932221,"wdid":"0803532","structureName":"CHERRY
+        PT TO RACE WELL 2","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971972"},{"waterRightNetAmtNum":1971973,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1950-07-14
         00:00:00","adminNumber":36719.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":114.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO SMITH WELL 1","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932221"},{"waterRightNetAmtNum":1932222,"wdid":"0803532","structureName":"CHERRY
+        PT TO SMITH WELL 1","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971973"},{"waterRightNetAmtNum":1971974,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1953-04-20
         00:00:00","adminNumber":37730.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":106.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO LOYD WELL 2","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932222"},{"waterRightNetAmtNum":1932223,"wdid":"0803532","structureName":"CHERRY
+        PT TO LOYD WELL 2","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971974"},{"waterRightNetAmtNum":1971975,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1971-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1953-04-26
         00:00:00","adminNumber":37736.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":190.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO RICH WELL 8","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932223"},{"waterRightNetAmtNum":1932224,"wdid":"0803532","structureName":"CHERRY
+        PT TO RICH WELL 8","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971975"},{"waterRightNetAmtNum":1971976,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1955-05-12
         00:00:00","adminNumber":38482.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":55.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO MEE WELL 2","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932224"},{"waterRightNetAmtNum":1932225,"wdid":"0803532","structureName":"CHERRY
+        PT TO MEE WELL 2","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971976"},{"waterRightNetAmtNum":1971977,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1955-05-19
         00:00:00","adminNumber":38489.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":43.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO RACE WELL 3","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932225"},{"waterRightNetAmtNum":1932226,"wdid":"0803532","structureName":"CHERRY
+        PT TO RACE WELL 3","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971977"},{"waterRightNetAmtNum":1971978,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-05-18
         00:00:00","priorAdjudicationDate":"1930-06-16 00:00:00","appropriationDate":"1958-05-05
-        00:00:00","adminNumber":39571.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA3635","decreedUses":"5","netAbsolute":10000.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"622","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932226"},{"waterRightNetAmtNum":1932227,"wdid":"0803532","structureName":"CHERRY
+        00:00:00","adminNumber":39571.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA3635","decreedUses":"5","netAbsolute":10000.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"622","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971978"},{"waterRightNetAmtNum":1971979,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1958-06-03
         00:00:00","adminNumber":39600.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":15.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO MEE WELL 1-8930","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932227"},{"waterRightNetAmtNum":1932228,"wdid":"0803532","structureName":"CHERRY
+        PT TO MEE WELL 1-8930","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971979"},{"waterRightNetAmtNum":1971980,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-05-18
         00:00:00","priorAdjudicationDate":"1930-06-16 00:00:00","appropriationDate":"1960-03-22
-        00:00:00","adminNumber":40258.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA3635","decreedUses":"5","netAbsolute":5580.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"624","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932228"},{"waterRightNetAmtNum":1932229,"wdid":"0803532","structureName":"CHERRY
+        00:00:00","adminNumber":40258.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA3635","decreedUses":"5","netAbsolute":5580.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"624","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971980"},{"waterRightNetAmtNum":1971981,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1971-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1961-06-21
         00:00:00","adminNumber":40714.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":170.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO RICH WELL 7","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932229"},{"waterRightNetAmtNum":1932230,"wdid":"0803532","structureName":"CHERRY
+        PT TO RICH WELL 7","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971981"},{"waterRightNetAmtNum":1971982,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1964-01-08
         00:00:00","adminNumber":41645.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":1.2200,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO RICH WELL 2-4988-F","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932230"},{"waterRightNetAmtNum":1932231,"wdid":"0803532","structureName":"CHERRY
+        PT TO RICH WELL 2-4988-F","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971982"},{"waterRightNetAmtNum":1971983,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1964-04-29
         00:00:00","adminNumber":41757.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":136.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO FORD WELL 1","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932231"},{"waterRightNetAmtNum":1932232,"wdid":"0803532","structureName":"CHERRY
+        PT TO FORD WELL 1","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971983"},{"waterRightNetAmtNum":1971984,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1971-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1964-05-07
         00:00:00","adminNumber":41765.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":73.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO RICH WELL 1-5379-F","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932232"},{"waterRightNetAmtNum":1932234,"wdid":"0803532","structureName":"CHERRY
+        PT TO RICH WELL 1-5379-F","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971984"},{"waterRightNetAmtNum":1971986,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1967-05-02
         00:00:00","adminNumber":42855.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":137.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO FORD WELL 2","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932234"},{"waterRightNetAmtNum":1932235,"wdid":"0803532","structureName":"CHERRY
+        PT TO FORD WELL 2","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971986"},{"waterRightNetAmtNum":1971987,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1967-08-10
         00:00:00","adminNumber":42955.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":10.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO ARAPAHOE 1-12264","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932235"},{"waterRightNetAmtNum":1932236,"wdid":"0803532","structureName":"CHERRY
+        PT TO ARAPAHOE 1-12264","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971987"},{"waterRightNetAmtNum":1971988,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1982-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1972-06-19
         00:00:00","adminNumber":44730.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":81.5300,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO ARAPAHOE ARAP 3, ALT PT TO ARAPAHOE ARAP 2","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932236"},{"waterRightNetAmtNum":1932237,"wdid":"0803532","structureName":"CHERRY
+        PT TO ARAPAHOE ARAP 3, ALT PT TO ARAPAHOE ARAP 2","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971988"},{"waterRightNetAmtNum":1971989,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1978-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1975-07-29
         00:00:00","adminNumber":45865.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":260.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO DENMARK LFH, ALT PT TO DENMARK ARAP","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932237"},{"waterRightNetAmtNum":1932238,"wdid":"0803532","structureName":"CHERRY
+        PT TO DENMARK LFH, ALT PT TO DENMARK ARAP","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971989"},{"waterRightNetAmtNum":1971990,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1978-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1976-10-08
         00:00:00","adminNumber":46302.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":103.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO DENMARK DEN","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932238"},{"waterRightNetAmtNum":1932239,"wdid":"0803532","structureName":"CHERRY
+        PT TO DENMARK DEN","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971990"},{"waterRightNetAmtNum":1971991,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1972-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1977-06-13
         00:00:00","adminNumber":46550.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":114.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO SMITH WELL RF101","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932239"},{"waterRightNetAmtNum":1932240,"wdid":"0803532","structureName":"CHERRY
+        PT TO SMITH WELL RF101","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971991"},{"waterRightNetAmtNum":1971992,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1986-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1978-03-27
         00:00:00","adminNumber":46837.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":160.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO ARAPAHOE SE","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932240"},{"waterRightNetAmtNum":1932241,"wdid":"0803532","structureName":"CHERRY
+        PT TO ARAPAHOE SE","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971992"},{"waterRightNetAmtNum":1971993,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1980-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1979-01-22
         00:00:00","adminNumber":47138.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":158.1000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO ARAPAHOE DEN, ALT PT TO ARAPAHOE LFH","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932241"},{"waterRightNetAmtNum":1932242,"wdid":"0803532","structureName":"CHERRY
+        PT TO ARAPAHOE DEN, ALT PT TO ARAPAHOE LFH","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971993"},{"waterRightNetAmtNum":1971994,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1980-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1980-12-29
@@ -13330,20 +13331,20 @@ http_interactions:
         ALT PT TO ARAPAHOE ARP 3, ALT PT TO ARAPAHOE ARP 2, ALT PT TO ARAPAHOE ARP
         1, ALT PT TO ARAPAHOE DEN 4, ALT PT TO ARAPAHOE DEN 3, ALT PT TO ARAPAHOE
         DEN 2, ALT PT TO ARAPAHOE DEN 1, ALT PT TO ARAPAHOE LFH-4, ALT PT TO ARAPAHOE
-        LFH-3, ALT PT TO ARAPAHOE LFH-2, ALT PT TO ARAPAHOE LFH-1","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932242"},{"waterRightNetAmtNum":1932243,"wdid":"0803532","structureName":"CHERRY
+        LFH-3, ALT PT TO ARAPAHOE LFH-2, ALT PT TO ARAPAHOE LFH-1","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971994"},{"waterRightNetAmtNum":1971995,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1981-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1981-02-27
         00:00:00","adminNumber":47905.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":18.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
-        PT TO ARAPAHOE ARAP","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932243"},{"waterRightNetAmtNum":1932244,"wdid":"0803532","structureName":"CHERRY
+        PT TO ARAPAHOE ARAP","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971995"},{"waterRightNetAmtNum":1971996,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1985-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1985-12-31
         00:00:00","adminNumber":49673.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"86CW0388A","decreedUses":"123456789A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":429.3000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"ALT
         PT TO ARAPAHOE LFH-1, ALT PT TO ANTONOFF A-1, ALT PT TO ARAPAHOE LFH-4, ALT
-        PT TO ARAPAHOE LFH-3, ALT PT TO ARAPAHOE LFH-2, ALT PT TO ARAPAHOE LFH-1","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932244"},{"waterRightNetAmtNum":1932245,"wdid":"0803532","structureName":"CHERRY
+        PT TO ARAPAHOE LFH-3, ALT PT TO ARAPAHOE LFH-2, ALT PT TO ARAPAHOE LFH-1","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971996"},{"waterRightNetAmtNum":1971997,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1986-12-31
         00:00:00","priorAdjudicationDate":"1985-12-31 00:00:00","appropriationDate":"1986-12-31
@@ -13351,7 +13352,7 @@ http_interactions:
         PT TO LOYD WELL 2, ALT PT TO RICH WELL 7, ALT PT TO RICH WELL 8, ALT PT TO
         SMITH WELL 1, ALT PT TO RICH WELL 2-4988-F, ALT PT TO RICH WELL 4, ALT PT
         TO FORD WELL 2, ALT PT TO FORD WELL 1, ALT PT TO RACE WELL 3, ALT PT TO RACE
-        WELL 1","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932245"},{"waterRightNetAmtNum":1932247,"wdid":"0803532","structureName":"CHERRY
+        WELL 1","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971997"},{"waterRightNetAmtNum":1971999,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1995-12-31
         00:00:00","priorAdjudicationDate":"1994-12-31 00:00:00","appropriationDate":"1995-11-27
@@ -13359,26 +13360,30 @@ http_interactions:
         95CW0226","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":26.9500,"netApexConditional":48.0500,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
         FM CHERRY CR AT SOUTH PLATTE, EXCH FM METRO SEWER, EXCH FM AUROAA SAND CR
         WWTP, MADE ABSOLUTE; EXCH FM METRO SEWER, MADE ABSOLUTE; EXCH FM AUROAA SAND
-        CR WWTP","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932247"},{"waterRightNetAmtNum":1932248,"wdid":"0803532","structureName":"CHERRY
+        CR WWTP","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971999"},{"waterRightNetAmtNum":1972000,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1997-12-31
         00:00:00","priorAdjudicationDate":"1996-12-31 00:00:00","appropriationDate":"1997-06-30
-        00:00:00","adminNumber":53872.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"93CW0121","decreedUses":"356AW","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":41.1500,"decreedUnits":"C","seasonalLimitation":"Yes","comments":"EXCH
+        00:00:00","adminNumber":53872.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"22CW3080,
+        93CW0121","decreedUses":"356AW","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.4900,"netApexConditional":40.6600,"decreedUnits":"C","seasonalLimitation":"Yes","comments":"EXCH
         FM CONFLUENCE SOUTH PLATTE & CHERRY CREEK OF CHATFIELD WATER, EXCH FM CONFLUENCE
-        SOUTH PLATTE & CHERRY CREEK OF NORTH FORK WATERS","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932248"},{"waterRightNetAmtNum":1932249,"wdid":"0803532","structureName":"CHERRY
+        SOUTH PLATTE & CHERRY CREEK OF NORTH FORK WATERS, MADE ABSOLUTE; EXCH FM CONFLUENCE
+        SOUTH PLATTE & CHERRY CREEK OF NORTH FORK WATERS","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1972000"},{"waterRightNetAmtNum":1972001,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1997-12-31
         00:00:00","priorAdjudicationDate":"1996-12-31 00:00:00","appropriationDate":"1997-06-30
-        00:00:00","adminNumber":53872.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"93CW0121","decreedUses":"356AW","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":2148.1000,"decreedUnits":"A","seasonalLimitation":"Yes","comments":"EXCH
+        00:00:00","adminNumber":53872.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"22CW3080,
+        93CW0121","decreedUses":"356AW","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":2148.1000,"decreedUnits":"A","seasonalLimitation":"Yes","comments":"EXCH
         FM CONFLUENCE SOUTH PLATTE & CHERRY CREEK OF CHATFIELD WATER, EXCH FM CONFLUENCE
-        SOUTH PLATTE & CHERRY CREEK OF NORTH FORK WATERS","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932249"},{"waterRightNetAmtNum":1932250,"wdid":"0803532","structureName":"CHERRY
+        SOUTH PLATTE & CHERRY CREEK OF NORTH FORK WATERS, MADE ABSOLUTE; EXCH FM CONFLUENCE
+        SOUTH PLATTE & CHERRY CREEK OF NORTH FORK WATERS","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1972001"},{"waterRightNetAmtNum":1972002,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"1998-12-31
         00:00:00","priorAdjudicationDate":"1997-12-31 00:00:00","appropriationDate":"1998-12-31
         00:00:00","adminNumber":54421.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"98CW0462","decreedUses":"01356AER","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.3400,"decreedUnits":"C","seasonalLimitation":"Yes","comments":"EXCH
-        FM 64TH AVE GAGE; GARDENERS DITCH WATER","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932250"},{"waterRightNetAmtNum":1932251,"wdid":"0803532","structureName":"CHERRY
+        FM 64TH AVE GAGE; GARDENERS DITCH WATER","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1972002"},{"waterRightNetAmtNum":1972003,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"2001-12-31
         00:00:00","priorAdjudicationDate":"2000-12-31 00:00:00","appropriationDate":"1996-06-25
@@ -13386,19 +13391,19 @@ http_interactions:
         FM CONFLUENCE S PLATTE & SAND CR, EXCH FM CONFLUENCE S PLATTE & SAND CR, EXCH
         FM CONFLUENCE S PLATTE & CHERRY CR, EXCH FM CONFLUENCE S PLATTE & CHERRY CR,
         EXCH FM METRO SEWER, EXCH FM METRO SEWER, EXCH FM GARDENER DITCH, EXCH FM
-        GARDENER DITCH","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932251"},{"waterRightNetAmtNum":1932252,"wdid":"0803532","structureName":"CHERRY
+        GARDENER DITCH","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1972003"},{"waterRightNetAmtNum":1972004,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"2001-12-31
         00:00:00","priorAdjudicationDate":"2000-12-31 00:00:00","appropriationDate":"2001-07-27
         00:00:00","adminNumber":55360.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"21CW3197,
         13CW3184, 01CW0284","decreedUses":"56AW","netAbsolute":12805.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"MADE
-        ABSOLUTE, MADE ABSOLUTE","lastModified":"2024-01-08 10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932252"},{"waterRightNetAmtNum":1932253,"wdid":"0803532","structureName":"CHERRY
+        ABSOLUTE, MADE ABSOLUTE","lastModified":"2025-01-13 12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1972004"},{"waterRightNetAmtNum":1972005,"wdid":"0803532","structureName":"CHERRY
         CREEK RESERVOIR","structureType":"Reservoir","waterSource":"CHERRY CREEK","gnisId":"00181657","streamMile":12.73,"division":1,"waterDistrict":8,"county":"ARAPAHOE","q10":null,"q40":"SW","q160":"SE","section":"2","township":"5.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":512400.0,"utmY":4387900.0,"latitude":39.640800,"longitude":-104.855497,"locationAccuracy":"Digitized","adjudicationDate":"2007-12-31
         00:00:00","priorAdjudicationDate":"2006-12-31 00:00:00","appropriationDate":"2007-12-17
         00:00:00","adminNumber":57694.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"07CW0298","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":50.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
-        FM AURORA-WALKER RESERVOIR, EXCH FM AURORA-EVERIST RESERVOIR","lastModified":"2024-01-08
-        10:48:18","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1932253"},{"waterRightNetAmtNum":1495546,"wdid":"0803538","structureName":"LAKEWOOD
+        FM AURORA-WALKER RESERVOIR, EXCH FM AURORA-EVERIST RESERVOIR","lastModified":"2025-01-13
+        12:03:57","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1972005"},{"waterRightNetAmtNum":1495546,"wdid":"0803538","structureName":"LAKEWOOD
         CC RES 1,2,3,5","structureType":"Reservoir","waterSource":"LITTLE DRY CREEK","gnisId":"00181738","streamMile":0.02,"division":1,"waterDistrict":8,"county":"JEFFERSON","q10":null,"q40":"SE","q160":"SE","section":"2","township":"4.0
         S","range":"69.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":493768.0,"utmY":4397550.0,"latitude":39.727816,"longitude":-105.072731,"locationAccuracy":"GPS","adjudicationDate":"1972-05-18
         00:00:00","priorAdjudicationDate":"1930-06-16 00:00:00","appropriationDate":"1908-07-01
@@ -18272,5 +18277,5 @@ http_interactions:
         00:00:00","appropriationDate":"1993-10-12 00:00:00","adminNumber":60265.52515,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"15CW0017","decreedUses":"178","netAbsolute":0.0334,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"79847-F
         CONDITIONAL RIGHT FOR IRRIGATION CANCELLED","lastModified":"2024-11-12 10:18:34","permit":"173566-,
         79847-F","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1967128"}]}'
-  recorded_at: Wed, 20 Nov 2024 01:58:42 GMT
+  recorded_at: Wed, 19 Feb 2025 05:24:54 GMT
 recorded_with: VCR 6.3.1
