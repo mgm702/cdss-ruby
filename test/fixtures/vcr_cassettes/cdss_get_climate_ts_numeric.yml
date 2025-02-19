@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/climatedata/climatestationtsday/?dateFormat=spaceSepToSeconds&format=json&measType=Snow&pageIndex=1&pageSize=50000&siteId=US1COJF0356
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/climatedata/climatestationtsday/?dateFormat=spaceSepToSeconds&measType=Snow&pageIndex=1&pageSize=50000&siteId=US1COJF0356&stationNum=
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-25T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '595077'
+      - '589837'
       X-Rate-Row-Limit:
       - '600000'
       X-Rate-Request-Limit:
       - '1000'
       X-Rate-Request-Remaining:
-      - '972'
+      - '989'
       X-Result-Count:
       - '304'
       X-Version-Number:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 26 Nov 2024 03:57:39 GMT
+      - Wed, 19 Feb 2025 05:00:46 GMT
       Content-Length:
       - '71835'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":304,"ResultDateTime":"2024-11-25
-        20:57:39","ResultList":[{"stationNum":5012,"siteId":"US1COJF0356","measType":"Snow","measDate":"2011-09-10
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":304,"ResultDateTime":"2025-02-18
+        22:00:46","ResultList":[{"stationNum":5012,"siteId":"US1COJF0356","measType":"Snow","measDate":"2011-09-10
         00:00:00","value":0.000000,"flagA":null,"flagB":null,"flagC":null,"flagD":null,"dataSource":"CoCoRaHS","modified":"2015-01-28
         14:16:02","measUnit":"in"},{"stationNum":5012,"siteId":"US1COJF0356","measType":"Snow","measDate":"2011-09-11
         00:00:00","value":0.000000,"flagA":null,"flagB":null,"flagC":null,"flagD":null,"dataSource":"CoCoRaHS","modified":"2015-01-28
@@ -660,5 +660,5 @@ http_interactions:
         13:31:30","measUnit":"in"},{"stationNum":5012,"siteId":"US1COJF0356","measType":"Snow","measDate":"2016-04-16
         00:00:00","value":7.000000,"flagA":null,"flagB":null,"flagC":null,"flagD":null,"dataSource":"NOAA","modified":"2019-08-13
         16:04:21","measUnit":"in"}]}'
-  recorded_at: Tue, 26 Nov 2024 03:56:09 GMT
+  recorded_at: Wed, 19 Feb 2025 04:59:10 GMT
 recorded_with: VCR 6.3.1

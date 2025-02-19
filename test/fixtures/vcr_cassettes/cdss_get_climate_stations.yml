@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/climatedata/climatestations/?county=Denver&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&units=miles
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/climatedata/climatestations/?county=Denver&dateFormat=spaceSepToSeconds&division=&pageIndex=1&pageSize=50000&siteId=&stationName=&units=miles&waterDistrict=
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-23T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '599773'
+      - '599469'
       X-Rate-Row-Limit:
       - '600000'
       X-Rate-Request-Limit:
       - '1000'
       X-Rate-Request-Remaining:
-      - '998'
+      - '996'
       X-Result-Count:
       - '227'
       X-Version-Number:
@@ -45,103 +45,103 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Sun, 24 Nov 2024 06:03:27 GMT
+      - Wed, 19 Feb 2025 05:00:45 GMT
       Content-Length:
       - '101056'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":227,"ResultDateTime":"2024-11-23
-        23:03:27","ResultList":[{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":227,"ResultDateTime":"2025-02-18
+        22:00:45","ResultList":[{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
         INTL AP","dataSource":"NOAA","division":1,"waterDistrict":1,"county":"DENVER
         ","state":"CO","utmX":529306.9,"utmY":4409256.0,"latitude":39.832806,"longitude":-104.657509,"locationAccuracy":"User
-        supplied","startDate":"1995-03-01 00:00:00","endDate":"2024-11-12 00:00:00","modified":"2024-11-16
-        02:01:58","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
+        supplied","startDate":"1994-07-20 00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-16
+        02:46:39","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
         INTL AP","dataSource":"NOAA","division":1,"waterDistrict":1,"county":"DENVER
         ","state":"CO","utmX":529306.9,"utmY":4409256.0,"latitude":39.832806,"longitude":-104.657509,"locationAccuracy":"User
-        supplied","startDate":"1995-01-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2024-11-16
-        02:01:58","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
+        supplied","startDate":"1994-07-20 00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-16
+        02:46:39","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
         INTL AP","dataSource":"NOAA","division":1,"waterDistrict":1,"county":"DENVER
         ","state":"CO","utmX":529306.9,"utmY":4409256.0,"latitude":39.832806,"longitude":-104.657509,"locationAccuracy":"User
-        supplied","startDate":"1994-07-20 00:00:00","endDate":"2024-11-12 00:00:00","modified":"2024-11-16
-        02:01:58","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
+        supplied","startDate":"1995-03-01 00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-16
+        02:46:39","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
         INTL AP","dataSource":"NOAA","division":1,"waterDistrict":1,"county":"DENVER
         ","state":"CO","utmX":529306.9,"utmY":4409256.0,"latitude":39.832806,"longitude":-104.657509,"locationAccuracy":"User
-        supplied","startDate":"1994-07-20 00:00:00","endDate":"2024-11-12 00:00:00","modified":"2024-11-16
-        02:01:58","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
+        supplied","startDate":"1994-07-20 00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-16
+        02:46:39","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":62,"siteId":"USW00003017","stationName":"DENVER
         INTL AP","dataSource":"NOAA","division":1,"waterDistrict":1,"county":"DENVER
         ","state":"CO","utmX":529306.9,"utmY":4409256.0,"latitude":39.832806,"longitude":-104.657509,"locationAccuracy":"User
-        supplied","startDate":"1994-07-20 00:00:00","endDate":"2024-11-12 00:00:00","modified":"2024-11-16
-        02:01:58","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
+        supplied","startDate":"1995-01-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-02-16
+        02:46:37","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
         STAPLETON INT''L ARPT","dataSource":"NOAA","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511186.3,"utmY":4401494.5,"latitude":39.763302,"longitude":-104.869414,"locationAccuracy":null,"startDate":"1948-01-01
-        00:00:00","endDate":"2024-11-05 00:00:00","modified":"2024-11-16 02:05:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
+        00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-01-16 01:19:53","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
         STAPLETON INT''L ARPT","dataSource":"NOAA","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511186.3,"utmY":4401494.5,"latitude":39.763302,"longitude":-104.869414,"locationAccuracy":null,"startDate":"1948-01-01
-        00:00:00","endDate":"2024-11-05 00:00:00","modified":"2024-11-16 02:05:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
+        00:00:00","endDate":"2025-02-06 00:00:00","modified":"2025-02-16 02:49:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
         STAPLETON INT''L ARPT","dataSource":"NOAA","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511186.3,"utmY":4401494.5,"latitude":39.763302,"longitude":-104.869414,"locationAccuracy":null,"startDate":"1948-01-01
-        00:00:00","endDate":"2024-11-05 00:00:00","modified":"2024-11-16 02:05:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
+        00:00:00","endDate":"2025-02-06 00:00:00","modified":"2025-02-16 02:49:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
         STAPLETON INT''L ARPT","dataSource":"NOAA","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511186.3,"utmY":4401494.5,"latitude":39.763302,"longitude":-104.869414,"locationAccuracy":null,"startDate":"1948-01-01
-        00:00:00","endDate":"2024-12-31 00:00:00","modified":"2024-11-16 02:05:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
+        00:00:00","endDate":"2025-02-06 00:00:00","modified":"2025-02-16 02:49:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":63,"siteId":"USW00023062","stationName":"DENVER
         STAPLETON INT''L ARPT","dataSource":"NOAA","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511186.3,"utmY":4401494.5,"latitude":39.763302,"longitude":-104.869414,"locationAccuracy":null,"startDate":"1948-01-01
-        00:00:00","endDate":"2024-11-05 00:00:00","modified":"2024-11-16 02:05:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
+        00:00:00","endDate":"2025-02-06 00:00:00","modified":"2025-02-16 02:49:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
         WSO CITY","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501428.1,"utmY":4400010.3,"latitude":39.750003,"longitude":-104.983342,"locationAccuracy":"User
         supplied","startDate":"1921-01-01 00:00:00","endDate":"1974-03-31 00:00:00","modified":"2013-03-29
-        15:43:59","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
+        15:42:35","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
+        WSO CITY","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501428.1,"utmY":4400010.3,"latitude":39.750003,"longitude":-104.983342,"locationAccuracy":"User
+        supplied","startDate":"1921-01-01 00:00:00","endDate":"1973-12-31 00:00:00","modified":"2013-03-29
+        15:47:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
+        WSO CITY","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501428.1,"utmY":4400010.3,"latitude":39.750003,"longitude":-104.983342,"locationAccuracy":"User
+        supplied","startDate":"1921-01-01 00:00:00","endDate":"1974-03-31 00:00:00","modified":"2013-03-29
+        15:45:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
         WSO CITY","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501428.1,"utmY":4400010.3,"latitude":39.750003,"longitude":-104.983342,"locationAccuracy":"User
         supplied","startDate":"1921-01-01 00:00:00","endDate":"1972-12-31 00:00:00","modified":"2013-03-29
         15:43:59","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
         WSO CITY","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501428.1,"utmY":4400010.3,"latitude":39.750003,"longitude":-104.983342,"locationAccuracy":"User
         supplied","startDate":"1921-01-01 00:00:00","endDate":"1974-03-31 00:00:00","modified":"2013-03-29
-        15:42:35","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
-        WSO CITY","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501428.1,"utmY":4400010.3,"latitude":39.750003,"longitude":-104.983342,"locationAccuracy":"User
-        supplied","startDate":"1921-01-01 00:00:00","endDate":"1974-03-31 00:00:00","modified":"2013-03-29
-        15:45:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":64,"siteId":"USW00093002","stationName":"DENVER
-        WSO CITY","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501428.1,"utmY":4400010.3,"latitude":39.750003,"longitude":-104.983342,"locationAccuracy":"User
-        supplied","startDate":"1921-01-01 00:00:00","endDate":"1973-12-31 00:00:00","modified":"2013-03-29
-        15:47:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
+        15:43:59","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
         FILTER PLANT","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":494378.2,"utmY":4385706.5,"latitude":39.621102,"longitude":-105.065512,"locationAccuracy":"User
-        supplied","startDate":"1998-05-01 00:00:00","endDate":"2024-11-13 00:00:00","modified":"2024-11-16
-        00:44:57","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
+        supplied","startDate":"1998-05-01 00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-16
+        01:29:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
         FILTER PLANT","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":494378.2,"utmY":4385706.5,"latitude":39.621102,"longitude":-105.065512,"locationAccuracy":"User
-        supplied","startDate":"1995-03-01 00:00:00","endDate":"2024-11-13 00:00:00","modified":"2024-11-16
-        00:44:57","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
+        supplied","startDate":"2001-01-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-01-16
+        00:09:22","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
         FILTER PLANT","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":494378.2,"utmY":4385706.5,"latitude":39.621102,"longitude":-105.065512,"locationAccuracy":"User
-        supplied","startDate":"2001-01-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2024-11-16
-        00:44:57","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
+        supplied","startDate":"1995-03-01 00:00:00","endDate":"2025-01-26 00:00:00","modified":"2025-02-16
+        01:29:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
         FILTER PLANT","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":494378.2,"utmY":4385706.5,"latitude":39.621102,"longitude":-105.065512,"locationAccuracy":"User
-        supplied","startDate":"1998-05-01 00:00:00","endDate":"2024-11-13 00:00:00","modified":"2024-11-16
-        00:44:57","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
+        supplied","startDate":"1995-03-01 00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-16
+        01:29:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":236,"siteId":"USC00055402","stationName":"MARSTON
         FILTER PLANT","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":494378.2,"utmY":4385706.5,"latitude":39.621102,"longitude":-105.065512,"locationAccuracy":"User
-        supplied","startDate":"1995-03-01 00:00:00","endDate":"2024-11-13 00:00:00","modified":"2024-11-16
-        00:44:57","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
+        supplied","startDate":"1998-05-01 00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-16
+        01:29:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
         WATER DEPT","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499288.7,"utmY":4397724.0,"latitude":39.729406,"longitude":-105.008307,"locationAccuracy":"User
-        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-11-13 00:00:00","modified":"2024-11-16
-        00:20:08","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
+        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-02-16
+        01:05:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
         WATER DEPT","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499288.7,"utmY":4397724.0,"latitude":39.729406,"longitude":-105.008307,"locationAccuracy":"User
-        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-11-13 00:00:00","modified":"2024-11-16
-        00:20:08","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
+        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-02-16
+        01:05:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
         WATER DEPT","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499288.7,"utmY":4397724.0,"latitude":39.729406,"longitude":-105.008307,"locationAccuracy":"User
-        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-16
-        00:20:08","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
+        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-02-16
+        01:05:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
         WATER DEPT","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499288.7,"utmY":4397724.0,"latitude":39.729406,"longitude":-105.008307,"locationAccuracy":"User
-        supplied","startDate":"1998-01-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2024-11-16
-        00:20:08","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
+        supplied","startDate":"1998-01-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-01-15
+        23:43:17","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":2391,"siteId":"USC00052223","stationName":"DENVER
         WATER DEPT","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499288.7,"utmY":4397724.0,"latitude":39.729406,"longitude":-105.008307,"locationAccuracy":"User
-        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-11-13 00:00:00","modified":"2024-11-16
-        00:20:08","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3011,"siteId":"USC00052213","stationName":"DENVER
+        supplied","startDate":"1997-11-01 00:00:00","endDate":"2024-12-31 00:00:00","modified":"2025-02-16
+        01:05:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3011,"siteId":"USC00052213","stationName":"DENVER
         1 SW 7NEWS","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":501285.5,"utmY":4397380.0,"latitude":39.726306,"longitude":-104.985004,"locationAccuracy":null,"startDate":"2005-11-01
         00:00:00","endDate":"2020-09-03 00:00:00","modified":"2024-02-14 21:32:22","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3011,"siteId":"USC00052213","stationName":"DENVER
@@ -149,17 +149,17 @@ http_interactions:
         ","state":"CO","utmX":501285.5,"utmY":4397380.0,"latitude":39.726306,"longitude":-104.985004,"locationAccuracy":null,"startDate":"2005-11-01
         00:00:00","endDate":"2020-09-03 00:00:00","modified":"2024-02-14 21:32:22","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3555,"siteId":"USC00052228","stationName":"DENVER
         MUSEUM","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
-        ","state":"CO","utmX":504926.1,"utmY":4399889.8,"latitude":39.748909,"longitude":-104.942511,"locationAccuracy":null,"startDate":"2010-05-01
-        00:00:00","endDate":"2018-10-15 00:00:00","modified":"2019-08-14 15:56:44","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3555,"siteId":"USC00052228","stationName":"DENVER
-        MUSEUM","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504926.1,"utmY":4399889.8,"latitude":39.748909,"longitude":-104.942511,"locationAccuracy":null,"startDate":"2013-01-01
         00:00:00","endDate":"2014-12-31 00:00:00","modified":"2016-01-16 01:39:34","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3555,"siteId":"USC00052228","stationName":"DENVER
         MUSEUM","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
-        ","state":"CO","utmX":504926.1,"utmY":4399889.8,"latitude":39.748909,"longitude":-104.942511,"locationAccuracy":null,"startDate":"2012-11-01
-        00:00:00","endDate":"2017-12-05 00:00:00","modified":"2018-05-14 03:18:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3555,"siteId":"USC00052228","stationName":"DENVER
+        ","state":"CO","utmX":504926.1,"utmY":4399889.8,"latitude":39.748909,"longitude":-104.942511,"locationAccuracy":null,"startDate":"2010-05-01
+        00:00:00","endDate":"2018-10-15 00:00:00","modified":"2019-08-14 15:56:44","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3555,"siteId":"USC00052228","stationName":"DENVER
         MUSEUM","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504926.1,"utmY":4399889.8,"latitude":39.748909,"longitude":-104.942511,"locationAccuracy":null,"startDate":"2012-11-01
         00:00:00","endDate":"2017-12-05 00:00:00","modified":"2018-05-14 03:18:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3555,"siteId":"USC00052228","stationName":"DENVER
+        MUSEUM","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
+        ","state":"CO","utmX":504926.1,"utmY":4399889.8,"latitude":39.748909,"longitude":-104.942511,"locationAccuracy":null,"startDate":"2012-11-01
+        00:00:00","endDate":"2017-12-05 00:00:00","modified":"2018-05-14 03:18:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":3555,"siteId":"USC00052228","stationName":"DENVER
         MUSEUM","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504926.1,"utmY":4399889.8,"latitude":39.748909,"longitude":-104.942511,"locationAccuracy":null,"startDate":"2010-05-01
         00:00:00","endDate":"2018-10-15 00:00:00","modified":"2019-08-14 15:56:44","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":4006,"siteId":"USW00023012","stationName":"DENVER
@@ -168,64 +168,64 @@ http_interactions:
         00:00:00","endDate":"1966-06-30 00:00:00","modified":"2013-03-29 15:47:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":4006,"siteId":"USW00023012","stationName":"DENVER
         LOWRY AFB","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":508571.1,"utmY":4396315.9,"latitude":39.716677,"longitude":-104.900012,"locationAccuracy":null,"startDate":"1949-01-01
-        00:00:00","endDate":"1965-12-31 00:00:00","modified":"2013-03-29 15:43:59","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":4006,"siteId":"USW00023012","stationName":"DENVER
-        LOWRY AFB","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
-        ","state":"CO","utmX":508571.1,"utmY":4396315.9,"latitude":39.716677,"longitude":-104.900012,"locationAccuracy":null,"startDate":"1949-01-01
         00:00:00","endDate":"1966-06-30 00:00:00","modified":"2013-03-29 15:42:35","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":4006,"siteId":"USW00023012","stationName":"DENVER
         LOWRY AFB","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":508571.1,"utmY":4396315.9,"latitude":39.716677,"longitude":-104.900012,"locationAccuracy":null,"startDate":"1949-01-01
         00:00:00","endDate":"1966-06-30 00:00:00","modified":"2013-03-29 15:43:59","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":4006,"siteId":"USW00023012","stationName":"DENVER
         LOWRY AFB","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":508571.1,"utmY":4396315.9,"latitude":39.716677,"longitude":-104.900012,"locationAccuracy":null,"startDate":"1949-01-01
+        00:00:00","endDate":"1965-12-31 00:00:00","modified":"2013-03-29 15:43:59","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":4006,"siteId":"USW00023012","stationName":"DENVER
+        LOWRY AFB","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER
+        ","state":"CO","utmX":508571.1,"utmY":4396315.9,"latitude":39.716677,"longitude":-104.900012,"locationAccuracy":null,"startDate":"1949-01-01
         00:00:00","endDate":"1966-06-30 00:00:00","modified":"2013-03-29 15:45:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5005,"siteId":"US1CODN0020","stationName":"DENVER
         8 SSW","dataSource":"CoCoRaHS","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":496447.1,"utmY":4386704.1,"latitude":39.630106,"longitude":-105.041411,"locationAccuracy":null,"startDate":"2002-04-21
-        00:00:00","endDate":"2013-01-24 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5005,"siteId":"US1CODN0020","stationName":"DENVER
+        00:00:00","endDate":"2013-01-24 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5005,"siteId":"US1CODN0020","stationName":"DENVER
         8 SSW","dataSource":"CoCoRaHS","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":496447.1,"utmY":4386704.1,"latitude":39.630106,"longitude":-105.041411,"locationAccuracy":null,"startDate":"2002-04-21
-        00:00:00","endDate":"2013-01-24 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5007,"siteId":"US1CODN0123","stationName":"ENGLEWOOD
+        00:00:00","endDate":"2013-01-24 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5007,"siteId":"US1CODN0123","stationName":"ENGLEWOOD
         2.2 WSW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":497562.8,"utmY":4386781.3,"latitude":39.630803,"longitude":-105.028408,"locationAccuracy":null,"startDate":"2008-07-01
-        00:00:00","endDate":"2009-08-17 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5007,"siteId":"US1CODN0123","stationName":"ENGLEWOOD
+        00:00:00","endDate":"2009-09-13 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5007,"siteId":"US1CODN0123","stationName":"ENGLEWOOD
         2.2 WSW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":497562.8,"utmY":4386781.3,"latitude":39.630803,"longitude":-105.028408,"locationAccuracy":null,"startDate":"2008-07-01
-        00:00:00","endDate":"2009-09-13 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5008,"siteId":"US1CODN0030","stationName":"DENVER
+        00:00:00","endDate":"2009-08-17 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5008,"siteId":"US1CODN0030","stationName":"DENVER
         8 SSW","dataSource":"CoCoRaHS","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":496026.7,"utmY":4386892.9,"latitude":39.631807,"longitude":-105.046307,"locationAccuracy":null,"startDate":"2002-05-12
-        00:00:00","endDate":"2023-07-15 00:00:00","modified":"2024-09-15 22:27:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5008,"siteId":"US1CODN0030","stationName":"DENVER
+        00:00:00","endDate":"2023-07-15 00:00:00","modified":"2025-01-15 21:25:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5008,"siteId":"US1CODN0030","stationName":"DENVER
         8 SSW","dataSource":"CoCoRaHS","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":496026.7,"utmY":4386892.9,"latitude":39.631807,"longitude":-105.046307,"locationAccuracy":null,"startDate":"2002-05-12
-        00:00:00","endDate":"2023-07-15 00:00:00","modified":"2024-09-15 22:27:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5019,"siteId":"US1COJF0214","stationName":"DENVER
+        00:00:00","endDate":"2023-07-15 00:00:00","modified":"2025-01-15 21:25:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5019,"siteId":"US1COJF0214","stationName":"DENVER
         11.2 SW","dataSource":"CoCoRaHS","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":493641.8,"utmY":4387815.7,"latitude":39.640109,"longitude":-105.074107,"locationAccuracy":null,"startDate":"2004-07-19
-        00:00:00","endDate":"2005-09-22 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5019,"siteId":"US1COJF0214","stationName":"DENVER
+        00:00:00","endDate":"2005-09-22 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5019,"siteId":"US1COJF0214","stationName":"DENVER
         11.2 SW","dataSource":"CoCoRaHS","division":1,"waterDistrict":9,"county":"DENVER
         ","state":"CO","utmX":493641.8,"utmY":4387815.7,"latitude":39.640109,"longitude":-105.074107,"locationAccuracy":null,"startDate":"2004-07-19
-        00:00:00","endDate":"2005-09-22 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5022,"siteId":"US1CODN0067","stationName":"DENVER
+        00:00:00","endDate":"2005-09-22 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5022,"siteId":"US1CODN0067","stationName":"DENVER
         8.5 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":507808.2,"utmY":4387939.1,"latitude":39.641205,"longitude":-104.909013,"locationAccuracy":null,"startDate":"2004-05-04
-        00:00:00","endDate":"2004-10-14 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5022,"siteId":"US1CODN0067","stationName":"DENVER
+        00:00:00","endDate":"2004-10-14 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5022,"siteId":"US1CODN0067","stationName":"DENVER
         8.5 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":507808.2,"utmY":4387939.1,"latitude":39.641205,"longitude":-104.909013,"locationAccuracy":null,"startDate":"2004-05-04
-        00:00:00","endDate":"2004-10-14 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5045,"siteId":"US1CODN0043","stationName":"CHERRY
+        00:00:00","endDate":"2004-10-14 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5045,"siteId":"US1CODN0043","stationName":"CHERRY
         CREEK 1.9 WNW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":510723.1,"utmY":4389718.4,"latitude":39.657203,"longitude":-104.875012,"locationAccuracy":null,"startDate":"2003-04-18
-        00:00:00","endDate":"2007-07-09 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5045,"siteId":"US1CODN0043","stationName":"CHERRY
+        00:00:00","endDate":"2007-07-09 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5045,"siteId":"US1CODN0043","stationName":"CHERRY
         CREEK 1.9 WNW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":510723.1,"utmY":4389718.4,"latitude":39.657203,"longitude":-104.875012,"locationAccuracy":null,"startDate":"2003-04-18
-        00:00:00","endDate":"2007-07-09 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5047,"siteId":"US1CODN0056","stationName":"CHERRY
+        00:00:00","endDate":"2007-07-09 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5047,"siteId":"US1CODN0056","stationName":"CHERRY
         CREEK DAM 1.7 WNW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":509796.6,"utmY":4389761.5,"latitude":39.657611,"longitude":-104.885805,"locationAccuracy":null,"startDate":"2003-10-28
-        00:00:00","endDate":"2006-04-24 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5047,"siteId":"US1CODN0056","stationName":"CHERRY
+        00:00:00","endDate":"2006-04-24 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5047,"siteId":"US1CODN0056","stationName":"CHERRY
         CREEK DAM 1.7 WNW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":509796.6,"utmY":4389761.5,"latitude":39.657611,"longitude":-104.885805,"locationAccuracy":null,"startDate":"2003-10-28
-        00:00:00","endDate":"2006-04-24 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5048,"siteId":"US1CODN0120","stationName":"CHERRY
+        00:00:00","endDate":"2006-04-24 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5048,"siteId":"US1CODN0120","stationName":"CHERRY
         CREEK RESERVOIR 1.9 N","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":510637.0,"utmY":4389984.6,"latitude":39.659610,"longitude":-104.876010,"locationAccuracy":null,"startDate":"2007-11-21
-        00:00:00","endDate":"2024-04-20 00:00:00","modified":"2024-10-15 21:29:36","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5048,"siteId":"US1CODN0120","stationName":"CHERRY
+        00:00:00","endDate":"2024-03-15 00:00:00","modified":"2025-02-15 21:49:40","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5048,"siteId":"US1CODN0120","stationName":"CHERRY
         CREEK RESERVOIR 1.9 N","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":510637.0,"utmY":4389984.6,"latitude":39.659610,"longitude":-104.876010,"locationAccuracy":null,"startDate":"2007-11-21
-        00:00:00","endDate":"2024-03-15 00:00:00","modified":"2024-10-15 21:29:36","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5049,"siteId":"US1CODN0078","stationName":"DENVER
+        00:00:00","endDate":"2024-04-20 00:00:00","modified":"2025-02-15 21:49:40","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5049,"siteId":"US1CODN0078","stationName":"DENVER
         7.3 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":508826.8,"utmY":4390093.3,"latitude":39.660604,"longitude":-104.897108,"locationAccuracy":null,"startDate":"2004-07-17
         00:00:00","endDate":"2011-07-27 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5049,"siteId":"US1CODN0078","stationName":"DENVER
@@ -234,10 +234,10 @@ http_interactions:
         00:00:00","endDate":"2009-09-12 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5056,"siteId":"US1CODN0016","stationName":"DENVER
         5.2 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502942.1,"utmY":4390643.7,"latitude":39.665609,"longitude":-104.965711,"locationAccuracy":null,"startDate":"2002-07-29
-        00:00:00","endDate":"2024-11-12 00:00:00","modified":"2024-11-15 21:37:35","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5056,"siteId":"US1CODN0016","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:06","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5056,"siteId":"US1CODN0016","stationName":"DENVER
         5.2 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502942.1,"utmY":4390643.7,"latitude":39.665609,"longitude":-104.965711,"locationAccuracy":null,"startDate":"2002-07-29
-        00:00:00","endDate":"2024-11-12 00:00:00","modified":"2024-11-15 21:37:35","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5059,"siteId":"US1CODN0015","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:06","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5059,"siteId":"US1CODN0015","stationName":"DENVER
         5.4 SSW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":498361.7,"utmY":4390776.5,"latitude":39.666802,"longitude":-105.019107,"locationAccuracy":null,"startDate":"2002-04-20
         00:00:00","endDate":"2005-09-22 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5059,"siteId":"US1CODN0015","stationName":"DENVER
@@ -252,10 +252,10 @@ http_interactions:
         00:00:00","endDate":"2015-02-01 00:00:00","modified":"2019-08-13 14:07:13","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5061,"siteId":"US1CODN0109","stationName":"CHERRY
         HILLS VILLAGE 2.1 N","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504803.2,"utmY":4390899.9,"latitude":39.667907,"longitude":-104.944013,"locationAccuracy":null,"startDate":"2008-10-01
-        00:00:00","endDate":"2017-07-18 00:00:00","modified":"2019-08-13 14:10:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5061,"siteId":"US1CODN0109","stationName":"CHERRY
+        00:00:00","endDate":"2017-08-25 00:00:00","modified":"2019-08-13 14:10:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5061,"siteId":"US1CODN0109","stationName":"CHERRY
         HILLS VILLAGE 2.1 N","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504803.2,"utmY":4390899.9,"latitude":39.667907,"longitude":-104.944013,"locationAccuracy":null,"startDate":"2008-10-01
-        00:00:00","endDate":"2017-08-25 00:00:00","modified":"2019-08-13 14:10:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5063,"siteId":"US1CODN0093","stationName":"DENVER
+        00:00:00","endDate":"2017-07-18 00:00:00","modified":"2019-08-13 14:10:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5063,"siteId":"US1CODN0093","stationName":"DENVER
         6.5 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503979.8,"utmY":4391010.4,"latitude":39.668902,"longitude":-104.953607,"locationAccuracy":null,"startDate":"2004-09-01
         00:00:00","endDate":"2012-07-10 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5063,"siteId":"US1CODN0093","stationName":"DENVER
@@ -270,22 +270,22 @@ http_interactions:
         00:00:00","endDate":"2015-02-11 00:00:00","modified":"2019-08-13 14:12:15","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5070,"siteId":"US1CODN0141","stationName":"DENVER
         5.3 SW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":496904.0,"utmY":4391820.2,"latitude":39.676204,"longitude":-105.036110,"locationAccuracy":null,"startDate":"2012-01-02
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:28","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5070,"siteId":"US1CODN0141","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:50","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5070,"siteId":"US1CODN0141","stationName":"DENVER
         5.3 SW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":496904.0,"utmY":4391820.2,"latitude":39.676204,"longitude":-105.036110,"locationAccuracy":null,"startDate":"2012-01-02
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:28","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5077,"siteId":"US1CODN0108","stationName":"ENGLEWOOD
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:50","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5077,"siteId":"US1CODN0108","stationName":"ENGLEWOOD
         2.4 NNE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502058.2,"utmY":4392152.8,"latitude":39.679208,"longitude":-104.976012,"locationAccuracy":null,"startDate":"2005-12-01
-        00:00:00","endDate":"2008-08-02 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5077,"siteId":"US1CODN0108","stationName":"ENGLEWOOD
+        00:00:00","endDate":"2008-08-02 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5077,"siteId":"US1CODN0108","stationName":"ENGLEWOOD
         2.4 NNE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502058.2,"utmY":4392152.8,"latitude":39.679208,"longitude":-104.976012,"locationAccuracy":null,"startDate":"2005-12-01
-        00:00:00","endDate":"2008-08-02 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5080,"siteId":"US1CODN0103","stationName":"DENVER
+        00:00:00","endDate":"2008-08-02 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5080,"siteId":"US1CODN0103","stationName":"DENVER
         4.7 SW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":497658.9,"utmY":4392530.2,"latitude":39.682604,"longitude":-105.027309,"locationAccuracy":null,"startDate":"2005-09-08
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:05","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5080,"siteId":"US1CODN0103","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:31","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5080,"siteId":"US1CODN0103","stationName":"DENVER
         4.7 SW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":497658.9,"utmY":4392530.2,"latitude":39.682604,"longitude":-105.027309,"locationAccuracy":null,"startDate":"2005-09-08
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:05","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5081,"siteId":"US1CODN0115","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:31","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5081,"siteId":"US1CODN0115","stationName":"DENVER
         3.2 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503961.8,"utmY":4392542.0,"latitude":39.682706,"longitude":-104.953808,"locationAccuracy":null,"startDate":"2003-07-09
         00:00:00","endDate":"2008-08-09 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5081,"siteId":"US1CODN0115","stationName":"DENVER
@@ -312,16 +312,16 @@ http_interactions:
         00:00:00","endDate":"2014-11-12 00:00:00","modified":"2019-08-13 14:08:57","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5091,"siteId":"US1CODN0122","stationName":"DENVER
         3.5 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506559.7,"utmY":4393021.0,"latitude":39.687006,"longitude":-104.923507,"locationAccuracy":null,"startDate":"2008-04-16
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:22","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5091,"siteId":"US1CODN0122","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5091,"siteId":"US1CODN0122","stationName":"DENVER
         3.5 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506559.7,"utmY":4393021.0,"latitude":39.687006,"longitude":-104.923507,"locationAccuracy":null,"startDate":"2008-04-16
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:22","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5092,"siteId":"US1CODN0088","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5092,"siteId":"US1CODN0088","stationName":"DENVER
         5.3 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506774.1,"utmY":4393021.2,"latitude":39.687005,"longitude":-104.921011,"locationAccuracy":null,"startDate":"2004-09-29
-        00:00:00","endDate":"2009-10-18 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5092,"siteId":"US1CODN0088","stationName":"DENVER
+        00:00:00","endDate":"2009-10-18 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5092,"siteId":"US1CODN0088","stationName":"DENVER
         5.3 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506774.1,"utmY":4393021.2,"latitude":39.687005,"longitude":-104.921011,"locationAccuracy":null,"startDate":"2004-09-29
-        00:00:00","endDate":"2009-10-18 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5094,"siteId":"US1CODN0021","stationName":"DENVER
+        00:00:00","endDate":"2009-10-18 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5094,"siteId":"US1CODN0021","stationName":"DENVER
         3.5 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503215.4,"utmY":4393374.0,"latitude":39.690206,"longitude":-104.962515,"locationAccuracy":null,"startDate":"2002-05-12
         00:00:00","endDate":"2002-10-03 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5094,"siteId":"US1CODN0021","stationName":"DENVER
@@ -330,10 +330,10 @@ http_interactions:
         00:00:00","endDate":"2002-10-03 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5097,"siteId":"US1CODN0033","stationName":"DENVER
         4.8 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":507150.9,"utmY":4393521.0,"latitude":39.691507,"longitude":-104.916609,"locationAccuracy":null,"startDate":"2002-05-12
-        00:00:00","endDate":"2005-04-11 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5097,"siteId":"US1CODN0033","stationName":"DENVER
+        00:00:00","endDate":"2005-04-11 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5097,"siteId":"US1CODN0033","stationName":"DENVER
         4.8 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":507150.9,"utmY":4393521.0,"latitude":39.691507,"longitude":-104.916609,"locationAccuracy":null,"startDate":"2002-05-12
-        00:00:00","endDate":"2005-04-11 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5104,"siteId":"US1CODN0136","stationName":"DENVER
+        00:00:00","endDate":"2005-04-11 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5104,"siteId":"US1CODN0136","stationName":"DENVER
         2.0 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503009.3,"utmY":4394295.1,"latitude":39.698505,"longitude":-104.964913,"locationAccuracy":null,"startDate":"2010-06-16
         00:00:00","endDate":"2012-04-17 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5104,"siteId":"US1CODN0136","stationName":"DENVER
@@ -360,46 +360,46 @@ http_interactions:
         00:00:00","endDate":"2008-08-15 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5114,"siteId":"US1CODN0022","stationName":"DENVER
         3 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504397.6,"utmY":4395217.0,"latitude":39.706807,"longitude":-104.948706,"locationAccuracy":null,"startDate":"1999-12-26
-        00:00:00","endDate":"2006-04-03 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5114,"siteId":"US1CODN0022","stationName":"DENVER
+        00:00:00","endDate":"2006-04-03 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5114,"siteId":"US1CODN0022","stationName":"DENVER
         3 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504397.6,"utmY":4395217.0,"latitude":39.706807,"longitude":-104.948706,"locationAccuracy":null,"startDate":"1999-12-26
-        00:00:00","endDate":"2006-04-03 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5116,"siteId":"US1CODN0028","stationName":"DENVER
+        00:00:00","endDate":"2006-04-03 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5116,"siteId":"US1CODN0028","stationName":"DENVER
         2.4 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503068.9,"utmY":4395338.4,"latitude":39.707903,"longitude":-104.964208,"locationAccuracy":null,"startDate":"2000-06-08
-        00:00:00","endDate":"2003-10-29 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5116,"siteId":"US1CODN0028","stationName":"DENVER
+        00:00:00","endDate":"2003-10-29 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5116,"siteId":"US1CODN0028","stationName":"DENVER
         2.4 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503068.9,"utmY":4395338.4,"latitude":39.707903,"longitude":-104.964208,"locationAccuracy":null,"startDate":"2000-06-08
-        00:00:00","endDate":"2003-10-29 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5118,"siteId":"US1COAR0059","stationName":"DENVER
+        00:00:00","endDate":"2003-10-29 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5118,"siteId":"US1COAR0059","stationName":"DENVER
         1.7 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":505066.1,"utmY":4395406.1,"latitude":39.708506,"longitude":-104.940912,"locationAccuracy":null,"startDate":"2002-06-01
-        00:00:00","endDate":"2005-06-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5118,"siteId":"US1COAR0059","stationName":"DENVER
+        00:00:00","endDate":"2005-06-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5118,"siteId":"US1COAR0059","stationName":"DENVER
         1.7 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":505066.1,"utmY":4395406.1,"latitude":39.708506,"longitude":-104.940912,"locationAccuracy":null,"startDate":"2002-06-01
-        00:00:00","endDate":"2005-06-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5122,"siteId":"US1CODN0095","stationName":"DENVER
+        00:00:00","endDate":"2005-06-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5122,"siteId":"US1CODN0095","stationName":"DENVER
         4.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":509154.8,"utmY":4395665.1,"latitude":39.710806,"longitude":-104.893207,"locationAccuracy":null,"startDate":"2005-04-28
-        00:00:00","endDate":"2007-07-05 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5122,"siteId":"US1CODN0095","stationName":"DENVER
+        00:00:00","endDate":"2007-07-05 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5122,"siteId":"US1CODN0095","stationName":"DENVER
         4.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":509154.8,"utmY":4395665.1,"latitude":39.710806,"longitude":-104.893207,"locationAccuracy":null,"startDate":"2005-04-28
-        00:00:00","endDate":"2007-07-05 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5125,"siteId":"US1CODN0008","stationName":"DENVER
+        00:00:00","endDate":"2007-07-05 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5125,"siteId":"US1CODN0008","stationName":"DENVER
         3.2 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":505820.0,"utmY":4396005.9,"latitude":39.713907,"longitude":-104.932111,"locationAccuracy":null,"startDate":"2002-04-08
-        00:00:00","endDate":"2002-10-22 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5125,"siteId":"US1CODN0008","stationName":"DENVER
+        00:00:00","endDate":"2002-10-22 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5125,"siteId":"US1CODN0008","stationName":"DENVER
         3.2 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":505820.0,"utmY":4396005.9,"latitude":39.713907,"longitude":-104.932111,"locationAccuracy":null,"startDate":"2002-04-08
-        00:00:00","endDate":"2002-10-22 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5127,"siteId":"US1CODN0077","stationName":"DENVER
+        00:00:00","endDate":"2002-10-22 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5127,"siteId":"US1CODN0077","stationName":"DENVER
         3.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506659.8,"utmY":4396339.5,"latitude":39.716911,"longitude":-104.922307,"locationAccuracy":null,"startDate":"2004-08-17
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:37:56","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5127,"siteId":"US1CODN0077","stationName":"DENVER
+        00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-15 21:49:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5127,"siteId":"US1CODN0077","stationName":"DENVER
         3.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506659.8,"utmY":4396339.5,"latitude":39.716911,"longitude":-104.922307,"locationAccuracy":null,"startDate":"2004-08-17
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:37:56","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5129,"siteId":"US1CODN0049","stationName":"DENVER
+        00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-15 21:49:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5129,"siteId":"US1CODN0049","stationName":"DENVER
         3.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":507070.9,"utmY":4396684.0,"latitude":39.720007,"longitude":-104.917508,"locationAccuracy":null,"startDate":"2003-09-16
-        00:00:00","endDate":"2024-11-09 00:00:00","modified":"2024-11-15 21:37:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5129,"siteId":"US1CODN0049","stationName":"DENVER
+        00:00:00","endDate":"2025-02-12 00:00:00","modified":"2025-02-15 21:49:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5129,"siteId":"US1CODN0049","stationName":"DENVER
         3.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":507070.9,"utmY":4396684.0,"latitude":39.720007,"longitude":-104.917508,"locationAccuracy":null,"startDate":"2003-09-16
-        00:00:00","endDate":"2024-11-09 00:00:00","modified":"2024-11-15 21:37:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5130,"siteId":"US1CODN0004","stationName":"DENVER
+        00:00:00","endDate":"2025-02-12 00:00:00","modified":"2025-02-15 21:49:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5130,"siteId":"US1CODN0004","stationName":"DENVER
         2.8 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":505416.7,"utmY":4396704.8,"latitude":39.720208,"longitude":-104.936806,"locationAccuracy":null,"startDate":"2000-05-18
         00:00:00","endDate":"2024-11-04 00:00:00","modified":"2024-11-15 21:37:31","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5130,"siteId":"US1CODN0004","stationName":"DENVER
@@ -414,10 +414,10 @@ http_interactions:
         00:00:00","endDate":"2007-08-26 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5134,"siteId":"US1CODN0110","stationName":"DENVER
         3.6 E","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":509024.4,"utmY":4397163.2,"latitude":39.724304,"longitude":-104.894715,"locationAccuracy":null,"startDate":"2006-06-15
-        00:00:00","endDate":"2007-04-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5134,"siteId":"US1CODN0110","stationName":"DENVER
+        00:00:00","endDate":"2007-04-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5134,"siteId":"US1CODN0110","stationName":"DENVER
         3.6 E","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":509024.4,"utmY":4397163.2,"latitude":39.724304,"longitude":-104.894715,"locationAccuracy":null,"startDate":"2006-06-15
-        00:00:00","endDate":"2007-04-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5135,"siteId":"US1CODN0050","stationName":"DENVER
+        00:00:00","endDate":"2007-04-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5135,"siteId":"US1CODN0050","stationName":"DENVER
         3.1 SW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502682.4,"utmY":4397358.2,"latitude":39.726105,"longitude":-104.968715,"locationAccuracy":null,"startDate":"2004-05-23
         00:00:00","endDate":"2004-11-17 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5135,"siteId":"US1CODN0050","stationName":"DENVER
@@ -438,28 +438,28 @@ http_interactions:
         00:00:00","endDate":"2004-03-16 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5140,"siteId":"US1CODN0051","stationName":"DENVER
         2.4 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504876.2,"utmY":4397614.5,"latitude":39.728402,"longitude":-104.943112,"locationAccuracy":null,"startDate":"2003-08-30
-        00:00:00","endDate":"2017-05-09 00:00:00","modified":"2018-05-14 03:18:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5140,"siteId":"US1CODN0051","stationName":"DENVER
+        00:00:00","endDate":"2017-05-09 00:00:00","modified":"2019-08-13 14:06:28","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5140,"siteId":"US1CODN0051","stationName":"DENVER
         2.4 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504876.2,"utmY":4397614.5,"latitude":39.728402,"longitude":-104.943112,"locationAccuracy":null,"startDate":"2003-08-30
-        00:00:00","endDate":"2017-05-09 00:00:00","modified":"2019-08-13 14:06:28","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5145,"siteId":"US1CODN0112","stationName":"DENVER
+        00:00:00","endDate":"2017-05-09 00:00:00","modified":"2018-05-14 03:18:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5145,"siteId":"US1CODN0112","stationName":"DENVER
         0.2 NNW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503127.8,"utmY":4397902.2,"latitude":39.731005,"longitude":-104.963508,"locationAccuracy":null,"startDate":"2006-06-08
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:13","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5145,"siteId":"US1CODN0112","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:39","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5145,"siteId":"US1CODN0112","stationName":"DENVER
         0.2 NNW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503127.8,"utmY":4397902.2,"latitude":39.731005,"longitude":-104.963508,"locationAccuracy":null,"startDate":"2006-06-08
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:13","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5147,"siteId":"US1CODN0068","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:49:39","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5147,"siteId":"US1CODN0068","stationName":"DENVER
         2.0 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":505287.1,"utmY":4398180.8,"latitude":39.733508,"longitude":-104.938311,"locationAccuracy":null,"startDate":"2004-07-15
-        00:00:00","endDate":"2006-08-15 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5147,"siteId":"US1CODN0068","stationName":"DENVER
+        00:00:00","endDate":"2006-08-15 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5147,"siteId":"US1CODN0068","stationName":"DENVER
         2.0 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":505287.1,"utmY":4398180.8,"latitude":39.733508,"longitude":-104.938311,"locationAccuracy":null,"startDate":"2004-07-15
-        00:00:00","endDate":"2006-08-15 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5149,"siteId":"US1CODN0143","stationName":"DENVER
+        00:00:00","endDate":"2006-08-15 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5149,"siteId":"US1CODN0143","stationName":"DENVER
         1.3 E","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503324.7,"utmY":4398501.6,"latitude":39.736410,"longitude":-104.961206,"locationAccuracy":null,"startDate":"2011-10-23
-        00:00:00","endDate":"2012-08-31 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5149,"siteId":"US1CODN0143","stationName":"DENVER
+        00:00:00","endDate":"2012-08-31 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5149,"siteId":"US1CODN0143","stationName":"DENVER
         1.3 E","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503324.7,"utmY":4398501.6,"latitude":39.736410,"longitude":-104.961206,"locationAccuracy":null,"startDate":"2011-10-23
-        00:00:00","endDate":"2012-08-31 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5150,"siteId":"US1CODN0099","stationName":"DENVER
+        00:00:00","endDate":"2012-08-31 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5150,"siteId":"US1CODN0099","stationName":"DENVER
         2.3 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":507960.3,"utmY":4398516.1,"latitude":39.736506,"longitude":-104.907114,"locationAccuracy":null,"startDate":"2005-05-14
         00:00:00","endDate":"2024-04-28 00:00:00","modified":"2024-05-15 21:44:04","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5150,"siteId":"US1CODN0099","stationName":"DENVER
@@ -468,16 +468,16 @@ http_interactions:
         00:00:00","endDate":"2023-07-31 00:00:00","modified":"2024-03-14 20:16:35","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5151,"siteId":"US1CODN0117","stationName":"DENVER
         3.0 ENE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":507977.4,"utmY":4398538.3,"latitude":39.736704,"longitude":-104.906915,"locationAccuracy":null,"startDate":"2007-04-09
-        00:00:00","endDate":"2009-11-16 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5151,"siteId":"US1CODN0117","stationName":"DENVER
+        00:00:00","endDate":"2009-11-16 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5151,"siteId":"US1CODN0117","stationName":"DENVER
         3.0 ENE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":507977.4,"utmY":4398538.3,"latitude":39.736704,"longitude":-104.906915,"locationAccuracy":null,"startDate":"2007-04-09
-        00:00:00","endDate":"2009-11-16 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5152,"siteId":"US1CODN0106","stationName":"EDGEWATER
+        00:00:00","endDate":"2009-11-16 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5152,"siteId":"US1CODN0106","stationName":"EDGEWATER
         1.5 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":496546.8,"utmY":4398568.2,"latitude":39.737004,"longitude":-105.040308,"locationAccuracy":null,"startDate":"2006-01-18
-        00:00:00","endDate":"2008-12-09 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5152,"siteId":"US1CODN0106","stationName":"EDGEWATER
+        00:00:00","endDate":"2008-12-09 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5152,"siteId":"US1CODN0106","stationName":"EDGEWATER
         1.5 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":496546.8,"utmY":4398568.2,"latitude":39.737004,"longitude":-105.040308,"locationAccuracy":null,"startDate":"2006-01-18
-        00:00:00","endDate":"2008-12-09 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5154,"siteId":"US1CODN0024","stationName":"DENVER
+        00:00:00","endDate":"2008-12-09 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5154,"siteId":"US1CODN0024","stationName":"DENVER
         1.8 E","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":501079.6,"utmY":4398911.6,"latitude":39.740110,"longitude":-104.987405,"locationAccuracy":null,"startDate":"2002-06-24
         00:00:00","endDate":"2012-11-05 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5154,"siteId":"US1CODN0024","stationName":"DENVER
@@ -498,16 +498,16 @@ http_interactions:
         00:00:00","endDate":"2005-04-01 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5164,"siteId":"US1CODN0066","stationName":"DENVER
         1.88 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":508420.8,"utmY":4400525.4,"latitude":39.754603,"longitude":-104.901708,"locationAccuracy":null,"startDate":"2004-05-28
-        00:00:00","endDate":"2009-10-24 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5164,"siteId":"US1CODN0066","stationName":"DENVER
+        00:00:00","endDate":"2009-10-24 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5164,"siteId":"US1CODN0066","stationName":"DENVER
         1.88 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":508420.8,"utmY":4400525.4,"latitude":39.754603,"longitude":-104.901708,"locationAccuracy":null,"startDate":"2004-05-28
-        00:00:00","endDate":"2009-10-24 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5166,"siteId":"US1CODN0031","stationName":"MOUNTAIN
+        00:00:00","endDate":"2009-10-24 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5166,"siteId":"US1CODN0031","stationName":"MOUNTAIN
         VIEW 1.9 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":497421.6,"utmY":4400732.1,"latitude":39.756505,"longitude":-105.030105,"locationAccuracy":null,"startDate":"1998-06-17
-        00:00:00","endDate":"2009-10-28 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5166,"siteId":"US1CODN0031","stationName":"MOUNTAIN
+        00:00:00","endDate":"2009-10-29 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5166,"siteId":"US1CODN0031","stationName":"MOUNTAIN
         VIEW 1.9 SE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":497421.6,"utmY":4400732.1,"latitude":39.756505,"longitude":-105.030105,"locationAccuracy":null,"startDate":"1998-06-17
-        00:00:00","endDate":"2009-10-29 00:00:00","modified":"2015-01-28 14:15:10","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5168,"siteId":"US1CODN0079","stationName":"DENVER
+        00:00:00","endDate":"2009-10-28 00:00:00","modified":"2015-01-28 14:16:02","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5168,"siteId":"US1CODN0079","stationName":"DENVER
         5.6 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":496428.0,"utmY":4400987.8,"latitude":39.758809,"longitude":-105.041710,"locationAccuracy":null,"startDate":"2004-07-18
         00:00:00","endDate":"2024-11-06 00:00:00","modified":"2024-11-15 21:38:00","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5168,"siteId":"US1CODN0079","stationName":"DENVER
@@ -516,28 +516,28 @@ http_interactions:
         00:00:00","endDate":"2024-11-09 00:00:00","modified":"2024-11-15 21:38:00","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5172,"siteId":"US1CODN0074","stationName":"DENVER
         6.0 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495725.7,"utmY":4401154.6,"latitude":39.760310,"longitude":-105.049907,"locationAccuracy":null,"startDate":"2004-06-21
-        00:00:00","endDate":"2021-04-20 00:00:00","modified":"2024-03-14 20:11:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5172,"siteId":"US1CODN0074","stationName":"DENVER
+        00:00:00","endDate":"2021-04-21 00:00:00","modified":"2024-03-14 20:11:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5172,"siteId":"US1CODN0074","stationName":"DENVER
         6.0 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495725.7,"utmY":4401154.6,"latitude":39.760310,"longitude":-105.049907,"locationAccuracy":null,"startDate":"2004-06-21
-        00:00:00","endDate":"2021-04-21 00:00:00","modified":"2024-03-14 20:11:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5173,"siteId":"US1CODN0081","stationName":"DENVER
+        00:00:00","endDate":"2021-04-20 00:00:00","modified":"2024-03-14 20:11:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5173,"siteId":"US1CODN0081","stationName":"DENVER
         5.4 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":496719.3,"utmY":4401198.5,"latitude":39.760702,"longitude":-105.038314,"locationAccuracy":null,"startDate":"2004-07-20
-        00:00:00","endDate":"2005-04-25 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5173,"siteId":"US1CODN0081","stationName":"DENVER
+        00:00:00","endDate":"2005-04-26 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5173,"siteId":"US1CODN0081","stationName":"DENVER
         5.4 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":496719.3,"utmY":4401198.5,"latitude":39.760702,"longitude":-105.038314,"locationAccuracy":null,"startDate":"2004-07-20
-        00:00:00","endDate":"2005-04-26 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5178,"siteId":"US1CODN0098","stationName":"DENVER
+        00:00:00","endDate":"2005-04-25 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5178,"siteId":"US1CODN0098","stationName":"DENVER
         3.9 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499169.2,"utmY":4401675.1,"latitude":39.765006,"longitude":-105.009712,"locationAccuracy":null,"startDate":"2005-05-01
-        00:00:00","endDate":"2006-09-25 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5178,"siteId":"US1CODN0098","stationName":"DENVER
+        00:00:00","endDate":"2006-09-25 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5178,"siteId":"US1CODN0098","stationName":"DENVER
         3.9 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499169.2,"utmY":4401675.1,"latitude":39.765006,"longitude":-105.009712,"locationAccuracy":null,"startDate":"2005-05-01
-        00:00:00","endDate":"2006-09-25 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5179,"siteId":"US1CODN0052","stationName":"DENVER
+        00:00:00","endDate":"2006-09-25 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5179,"siteId":"US1CODN0052","stationName":"DENVER
         1.9 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502483.8,"utmY":4401819.7,"latitude":39.766309,"longitude":-104.971008,"locationAccuracy":null,"startDate":"2003-10-12
-        00:00:00","endDate":"2006-04-26 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5179,"siteId":"US1CODN0052","stationName":"DENVER
+        00:00:00","endDate":"2006-04-26 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5179,"siteId":"US1CODN0052","stationName":"DENVER
         1.9 W","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502483.8,"utmY":4401819.7,"latitude":39.766309,"longitude":-104.971008,"locationAccuracy":null,"startDate":"2003-10-12
-        00:00:00","endDate":"2006-04-26 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5183,"siteId":"US1CODN0006","stationName":"DENVER
+        00:00:00","endDate":"2006-04-26 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5183,"siteId":"US1CODN0006","stationName":"DENVER
         WSFO AIRPORT","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511296.9,"utmY":4402071.8,"latitude":39.768508,"longitude":-104.868109,"locationAccuracy":null,"startDate":"2000-05-01
         00:00:00","endDate":"2001-05-31 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5183,"siteId":"US1CODN0006","stationName":"DENVER
@@ -546,28 +546,28 @@ http_interactions:
         00:00:00","endDate":"2001-05-31 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5185,"siteId":"US1CODN0005","stationName":"DENVER
         3.0 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":497456.4,"utmY":4402308.1,"latitude":39.770706,"longitude":-105.029714,"locationAccuracy":null,"startDate":"2001-05-01
-        00:00:00","endDate":"2005-01-31 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5185,"siteId":"US1CODN0005","stationName":"DENVER
+        00:00:00","endDate":"2005-01-31 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5185,"siteId":"US1CODN0005","stationName":"DENVER
         3.0 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":497456.4,"utmY":4402308.1,"latitude":39.770706,"longitude":-105.029714,"locationAccuracy":null,"startDate":"2001-05-01
-        00:00:00","endDate":"2005-01-31 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5189,"siteId":"US1CODN0046","stationName":"WHEATRIDGE
+        00:00:00","endDate":"2005-01-31 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5189,"siteId":"US1CODN0046","stationName":"WHEATRIDGE
         1.6 ENE","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495726.5,"utmY":4402664.0,"latitude":39.773906,"longitude":-105.049916,"locationAccuracy":null,"startDate":"2003-01-01
-        00:00:00","endDate":"2005-03-13 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5189,"siteId":"US1CODN0046","stationName":"WHEATRIDGE
+        00:00:00","endDate":"2005-03-13 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5189,"siteId":"US1CODN0046","stationName":"WHEATRIDGE
         1.6 ENE","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495726.5,"utmY":4402664.0,"latitude":39.773906,"longitude":-105.049916,"locationAccuracy":null,"startDate":"2003-01-01
-        00:00:00","endDate":"2005-03-13 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5191,"siteId":"US1CODN0048","stationName":"DENVER
+        00:00:00","endDate":"2005-03-13 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5191,"siteId":"US1CODN0048","stationName":"DENVER
         3.4 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":497636.4,"utmY":4402874.1,"latitude":39.775806,"longitude":-105.027615,"locationAccuracy":null,"startDate":"2003-07-19
-        00:00:00","endDate":"2004-10-17 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5191,"siteId":"US1CODN0048","stationName":"DENVER
+        00:00:00","endDate":"2004-10-17 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5191,"siteId":"US1CODN0048","stationName":"DENVER
         3.4 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":497636.4,"utmY":4402874.1,"latitude":39.775806,"longitude":-105.027615,"locationAccuracy":null,"startDate":"2003-07-19
-        00:00:00","endDate":"2004-10-17 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5192,"siteId":"US1CODN0032","stationName":"DENVER
+        00:00:00","endDate":"2004-10-17 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5192,"siteId":"US1CODN0032","stationName":"DENVER
         4.3 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495555.4,"utmY":4402886.1,"latitude":39.775906,"longitude":-105.051915,"locationAccuracy":null,"startDate":"2002-05-23
-        00:00:00","endDate":"2005-10-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5192,"siteId":"US1CODN0032","stationName":"DENVER
+        00:00:00","endDate":"2005-10-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5192,"siteId":"US1CODN0032","stationName":"DENVER
         4.3 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495555.4,"utmY":4402886.1,"latitude":39.775906,"longitude":-105.051915,"locationAccuracy":null,"startDate":"2002-05-23
-        00:00:00","endDate":"2005-10-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5193,"siteId":"US1CODN0023","stationName":"DENVER
+        00:00:00","endDate":"2005-10-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5193,"siteId":"US1CODN0023","stationName":"DENVER
         4.4 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495572.5,"utmY":4402908.3,"latitude":39.776104,"longitude":-105.051716,"locationAccuracy":null,"startDate":"2004-05-29
         00:00:00","endDate":"2005-10-16 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5193,"siteId":"US1CODN0023","stationName":"DENVER
@@ -576,46 +576,46 @@ http_interactions:
         00:00:00","endDate":"2005-10-16 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5194,"siteId":"US1CODN0041","stationName":"DENVER
         3 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":498612.7,"utmY":4403106.9,"latitude":39.777907,"longitude":-105.016207,"locationAccuracy":null,"startDate":"2003-04-14
-        00:00:00","endDate":"2007-12-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5194,"siteId":"US1CODN0041","stationName":"DENVER
+        00:00:00","endDate":"2007-12-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5194,"siteId":"US1CODN0041","stationName":"DENVER
         3 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":498612.7,"utmY":4403106.9,"latitude":39.777907,"longitude":-105.016207,"locationAccuracy":null,"startDate":"2003-04-14
-        00:00:00","endDate":"2007-12-07 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5195,"siteId":"US1CODN0044","stationName":"DENVER
+        00:00:00","endDate":"2007-12-07 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5195,"siteId":"US1CODN0044","stationName":"DENVER
         4.5 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495512.8,"utmY":4403230.2,"latitude":39.779005,"longitude":-105.052407,"locationAccuracy":null,"startDate":"2002-10-21
-        00:00:00","endDate":"2005-01-05 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5195,"siteId":"US1CODN0044","stationName":"DENVER
+        00:00:00","endDate":"2005-01-05 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5195,"siteId":"US1CODN0044","stationName":"DENVER
         4.5 NW","dataSource":"CoCoRaHS","division":1,"waterDistrict":7,"county":"DENVER
         ","state":"CO","utmX":495512.8,"utmY":4403230.2,"latitude":39.779005,"longitude":-105.052407,"locationAccuracy":null,"startDate":"2002-10-21
-        00:00:00","endDate":"2005-01-05 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5197,"siteId":"US1CODN0038","stationName":"DENVER
+        00:00:00","endDate":"2005-01-05 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5197,"siteId":"US1CODN0038","stationName":"DENVER
         4.9 NE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":507937.9,"utmY":4403632.5,"latitude":39.782602,"longitude":-104.907309,"locationAccuracy":null,"startDate":"2002-06-19
-        00:00:00","endDate":"2005-03-16 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5197,"siteId":"US1CODN0038","stationName":"DENVER
+        00:00:00","endDate":"2005-03-16 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5197,"siteId":"US1CODN0038","stationName":"DENVER
         4.9 NE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":507937.9,"utmY":4403632.5,"latitude":39.782602,"longitude":-104.907309,"locationAccuracy":null,"startDate":"2002-06-19
-        00:00:00","endDate":"2005-03-16 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5199,"siteId":"US1CODN0127","stationName":"DENVER
+        00:00:00","endDate":"2005-03-16 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5199,"siteId":"US1CODN0127","stationName":"DENVER
         4.4 N","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504443.6,"utmY":4404584.2,"latitude":39.791205,"longitude":-104.948106,"locationAccuracy":null,"startDate":"2008-12-24
-        00:00:00","endDate":"2014-05-10 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5199,"siteId":"US1CODN0127","stationName":"DENVER
+        00:00:00","endDate":"2014-05-10 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5199,"siteId":"US1CODN0127","stationName":"DENVER
         4.4 N","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":504443.6,"utmY":4404584.2,"latitude":39.791205,"longitude":-104.948106,"locationAccuracy":null,"startDate":"2008-12-24
-        00:00:00","endDate":"2014-05-10 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5205,"siteId":"US1COAD0036","stationName":"COMMERCE
+        00:00:00","endDate":"2014-05-10 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5205,"siteId":"US1COAD0036","stationName":"COMMERCE
         CITY 3.9 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511420.3,"utmY":4405457.1,"latitude":39.799006,"longitude":-104.866614,"locationAccuracy":null,"startDate":"2003-06-10
-        00:00:00","endDate":"2004-08-04 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5205,"siteId":"US1COAD0036","stationName":"COMMERCE
+        00:00:00","endDate":"2004-08-04 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5205,"siteId":"US1COAD0036","stationName":"COMMERCE
         CITY 3.9 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":511420.3,"utmY":4405457.1,"latitude":39.799006,"longitude":-104.866614,"locationAccuracy":null,"startDate":"2003-06-10
-        00:00:00","endDate":"2004-08-04 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5239,"siteId":"US1CODN0073","stationName":"DIA
+        00:00:00","endDate":"2004-08-04 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5239,"siteId":"US1CODN0073","stationName":"DIA
         1.0 NE","dataSource":"CoCoRaHS","division":1,"waterDistrict":1,"county":"DENVER
         ","state":"CO","utmX":529865.6,"utmY":4412998.5,"latitude":39.866502,"longitude":-104.650805,"locationAccuracy":null,"startDate":"1999-04-01
-        00:00:00","endDate":"2005-08-08 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5239,"siteId":"US1CODN0073","stationName":"DIA
+        00:00:00","endDate":"2005-08-08 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5239,"siteId":"US1CODN0073","stationName":"DIA
         1.0 NE","dataSource":"CoCoRaHS","division":1,"waterDistrict":1,"county":"DENVER
         ","state":"CO","utmX":529865.6,"utmY":4412998.5,"latitude":39.866502,"longitude":-104.650805,"locationAccuracy":null,"startDate":"1999-04-01
-        00:00:00","endDate":"2005-08-08 00:00:00","modified":"2013-08-08 07:39:21","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5841,"siteId":"US1CODN0175","stationName":"DENVER
+        00:00:00","endDate":"2005-08-08 00:00:00","modified":"2013-08-08 07:41:24","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5841,"siteId":"US1CODN0175","stationName":"DENVER
         0.4 E","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503907.7,"utmY":4397591.7,"latitude":39.728208,"longitude":-104.954408,"locationAccuracy":null,"startDate":"2012-11-07
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:34","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5841,"siteId":"US1CODN0175","stationName":"DENVER
+        00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-15 21:49:58","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5841,"siteId":"US1CODN0175","stationName":"DENVER
         0.4 E","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503907.7,"utmY":4397591.7,"latitude":39.728208,"longitude":-104.954408,"locationAccuracy":null,"startDate":"2012-11-07
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:34","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5842,"siteId":"US1CODN0146","stationName":"DENVER
+        00:00:00","endDate":"2025-02-13 00:00:00","modified":"2025-02-15 21:49:58","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5842,"siteId":"US1CODN0146","stationName":"DENVER
         3.6 NNW","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":501335.9,"utmY":4403006.9,"latitude":39.777006,"longitude":-104.984409,"locationAccuracy":null,"startDate":"2011-12-30
         00:00:00","endDate":"2016-11-17 00:00:00","modified":"2019-08-13 14:12:49","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5842,"siteId":"US1CODN0146","stationName":"DENVER
@@ -624,76 +624,76 @@ http_interactions:
         00:00:00","endDate":"2016-11-17 00:00:00","modified":"2019-08-13 14:12:49","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5843,"siteId":"US1CODN0159","stationName":"DENVER
         4.6 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503817.2,"utmY":4390177.9,"latitude":39.661407,"longitude":-104.955512,"locationAccuracy":null,"startDate":"2012-09-10
-        00:00:00","endDate":"2013-05-23 00:00:00","modified":"2015-01-27 07:10:56","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5843,"siteId":"US1CODN0159","stationName":"DENVER
+        00:00:00","endDate":"2013-05-07 00:00:00","modified":"2015-01-27 07:11:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":5843,"siteId":"US1CODN0159","stationName":"DENVER
         4.6 S","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":503817.2,"utmY":4390177.9,"latitude":39.661407,"longitude":-104.955512,"locationAccuracy":null,"startDate":"2012-09-10
-        00:00:00","endDate":"2013-05-07 00:00:00","modified":"2015-01-27 07:11:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6396,"siteId":"US1CODN0168","stationName":"GHCND:US1CODN0168","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2013-05-23 00:00:00","modified":"2015-01-27 07:10:56","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6396,"siteId":"US1CODN0168","stationName":"GHCND:US1CODN0168","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":501242.8,"utmY":4395815.1,"latitude":39.712205,"longitude":-104.985509,"locationAccuracy":null,"startDate":"2012-09-04
-        00:00:00","endDate":"2014-04-17 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6396,"siteId":"US1CODN0168","stationName":"GHCND:US1CODN0168","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2014-04-17 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6396,"siteId":"US1CODN0168","stationName":"GHCND:US1CODN0168","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":501242.8,"utmY":4395815.1,"latitude":39.712205,"longitude":-104.985509,"locationAccuracy":null,"startDate":"2012-09-04
-        00:00:00","endDate":"2014-04-17 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6397,"siteId":"US1CODN0160","stationName":"GHCND:US1CODN0160","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2014-04-17 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6397,"siteId":"US1CODN0160","stationName":"GHCND:US1CODN0160","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506452.6,"utmY":4398004.1,"latitude":39.731905,"longitude":-104.924706,"locationAccuracy":null,"startDate":"2012-08-30
-        00:00:00","endDate":"2014-01-23 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6397,"siteId":"US1CODN0160","stationName":"GHCND:US1CODN0160","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2013-12-03 00:00:00","modified":"2015-01-27 07:11:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6397,"siteId":"US1CODN0160","stationName":"GHCND:US1CODN0160","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506452.6,"utmY":4398004.1,"latitude":39.731905,"longitude":-104.924706,"locationAccuracy":null,"startDate":"2012-08-30
-        00:00:00","endDate":"2013-12-03 00:00:00","modified":"2015-01-27 07:11:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6398,"siteId":"US1COAR0245","stationName":"GHCND:US1COAR0245","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":506802.3,"utmY":4390191.1,"latitude":39.661505,"longitude":-104.920714,"locationAccuracy":null,"startDate":"2012-09-26
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 20:52:38","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6398,"siteId":"US1COAR0245","stationName":"GHCND:US1COAR0245","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":506802.3,"utmY":4390191.1,"latitude":39.661505,"longitude":-104.920714,"locationAccuracy":null,"startDate":"2012-09-28
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 20:52:38","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6476,"siteId":"US1CODN0147","stationName":"GHCND:US1CODN0147","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
-        ","state":"CO","utmX":499006.0,"utmY":4401531.0,"latitude":39.763708,"longitude":-105.011615,"locationAccuracy":null,"startDate":"2012-07-07
-        00:00:00","endDate":"2014-03-05 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6476,"siteId":"US1CODN0147","stationName":"GHCND:US1CODN0147","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2014-01-23 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6398,"siteId":"US1COAR0245","stationName":"GHCND:US1COAR0245","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":506802.3,"utmY":4390191.1,"latitude":39.661505,"longitude":-104.920714,"locationAccuracy":null,"startDate":"2012-09-28
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 20:47:29","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6398,"siteId":"US1COAR0245","stationName":"GHCND:US1COAR0245","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":506802.3,"utmY":4390191.1,"latitude":39.661505,"longitude":-104.920714,"locationAccuracy":null,"startDate":"2012-09-26
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 20:47:29","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6476,"siteId":"US1CODN0147","stationName":"GHCND:US1CODN0147","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":499006.0,"utmY":4401531.0,"latitude":39.763708,"longitude":-105.011615,"locationAccuracy":null,"startDate":"2013-03-29
-        00:00:00","endDate":"2013-11-25 00:00:00","modified":"2015-01-14 13:31:30","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6541,"siteId":"US1CODN0196","stationName":"GHCND:US1CODN0196","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
+        00:00:00","endDate":"2013-11-25 00:00:00","modified":"2015-01-14 13:31:30","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6476,"siteId":"US1CODN0147","stationName":"GHCND:US1CODN0147","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        ","state":"CO","utmX":499006.0,"utmY":4401531.0,"latitude":39.763708,"longitude":-105.011615,"locationAccuracy":null,"startDate":"2012-07-07
+        00:00:00","endDate":"2014-03-05 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6541,"siteId":"US1CODN0196","stationName":"GHCND:US1CODN0196","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":521814.0,"utmY":4405269.0,"latitude":39.797109,"longitude":-104.745209,"locationAccuracy":null,"startDate":"2013-08-07
-        00:00:00","endDate":"2016-06-21 00:00:00","modified":"2019-08-13 14:15:26","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6541,"siteId":"US1CODN0196","stationName":"GHCND:US1CODN0196","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
+        00:00:00","endDate":"2016-04-30 00:00:00","modified":"2019-08-13 14:15:26","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6541,"siteId":"US1CODN0196","stationName":"GHCND:US1CODN0196","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":521814.0,"utmY":4405269.0,"latitude":39.797109,"longitude":-104.745209,"locationAccuracy":null,"startDate":"2013-08-07
-        00:00:00","endDate":"2016-04-30 00:00:00","modified":"2019-08-13 14:15:26","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6542,"siteId":"US1CODN0180","stationName":"GHCND:US1CODN0180","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
-        ","state":"CO","utmX":497533.0,"utmY":4399988.0,"latitude":39.749802,"longitude":-105.028807,"locationAccuracy":null,"startDate":"2013-04-12
-        00:00:00","endDate":"2015-09-04 00:00:00","modified":"2019-08-13 14:14:11","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6542,"siteId":"US1CODN0180","stationName":"GHCND:US1CODN0180","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2016-06-21 00:00:00","modified":"2019-08-13 14:15:26","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6542,"siteId":"US1CODN0180","stationName":"GHCND:US1CODN0180","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":497533.0,"utmY":4399988.0,"latitude":39.749802,"longitude":-105.028807,"locationAccuracy":null,"startDate":"2013-04-15
-        00:00:00","endDate":"2015-07-13 00:00:00","modified":"2019-08-13 14:14:11","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6543,"siteId":"US1CODN0183","stationName":"GHCND:US1CODN0183","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
+        00:00:00","endDate":"2015-07-13 00:00:00","modified":"2019-08-13 14:14:11","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6542,"siteId":"US1CODN0180","stationName":"GHCND:US1CODN0180","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        ","state":"CO","utmX":497533.0,"utmY":4399988.0,"latitude":39.749802,"longitude":-105.028807,"locationAccuracy":null,"startDate":"2013-04-12
+        00:00:00","endDate":"2015-09-04 00:00:00","modified":"2019-08-13 14:14:11","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6543,"siteId":"US1CODN0183","stationName":"GHCND:US1CODN0183","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":510793.0,"utmY":4400906.0,"latitude":39.758009,"longitude":-104.874012,"locationAccuracy":null,"startDate":"2013-04-28
-        00:00:00","endDate":"2023-12-11 00:00:00","modified":"2024-03-14 20:25:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6543,"siteId":"US1CODN0183","stationName":"GHCND:US1CODN0183","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
+        00:00:00","endDate":"2023-12-11 00:00:00","modified":"2024-03-14 20:25:34","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6543,"siteId":"US1CODN0183","stationName":"GHCND:US1CODN0183","dataSource":"CoCoRaHS","division":1,"waterDistrict":2,"county":"DENVER
         ","state":"CO","utmX":510793.0,"utmY":4400906.0,"latitude":39.758009,"longitude":-104.874012,"locationAccuracy":null,"startDate":"2013-04-28
-        00:00:00","endDate":"2023-12-11 00:00:00","modified":"2024-03-14 20:25:34","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6659,"siteId":"US1CODN0190","stationName":"GHCND:US1CODN0190","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
-        ","state":"CO","utmX":502109.0,"utmY":4395061.0,"latitude":39.705410,"longitude":-104.975408,"locationAccuracy":null,"startDate":"2013-08-05
-        00:00:00","endDate":"2017-05-12 00:00:00","modified":"2019-08-13 14:15:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6659,"siteId":"US1CODN0190","stationName":"GHCND:US1CODN0190","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2023-12-11 00:00:00","modified":"2024-03-14 20:25:45","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6659,"siteId":"US1CODN0190","stationName":"GHCND:US1CODN0190","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":502109.0,"utmY":4395061.0,"latitude":39.705410,"longitude":-104.975408,"locationAccuracy":null,"startDate":"2013-08-07
-        00:00:00","endDate":"2017-05-07 00:00:00","modified":"2019-08-13 14:15:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6660,"siteId":"US1CODN0186","stationName":"GHCND:US1CODN0186","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2017-05-07 00:00:00","modified":"2019-08-13 14:15:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6659,"siteId":"US1CODN0190","stationName":"GHCND:US1CODN0190","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        ","state":"CO","utmX":502109.0,"utmY":4395061.0,"latitude":39.705410,"longitude":-104.975408,"locationAccuracy":null,"startDate":"2013-08-05
+        00:00:00","endDate":"2017-05-12 00:00:00","modified":"2019-08-13 14:15:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6660,"siteId":"US1CODN0186","stationName":"GHCND:US1CODN0186","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506917.0,"utmY":4396262.0,"latitude":39.716206,"longitude":-104.919310,"locationAccuracy":null,"startDate":"2023-10-29
         00:00:00","endDate":"2024-07-18 00:00:00","modified":"2024-08-15 21:55:20","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6660,"siteId":"US1CODN0186","stationName":"GHCND:US1CODN0186","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":506917.0,"utmY":4396262.0,"latitude":39.716206,"longitude":-104.919310,"locationAccuracy":null,"startDate":"2022-05-02
-        00:00:00","endDate":"2024-11-10 00:00:00","modified":"2024-11-15 21:38:48","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6661,"siteId":"US1CODN0205","stationName":"GHCND:US1CODN0205","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2025-02-12 00:00:00","modified":"2025-02-15 21:50:11","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6661,"siteId":"US1CODN0205","stationName":"GHCND:US1CODN0205","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":501303.0,"utmY":4393973.0,"latitude":39.695608,"longitude":-104.984813,"locationAccuracy":null,"startDate":"2012-04-17
-        00:00:00","endDate":"2014-08-14 00:00:00","modified":"2019-08-13 14:15:28","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6661,"siteId":"US1CODN0205","stationName":"GHCND:US1CODN0205","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
+        00:00:00","endDate":"2014-07-20 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6661,"siteId":"US1CODN0205","stationName":"GHCND:US1CODN0205","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER
         ","state":"CO","utmX":501303.0,"utmY":4393973.0,"latitude":39.695608,"longitude":-104.984813,"locationAccuracy":null,"startDate":"2012-04-17
-        00:00:00","endDate":"2014-07-20 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6859,"siteId":"US1CODN0187","stationName":"DENVER
-        2.6 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":507285.0,"utmY":4396495.0,"latitude":39.718302,"longitude":-104.915014,"locationAccuracy":null,"startDate":"2013-08-03
-        00:00:00","endDate":"2024-09-05 00:00:00","modified":"2024-09-15 22:31:44","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6859,"siteId":"US1CODN0187","stationName":"DENVER
+        00:00:00","endDate":"2014-08-14 00:00:00","modified":"2019-08-13 14:15:28","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6859,"siteId":"US1CODN0187","stationName":"DENVER
         2.6 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":507285.0,"utmY":4396495.0,"latitude":39.718302,"longitude":-104.915014,"locationAccuracy":null,"startDate":"2013-08-07
-        00:00:00","endDate":"2024-05-14 00:00:00","modified":"2024-07-15 21:59:01","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6860,"siteId":"US1CODN0199","stationName":"DENVER
+        00:00:00","endDate":"2024-05-14 00:00:00","modified":"2024-07-15 21:59:01","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6859,"siteId":"US1CODN0187","stationName":"DENVER
+        2.6 ESE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":507285.0,"utmY":4396495.0,"latitude":39.718302,"longitude":-104.915014,"locationAccuracy":null,"startDate":"2013-08-03
+        00:00:00","endDate":"2024-09-05 00:00:00","modified":"2024-09-15 22:31:44","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6860,"siteId":"US1CODN0199","stationName":"DENVER
         1.1 NNE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":503916.0,"utmY":4399146.0,"latitude":39.742210,"longitude":-104.954305,"locationAccuracy":null,"startDate":"2013-08-19
-        00:00:00","endDate":"2014-07-15 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6860,"siteId":"US1CODN0199","stationName":"DENVER
+        00:00:00","endDate":"2014-07-11 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6860,"siteId":"US1CODN0199","stationName":"DENVER
         1.1 NNE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":503916.0,"utmY":4399146.0,"latitude":39.742210,"longitude":-104.954305,"locationAccuracy":null,"startDate":"2013-08-19
-        00:00:00","endDate":"2014-07-11 00:00:00","modified":"2016-01-16 01:40:16","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6953,"siteId":"US1CODN0223","stationName":"DENVER
+        00:00:00","endDate":"2014-07-15 00:00:00","modified":"2016-01-16 01:39:55","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6953,"siteId":"US1CODN0223","stationName":"DENVER
         6.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":507636.0,"utmY":4388560.0,"latitude":39.646802,"longitude":-104.911010,"locationAccuracy":null,"startDate":"2014-05-08
         00:00:00","endDate":"2019-07-24 00:00:00","modified":"2024-03-14 20:27:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":6953,"siteId":"US1CODN0223","stationName":"DENVER
         6.2 SSE","dataSource":"CoCoRaHS","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":507636.0,"utmY":4388560.0,"latitude":39.646802,"longitude":-104.911010,"locationAccuracy":null,"startDate":"2014-05-10
         00:00:00","endDate":"2019-07-24 00:00:00","modified":"2024-03-14 20:27:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7313,"siteId":"US1CODN0231","stationName":"DENVER
-        2.6 SSW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":502358.0,"utmY":4393540.0,"latitude":39.691705,"longitude":-104.972509,"locationAccuracy":null,"startDate":"2014-10-15
-        00:00:00","endDate":"2024-03-14 00:00:00","modified":"2024-05-15 21:45:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7313,"siteId":"US1CODN0231","stationName":"DENVER
         2.6 SSW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":502358.0,"utmY":4393540.0,"latitude":39.691705,"longitude":-104.972509,"locationAccuracy":null,"startDate":"2014-10-09
-        00:00:00","endDate":"2024-04-16 00:00:00","modified":"2024-05-15 21:45:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7357,"siteId":"US1CODN0177","stationName":"DENVER
+        00:00:00","endDate":"2024-04-16 00:00:00","modified":"2024-05-15 21:45:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7313,"siteId":"US1CODN0231","stationName":"DENVER
+        2.6 SSW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":502358.0,"utmY":4393540.0,"latitude":39.691705,"longitude":-104.972509,"locationAccuracy":null,"startDate":"2014-10-15
+        00:00:00","endDate":"2024-03-14 00:00:00","modified":"2024-05-15 21:45:51","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7357,"siteId":"US1CODN0177","stationName":"DENVER
         2.0 ESE","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":506128.0,"utmY":4396150.0,"latitude":39.715203,"longitude":-104.928516,"locationAccuracy":null,"startDate":"2013-10-18
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7357,"siteId":"US1CODN0177","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:50:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7357,"siteId":"US1CODN0177","stationName":"DENVER
         2.0 ESE","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":506128.0,"utmY":4396150.0,"latitude":39.715203,"longitude":-104.928516,"locationAccuracy":null,"startDate":"2013-10-18
-        00:00:00","endDate":"2024-11-14 00:00:00","modified":"2024-11-15 21:38:41","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7593,"siteId":"US1CODN0212","stationName":"DENVER
+        00:00:00","endDate":"2025-02-14 00:00:00","modified":"2025-02-15 21:50:07","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7593,"siteId":"US1CODN0212","stationName":"DENVER
         6.5 SW","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER","state":"CO","utmX":495308.0,"utmY":4390167.0,"latitude":39.661303,"longitude":-105.054708,"locationAccuracy":null,"startDate":"2013-10-21
         00:00:00","endDate":"2022-09-15 00:00:00","modified":"2024-03-14 20:26:38","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7593,"siteId":"US1CODN0212","stationName":"DENVER
         6.5 SW","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER","state":"CO","utmX":495308.0,"utmY":4390167.0,"latitude":39.661303,"longitude":-105.054708,"locationAccuracy":null,"startDate":"2013-10-23
         00:00:00","endDate":"2022-01-15 00:00:00","modified":"2024-03-14 20:26:38","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7594,"siteId":"US1CODN0229","stationName":"DENVER
-        1.9 SSW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":502255.0,"utmY":4394750.0,"latitude":39.702607,"longitude":-104.973706,"locationAccuracy":null,"startDate":"2016-08-09
-        00:00:00","endDate":"2021-06-09 00:00:00","modified":"2024-01-15 21:52:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7594,"siteId":"US1CODN0229","stationName":"DENVER
         1.9 SSW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":502255.0,"utmY":4394750.0,"latitude":39.702607,"longitude":-104.973706,"locationAccuracy":null,"startDate":"2014-11-08
-        00:00:00","endDate":"2021-06-26 00:00:00","modified":"2024-01-15 21:52:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7595,"siteId":"US1CODN0235","stationName":"DENVER
+        00:00:00","endDate":"2021-06-26 00:00:00","modified":"2024-01-15 21:52:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7594,"siteId":"US1CODN0229","stationName":"DENVER
+        1.9 SSW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":502255.0,"utmY":4394750.0,"latitude":39.702607,"longitude":-104.973706,"locationAccuracy":null,"startDate":"2016-08-09
+        00:00:00","endDate":"2021-06-09 00:00:00","modified":"2024-01-15 21:52:18","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7595,"siteId":"US1CODN0235","stationName":"DENVER
         1.3 WNW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501225.0,"utmY":4398124.0,"latitude":39.733010,"longitude":-104.985715,"locationAccuracy":null,"startDate":"2015-05-10
         00:00:00","endDate":"2020-12-15 00:00:00","modified":"2021-01-15 21:47:44","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7595,"siteId":"US1CODN0235","stationName":"DENVER
         1.3 WNW","dataSource":"NOAA","division":1,"waterDistrict":8,"county":"DENVER","state":"CO","utmX":501225.0,"utmY":4398124.0,"latitude":39.733010,"longitude":-104.985715,"locationAccuracy":null,"startDate":"2015-05-04
@@ -703,8 +703,8 @@ http_interactions:
         1.3 SW","dataSource":"NOAA","division":1,"waterDistrict":9,"county":"DENVER","state":"CO","utmX":496928.0,"utmY":4387059.0,"latitude":39.633306,"longitude":-105.035808,"locationAccuracy":null,"startDate":"2015-09-28
         00:00:00","endDate":"2016-03-26 00:00:00","modified":"2019-08-13 12:11:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7754,"siteId":"US1CODN0236","stationName":"DENVER
         4.6 ENE","dataSource":"NOAA","division":1,"waterDistrict":2,"county":"DENVER","state":"CO","utmX":510074.0,"utmY":4400317.0,"latitude":39.752711,"longitude":-104.882415,"locationAccuracy":null,"startDate":"2015-06-27
-        00:00:00","endDate":"2020-08-28 00:00:00","modified":"2024-03-14 20:29:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7754,"siteId":"US1CODN0236","stationName":"DENVER
+        00:00:00","endDate":"2020-08-29 00:00:00","modified":"2024-03-14 20:29:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"},{"stationNum":7754,"siteId":"US1CODN0236","stationName":"DENVER
         4.6 ENE","dataSource":"NOAA","division":1,"waterDistrict":2,"county":"DENVER","state":"CO","utmX":510074.0,"utmY":4400317.0,"latitude":39.752711,"longitude":-104.882415,"locationAccuracy":null,"startDate":"2015-06-27
-        00:00:00","endDate":"2020-08-29 00:00:00","modified":"2024-03-14 20:29:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"}]}'
-  recorded_at: Sun, 24 Nov 2024 06:02:00 GMT
+        00:00:00","endDate":"2020-08-28 00:00:00","modified":"2024-03-14 20:29:14","moreInformation":"http://cdss.state.co.us/onlineTools/Pages/ClimateStation.aspx"}]}'
+  recorded_at: Wed, 19 Feb 2025 04:59:09 GMT
 recorded_with: VCR 6.3.1
