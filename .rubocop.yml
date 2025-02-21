@@ -1,13 +1,86 @@
+# .rubocop.yml
+require:
+  - rubocop-minitest
+
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
+  NewCops: enable
 
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+# Allow development dependencies in gemspec
+Gemspec/DevelopmentDependencies:
+  Enabled: false
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+# Make documentation optional for most files
+Style/Documentation:
+  Enabled: false
 
+# Allow unused arguments (often needed for API compatibility)
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+# Allow missing super in inherited callbacks
+Lint/MissingSuper:
+  Enabled: false
+
+# Allow private class methods to be defined normally
+Lint/IneffectiveAccessModifier:
+  Enabled: false
+
+# Allow longer classes and modules for better organization
+Metrics/ClassLength:
+  Max: 200
+  Exclude:
+    - 'test/**/*'
+
+Metrics/ModuleLength:
+  Max: 200
+
+# Allow more reasonable method lengths
+Metrics/MethodLength:
+  Max: 40
+  Exclude:
+    - 'test/**/*'
+
+Metrics/AbcSize:
+  Max: 50
+  Exclude:
+    - 'test/**/*'
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/PerceivedComplexity:
+  Max: 12
+
+# Allow longer parameter lists for API methods
+Metrics/ParameterLists:
+  Max: 10
+  CountKeywordArgs: false
+
+# Allow longer lines, especially for documentation
 Layout/LineLength:
-  Max: 120
+  Max: 150
+  Exclude:
+    - 'test/**/*'
+
+# Allow larger blocks in tests
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*'
+    - '*.gemspec'
+
+# Other style preferences
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Lint/DuplicateMethods:
+  Exclude:
+    - 'test/**/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Lint/Void:
+  Exclude:
+    - test/cdss/test_analysis.rb
+    - test/cdss/test_structures.rb

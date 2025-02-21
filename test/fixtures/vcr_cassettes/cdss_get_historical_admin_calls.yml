@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-25T00:00:00-07:00"'
+      - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '577745'
+      - '580138'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '953'
       X-Result-Count:
       - '459'
       X-Version-Number:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 26 Nov 2024 04:18:39 GMT
+      - Tue, 18 Feb 2025 05:29:26 GMT
       Content-Length:
       - '381679'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":459,"ResultDateTime":"2024-11-25
-        21:18:40","ResultList":[{"callNumber":31820,"callType":"CALL","dateTimeSet":"2023-01-01
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":459,"ResultDateTime":"2025-02-17
+        22:29:26","ResultList":[{"callNumber":31820,"callType":"CALL","dateTimeSet":"2023-01-01
         08:00:00","dateTimeReleased":"2023-01-03 12:00:00","waterSourceName":"SOUTH
         PLATTE RIVER","locationWdid":"0200802","locationWdidStreammile":237.77,"locationStructureName":"BURLINGTON
         D RIVER HEADGATE","priorityWdid":"0200802","priorityStructureName":"BURLINGTON
@@ -3091,5 +3091,5 @@ http_interactions:
         00:00:00","priorityNumber":null,"boundingWdid":null,"boundingStructureName":null,"setComments":"AFFECTS
         DISTRICTS 1,2,3,4,5,6,7","releaseComment":null,"division":1,"locationStructureLatitude":40.379770,"locationStructureLongitude":-103.478332,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2023-12-26
         12:53:30","moreInformation":"https://dwr.state.co.us/Tools/AdministrativeCalls/33243"}]}'
-  recorded_at: Tue, 26 Nov 2024 04:17:09 GMT
+  recorded_at: Tue, 18 Feb 2025 05:27:52 GMT
 recorded_with: VCR 6.3.1

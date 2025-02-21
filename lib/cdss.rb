@@ -1,7 +1,9 @@
-require 'zeitwerk'
-require 'dry-configurable'
-require 'httparty'
-require 'json'
+# frozen_string_literal: true
+
+require "zeitwerk"
+require "dry-configurable"
+require "httparty"
+require "json"
 
 module Cdss
   @loader = Zeitwerk::Loader.for_gem

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Models
     class AdminCall
@@ -28,7 +30,7 @@ module Cdss
         modified
         more_information
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 

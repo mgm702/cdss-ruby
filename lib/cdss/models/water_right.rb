@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Models
     class WaterRight
@@ -29,7 +31,7 @@ module Cdss
         longitude
         modified
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 

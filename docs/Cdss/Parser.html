@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Cdss::Parser
+  
+    &mdash; Documentation by YARD 0.9.37
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "Cdss::Parser";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Cdss.html" title="Cdss (module)">Cdss</a></span></span>
+     &raquo; 
+    <span class="title">Parser</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Cdss::Parser
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Cdss::Parser</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/cdss/parser.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Parser class handles parsing of response data from the CDSS API into domain objects. It delegates the actual parsing work to specialized parser modules for each data type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_admin_calls-class_method" title="parse_admin_calls (class method)">.<strong>parse_admin_calls</strong>(response)  &#x21d2; Array&lt;AdminCall&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses administrative calls data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_call_analyses-class_method" title="parse_call_analyses (class method)">.<strong>parse_call_analyses</strong>(response, type:)  &#x21d2; Array&lt;CallAnalysis&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses call analysis data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_climate_readings-class_method" title="parse_climate_readings (class method)">.<strong>parse_climate_readings</strong>(response, type:)  &#x21d2; Array&lt;Reading&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses climate reading data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_climate_stations-class_method" title="parse_climate_stations (class method)">.<strong>parse_climate_stations</strong>(response)  &#x21d2; Array&lt;ClimateStation&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses climate station data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_diversion_records-class_method" title="parse_diversion_records (class method)">.<strong>parse_diversion_records</strong>(response, type:)  &#x21d2; Array&lt;Cdss::Models::DiversionRecord&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses diversion record data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_geophysical_wells-class_method" title="parse_geophysical_wells (class method)">.<strong>parse_geophysical_wells</strong>(response)  &#x21d2; Array&lt;Well&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses geophysical well data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_log_picks-class_method" title="parse_log_picks (class method)">.<strong>parse_log_picks</strong>(response)  &#x21d2; Array&lt;Reading&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses geophysical log pick data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_readings-class_method" title="parse_readings (class method)">.<strong>parse_readings</strong>(response, timescale:)  &#x21d2; Array&lt;Reading&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses time series readings from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_reference_table-class_method" title="parse_reference_table (class method)">.<strong>parse_reference_table</strong>(response)  &#x21d2; Array&lt;Cdss::Models::ReferenceTable&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses reference table data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_route_analyses-class_method" title="parse_route_analyses (class method)">.<strong>parse_route_analyses</strong>(response)  &#x21d2; Array&lt;RouteAnalysis&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses route analysis data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_source_routes-class_method" title="parse_source_routes (class method)">.<strong>parse_source_routes</strong>(response)  &#x21d2; Array&lt;SourceRoute&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses source route framework data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_stations-class_method" title="parse_stations (class method)">.<strong>parse_stations</strong>(response)  &#x21d2; Array&lt;Station&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses station data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_structures-class_method" title="parse_structures (class method)">.<strong>parse_structures</strong>(response)  &#x21d2; Array&lt;Cdss::Models::Structure&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses structure data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_water_classes-class_method" title="parse_water_classes (class method)">.<strong>parse_water_classes</strong>(response)  &#x21d2; Array&lt;Cdss::Models::WaterClass&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses water class data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_water_rights-class_method" title="parse_water_rights (class method)">.<strong>parse_water_rights</strong>(response, type:)  &#x21d2; Array&lt;WaterRight&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses water rights data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_well_measurements-class_method" title="parse_well_measurements (class method)">.<strong>parse_well_measurements</strong>(response)  &#x21d2; Array&lt;Reading&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses well measurement data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_wells-class_method" title="parse_wells (class method)">.<strong>parse_wells</strong>(response)  &#x21d2; Array&lt;Well&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses well data from the API response.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="parse_admin_calls-class_method">
+  
+    .<strong>parse_admin_calls</strong>(response)  &#x21d2; <tt>Array&lt;AdminCall&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses administrative calls data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse admin calls from response</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_calls'>calls</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_admin_calls'>parse_admin_calls</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing administrative calls data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;AdminCall&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of administrative call objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+108
+109
+110</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 108</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_admin_calls'>parse_admin_calls</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/AdminCallsParser.html" title="Cdss::Parsers::AdminCallsParser (module)">AdminCallsParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_admin_calls'><span class='object_link'><a href="Parsers/AdminCallsParser.html#parse_admin_calls-class_method" title="Cdss::Parsers::AdminCallsParser.parse_admin_calls (method)">parse_admin_calls</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_call_analyses-class_method">
+  
+    .<strong>parse_call_analyses</strong>(response, type:)  &#x21d2; <tt>Array&lt;CallAnalysis&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses call analysis data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing call analysis data.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The type of analysis (:wdid or :gnis).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;CallAnalysis&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of call analysis objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>If an invalid analysis type is provided.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 118</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_call_analyses'>parse_call_analyses</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/AnalysisParser.html" title="Cdss::Parsers::AnalysisParser (module)">AnalysisParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_call_analyses'><span class='object_link'><a href="Parsers/AnalysisParser.html#parse_call_analyses-class_method" title="Cdss::Parsers::AnalysisParser.parse_call_analyses (method)">parse_call_analyses</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_climate_readings-class_method">
+  
+    .<strong>parse_climate_readings</strong>(response, type:)  &#x21d2; <tt>Array&lt;Reading&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses climate reading data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing climate readings.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The type of climate reading (:frost_dates, :daily, or :monthly).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Reading&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of climate reading objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>If an invalid reading type is provided.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_climate_readings'>parse_climate_readings</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/ClimateParser.html" title="Cdss::Parsers::ClimateParser (module)">ClimateParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_climate_readings'><span class='object_link'><a href="Parsers/ClimateParser.html#parse_climate_readings-class_method" title="Cdss::Parsers::ClimateParser.parse_climate_readings (method)">parse_climate_readings</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_climate_stations-class_method">
+  
+    .<strong>parse_climate_stations</strong>(response)  &#x21d2; <tt>Array&lt;ClimateStation&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses climate station data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing climate station data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;ClimateStation&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of climate station objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_climate_stations'>parse_climate_stations</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/ClimateParser.html" title="Cdss::Parsers::ClimateParser (module)">ClimateParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_climate_stations'><span class='object_link'><a href="Parsers/ClimateParser.html#parse_climate_stations-class_method" title="Cdss::Parsers::ClimateParser.parse_climate_stations (method)">parse_climate_stations</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_diversion_records-class_method">
+  
+    .<strong>parse_diversion_records</strong>(response, type:)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Models/DiversionRecord.html" title="Cdss::Models::DiversionRecord (class)">Cdss::Models::DiversionRecord</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses diversion record data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing diversion record data.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The type of record (:day, :month, :year, or :stage_volume).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Models/DiversionRecord.html" title="Cdss::Models::DiversionRecord (class)">Cdss::Models::DiversionRecord</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of diversion record objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 151</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_diversion_records'>parse_diversion_records</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/StructuresParser.html" title="Cdss::Parsers::StructuresParser (module)">StructuresParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_diversion_records'><span class='object_link'><a href="Parsers/StructuresParser.html#parse_diversion_records-class_method" title="Cdss::Parsers::StructuresParser.parse_diversion_records (method)">parse_diversion_records</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_geophysical_wells-class_method">
+  
+    .<strong>parse_geophysical_wells</strong>(response)  &#x21d2; <tt>Array&lt;Well&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses geophysical well data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse geophysical wells</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_geo_wells'>geo_wells</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_geophysical_wells'>parse_geophysical_wells</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing geophysical well data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Well&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of Well objects with geophysical well information.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_geophysical_wells'>parse_geophysical_wells</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/WellParser.html" title="Cdss::Parsers::WellParser (module)">WellParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_geophysical_wells'><span class='object_link'><a href="Parsers/WellParser.html#parse_geophysical_wells-class_method" title="Cdss::Parsers::WellParser.parse_geophysical_wells (method)">parse_geophysical_wells</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_log_picks-class_method">
+  
+    .<strong>parse_log_picks</strong>(response)  &#x21d2; <tt>Array&lt;Reading&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses geophysical log pick data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse log picks for a well</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_picks'>picks</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_log_picks'>parse_log_picks</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing log pick data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Reading&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of Reading objects containing log pick information.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_log_picks'>parse_log_picks</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/WellParser.html" title="Cdss::Parsers::WellParser (module)">WellParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_log_picks'><span class='object_link'><a href="Parsers/WellParser.html#parse_log_picks-class_method" title="Cdss::Parsers::WellParser.parse_log_picks (method)">parse_log_picks</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_readings-class_method">
+  
+    .<strong>parse_readings</strong>(response, timescale:)  &#x21d2; <tt>Array&lt;Reading&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses time series readings from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse daily readings</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_readings'>readings</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_readings'>parse_readings</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='comma'>,</span> <span class='label'>timescale:</span> <span class='symbol'>:day</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing reading data.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>timescale</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The timescale of the readings (:day, :month, :year, :raw, :hour).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Reading&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of Reading objects with time series data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>If an invalid timescale is provided.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_readings'>parse_readings</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>timescale:</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/ReadingParser.html" title="Cdss::Parsers::ReadingParser (module)">ReadingParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_readings'><span class='object_link'><a href="Parsers/ReadingParser.html#parse_readings-class_method" title="Cdss::Parsers::ReadingParser.parse_readings (method)">parse_readings</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>timescale:</span> <span class='id identifier rubyid_timescale'>timescale</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_reference_table-class_method">
+  
+    .<strong>parse_reference_table</strong>(response)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Models/ReferenceTable.html" title="Cdss::Models::ReferenceTable (class)">Cdss::Models::ReferenceTable</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses reference table data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing reference table data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Models/ReferenceTable.html" title="Cdss::Models::ReferenceTable (class)">Cdss::Models::ReferenceTable</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of reference table objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 167</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_reference_table'>parse_reference_table</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/ReferenceTablesParser.html" title="Cdss::Parsers::ReferenceTablesParser (module)">ReferenceTablesParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_reference_table'><span class='object_link'><a href="Parsers/ReferenceTablesParser.html#parse_reference_table-class_method" title="Cdss::Parsers::ReferenceTablesParser.parse_reference_table (method)">parse_reference_table</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_route_analyses-class_method">
+  
+    .<strong>parse_route_analyses</strong>(response)  &#x21d2; <tt>Array&lt;RouteAnalysis&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses route analysis data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing route analysis data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;RouteAnalysis&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of route analysis objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+134
+135
+136</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 134</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_route_analyses'>parse_route_analyses</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/AnalysisParser.html" title="Cdss::Parsers::AnalysisParser (module)">AnalysisParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_route_analyses'><span class='object_link'><a href="Parsers/AnalysisParser.html#parse_route_analyses-class_method" title="Cdss::Parsers::AnalysisParser.parse_route_analyses (method)">parse_route_analyses</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_source_routes-class_method">
+  
+    .<strong>parse_source_routes</strong>(response)  &#x21d2; <tt>Array&lt;SourceRoute&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses source route framework data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing source route data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;SourceRoute&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of source route objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+126
+127
+128</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 126</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_source_routes'>parse_source_routes</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/AnalysisParser.html" title="Cdss::Parsers::AnalysisParser (module)">AnalysisParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_source_routes'><span class='object_link'><a href="Parsers/AnalysisParser.html#parse_source_routes-class_method" title="Cdss::Parsers::AnalysisParser.parse_source_routes (method)">parse_source_routes</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_stations-class_method">
+  
+    .<strong>parse_stations</strong>(response)  &#x21d2; <tt>Array&lt;Station&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses station data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse stations from API response</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_stations'>stations</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_stations'>parse_stations</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing station data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Station&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of Station objects representing telemetry or surface water stations.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_stations'>parse_stations</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/StationParser.html" title="Cdss::Parsers::StationParser (module)">StationParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_stations'><span class='object_link'><a href="Parsers/StationParser.html#parse_stations-class_method" title="Cdss::Parsers::StationParser.parse_stations (method)">parse_stations</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_structures-class_method">
+  
+    .<strong>parse_structures</strong>(response)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Models/Structure.html" title="Cdss::Models::Structure (class)">Cdss::Models::Structure</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses structure data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing structure data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Models/Structure.html" title="Cdss::Models::Structure (class)">Cdss::Models::Structure</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of structure objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+142
+143
+144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 142</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_structures'>parse_structures</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/StructuresParser.html" title="Cdss::Parsers::StructuresParser (module)">StructuresParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_structures'><span class='object_link'><a href="Parsers/StructuresParser.html#parse_structures-class_method" title="Cdss::Parsers::StructuresParser.parse_structures (method)">parse_structures</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_water_classes-class_method">
+  
+    .<strong>parse_water_classes</strong>(response)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Models/WaterClass.html" title="Cdss::Models::WaterClass (class)">Cdss::Models::WaterClass</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses water class data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing water class data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Models/WaterClass.html" title="Cdss::Models::WaterClass (class)">Cdss::Models::WaterClass</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of water class objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+159
+160
+161</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 159</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_water_classes'>parse_water_classes</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/StructuresParser.html" title="Cdss::Parsers::StructuresParser (module)">StructuresParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_water_classes'><span class='object_link'><a href="Parsers/StructuresParser.html#parse_water_classes-class_method" title="Cdss::Parsers::StructuresParser.parse_water_classes (method)">parse_water_classes</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_water_rights-class_method">
+  
+    .<strong>parse_water_rights</strong>(response, type:)  &#x21d2; <tt>Array&lt;WaterRight&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses water rights data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse net amounts</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_rights'>rights</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_water_rights'>parse_water_rights</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:net_amount</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse transactions</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_transactions'>transactions</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_water_rights'>parse_water_rights</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:transaction</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing water rights data.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The type of water rights data to parse (:net_amount or :transaction).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;WaterRight&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of WaterRight objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>If an invalid water rights type is provided.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_water_rights'>parse_water_rights</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/WaterRightsParser.html" title="Cdss::Parsers::WaterRightsParser (module)">WaterRightsParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_water_rights'><span class='object_link'><a href="Parsers/WaterRightsParser.html#parse_water_rights-class_method" title="Cdss::Parsers::WaterRightsParser.parse_water_rights (method)">parse_water_rights</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_well_measurements-class_method">
+  
+    .<strong>parse_well_measurements</strong>(response)  &#x21d2; <tt>Array&lt;Reading&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses well measurement data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse well measurements</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_measurements'>measurements</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_well_measurements'>parse_well_measurements</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing well measurement data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Reading&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of Reading objects containing well measurements.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_well_measurements'>parse_well_measurements</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/WellParser.html" title="Cdss::Parsers::WellParser (module)">WellParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_well_measurements'><span class='object_link'><a href="Parsers/WellParser.html#parse_well_measurements-class_method" title="Cdss::Parsers::WellParser.parse_well_measurements (method)">parse_well_measurements</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_wells-class_method">
+  
+    .<strong>parse_wells</strong>(response)  &#x21d2; <tt>Array&lt;Well&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses well data from the API response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'>
+<p>Parse wells from response</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_wells'>wells</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="Cdss::Parser (class)">Parser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_wells'>parse_wells</span><span class='lparen'>(</span><span class='id identifier rubyid_response_data'>response_data</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The API response containing well data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Well&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of Well objects with basic well information.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/cdss/parser.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_wells'>parse_wells</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="Parsers.html" title="Cdss::Parsers (module)">Parsers</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Parsers/WellParser.html" title="Cdss::Parsers::WellParser (module)">WellParser</a></span></span><span class='period'>.</span><span class='id identifier rubyid_parse_wells'><span class='object_link'><a href="Parsers/WellParser.html#parse_wells-class_method" title="Cdss::Parsers::WellParser.parse_wells (method)">parse_wells</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Feb 20 21:19:08 2025 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.37 (ruby-3.2.2).
+</div>
+
+    </div>
+  </body>
+</html>

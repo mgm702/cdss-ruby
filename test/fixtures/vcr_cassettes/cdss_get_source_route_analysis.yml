@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/watersourcerouteanalysis/?dateFormat=spaceSepToSeconds&format=json&ltGnisId=00180489&ltStreamMile=0.0&pageIndex=1&pageSize=50000&utGnisId=00010001&utStreamMile=10.5
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/watersourcerouteanalysis/?format=json&ltGnisId=00180489&ltStreamMile=0.0&pageIndex=1&pageSize=50000&utGnisId=00010001&utStreamMile=10.5
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2025-02-10T00:00:00-07:00"'
+      - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '593941'
+      - '588000'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '982'
       X-Result-Count:
       - '3'
       X-Version-Number:
@@ -45,15 +45,14 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Tue, 11 Feb 2025 04:59:17 GMT
+      - Tue, 18 Feb 2025 05:16:29 GMT
       Content-Length:
-      - '555'
+      - '569'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":3,"ResultDateTime":"2025-02-10
-        21:59:17","ResultList":[{"wdid":"0103890","structureName":"TOM KIME RES","structureType":"Reservoir","featureType":"Point
-        of Diversion","gnisId":"00010001","streamMile":2.90},{"wdid":"0100609","structureName":"LONG
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":3,"ResultDateTime":"2025-02-17T22:16:30.7588638-07:00","ResultList":[{"wdid":"0103890","structureName":"TOM
+        KIME RES","structureType":"Reservoir","featureType":"Point of Diversion","gnisId":"00010001","streamMile":2.90},{"wdid":"0100609","structureName":"LONG
         DRAW IRR DITCH","structureType":"Ditch","featureType":"Point of Diversion","gnisId":"00010001","streamMile":0.00},{"wdid":"0103626","structureName":"DRURY
         RES 2","structureType":"Reservoir","featureType":"Point of Diversion","gnisId":"00180489","streamMile":0.00}]}'
-  recorded_at: Tue, 11 Feb 2025 04:57:53 GMT
+  recorded_at: Tue, 18 Feb 2025 05:14:56 GMT
 recorded_with: VCR 6.3.1

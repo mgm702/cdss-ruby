@@ -1,5 +1,9 @@
+# frozen_string_literal: true
+
 module Cdss
   module GroundWater
+    include Utils
+
     # Fetches groundwater water level wells based on filters.
     #
     # @param [String, nil] county County to filter wells
@@ -11,44 +15,23 @@ module Cdss
     # @return [Array<Well>] An array of groundwater well objects
     # @example Fetch wells in Denver county
     #   client.get_water_level_wells(county: 'Denver')
-    def get_water_level_wells(county: nil, designated_basin: nil, division: nil, management_district: nil, water_district: nil, wellid: nil)
+    def get_water_level_wells(county: nil, designated_basin: nil, division: nil, management_district: nil,
+                              water_district: nil, wellid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds'
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        county: county&.upcase&.gsub(" ", "+"),
+        designatedBasin: designated_basin&.upcase&.gsub(" ", "+"),
+        division: division,
+        managementDistrict: management_district&.upcase&.gsub(" ", "+"),
+        waterDistrict: water_district,
+        wellId: wellid
       }
 
-      query[:county] = county&.upcase&.gsub(' ', '+') if county
-      query[:designatedBasin] = designated_basin&.upcase&.gsub(' ', '+') if designated_basin
-      query[:division] = division if division
-      query[:managementDistrict] = management_district&.upcase&.gsub(' ', '+') if management_district
-      query[:waterDistrict] = water_district if water_district
-      query[:wellId] = wellid if wellid
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/groundwater/waterlevels/wells/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        wells = Parser.parse_wells(data)
-
-        break if wells.empty?
-
-        results.concat(wells)
-
-        break if wells.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/groundwater/waterlevels/wells/",
+        query: query
+      ) { |data| Parser.parse_wells(data) }
     end
 
     # Fetches water level measurements for a specific well
@@ -61,39 +44,17 @@ module Cdss
     #   client.get_well_measurements(wellid: '1234', start_date: Date.parse('2021-01-01'))
     def get_well_measurements(wellid:, start_date: nil, end_date: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        wellId: wellid
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        wellId: wellid,
+        "min-measurementDate": start_date&.strftime("%m-%d-%Y"),
+        "max-measurementDate": end_date&.strftime("%m-%d-%Y")
       }
 
-      query[:'min-measurementDate'] = start_date.strftime('%m-%d-%Y') if start_date
-      query[:'max-measurementDate'] = end_date.strftime('%m-%d-%Y') if end_date
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/groundwater/waterlevels/wellmeasurements/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        measurements = Parser.parse_well_measurements(data)
-
-        break if measurements.empty?
-
-        results.concat(measurements)
-
-        break if measurements.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/groundwater/waterlevels/wellmeasurements/",
+        query: query
+      ) { |data| Parser.parse_well_measurements(data) }
     end
 
     # Fetches groundwater geophysical log wells based on filters
@@ -107,44 +68,23 @@ module Cdss
     # @return [Array<Well>] An array of geophysical log well objects
     # @example Fetch geophysical log wells in Denver county
     #   client.get_geophysical_log_wells(county: 'Denver')
-    def get_geophysical_log_wells(county: nil, designated_basin: nil, division: nil, management_district: nil, water_district: nil, wellid: nil)
+    def get_geophysical_log_wells(county: nil, designated_basin: nil, division: nil, management_district: nil,
+                                  water_district: nil, wellid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds'
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        county: county&.upcase&.gsub(" ", "+"),
+        designatedBasin: designated_basin&.upcase&.gsub(" ", "+"),
+        division: division,
+        managementDistrict: management_district&.upcase&.gsub(" ", "+"),
+        waterDistrict: water_district,
+        wellId: wellid
       }
 
-      query[:county] = county&.upcase&.gsub(' ', '+') if county
-      query[:designatedBasin] = designated_basin&.upcase&.gsub(' ', '+') if designated_basin
-      query[:division] = division if division
-      query[:managementDistrict] = management_district&.upcase&.gsub(' ', '+') if management_district
-      query[:waterDistrict] = water_district if water_district
-      query[:wellId] = wellid if wellid
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/groundwater/geophysicallogs/wells/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        wells = Parser.parse_geophysical_wells(data)
-
-        break if wells.empty?
-
-        results.concat(wells)
-
-        break if wells.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/groundwater/geophysicallogs/wells/",
+        query: query
+      ) { |data| Parser.parse_geophysical_wells(data) }
     end
 
     # Fetches geophysical log picks for a specific well
@@ -158,36 +98,15 @@ module Cdss
       raise ArgumentError, "wellid is required" if wellid.nil?
 
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
         wellId: wellid
       }
 
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/groundwater/geophysicallogs/geoplogpicks/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        picks = Parser.parse_log_picks(data)
-
-        break if picks.empty?
-
-        results.concat(picks)
-
-        break if picks.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      fetch_paginated_data(
+        endpoint: "/groundwater/geophysicallogs/geoplogpicks/",
+        query: query
+      ) { |data| Parser.parse_log_picks(data) }
     end
   end
 end

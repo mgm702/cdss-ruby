@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/referencetables/county/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/referencetables/county/?format=json&pageIndex=1&pageSize=50000
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2025-02-15T00:00:00-07:00"'
+      - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '598101'
+      - '580603'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '955'
       X-Result-Count:
       - '65'
       X-Version-Number:
@@ -45,18 +45,17 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Sun, 16 Feb 2025 01:19:50 GMT
+      - Tue, 18 Feb 2025 05:29:10 GMT
       Content-Length:
-      - '1461'
+      - '1475'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":65,"ResultDateTime":"2025-02-15
-        18:19:51","ResultList":[{"county":"ADAMS"},{"county":"ALAMOSA"},{"county":"ARAPAHOE"},{"county":"ARCHULETA"},{"county":"BACA"},{"county":"BENT"},{"county":"BOULDER"},{"county":"BROOMFIELD"},{"county":"CHAFFEE"},{"county":"CHEYENNE"},{"county":"CLEAR
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":65,"ResultDateTime":"2025-02-17T22:29:10.5924471-07:00","ResultList":[{"county":"ADAMS"},{"county":"ALAMOSA"},{"county":"ARAPAHOE"},{"county":"ARCHULETA"},{"county":"BACA"},{"county":"BENT"},{"county":"BOULDER"},{"county":"BROOMFIELD"},{"county":"CHAFFEE"},{"county":"CHEYENNE"},{"county":"CLEAR
         CREEK"},{"county":"CONEJOS"},{"county":"COSTILLA"},{"county":"CROWLEY"},{"county":"CUSTER"},{"county":"DELTA"},{"county":"DENVER"},{"county":"DOLORES"},{"county":"DOUGLAS"},{"county":"EAGLE"},{"county":"EL
         PASO"},{"county":"ELBERT"},{"county":"FREMONT"},{"county":"GARFIELD"},{"county":"GILPIN"},{"county":"GRAND"},{"county":"GUNNISON"},{"county":"HINSDALE"},{"county":"HUERFANO"},{"county":"JACKSON"},{"county":"JEFFERSON"},{"county":"KIOWA"},{"county":"KIT
         CARSON"},{"county":"LA PLATA"},{"county":"LAKE"},{"county":"LARIMER"},{"county":"LAS
         ANIMAS"},{"county":"LINCOLN"},{"county":"LOGAN"},{"county":"MESA"},{"county":"MINERAL"},{"county":"MOFFAT"},{"county":"MONTEZUMA"},{"county":"MONTROSE"},{"county":"MORGAN"},{"county":"OTERO"},{"county":"OURAY"},{"county":"PARK"},{"county":"PHILLIPS"},{"county":"PITKIN"},{"county":"PROWERS"},{"county":"PUEBLO"},{"county":"RIO
         BLANCO"},{"county":"RIO GRANDE"},{"county":"ROUTT"},{"county":"SAGUACHE"},{"county":"SAN
         JUAN"},{"county":"SAN MIGUEL"},{"county":"SEDGWICK"},{"county":"SUMMIT"},{"county":"TELLER"},{"county":"UNKNOWN"},{"county":"WASHINGTON"},{"county":"WELD"},{"county":"YUMA"}]}'
-  recorded_at: Sun, 16 Feb 2025 01:18:19 GMT
+  recorded_at: Tue, 18 Feb 2025 05:27:35 GMT
 recorded_with: VCR 6.3.1

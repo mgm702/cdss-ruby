@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Models
     class ReferenceTable
@@ -35,7 +37,7 @@ module Cdss
         not_used_code_descr
         submission_type
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 

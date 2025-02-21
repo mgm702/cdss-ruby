@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/waterrights/netamount/?county=Denver&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&units=miles
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/waterrights/netamount/?county=Denver&dateFormat=spaceSepToSeconds&division=&format=json&pageIndex=1&pageSize=50000&units=miles&waterDistrict=&wdid=
     body:
       encoding: US-ASCII
       string: ''
@@ -29,9 +29,9 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-19T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '359536'
+      - '577110'
       X-Rate-Row-Limit:
       - 'null'
       X-Rate-Request-Limit:
@@ -45,13 +45,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Wed, 20 Nov 2024 02:00:21 GMT
+      - Wed, 19 Feb 2025 05:26:36 GMT
       Content-Length:
-      - '660185'
+      - '660232'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":589,"ResultDateTime":"2024-11-19
-        19:00:21","ResultList":[{"waterRightNetAmtNum":1804590,"wdid":"0200800","structureName":"FARMERS
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":589,"ResultDateTime":"2025-02-18
+        22:26:36","ResultList":[{"waterRightNetAmtNum":1804590,"wdid":"0200800","structureName":"FARMERS
         GARDNERS DITCH","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":241.26,"division":1,"waterDistrict":2,"county":"DENVER","q10":null,"q40":"NE","q160":"NW","section":"33","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":499225.7,"utmY":4400521.6,"latitude":39.754617,"longitude":-105.009045,"locationAccuracy":"Digitized","adjudicationDate":"1884-02-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1861-06-01
@@ -116,38 +116,38 @@ http_interactions:
         00:00:00","priorAdjudicationDate":"1930-06-16 00:00:00","appropriationDate":"1921-07-04
         00:00:00","adminNumber":29386.26117,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA3635","decreedUses":"1238AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":24.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"591
         DENVER SYS EXCH SEE DECREE FOR LIMITS; EXCH DOESN''T HAVE TO BE FROM METRO
-        SEWER","lastModified":"2021-07-02 13:47:44","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1804602"},{"waterRightNetAmtNum":1935205,"wdid":"0200802","structureName":"BURLINGTON
+        SEWER","lastModified":"2021-07-02 13:47:44","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1804602"},{"waterRightNetAmtNum":1974208,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1861-06-29
         00:00:00","adminNumber":4198.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":4.5360,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO FISHER D THORNTON CHNG USE 11/07/1990","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935205"},{"waterRightNetAmtNum":1935206,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO FISHER D THORNTON CHNG USE 11/07/1990","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974208"},{"waterRightNetAmtNum":1974209,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1861-11-01
         00:00:00","adminNumber":4323.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":20.9704,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO CLEAR CR PLATTE RIVER D; AMOUNTS CORRECTED IN 02CW0266","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935206"},{"waterRightNetAmtNum":1935207,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO CLEAR CR PLATTE RIVER D; AMOUNTS CORRECTED IN 02CW0266","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974209"},{"waterRightNetAmtNum":1974210,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-14
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1862-06-02
         00:00:00","adminNumber":4536.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA45791","decreedUses":"1","netAbsolute":3.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"111ASP
-        210 REITHMAN DITCH WTR","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935207"},{"waterRightNetAmtNum":1935208,"wdid":"0200802","structureName":"BURLINGTON
+        210 REITHMAN DITCH WTR","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974210"},{"waterRightNetAmtNum":1974211,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1883-04-28
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1863-03-15
         00:00:00","adminNumber":4822.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0084","decreedUses":"2A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":2.6500,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"Yes","comments":"ALTERNATE
-        POINT TO FARMERS GARDNERS DITCH","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935208"},{"waterRightNetAmtNum":1935209,"wdid":"0200802","structureName":"BURLINGTON
+        POINT TO FARMERS GARDNERS DITCH","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974211"},{"waterRightNetAmtNum":1974212,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1883-04-28
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1863-03-15
         00:00:00","adminNumber":4822.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0084","decreedUses":"2A","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":698.8500,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"Yes","comments":"ALTERNATE
-        POINT TO FARMERS GARDNERS DITCH","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935209"},{"waterRightNetAmtNum":1935210,"wdid":"0200802","structureName":"BURLINGTON
+        POINT TO FARMERS GARDNERS DITCH","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974212"},{"waterRightNetAmtNum":1974213,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1863-11-05
         00:00:00","adminNumber":5057.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":5.6447,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO COLO AG D; THORNTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935210"},{"waterRightNetAmtNum":1935211,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO COLO AG D; THORNTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974213"},{"waterRightNetAmtNum":1974214,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1883-04-28
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1864-04-01
@@ -172,17 +172,17 @@ http_interactions:
         OF USE (WELLINGTON RESERVOIR COMPANY SHARES), SACWSD CHANGE OF USE (WELLINGTON
         RESERVOIR COMPANY SHARES), BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE
         OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE
-        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935211"},{"waterRightNetAmtNum":1935212,"wdid":"0200802","structureName":"BURLINGTON
+        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974214"},{"waterRightNetAmtNum":1974215,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1867-03-05
         00:00:00","adminNumber":6273.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":8.2914,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO COLO AG D; THORNTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935212"},{"waterRightNetAmtNum":1935215,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO COLO AG D; THORNTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974215"},{"waterRightNetAmtNum":1974218,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1884-10-04
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"1874-04-05
         00:00:00","adminNumber":8861.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"89CW0132","decreedUses":"12345678AP","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":8.7307,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ALT
-        PT TO COLO AG D; THORNTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935215"},{"waterRightNetAmtNum":1935226,"wdid":"0200802","structureName":"BURLINGTON
+        PT TO COLO AG D; THORNTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974218"},{"waterRightNetAmtNum":1974229,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1893-07-08
         00:00:00","priorAdjudicationDate":"1883-04-28 00:00:00","appropriationDate":"1885-11-20
@@ -201,13 +201,13 @@ http_interactions:
         OF USE, THORNTON CHANGE OF USE, SACWSD CHANGE OF USE (BURLINGTON DITCH, RESERVOIR
         & LAND COMPANY SHARES), SACWSD CHANGE OF USE (BURLINGTON DITCH, RESERVOIR
         & LAND COMPANY SHARES), BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE
-        OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, ABANDONED","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935226"},{"waterRightNetAmtNum":1935235,"wdid":"0200802","structureName":"BURLINGTON
+        OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, ABANDONED","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974229"},{"waterRightNetAmtNum":1974238,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1907-11-28
         00:00:00","adminNumber":21150.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"1","netAbsolute":300.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"288
-        DENVER HUDSON CNL WTR","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935235"},{"waterRightNetAmtNum":1935236,"wdid":"0200802","structureName":"BURLINGTON
+        DENVER HUDSON CNL WTR","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974238"},{"waterRightNetAmtNum":1974239,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1908-03-09
@@ -215,7 +215,7 @@ http_interactions:
         03CW0320, 02CW0403, CA54658","decreedUses":"12ARX","netAbsolute":565.2000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"289
         86CW402/403 O BRIAN DITCH WTR, CHNG USE & LOC 5/11/2009 ECCV WSD ET AL, CHNG
         USE & LOC 5/11/2009 ECCV WSD ET AL, BRIGHTON CHANGE OF USE, BRIGHTON CHANGE
-        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935236"},{"waterRightNetAmtNum":1935238,"wdid":"0200802","structureName":"BURLINGTON
+        OF USE, BRIGHTON CHANGE OF CHANGE OF USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974239"},{"waterRightNetAmtNum":1974241,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1909-01-13
@@ -224,117 +224,117 @@ http_interactions:
         STORAGE IN BARR LK ENL AND REFILL, CHNG USE & LOC 5/11/2009 ECCV WSD ET AL,
         CHNG USE & LOC 5/11/2009 ECCV WSD ET AL, BRIGHTON CHANGE OF USE, BRIGHTON
         CHANGE OF USE, BRIGHTON CHANGE OF CHANGE OF USE, BRIGHTON CHANGE OF CHANGE
-        OF USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935238"},{"waterRightNetAmtNum":1935239,"wdid":"0200802","structureName":"BURLINGTON
+        OF USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974241"},{"waterRightNetAmtNum":1974242,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1909-05-29
         00:00:00","adminNumber":21698.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":200.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"406
-        STORAGE IN MILTON RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935239"},{"waterRightNetAmtNum":1935240,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN MILTON RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974242"},{"waterRightNetAmtNum":1974243,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1910-11-21
         00:00:00","adminNumber":22239.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":500.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"325
-        STORAGE IN PROSPECT RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935240"},{"waterRightNetAmtNum":1935241,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN PROSPECT RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974243"},{"waterRightNetAmtNum":1974244,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1918-08-02
         00:00:00","priorAdjudicationDate":"1893-07-08 00:00:00","appropriationDate":"1911-03-17
         00:00:00","adminNumber":22355.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":400.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"326
-        STORAGE IN HORSE CREEK RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935241"},{"waterRightNetAmtNum":1935243,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN HORSE CREEK RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974244"},{"waterRightNetAmtNum":1974246,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1918-01-28
         00:00:00","adminNumber":25050.24864,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":150.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"423
-        STORAGE IN OLDS RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935243"},{"waterRightNetAmtNum":1935244,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN OLDS RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974246"},{"waterRightNetAmtNum":1974247,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1919-06-01
         00:00:00","adminNumber":25353.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":20.2500,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"426
-        STORAGE IN IRELAND NO 1 RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935244"},{"waterRightNetAmtNum":1935245,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN IRELAND NO 1 RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974247"},{"waterRightNetAmtNum":1974248,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1921-06-05
         00:00:00","adminNumber":26088.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":20.2500,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"428
-        STORAGE IN IRELAND NO 5 RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935245"},{"waterRightNetAmtNum":1935247,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN IRELAND NO 5 RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974248"},{"waterRightNetAmtNum":1974250,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1922-06-15
         00:00:00","adminNumber":26463.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":150.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"423
-        STORAGE IN OLDS RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935247"},{"waterRightNetAmtNum":1935248,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN OLDS RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974250"},{"waterRightNetAmtNum":1974251,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1924-11-12
         00:00:00","priorAdjudicationDate":"1918-08-02 00:00:00","appropriationDate":"1922-07-20
         00:00:00","adminNumber":26498.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"CA54658","decreedUses":"0","netAbsolute":450.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"409
-        STORAGE IN HORSE CREEK RES","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935248"},{"waterRightNetAmtNum":1935250,"wdid":"0200802","structureName":"BURLINGTON
+        STORAGE IN HORSE CREEK RES","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974251"},{"waterRightNetAmtNum":1974253,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1979-12-31
         00:00:00","priorAdjudicationDate":"1978-12-31 00:00:00","appropriationDate":"1979-12-31
         00:00:00","adminNumber":47481.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0164,
         99CW0078, 79CW0374","decreedUses":"2Q","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":13.0000,"netApexConditional":187.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"METRO
         SEWER EX 88CW401/02/03/87CW322, METRO SEWER EXCH MADE ABS 07/01/03, METRO
-        PUMPS EX 88CW401/02/03/87CW322, METRO SEWER EXCH MADE ABSOLUTE","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935250"},{"waterRightNetAmtNum":1935252,"wdid":"0200802","structureName":"BURLINGTON
+        PUMPS EX 88CW401/02/03/87CW322, METRO SEWER EXCH MADE ABSOLUTE","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974253"},{"waterRightNetAmtNum":1974255,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1984-12-31
         00:00:00","priorAdjudicationDate":"1983-12-31 00:00:00","appropriationDate":"1984-02-01
         00:00:00","adminNumber":48974.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"20CW3129,
         05CW0238, 84CW0090","decreedUses":"123458AR","netAbsolute":648.9000,"netConditional":251.1000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"O
         BRIAN DITCH WTR 94CW272, MADE ABSOLUTE; CLERICAL ERRORS CORRECTED IN AMENDED
-        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935252"},{"waterRightNetAmtNum":1935253,"wdid":"0200802","structureName":"BURLINGTON
+        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974255"},{"waterRightNetAmtNum":1974256,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1984-12-31
         00:00:00","priorAdjudicationDate":"1983-12-31 00:00:00","appropriationDate":"1984-02-01
         00:00:00","adminNumber":48974.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"20CW3129,
         05CW0238, 84CW0090","decreedUses":"123458AR","netAbsolute":10000.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"O
         BRIAN DITCH WTR 94CW272, MADE ABSOLUTE; CLERICAL ERRORS CORRECTED IN AMENDED
-        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935253"},{"waterRightNetAmtNum":1935254,"wdid":"0200802","structureName":"BURLINGTON
+        DECREE 12/8/2015, MADE ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974256"},{"waterRightNetAmtNum":1974257,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1986-12-31
         00:00:00","priorAdjudicationDate":"1985-12-31 00:00:00","appropriationDate":"1984-11-24
         00:00:00","adminNumber":49673.49271,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"W8440","decreedUses":"0","netAbsolute":20.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN FORD WATER RECHARGE AREA","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935254"},{"waterRightNetAmtNum":1935255,"wdid":"0200802","structureName":"BURLINGTON
+        IN FORD WATER RECHARGE AREA","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974257"},{"waterRightNetAmtNum":1974258,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1988-12-31
         00:00:00","priorAdjudicationDate":"1987-12-31 00:00:00","appropriationDate":"1979-12-31
         00:00:00","adminNumber":50403.47481,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"88CW0261","decreedUses":"2Q","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":200.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"METRO
-        SEWER EX 88CW401/02/03/87CW322, METRO PUMPS EX 88CW401/02/03/87CW322","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935255"},{"waterRightNetAmtNum":1935256,"wdid":"0200802","structureName":"BURLINGTON
+        SEWER EX 88CW401/02/03/87CW322, METRO PUMPS EX 88CW401/02/03/87CW322","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974258"},{"waterRightNetAmtNum":1974259,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1992-12-31
         00:00:00","priorAdjudicationDate":"1991-12-31 00:00:00","appropriationDate":"1988-10-10
         00:00:00","adminNumber":51864.50687,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"92CW0164,
         02CW0051","decreedUses":"02X","netAbsolute":80.0000,"netConditional":35.0000,"netApexAbsolute":0.0000,"netApexConditional":100.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN DAHLIA PIT, DAHLIA PIT EXCH, STORAGE IN DAHLIA PIT MADE ABS 12/01/05","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935256"},{"waterRightNetAmtNum":1935257,"wdid":"0200802","structureName":"BURLINGTON
+        IN DAHLIA PIT, DAHLIA PIT EXCH, STORAGE IN DAHLIA PIT MADE ABS 12/01/05","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974259"},{"waterRightNetAmtNum":1974260,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1994-12-31
         00:00:00","priorAdjudicationDate":"1993-12-31 00:00:00","appropriationDate":"1907-04-12
         00:00:00","adminNumber":52595.20920,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"94CW0299","decreedUses":"0","netAbsolute":60.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN LORD RES NO 4","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935257"},{"waterRightNetAmtNum":1935258,"wdid":"0200802","structureName":"BURLINGTON
+        IN LORD RES NO 4","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974260"},{"waterRightNetAmtNum":1974261,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1995-12-31
         00:00:00","priorAdjudicationDate":"1994-12-31 00:00:00","appropriationDate":"1995-11-27
         00:00:00","adminNumber":53291.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"95CW0226","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":50.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
-        FM AURORA SAND CR SEWER, EXCH FM METRO SEWER","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935258"},{"waterRightNetAmtNum":1935259,"wdid":"0200802","structureName":"BURLINGTON
+        FM AURORA SAND CR SEWER, EXCH FM METRO SEWER","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974261"},{"waterRightNetAmtNum":1974262,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1991-12-31
         00:00:00","priorAdjudicationDate":"1990-12-31 00:00:00","appropriationDate":"1996-08-19
         00:00:00","adminNumber":53557.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"91CW0126","decreedUses":"0","netAbsolute":0.0000,"netConditional":400.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"STORAGE
-        IN NORTH DAHILA PIT, STORAGE IN SPRAT-PLATTE EAST PIT","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935259"},{"waterRightNetAmtNum":1935261,"wdid":"0200802","structureName":"BURLINGTON
+        IN NORTH DAHILA PIT, STORAGE IN SPRAT-PLATTE EAST PIT","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974262"},{"waterRightNetAmtNum":1974264,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2001-12-31
         00:00:00","priorAdjudicationDate":"2000-12-31 00:00:00","appropriationDate":"2001-12-28
         00:00:00","adminNumber":55514.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"01CW0286,
         01CW0285","decreedUses":"2","netAbsolute":0.0000,"netConditional":70.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"NO
-        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935261"},{"waterRightNetAmtNum":1935262,"wdid":"0200802","structureName":"BURLINGTON
+        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974264"},{"waterRightNetAmtNum":1974265,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2001-12-31
         00:00:00","priorAdjudicationDate":"2000-12-31 00:00:00","appropriationDate":"2001-12-28
         00:00:00","adminNumber":55514.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"01CW0286,
         01CW0285","decreedUses":"2","netAbsolute":0.0000,"netConditional":5000.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"NO
-        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935262"},{"waterRightNetAmtNum":1935263,"wdid":"0200802","structureName":"BURLINGTON
+        AGRICULTURAL USE, NO AGRICULTURAL USE; 13CW3056","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974265"},{"waterRightNetAmtNum":1974266,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2002-12-31
         00:00:00","priorAdjudicationDate":"0001-01-01 00:00:00","appropriationDate":"2002-05-30
@@ -343,13 +343,13 @@ http_interactions:
         FM METRO SEWER LTD 3000 AF, EXCH FM CAT/MILLER RES LTD 3000 AF, EXCH FM HAZELTINE/TANABE
         RES LTD 3000 AF, MADE ABSOLUTE; EXCH FM METRO SEWER 558.7 AF ABSOLUTE, MADE
         ABSOLUTE; EXCH FM CAT/MILLER RES 558.7 AF ABSOLUTE, MADE ABSOLUTE; EXCH FM
-        HAZELTINE/TANABE RES 558.7 AF ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935263"},{"waterRightNetAmtNum":1935264,"wdid":"0200802","structureName":"BURLINGTON
+        HAZELTINE/TANABE RES 558.7 AF ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974266"},{"waterRightNetAmtNum":1974267,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2003-12-31
         00:00:00","priorAdjudicationDate":"2002-12-31 00:00:00","appropriationDate":"2002-05-30
         00:00:00","adminNumber":55882.55667,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"15CW3065,
         02CW0403","decreedUses":"1234589AR","netAbsolute":462.5000,"netConditional":437.5000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"MADE
-        ABSOLUTE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935264"},{"waterRightNetAmtNum":1935265,"wdid":"0200802","structureName":"BURLINGTON
+        ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974267"},{"waterRightNetAmtNum":1974268,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"1996-12-31
         00:00:00","priorAdjudicationDate":"1995-12-31 00:00:00","appropriationDate":"2003-05-23
@@ -358,13 +358,13 @@ http_interactions:
         OF THORNTON POUDRE WTR, EXCH FM N DAHLIA PIT, EXCH FM WEST SPRATT PIT, EXCH
         FM COOLEY WEST PIT, EXCH FM COOLEY EAST PIT, EXCH FM HAMMER PIT, EXCH FM ROGERS
         PIT, EXCH FM DOREINGSFLED PIT, EXCH FM FT LUPTON PIT, EXCH FM COOLEY WEST
-        PIT","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935265"},{"waterRightNetAmtNum":1935266,"wdid":"0200802","structureName":"BURLINGTON
+        PIT","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974268"},{"waterRightNetAmtNum":1974269,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2004-12-31
         00:00:00","priorAdjudicationDate":"2003-12-31 00:00:00","appropriationDate":"2004-12-29
         00:00:00","adminNumber":56611.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"04CW0350","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":100.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
-        FM METRO SEWER, EXCH FM CONFLUENCE OF SOUTH PLATTE & SAND CREEK","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935266"},{"waterRightNetAmtNum":1935267,"wdid":"0200802","structureName":"BURLINGTON
+        FM METRO SEWER, EXCH FM CONFLUENCE OF SOUTH PLATTE & SAND CREEK","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974269"},{"waterRightNetAmtNum":1974270,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2007-12-31
         00:00:00","priorAdjudicationDate":"2006-12-31 00:00:00","appropriationDate":"2007-05-31
@@ -372,7 +372,7 @@ http_interactions:
         FM FARMERS IND D FRICO/ECCV RETURN, EXCH FM GILCREST RESERVOIR, EXCH FM HEWES
         COOK D FRICO/ECCV RETURN, EXCH FM CONFLUENCE SOUTH PLATTE & CACHE LA POUDRE,
         EXCH FM 70 RANCH AUG IMPACT REACH, EXCH FM WELDON VALLEY CNL FRICO/ECCV RETURN,
-        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935267"},{"waterRightNetAmtNum":1935268,"wdid":"0200802","structureName":"BURLINGTON
+        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974270"},{"waterRightNetAmtNum":1974271,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2007-12-31
         00:00:00","priorAdjudicationDate":"2006-12-31 00:00:00","appropriationDate":"2007-05-31
@@ -380,7 +380,7 @@ http_interactions:
         FM FARMERS IND D FRICO/ECCV RETURN, EXCH FM GILCREST RESERVOIR, EXCH FM HEWES
         COOK D FRICO/ECCV RETURN, EXCH FM CONFLUENCE SOUTH PLATTE & CACHE LA POUDRE,
         EXCH FM 70 RANCH AUG IMPACT REACH, EXCH FM WELDON VALLEY CNL FRICO/ECCV RETURN,
-        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935268"},{"waterRightNetAmtNum":1935269,"wdid":"0200802","structureName":"BURLINGTON
+        EXCH FM FT MORGAN CNL FRICO/ECCV RETURN","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974271"},{"waterRightNetAmtNum":1974272,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-02-27
@@ -388,7 +388,7 @@ http_interactions:
         03CW0320","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":132.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"EXCH
         FM BRIGHTON N STORM DRAIN OUTFALL, EXCH FM BRIGHTON SEWER, EXCH FM BRIGHTON
         S STORM DRAIN OUTFALL, EXCH FM KEN MITCHELL LAKES OUTFALL, EXCH FM CONFLUENCE
-        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935269"},{"waterRightNetAmtNum":1935270,"wdid":"0200802","structureName":"BURLINGTON
+        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974272"},{"waterRightNetAmtNum":1974273,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-02-27
@@ -396,33 +396,33 @@ http_interactions:
         03CW0320","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":120.6000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
         FM BRIGHTON N STORM DRAIN OUTFALL, EXCH FM BRIGHTON SEWER, EXCH FM BRIGHTON
         S STORM DRAIN OUTFALL, EXCH FM KEN MITCHELL LAKES OUTFALL, EXCH FM CONFLUENCE
-        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935270"},{"waterRightNetAmtNum":1935271,"wdid":"0200802","structureName":"BURLINGTON
+        S P & SAND CREEK, EXCH FM BRIGHTON POINT H-2","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974273"},{"waterRightNetAmtNum":1974274,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-08-31
         00:00:00","adminNumber":58317.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"19CW3180,
         09CW0123","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":34.5100,"netApexConditional":115.4900,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
         FM METRO SEWER, EXCH FM NORTH RESERVOIR COMPLEX, EXCH FM LUPTON LAKES RES
-        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935271"},{"waterRightNetAmtNum":1935272,"wdid":"0200802","structureName":"BURLINGTON
+        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974274"},{"waterRightNetAmtNum":1974275,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-08-31
         00:00:00","adminNumber":58317.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"19CW3180,
         09CW0123","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":9900.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"EXCH
         FM METRO SEWER, EXCH FM NORTH RESERVOIR COMPLEX, EXCH FM LUPTON LAKES RES
-        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935272"},{"waterRightNetAmtNum":1935273,"wdid":"0200802","structureName":"BURLINGTON
+        COMPLEX, MADE ABSOLUTE; EXCH FM METRO SEWER","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974275"},{"waterRightNetAmtNum":1974276,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-10-19
         00:00:00","adminNumber":58366.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"15CW3170,
         04CW0174","decreedUses":"2","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":90.2000,"decreedUnits":"C","seasonalLimitation":"No","comments":"EXCH
         FM BRIGHTON S STORM DRAIN OUTFALL, EXCH FM BRIGHTON SEWER, EXCH FM BRIGHTON
-        124TH AVE RES, EXCH FM BRIGHTON POINT H-2","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935273"},{"waterRightNetAmtNum":1935274,"wdid":"0200802","structureName":"BURLINGTON
+        124TH AVE RES, EXCH FM BRIGHTON POINT H-2","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974276"},{"waterRightNetAmtNum":1974277,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-12-29
         00:00:00","adminNumber":58437.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"09CW0264","decreedUses":"2","netAbsolute":0.0000,"netConditional":50.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"NO
-        AGRICULTURAL USE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935274"},{"waterRightNetAmtNum":1935275,"wdid":"0200802","structureName":"BURLINGTON
+        AGRICULTURAL USE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974277"},{"waterRightNetAmtNum":1974278,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2009-12-31
         00:00:00","priorAdjudicationDate":"2008-12-31 00:00:00","appropriationDate":"2009-12-31
@@ -434,12 +434,13 @@ http_interactions:
         VRAIN PIPELINE; 07CW335 & 11CW0285, EXCH FM ECCV AUG SPR4 IMPACT REACH VIA
         ST VRAIN PIPELINE; 07CW335 & 11CW0285, EXCH FM ECCV AUG SPR3 IMPACT REACH
         VIA ST VRAIN PIPELINE; 07CW335 & 11CW0285, EXCH FM ECCV AUG SPR2 IMPACT REACH
-        VIA ST VRAIN PIPELINE; 07CW335 & 11CW0285","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935275"},{"waterRightNetAmtNum":1935276,"wdid":"0200802","structureName":"BURLINGTON
+        VIA ST VRAIN PIPELINE; 07CW335 & 11CW0285","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974278"},{"waterRightNetAmtNum":1974279,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2011-12-31
         00:00:00","priorAdjudicationDate":"2010-12-31 00:00:00","appropriationDate":"2011-09-21
-        00:00:00","adminNumber":59068.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"11CW0280","decreedUses":"2AC","netAbsolute":0.0000,"netConditional":250.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935276"},{"waterRightNetAmtNum":1935277,"wdid":"0200802","structureName":"BURLINGTON
+        00:00:00","adminNumber":59068.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"20CW3161,
+        11CW0280","decreedUses":"2AC","netAbsolute":24.5000,"netConditional":225.5000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"MADE
+        ABSOLUTE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974279"},{"waterRightNetAmtNum":1974280,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2011-12-31
         00:00:00","priorAdjudicationDate":"2010-12-31 00:00:00","appropriationDate":"2011-12-29
@@ -451,12 +452,12 @@ http_interactions:
         VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335, EXCH FM ECCV AUG SPR4 IMPACT REACH
         VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335, EXCH FM ECCV AUG SPR3 IMPACT REACH
         VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335, EXCH FM ECCV AUG SPR2 IMPACT REACH
-        VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935277"},{"waterRightNetAmtNum":1935278,"wdid":"0200802","structureName":"BURLINGTON
+        VIA ST VRAIN PIPELINE; 09CW0283 & 07CW335","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974280"},{"waterRightNetAmtNum":1974281,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2014-12-31
         00:00:00","priorAdjudicationDate":"2013-12-31 00:00:00","appropriationDate":"2014-12-30
-        00:00:00","adminNumber":60264.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"14CW3164","decreedUses":"2AR","netAbsolute":0.0000,"netConditional":900.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ECCV","lastModified":"2024-01-12
-        11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935278"},{"waterRightNetAmtNum":1935279,"wdid":"0200802","structureName":"BURLINGTON
+        00:00:00","adminNumber":60264.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"14CW3164","decreedUses":"2AR","netAbsolute":0.0000,"netConditional":900.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"ECCV","lastModified":"2025-02-03
+        10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974281"},{"waterRightNetAmtNum":1974282,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2016-12-31
         00:00:00","priorAdjudicationDate":"2015-12-31 00:00:00","appropriationDate":"2016-04-29
@@ -464,7 +465,7 @@ http_interactions:
         FM UNITED RESERVOIR NO 3, EXCH FM BRIGHTON LATERAL RESERVOIR, EXCH FM ST VRAIN
         PIPELINE DISCHARGE, EXCH FM MILLIKEN RESERVOIR, EXCH FM CENTRAL GMS REACH
         C IMPACT REACH OF HAREN RECHARGE AREA ACCRETIONS, EXCH FM 70 RANCH RESERVOIR,
-        EXCH FM 70 RANCH LIRF QUANTIFICATION POINT","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935279"},{"waterRightNetAmtNum":1935280,"wdid":"0200802","structureName":"BURLINGTON
+        EXCH FM 70 RANCH LIRF QUANTIFICATION POINT","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974282"},{"waterRightNetAmtNum":1974283,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2016-12-31
         00:00:00","priorAdjudicationDate":"2015-12-31 00:00:00","appropriationDate":"2016-12-15
@@ -472,14 +473,14 @@ http_interactions:
         STORAGE IN BINDER RESERVOIR; CAN ALSO BE DIVERTED AT UNITED #3 & BINDER PIPELINE;
         ACWWA, ALTERNATE POINT OF DIVERSION TO  UNITED NO 3; ACWWA BRIGHTON LATERAL
         RECHARGE RIGHT, ALTERNATE POINT OF DIVERSION TO  UNITED NO 3; ACWWA BRIGHTON
-        LATERAL RECHARGE SITE","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935280"},{"waterRightNetAmtNum":1935281,"wdid":"0200802","structureName":"BURLINGTON
+        LATERAL RECHARGE SITE","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974283"},{"waterRightNetAmtNum":1974284,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2016-12-31
         00:00:00","priorAdjudicationDate":"2015-12-31 00:00:00","appropriationDate":"2017-11-30
         00:00:00","adminNumber":61330.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"16CW3195","decreedUses":"2AR","netAbsolute":0.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":1065.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"FOR
         STORAGE IN BARR LAKE; CAN ALSO BE DIVERTED AT UNITED DIVERSION FACILITY 3;
         ACWWA, ACWWA SPR 1 WATER RIGHT; CAN ALSO BE DIVERTED AT UNITED DIVERSION FACILITY
-        NO 3; ACWWA","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935281"},{"waterRightNetAmtNum":1935282,"wdid":"0200802","structureName":"BURLINGTON
+        NO 3; ACWWA","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974284"},{"waterRightNetAmtNum":1974285,"wdid":"0200802","structureName":"BURLINGTON
         D RIVER HEADGATE","structureType":"Ditch","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":237.77,"division":1,"waterDistrict":2,"county":"DENVER","q10":"NE","q40":"NE","q160":"SW","section":"14","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":502620.0,"utmY":4404470.0,"latitude":39.790185,"longitude":-104.969410,"locationAccuracy":"Digitized","adjudicationDate":"2018-12-31
         00:00:00","priorAdjudicationDate":"2017-12-31 00:00:00","appropriationDate":"2018-11-30
@@ -487,7 +488,7 @@ http_interactions:
         FM BRIGHTON POINT B; CITY OF BRIGHTON, EXCH FM BRIGHTON POINT C; CITY OF BRIGHTON,
         EXCH FM BRIGHTON POINT H-1; CITY OF BRIGHTON, EXCH FM BRIGHTON POINT H-2;
         CITY OF BRIGHTON, EXCH FM BRIGHTON POINT J; CITY OF BRIGHTON, EXCH FM BRIGHTON
-        POINT N; CITY OF BRIGHTON","lastModified":"2024-01-12 11:37:38","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1935282"},{"waterRightNetAmtNum":1468904,"wdid":"0200963","structureName":"BROWNBRIAR
+        POINT N; CITY OF BRIGHTON","lastModified":"2025-02-03 10:51:58","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1974285"},{"waterRightNetAmtNum":1468904,"wdid":"0200963","structureName":"BROWNBRIAR
         DIVR SYS","structureType":"Other","waterSource":"SOUTH PLATTE RIVER","gnisId":"00201759","streamMile":245.78,"division":1,"waterDistrict":2,"county":"DENVER","q10":"SE","q40":"NE","q160":"NW","section":"15","township":"4.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":510485.2,"utmY":4395490.3,"latitude":39.709216,"longitude":-104.877692,"locationAccuracy":"Spotted
         from quarters","adjudicationDate":"1971-12-31 00:00:00","priorAdjudicationDate":"1970-12-31
@@ -1886,13 +1887,14 @@ http_interactions:
         S","range":"66.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":519724.5,"utmY":4408404.7,"latitude":39.825413,"longitude":-104.769521,"locationAccuracy":"Spotted
         from quarters","adjudicationDate":"1985-12-31 00:00:00","priorAdjudicationDate":"0001-01-01
         00:00:00","appropriationDate":"1985-12-26 00:00:00","adminNumber":49668.00000,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"85CW0414V","decreedUses":"2X","netAbsolute":37.0000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"A","seasonalLimitation":"No","comments":"AR
-        WL FLD LTD 160AF NT VAN SCHAACK","lastModified":"1998-06-16 00:00:00","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1475272"},{"waterRightNetAmtNum":1475704,"wdid":"0209867","structureName":"GREEN
+        WL FLD LTD 160AF NT VAN SCHAACK","lastModified":"1998-06-16 00:00:00","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1475272"},{"waterRightNetAmtNum":1971423,"wdid":"0209867","structureName":"GREEN
         VLY RNCH  WL POND","structureType":"Well","waterSource":"GROUNDWATER: SOUTH
         PLATTE RIVER","gnisId":"00201759","streamMile":null,"division":1,"waterDistrict":2,"county":"DENVER","q10":null,"q40":"SE","q160":"NE","section":"15","township":"3.0
         S","range":"66.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":520831.0,"utmY":4404617.0,"latitude":39.791259,"longitude":-104.756712,"locationAccuracy":"GPS","adjudicationDate":"2004-12-31
         00:00:00","priorAdjudicationDate":"2003-12-31 00:00:00","appropriationDate":"2003-02-01
-        00:00:00","adminNumber":56247.55914,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"04CW0028","decreedUses":"156ARW","netAbsolute":0.0000,"netConditional":1.1000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"","lastModified":"2010-01-04
-        13:10:53","permit":"61812-F","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1475704"},{"waterRightNetAmtNum":1476178,"wdid":"0209971","structureName":"PUGH
+        00:00:00","adminNumber":56247.55914,"orderNumber":0,"priorityNumber":"","associatedCaseNumbers":"15CW3121,
+        04CW0028","decreedUses":"156ARW","netAbsolute":1.1000,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"MADE
+        ABSOLUTE","lastModified":"2025-01-06 09:33:57","permit":"61812-F","moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1971423"},{"waterRightNetAmtNum":1476178,"wdid":"0209971","structureName":"PUGH
         WELL LA-1","structureType":"Well","waterSource":"GROUNDWATER: LOWER ARAPAHOE","gnisId":null,"streamMile":null,"division":1,"waterDistrict":2,"county":"DENVER","q10":"SW","q40":"NE","q160":"NE","section":"13","township":"2.0
         S","range":"65.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":533777.6,"utmY":4414819.6,"latitude":39.882767,"longitude":-104.604977,"locationAccuracy":"Spotted
         from quarters","adjudicationDate":"1988-12-31 00:00:00","priorAdjudicationDate":"0001-01-01
@@ -3440,5 +3442,5 @@ http_interactions:
         from quarters","adjudicationDate":"1972-12-31 00:00:00","priorAdjudicationDate":"0001-01-01
         00:00:00","appropriationDate":"1933-12-31 00:00:00","adminNumber":30680.00000,"orderNumber":0,"priorityNumber":"0","associatedCaseNumbers":"W1223","decreedUses":"9","netAbsolute":0.0111,"netConditional":0.0000,"netApexAbsolute":0.0000,"netApexConditional":0.0000,"decreedUnits":"C","seasonalLimitation":"No","comments":"85691","lastModified":"1996-02-20
         00:00:00","permit":null,"moreInformation":"https://dwr.state.co.us/Tools/WaterRights/NetAmounts/1529514"}]}'
-  recorded_at: Wed, 20 Nov 2024 01:59:00 GMT
+  recorded_at: Wed, 19 Feb 2025 05:25:00 GMT
 recorded_with: VCR 6.3.1

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/callanalysisbywdid/?adminNo=12941.00000&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wdid=INVALID
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/analysisservices/callanalysisbywdid/?adminNo=12941.00000&format=json&pageIndex=1&pageSize=50000&wdid=INVALID
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2025-02-04T00:00:00-07:00"'
+      - '"2025-02-17T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '597507'
+      - '584623'
       X-Rate-Row-Limit:
       - '600000'
       X-Rate-Request-Limit:
       - '1000'
       X-Rate-Request-Remaining:
-      - '992'
+      - '971'
       X-Result-Count:
       - '0'
       X-Version-Number:
@@ -45,12 +45,12 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Wed, 05 Feb 2025 02:30:43 GMT
+      - Tue, 18 Feb 2025 05:24:00 GMT
       Content-Length:
       - '78'
     body:
       encoding: ASCII-8BIT
       string: '"Error: (wdid and adminNo and startDate and endDate) required for this
         search"'
-  recorded_at: Wed, 05 Feb 2025 02:29:29 GMT
+  recorded_at: Tue, 18 Feb 2025 05:22:26 GMT
 recorded_with: VCR 6.3.1

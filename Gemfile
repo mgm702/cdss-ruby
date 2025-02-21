@@ -10,11 +10,12 @@ gem "rake", "~> 13.0"
 group :development, :test do
   gem "minitest", "~> 5.0"
   gem "rubocop", "~> 1.21"
+  gem "rubocop-minitest"
 
-  gem 'pry'
-  gem 'pry-byebug'
+  gem "pry"
+  gem "pry-byebug"
 
-  gem 'yard'
-  gem 'webrick'
-  gem 'rack', '~> 2.2'
+  gem "rack", "~> 2.2"
+  gem "webrick"
+  gem "yard"
 end

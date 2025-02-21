@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Models
     class Structure
@@ -29,7 +31,7 @@ module Cdss
         data_source
         more_information
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 
@@ -56,7 +58,7 @@ module Cdss
         approval_status
         modified
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 
@@ -82,7 +84,7 @@ module Cdss
         op_code
         modified
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 

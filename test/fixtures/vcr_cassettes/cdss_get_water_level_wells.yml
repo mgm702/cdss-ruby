@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/waterlevels/wells/?county=DENVER&dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/waterlevels/wells/?county=DENVER&dateFormat=spaceSepToSeconds&designatedBasin=&division=&format=json&managementDistrict=&pageIndex=1&pageSize=50000&waterDistrict=&wellId=
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-07T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '512330'
+      - '589507'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '983'
       X-Result-Count:
       - '316'
       X-Version-Number:
@@ -45,21 +45,21 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Fri, 08 Nov 2024 02:36:26 GMT
+      - Wed, 19 Feb 2025 05:09:00 GMT
       Content-Length:
-      - '342339'
+      - '342378'
     body:
       encoding: ASCII-8BIT
-      string: '{"PageNumber":1,"PageCount":1,"ResultCount":316,"ResultDateTime":"2024-11-07
-        19:36:26","ResultList":[{"wellId":84,"wellName":"DB-022 A  EASTWOOD ESTS.","receipt":"9002112","permit":"16050-F","wellDepth":1748,"measurementDate":"2023-04-05
-        00:00:00","waterLevelDepth":422.4,"waterLevelElevation":4882.6,"measurementBy":"DWR","porStart":"1973-11-08
-        00:00:00","porEnd":"2023-04-05 00:00:00","porCount":39,"publicationName":"DENVER
+      string: '{"PageNumber":1,"PageCount":1,"ResultCount":316,"ResultDateTime":"2025-02-18
+        22:09:00","ResultList":[{"wellId":84,"wellName":"DB-022 A  EASTWOOD ESTS.","receipt":"9002112","permit":"16050-F","wellDepth":1748,"measurementDate":"2024-08-21
+        00:00:00","waterLevelDepth":430.84,"waterLevelElevation":4874.16,"measurementBy":"DWR","porStart":"1973-11-08
+        00:00:00","porEnd":"2024-08-21 00:00:00","porCount":40,"publicationName":"DENVER
         BASIN","aquifers":"LARAMIE-FOX HILLS","elevation":5305.0,"elevationAccuracy":null,"topPerforatedCasing":1520,"bottomPerforatedCasing":1748,"baseOfGrout":1520,"wdid":"0205724","locationNumber":"SC00306609CBB","usgsSiteId":null,"contact":null,"division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":"NW","q40":"NW","q160":"SW","section":"9","township":"3.0
         S","range":"66.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":517953.0,"utmY":4406064.0,"latitude":39.804362,"longitude":-104.790286,"locationAccuracy":"GPS","dataSource":"DWR","modified":"2015-06-29
         10:26:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/WaterLevels/84"},{"wellId":85,"wellName":"DB-022
-        B  EASTWOOD ESTS.","receipt":"9002113 ","permit":"16051-F","wellDepth":1730,"measurementDate":"2022-05-15
-        00:00:00","waterLevelDepth":437.08,"waterLevelElevation":4884.92,"measurementBy":"DWR","porStart":"1973-10-31
-        00:00:00","porEnd":"2022-05-15 00:00:00","porCount":39,"publicationName":"DENVER
+        B  EASTWOOD ESTS.","receipt":"9002113 ","permit":"16051-F","wellDepth":1730,"measurementDate":"2024-08-21
+        00:00:00","waterLevelDepth":451.62,"waterLevelElevation":4870.38,"measurementBy":"DWR","porStart":"1973-10-31
+        00:00:00","porEnd":"2024-08-21 00:00:00","porCount":41,"publicationName":"DENVER
         BASIN","aquifers":"LARAMIE-FOX HILLS","elevation":5322.0,"elevationAccuracy":null,"topPerforatedCasing":1484,"bottomPerforatedCasing":1730,"baseOfGrout":1484,"wdid":"0205725","locationNumber":"SC00306609CDD","usgsSiteId":null,"contact":null,"division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":"SE","q40":"SE","q160":"SW","section":"9","township":"3.0
         S","range":"66.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":518688.0,"utmY":4405443.0,"latitude":39.798751,"longitude":-104.781717,"locationAccuracy":"GPS","dataSource":"DWR","modified":"2014-07-18
         09:44:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/WaterLevels/85"},{"wellId":94,"wellName":"DB-113  DEN
@@ -97,13 +97,14 @@ http_interactions:
         SOUTH PLATTE ALLUVIUM","aquifers":"ALLUVIAL","elevation":5297.33,"elevationAccuracy":"Surveyed","topPerforatedCasing":43,"bottomPerforatedCasing":60,"baseOfGrout":null,"wdid":"0205493","locationNumber":"SC00206523ADC","usgsSiteId":"395148104373601","contact":"DIA
         ENVIRONMENTAL PROGRAMS","division":1,"waterDistrict":1,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":"SW","q40":"SE","q160":"NE","section":"23","township":"2.0
         S","range":"65.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":532188.2,"utmY":4412635.6,"latitude":39.863155,"longitude":-104.623674,"locationAccuracy":"GPS","dataSource":"DWR","modified":"2023-06-28
-        14:48:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/WaterLevels/1267"},{"wellId":3674,"wellName":"EASTWOOD
-        ESTATES - KA","receipt":"9002130","permit":"16179-F","wellDepth":1200,"measurementDate":"2017-04-25
-        00:00:00","waterLevelDepth":null,"waterLevelElevation":null,"measurementBy":"DWR","porStart":"2015-06-24
-        00:00:00","porEnd":"2017-04-25 00:00:00","porCount":3,"publicationName":null,"aquifers":"ARAPAHOE","elevation":5310.0,"elevationAccuracy":null,"topPerforatedCasing":700,"bottomPerforatedCasing":1106,"baseOfGrout":505,"wdid":"0205721","locationNumber":"SC00306609CB
+        14:48:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/WaterLevels/1267"},{"wellId":3674,"wellName":"DB-022
+        C  EASTWOOD ESTATES - KA","receipt":"9002130","permit":"16179-F","wellDepth":1200,"measurementDate":"2024-08-21
+        00:00:00","waterLevelDepth":405.28000000000003,"waterLevelElevation":4904.72,"measurementBy":"DWR","porStart":"2015-06-24
+        00:00:00","porEnd":"2024-08-21 00:00:00","porCount":6,"publicationName":"DENVER
+        BASIN","aquifers":"ARAPAHOE","elevation":5310.0,"elevationAccuracy":null,"topPerforatedCasing":700,"bottomPerforatedCasing":1106,"baseOfGrout":505,"wdid":"0205721","locationNumber":"SC00306609CB
         DWR2","usgsSiteId":null,"contact":null,"division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"9","township":"3.0
-        S","range":"66.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":517925.0,"utmY":4406052.0,"latitude":39.804254,"longitude":-104.790613,"locationAccuracy":"GPS","dataSource":"DWR","modified":"2019-08-01
-        09:22:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/WaterLevels/3674"},{"wellId":7751,"wellName":"SC00306834CDD2","receipt":null,"permit":null,"wellDepth":60,"measurementDate":"1984-03-28
+        S","range":"66.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":517925.0,"utmY":4406052.0,"latitude":39.804254,"longitude":-104.790613,"locationAccuracy":"GPS","dataSource":"DWR","modified":"2024-12-19
+        15:04:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/WaterLevels/3674"},{"wellId":7751,"wellName":"SC00306834CDD2","receipt":null,"permit":null,"wellDepth":60,"measurementDate":"1984-03-28
         00:00:00","waterLevelDepth":36.8,"waterLevelElevation":5203.21,"measurementBy":"USGS","porStart":"1962-04-02
         00:00:00","porEnd":"1984-03-28 00:00:00","porCount":9,"publicationName":null,"aquifers":"ALLUVIAL","elevation":5240.01,"elevationAccuracy":null,"topPerforatedCasing":null,"bottomPerforatedCasing":null,"baseOfGrout":null,"wdid":null,"locationNumber":"SC00306834CDD","usgsSiteId":"394429104591402","contact":null,"division":1,"waterDistrict":8,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":"SE","q40":"SE","q160":"SW","section":"34","township":"3.0
         S","range":"68.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":501048.8,"utmY":4399053.2,"latitude":39.741381,"longitude":-104.987767,"locationAccuracy":"User
@@ -1744,5 +1745,5 @@ http_interactions:
         ","usgsSiteId":null,"contact":null,"division":1,"waterDistrict":2,"county":"DENVER","designatedBasin":null,"managementDistrict":null,"q10":null,"q40":"NW","q160":"SW","section":"10","township":"3.0
         S","range":"67.0 W","pm":"S","coordinatesEw":null,"coordinatesEwDir":null,"coordinatesNs":null,"coordinatesNsDir":null,"utmX":509893.0,"utmY":4405894.7,"latitude":39.802971,"longitude":-104.884444,"locationAccuracy":"User
         supplied","dataSource":"SAC 2005","modified":"2007-09-24 00:00:00","moreInformation":"https://dwr.state.co.us/Tools/GroundWater/WaterLevels/49315"}]}'
-  recorded_at: Fri, 08 Nov 2024 02:35:22 GMT
+  recorded_at: Wed, 19 Feb 2025 05:07:24 GMT
 recorded_with: VCR 6.3.1

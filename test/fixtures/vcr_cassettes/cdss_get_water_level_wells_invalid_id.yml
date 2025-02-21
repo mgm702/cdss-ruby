@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/waterlevels/wells/?dateFormat=spaceSepToSeconds&format=json&pageIndex=1&pageSize=50000&wellId=NONEXISTENT
+    uri: https://dwr.state.co.us/Rest/GET/api/v2/groundwater/waterlevels/wells/?county=&dateFormat=spaceSepToSeconds&designatedBasin=&division=&format=json&managementDistrict=&pageIndex=1&pageSize=50000&waterDistrict=&wellId=NONEXISTENT
     body:
       encoding: US-ASCII
       string: ''
@@ -29,15 +29,15 @@ http_interactions:
       Vary:
       - Content-Encoding
       X-Rate-Reset-Date:
-      - '"2024-11-07T00:00:00-07:00"'
+      - '"2025-02-18T00:00:00-07:00"'
       X-Rate-Row-Remaining:
-      - '511957'
+      - '589824'
       X-Rate-Row-Limit:
-      - 'null'
+      - '600000'
       X-Rate-Request-Limit:
-      - 'null'
+      - '1000'
       X-Rate-Request-Remaining:
-      - 'null'
+      - '985'
       X-Result-Count:
       - '0'
       X-Version-Number:
@@ -45,7 +45,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Date:
-      - Fri, 08 Nov 2024 02:36:26 GMT
+      - Wed, 19 Feb 2025 05:08:59 GMT
       Content-Length:
       - '171'
     body:
@@ -53,5 +53,5 @@ http_interactions:
       string: '"Error: (wellId or division or waterDistrict or county or designatedBasin
         or managementDistrict or publicationName or modified or locationSearch) required
         for this search"'
-  recorded_at: Fri, 08 Nov 2024 02:35:23 GMT
+  recorded_at: Wed, 19 Feb 2025 05:07:23 GMT
 recorded_with: VCR 6.3.1

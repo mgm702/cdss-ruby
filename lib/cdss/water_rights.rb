@@ -1,9 +1,13 @@
+# frozen_string_literal: true
+
 module Cdss
   # Provides methods for accessing water rights data from the CDSS API.
   #
   # This module includes functionality for retrieving water rights net amounts
   # and transactions data based on various spatial and attribute-based searches.
   module WaterRights
+    include Utils
+
     # Fetches water rights net amounts data based on various filtering criteria.
     #
     # @param [Hash, Array, nil] aoi Area of interest for spatial searches. If hash, must contain :latitude and :longitude keys.
@@ -17,54 +21,19 @@ module Cdss
     # @raise [ArgumentError] If aoi parameter is provided but invalid.
     def get_water_rights_net_amounts(aoi: nil, radius: nil, county: nil, division: nil, water_district: nil, wdid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        units: 'miles'
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        units: "miles",
+        county: county,
+        division: division,
+        waterDistrict: water_district,
+        wdid: wdid
       }
-
-      query[:county] = county if county
-      query[:division] = division if division
-      query[:waterDistrict] = water_district if water_district
-      query[:wdid] = wdid if wdid
-
-      if aoi
-        if aoi.is_a?(Hash) && aoi[:latitude] && aoi[:longitude]
-          query[:longitude] = aoi[:longitude]
-          query[:latitude] = aoi[:latitude]
-        elsif aoi.is_a?(Array) && aoi.count == 2
-          query[:longitude] = aoi[0]
-          query[:latitude] = aoi[1]
-        else
-          raise ArgumentError, "Invalid 'aoi' parameter"
-        end
-        query[:radius] = radius || 20
-      end
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/waterrights/netamount/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        rights = Parser.parse_water_rights(data, type: :net_amount)
-
-        break if rights.empty?
-
-        results.concat(rights)
-
-        break if rights.size < page_size
-
-        page_index += 1
-      end
-
-      results
+      query.merge!(process_aoi(aoi, radius)) if aoi
+      fetch_paginated_data(
+        endpoint: "/waterrights/netamount/",
+        query: query
+      ) { |data| Parser.parse_water_rights(data, type: :net_amount) }
     end
 
     # Fetches water rights transactions data based on various filtering criteria.
@@ -80,54 +49,47 @@ module Cdss
     # @raise [ArgumentError] If aoi parameter is provided but invalid.
     def get_water_rights_transactions(aoi: nil, radius: nil, county: nil, division: nil, water_district: nil, wdid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        units: 'miles'
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        units: "miles",
+        county: county,
+        division: division,
+        waterDistrict: water_district,
+        wdid: wdid
       }
+      query.merge!(process_aoi(aoi, radius)) if aoi
+      fetch_paginated_data(
+        endpoint: "/waterrights/transaction/",
+        query: query
+      ) { |data| Parser.parse_water_rights(data, type: :transaction) }
+    end
 
-      query[:county] = county if county
-      query[:division] = division if division
-      query[:waterDistrict] = water_district if water_district
-      query[:wdid] = wdid if wdid
+    private
 
-      if aoi
-        if aoi.is_a?(Hash) && aoi[:latitude] && aoi[:longitude]
-          query[:longitude] = aoi[:longitude]
-          query[:latitude] = aoi[:latitude]
-        elsif aoi.is_a?(Array) && aoi.count == 2
-          query[:longitude] = aoi[0]
-          query[:latitude] = aoi[1]
-        else
-          raise ArgumentError, "Invalid 'aoi' parameter"
-        end
-        query[:radius] = radius || 20
+    # Processes the area of interest (AOI) parameter for spatial searches.
+    #
+    # @param [Hash, Array] aoi Area of interest with location data
+    # @param [Integer, nil] radius Search radius in miles
+    # @return [Hash] Processed location and radius query parameters
+    # @raise [ArgumentError] If AOI parameter is invalid
+    # @example Process a hash-based AOI
+    #   process_aoi({ latitude: 39.7392, longitude: -104.9903 }, 20)
+    def process_aoi(aoi, radius)
+      if aoi.is_a?(Hash) && aoi[:latitude] && aoi[:longitude]
+        {
+          longitude: aoi[:longitude],
+          latitude: aoi[:latitude],
+          radius: radius || 20
+        }
+      elsif aoi.is_a?(Array) && aoi.count == 2
+        {
+          longitude: aoi[0],
+          latitude: aoi[1],
+          radius: radius || 20
+        }
+      else
+        raise ArgumentError, "Invalid 'aoi' parameter"
       end
-
-      page_size = 50000
-      page_index = 1
-      results = []
-
-      loop do
-        query[:pageSize] = page_size
-        query[:pageIndex] = page_index
-
-        response = get("/waterrights/transaction/", {
-          query: query
-        })
-
-        data = handle_response(response)
-        rights = Parser.parse_water_rights(data, type: :transaction)
-
-        break if rights.empty?
-
-        results.concat(rights)
-
-        break if rights.size < page_size
-
-        page_index += 1
-      end
-
-      results
     end
   end
 end

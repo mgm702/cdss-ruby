@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   # The Parser class handles parsing of response data from the CDSS API into domain objects.
   # It delegates the actual parsing work to specialized parser modules for each data type.
