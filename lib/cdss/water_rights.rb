@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   # Provides methods for accessing water rights data from the CDSS API.
   #
@@ -19,9 +21,9 @@ module Cdss
     # @raise [ArgumentError] If aoi parameter is provided but invalid.
     def get_water_rights_net_amounts(aoi: nil, radius: nil, county: nil, division: nil, water_district: nil, wdid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        units: 'miles',
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        units: "miles",
         county: county,
         division: division,
         waterDistrict: water_district,
@@ -49,9 +51,9 @@ module Cdss
     # @raise [ArgumentError] If aoi parameter is provided but invalid.
     def get_water_rights_transactions(aoi: nil, radius: nil, county: nil, division: nil, water_district: nil, wdid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        units: 'miles',
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        units: "miles",
         county: county,
         division: division,
         waterDistrict: water_district,

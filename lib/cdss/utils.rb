@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Utils
     def batch_dates(start_date, end_date)
@@ -7,7 +9,9 @@ module Cdss
       start_year = start_date.year
       end_year = end_date.year
 
-      if start_year != end_year
+      if start_year == end_year
+        [[start_date, end_date]]
+      else
         dates = []
         # First year
         dates << [start_date, Date.new(start_year, 12, 31)]
@@ -20,20 +24,19 @@ module Cdss
         # Last year
         dates << [Date.new(end_year, 1, 1), end_date]
         dates
-      else
-        [[start_date, end_date]]
       end
     end
 
     def format_query_param(value)
       return nil if value.nil?
-      return value.join(',') if value.is_a?(Array)
-      value = value.to_s
+      return value.join(",") if value.is_a?(Array)
+
+      value.to_s
     end
 
     def build_query(params = {}, encode: false)
       base_query = {
-        format: 'json'
+        format: "json"
       }
 
       params.each do |key, value|
@@ -48,8 +51,9 @@ module Cdss
 
     def format_date(date, special_format: false)
       return nil unless date
-      date = date.strftime('%m-%d-%Y')
-      special_format ? date.gsub('-', '%2F') : date
+
+      date = date.strftime("%m-%d-%Y")
+      special_format ? date.gsub("-", "%2F") : date
     end
 
     def parse_timestamp(datetime_str)
@@ -71,27 +75,27 @@ module Cdss
     end
 
     def fetch_paginated_data(endpoint:, query:)
-     page_size = 50000
-     page_index = 1
-     results = []
+      page_size = 50_000
+      page_index = 1
+      results = []
 
-     loop do
-       query = query.merge(pageSize: page_size, pageIndex: page_index)
+      loop do
+        query = query.merge(pageSize: page_size, pageIndex: page_index)
 
-       response = get(endpoint, query: query)
-       data = handle_response(response)
-       records = yield(data)
+        response = get(endpoint, query: query)
+        data = handle_response(response)
+        records = yield(data)
 
-       break if records.empty?
+        break if records.empty?
 
-       results.concat(records)
+        results.concat(records)
 
-       break if records.size < page_size
+        break if records.size < page_size
 
-       page_index += 1
-     end
+        page_index += 1
+      end
 
-     results
+      results
     end
   end
 end

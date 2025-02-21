@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Telemetry
     include Utils
@@ -23,10 +25,11 @@ module Cdss
     # @raise [ArgumentError] if the `aoi` parameter is provided but not in the correct format.
     # @example Usage
     #   client.get_telemetry_stations(abbrev: 'PLACHECO', county: 'Denver')
-    def get_telemetry_stations(aoi: nil, radius: nil, abbrev: nil, county: nil, division: nil, gnis_id: nil, usgs_id: nil, water_district: nil, wdid: nil)
+    def get_telemetry_stations(aoi: nil, radius: nil, abbrev: nil, county: nil, division: nil, gnis_id: nil,
+                               usgs_id: nil, water_district: nil, wdid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
         includeThirdParty: true,
         abbrev: abbrev,
         county: county,
@@ -46,7 +49,7 @@ module Cdss
           raise ArgumentError, "Invalid 'aoi' parameter"
         end
         query[:radius] = radius || 20
-        query[:units] = 'miles'
+        query[:units] = "miles"
       end
 
       fetch_paginated_data(
@@ -70,22 +73,23 @@ module Cdss
     # @raise [ArgumentError] if an invalid timescale is provided.
     # @example Fetch daily discharge data for the PLACHECO station
     #   client.get_telemetry_ts(abbrev: 'PLACHECO', parameter: 'DISCHRG', start_date: Date.parse('2021-01-01'), end_date: Date.parse('2021-12-31'))
-    def get_telemetry_ts(abbrev:, parameter: 'DISCHRG', start_date: nil, end_date: nil, timescale: 'day', include_third_party: true)
-      timescales = ['day', 'hour', 'raw']
+    def get_telemetry_ts(abbrev:, parameter: "DISCHRG", start_date: nil, end_date: nil, timescale: "day",
+                         include_third_party: true)
+      timescales = %w[day hour raw]
       unless timescales.include?(timescale)
         raise ArgumentError, "Invalid 'timescale' argument: '#{timescale}'. Valid values are: #{timescales.join(', ')}"
       end
 
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
         abbrev: abbrev,
         parameter: parameter,
         includeThirdParty: include_third_party.to_s
       }
 
-      query[:startDate] = start_date&.strftime('%m-%d-%Y') if start_date
-      query[:endDate] = end_date&.strftime('%m-%d-%Y') if end_date
+      query[:startDate] = start_date&.strftime("%m-%d-%Y") if start_date
+      query[:endDate] = end_date&.strftime("%m-%d-%Y") if end_date
 
       fetch_paginated_data(
         endpoint: "/telemetrystations/telemetrytimeseries#{timescale}/",

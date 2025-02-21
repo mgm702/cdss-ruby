@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   # Provides access to reference tables from the CDSS API.
   # These tables provide metadata and lookup information for various CDSS resources.
@@ -32,10 +34,10 @@ module Cdss
     private
 
     def validate_table_name!(table_name)
-      unless VALID_TABLES.include?(table_name)
-        raise ArgumentError,
-              "Invalid table_name: #{table_name}. Valid values are: #{VALID_TABLES.join(', ')}"
-      end
+      return if VALID_TABLES.include?(table_name)
+
+      raise ArgumentError,
+            "Invalid table_name: #{table_name}. Valid values are: #{VALID_TABLES.join(', ')}"
     end
 
     def fetch_county_reference(county: nil)
