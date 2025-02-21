@@ -79,3 +79,8 @@ Lint/DuplicateMethods:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Lint/Void:
+  Exclude:
+    - test/cdss/test_analysis.rb
+    - test/cdss/test_structures.rb

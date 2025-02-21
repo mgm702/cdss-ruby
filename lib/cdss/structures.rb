@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 module Cdss
+  # Provides methods for accessing water structures data from the CDSS API.
+  #
+  # This module includes functionality for retrieving water structures,
+  # diversion records, stage/volume data, and water classes.
   module Structures
     include Utils
 
@@ -14,6 +18,7 @@ module Cdss
     # @param [Integer, nil] water_district Water district to filter structures.
     # @param [String, Array<String>, nil] wdid WDID code(s) to filter specific structures.
     # @return [Array<Models::Structure>] Array of matching structures.
+    # @raise [ArgumentError] If aoi parameter is provided but invalid.
     def get_structures(aoi: nil, radius: nil, county: nil, division: nil, gnis_id: nil, water_district: nil, wdid: nil)
       query = build_query({
                             county: county,
@@ -49,6 +54,7 @@ module Cdss
     # @param [Date, nil] end_date End date for time series data.
     # @param [String, nil] timescale Time interval ('day', 'month', or 'year'). Defaults to 'day'.
     # @return [Array<Models::DiversionRecord>] Array of diversion records.
+    # @raise [ArgumentError] If an invalid timescale is provided.
     def get_diversion_records_ts(wdid:, wc_identifier: nil, start_date: nil, end_date: nil, timescale: "day")
       validate_timescale!(timescale)
 
@@ -80,6 +86,19 @@ module Cdss
     # Fetches water classes for structures.
     #
     # @param [Hash] params Query parameters including wdid, county, division, etc.
+    # @option params [String, Array<String>] :wdid WDID code(s) to filter by
+    # @option params [String] :county County name to filter by
+    # @option params [Integer] :division Division number to filter by
+    # @option params [Integer] :water_district Water district to filter by
+    # @option params [String] :wc_identifier Water class identifier
+    # @option params [String] :timestep Time step for records
+    # @option params [Date] :start_date Start date for records
+    # @option params [Date] :end_date End date for records
+    # @option params [String] :divrectype Diversion record type
+    # @option params [String] :ciu_code CIU code
+    # @option params [String] :gnis_id GNIS ID
+    # @option params [Hash, Array] :aoi Area of interest for spatial search
+    # @option params [Integer] :radius Radius in miles for spatial search
     # @return [Array<Models::WaterClass>] Array of water classes.
     def get_water_classes(**params)
       query = build_query({
@@ -116,6 +135,10 @@ module Cdss
 
     private
 
+    # Validates the provided timescale against allowed values.
+    #
+    # @param [String] timescale The timescale to validate
+    # @raise [ArgumentError] If timescale is not a valid value
     def validate_timescale!(timescale)
       valid_timescales = {
         "day" => %w[day days daily d],
@@ -130,6 +153,10 @@ module Cdss
             "Invalid timescale: #{timescale}. Valid values are: #{valid_timescales.values.flatten.join(', ')}"
     end
 
+    # Formats a water class identifier for API queries.
+    #
+    # @param [String, nil] identifier The identifier to format
+    # @return [String] Formatted identifier for API use
     def format_wc_identifier(identifier)
       return "*diversion*" if identifier.nil?
       return "diversion" if %w[diversion diversions div divs d].include?(identifier.downcase)
@@ -138,6 +165,13 @@ module Cdss
       "*#{identifier}*"
     end
 
+    # Fetches daily diversion records.
+    #
+    # @param [String, Array<String>] wdid WDID code(s)
+    # @param [String] wc_identifier Water class identifier
+    # @param [Date, nil] start_date Start date for records
+    # @param [Date, nil] end_date End date for records
+    # @return [Array<Models::DiversionRecord>] Array of daily diversion records
     def fetch_diversion_records_day(wdid:, wc_identifier:, start_date:, end_date:)
       query = build_diversion_query(wdid, wc_identifier, start_date, end_date)
       fetch_paginated_data(
@@ -148,6 +182,13 @@ module Cdss
       end
     end
 
+    # Fetches monthly diversion records.
+    #
+    # @param [String, Array<String>] wdid WDID code(s)
+    # @param [String] wc_identifier Water class identifier
+    # @param [Date, nil] start_date Start date for records
+    # @param [Date, nil] end_date End date for records
+    # @return [Array<Models::DiversionRecord>] Array of monthly diversion records
     def fetch_diversion_records_month(wdid:, wc_identifier:, start_date:, end_date:)
       query = build_diversion_query(wdid, wc_identifier, start_date, end_date)
       fetch_paginated_data(
@@ -158,6 +199,13 @@ module Cdss
       end
     end
 
+    # Fetches yearly diversion records.
+    #
+    # @param [String, Array<String>] wdid WDID code(s)
+    # @param [String] wc_identifier Water class identifier
+    # @param [Date, nil] start_date Start date for records
+    # @param [Date, nil] end_date End date for records
+    # @return [Array<Models::DiversionRecord>] Array of yearly diversion records
     def fetch_diversion_records_year(wdid:, wc_identifier:, start_date:, end_date:)
       query = build_diversion_query(wdid, wc_identifier, start_date, end_date)
       fetch_paginated_data(
@@ -168,6 +216,13 @@ module Cdss
       end
     end
 
+    # Builds a query for diversion record requests.
+    #
+    # @param [String, Array<String>] wdid WDID code(s)
+    # @param [String] wc_identifier Water class identifier
+    # @param [Date, nil] start_date Start date for records
+    # @param [Date, nil] end_date End date for records
+    # @return [Hash] Query parameters for the API request
     def build_diversion_query(wdid, wc_identifier, start_date, end_date)
       build_query({
                     wdid: Array(wdid).join("%2C+"),

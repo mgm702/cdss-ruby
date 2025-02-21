@@ -132,6 +132,13 @@ module Cdss
 
     private
 
+    # Fetches call analysis data for a specific WDID.
+    #
+    # @param [String] wdid WDID to analyze
+    # @param [String] admin_no Water Right Administration Number
+    # @param [Date, nil] start_date Start date for analysis data
+    # @param [Date, nil] end_date End date for analysis data
+    # @return [Array<CallAnalysis>] Array of call analysis records
     def fetch_call_analysis_wdid(wdid:, admin_no:, start_date:, end_date:)
       query = build_query(
         {
@@ -148,6 +155,14 @@ module Cdss
       ) { |data| Parser.parse_call_analyses(data, type: :wdid) }
     end
 
+    # Fetches call analysis data for a specific GNIS ID and stream mile.
+    #
+    # @param [String] gnis_id GNIS ID to analyze
+    # @param [String] admin_no Water Right Administration Number
+    # @param [Float] stream_mile Stream mile for the analysis point
+    # @param [Date, nil] start_date Start date for analysis data
+    # @param [Date, nil] end_date End date for analysis data
+    # @return [Array<CallAnalysis>] Array of call analysis records
     def fetch_call_analysis_gnisid(gnis_id:, admin_no:, stream_mile:, start_date:, end_date:)
       query = build_query(
         {

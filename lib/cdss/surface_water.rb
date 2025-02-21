@@ -105,6 +105,15 @@ module Cdss
 
     private
 
+    # Fetches daily surface water time series readings.
+    #
+    # @param [String, nil] abbrev Station abbreviation
+    # @param [String, nil] station_number Station number
+    # @param [String, nil] usgs_id USGS site ID
+    # @param [Date, nil] start_date Start date for readings
+    # @param [Date, nil] end_date End date for readings
+    # @param [String, nil] api_key Optional API key for authentication
+    # @return [Array<Reading>] Array of daily surface water readings
     def get_sw_ts_day(abbrev: nil, station_number: nil, usgs_id: nil, start_date: nil, end_date: nil, api_key: nil)
       query = {
         format: "json",
@@ -122,6 +131,15 @@ module Cdss
       ) { |data| Parser.parse_readings(data, timescale: :day) }
     end
 
+    # Fetches monthly surface water time series readings.
+    #
+    # @param [String, nil] abbrev Station abbreviation
+    # @param [String, nil] station_number Station number
+    # @param [String, nil] usgs_id USGS site ID
+    # @param [Date, nil] start_date Start date for readings (year only)
+    # @param [Date, nil] end_date End date for readings (year only)
+    # @param [String, nil] api_key Optional API key for authentication
+    # @return [Array<Reading>] Array of monthly surface water readings
     def get_sw_ts_month(abbrev: nil, station_number: nil, usgs_id: nil, start_date: nil, end_date: nil, api_key: nil)
       query = {
         format: "json",
@@ -139,6 +157,15 @@ module Cdss
       ) { |data| Parser.parse_readings(data, timescale: :month) }
     end
 
+    # Fetches water year time series readings.
+    #
+    # @param [String, nil] abbrev Station abbreviation
+    # @param [String, nil] station_number Station number
+    # @param [String, nil] usgs_id USGS site ID
+    # @param [Date, nil] start_date Start date for readings (year only)
+    # @param [Date, nil] end_date End date for readings (year only)
+    # @param [String, nil] api_key Optional API key for authentication
+    # @return [Array<Reading>] Array of water year readings
     def get_sw_ts_wyear(abbrev: nil, station_number: nil, usgs_id: nil, start_date: nil, end_date: nil, api_key: nil)
       query = {
         format: "json",

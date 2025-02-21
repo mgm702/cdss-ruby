@@ -29,9 +29,7 @@ module Cdss
         waterDistrict: water_district,
         wdid: wdid
       }
-
       query.merge!(process_aoi(aoi, radius)) if aoi
-
       fetch_paginated_data(
         endpoint: "/waterrights/netamount/",
         query: query
@@ -59,9 +57,7 @@ module Cdss
         waterDistrict: water_district,
         wdid: wdid
       }
-
       query.merge!(process_aoi(aoi, radius)) if aoi
-
       fetch_paginated_data(
         endpoint: "/waterrights/transaction/",
         query: query
@@ -70,6 +66,14 @@ module Cdss
 
     private
 
+    # Processes the area of interest (AOI) parameter for spatial searches.
+    #
+    # @param [Hash, Array] aoi Area of interest with location data
+    # @param [Integer, nil] radius Search radius in miles
+    # @return [Hash] Processed location and radius query parameters
+    # @raise [ArgumentError] If AOI parameter is invalid
+    # @example Process a hash-based AOI
+    #   process_aoi({ latitude: 39.7392, longitude: -104.9903 }, 20)
     def process_aoi(aoi, radius)
       if aoi.is_a?(Hash) && aoi[:latitude] && aoi[:longitude]
         {
