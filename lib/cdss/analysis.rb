@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   # Provides methods for accessing analysis services from the CDSS API including
   # call analysis and water source route frameworks.
@@ -92,7 +94,7 @@ module Cdss
     def get_source_route_framework(division: nil, gnis_name: nil, water_district: nil)
       query = build_query(
         {
-          dateFormat: 'spaceSepToSeconds',
+          dateFormat: "spaceSepToSeconds",
           division: division,
           gnisName: gnis_name,
           waterDistrict: water_district

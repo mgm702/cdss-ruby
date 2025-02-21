@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Models
     class Station
@@ -22,7 +24,7 @@ module Cdss
         more_information
         meas_unit
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 

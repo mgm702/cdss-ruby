@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   # Provides methods for accessing administrative calls data from the CDSS API.
   #
@@ -17,14 +19,15 @@ module Cdss
     # @return [Array<AdminCall>] Array of matching administrative call objects.
     # @example Fetch active calls for a division
     #   get_admin_calls(division: 1, active: true)
-    def get_admin_calls(division: nil, location_wdid: nil, call_number: nil, start_date: nil, end_date: nil, active: true)
+    def get_admin_calls(division: nil, location_wdid: nil, call_number: nil, start_date: nil, end_date: nil,
+                        active: true)
       query = build_query(
         {
-          dateFormat: 'spaceSepToSeconds',
+          dateFormat: "spaceSepToSeconds",
           division: division,
           callNumber: call_number,
-          'min-dateTimeSet': format_date(start_date),
-          'max-dateTimeSet': format_date(end_date),
+          "min-dateTimeSet": format_date(start_date),
+          "max-dateTimeSet": format_date(end_date),
           locationWdid: location_wdid
         },
         encode: true

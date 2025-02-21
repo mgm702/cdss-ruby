@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Models
     class Well
@@ -25,7 +27,7 @@ module Cdss
         utm_y
         state
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 

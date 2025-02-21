@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Concerns
     module LogReadingAttributes

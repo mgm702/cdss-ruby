@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   class Client
     include HTTParty
@@ -31,13 +33,14 @@ module Cdss
     def setup_client
       self.class.default_timeout(Cdss.config.timeout)
       self.class.headers({
-        'User-Agent' => Cdss.config.user_agent,
-        'Token' => api_key
+        "User-Agent" => Cdss.config.user_agent,
+        "Token" => api_key
       }.compact)
     end
 
     def handle_response(response)
       return JSON.parse(response.body) if response.success?
+
       raise "API request failed with status #{response.code}: #{response.message}"
     end
 
@@ -54,21 +57,21 @@ module Cdss
     end
 
     def self.debug_request(endpoint, options)
-      if Cdss.config.debug
-        query_string = options[:query]&.map { |k,v| "#{k}=#{v}" }&.join('&')
-        full_url = [base_uri, endpoint].join
-        full_url += "?#{query_string}" if query_string
-        puts "\n=== CDSS API Request ==="
-        puts "URL: #{full_url}"
+      return unless Cdss.config.debug
 
-        puts "\nHeaders:"
-        headers = default_options[:headers] || {}
-        headers.merge!(options[:headers] || {})
-        headers.each do |key, value|
-          puts "  #{key}: #{value}"
-        end
-        puts "=====================\n"
+      query_string = options[:query]&.map { |k, v| "#{k}=#{v}" }&.join("&")
+      full_url = [base_uri, endpoint].join
+      full_url += "?#{query_string}" if query_string
+      puts "\n=== CDSS API Request ==="
+      puts "URL: #{full_url}"
+
+      puts "\nHeaders:"
+      headers = default_options[:headers] || {}
+      headers.merge!(options[:headers] || {})
+      headers.each do |key, value|
+        puts "  #{key}: #{value}"
       end
+      puts "=====================\n"
     end
   end
 end

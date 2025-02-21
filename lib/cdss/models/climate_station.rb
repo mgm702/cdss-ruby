@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module Models
     class ClimateStation
@@ -21,7 +23,7 @@ module Cdss
         more_information
         parameter_types
         metadata
-      ]
+      ].freeze
 
       attr_accessor(*ATTRIBUTES)
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cdss
   module GroundWater
     include Utils
@@ -13,14 +15,15 @@ module Cdss
     # @return [Array<Well>] An array of groundwater well objects
     # @example Fetch wells in Denver county
     #   client.get_water_level_wells(county: 'Denver')
-    def get_water_level_wells(county: nil, designated_basin: nil, division: nil, management_district: nil, water_district: nil, wellid: nil)
+    def get_water_level_wells(county: nil, designated_basin: nil, division: nil, management_district: nil,
+                              water_district: nil, wellid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        county: county&.upcase&.gsub(' ', '+'),
-        designatedBasin: designated_basin&.upcase&.gsub(' ', '+'),
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        county: county&.upcase&.gsub(" ", "+"),
+        designatedBasin: designated_basin&.upcase&.gsub(" ", "+"),
         division: division,
-        managementDistrict: management_district&.upcase&.gsub(' ', '+'),
+        managementDistrict: management_district&.upcase&.gsub(" ", "+"),
         waterDistrict: water_district,
         wellId: wellid
       }
@@ -41,11 +44,11 @@ module Cdss
     #   client.get_well_measurements(wellid: '1234', start_date: Date.parse('2021-01-01'))
     def get_well_measurements(wellid:, start_date: nil, end_date: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
         wellId: wellid,
-        'min-measurementDate': start_date&.strftime('%m-%d-%Y'),
-        'max-measurementDate': end_date&.strftime('%m-%d-%Y')
+        "min-measurementDate": start_date&.strftime("%m-%d-%Y"),
+        "max-measurementDate": end_date&.strftime("%m-%d-%Y")
       }
 
       fetch_paginated_data(
@@ -65,14 +68,15 @@ module Cdss
     # @return [Array<Well>] An array of geophysical log well objects
     # @example Fetch geophysical log wells in Denver county
     #   client.get_geophysical_log_wells(county: 'Denver')
-    def get_geophysical_log_wells(county: nil, designated_basin: nil, division: nil, management_district: nil, water_district: nil, wellid: nil)
+    def get_geophysical_log_wells(county: nil, designated_basin: nil, division: nil, management_district: nil,
+                                  water_district: nil, wellid: nil)
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
-        county: county&.upcase&.gsub(' ', '+'),
-        designatedBasin: designated_basin&.upcase&.gsub(' ', '+'),
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
+        county: county&.upcase&.gsub(" ", "+"),
+        designatedBasin: designated_basin&.upcase&.gsub(" ", "+"),
         division: division,
-        managementDistrict: management_district&.upcase&.gsub(' ', '+'),
+        managementDistrict: management_district&.upcase&.gsub(" ", "+"),
         waterDistrict: water_district,
         wellId: wellid
       }
@@ -94,8 +98,8 @@ module Cdss
       raise ArgumentError, "wellid is required" if wellid.nil?
 
       query = {
-        format: 'json',
-        dateFormat: 'spaceSepToSeconds',
+        format: "json",
+        dateFormat: "spaceSepToSeconds",
         wellId: wellid
       }
 
