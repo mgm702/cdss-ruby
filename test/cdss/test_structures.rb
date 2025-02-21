@@ -6,7 +6,8 @@ module Cdss
   class TestStructuresApi < Minitest::Test
     def setup
       @client = Cdss::Client.new
-      Cdss::Models::WaterClass
+      Cdss::Models::Structure
+      Cdss::Models::DiversionRecord
     end
 
     def test_get_structures

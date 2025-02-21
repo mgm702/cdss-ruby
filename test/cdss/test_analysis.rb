@@ -6,6 +6,8 @@ module Cdss
   class TestAnalysisApi < Minitest::Test
     def setup
       @client = Cdss::Client.new
+      Cdss::Models::Analysis
+      Cdss::Models::SourceRoute
     end
 
     def test_get_call_analysis_wdid
