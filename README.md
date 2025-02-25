@@ -1,26 +1,86 @@
-# Cdss::Ruby
+# **cdss-ruby**
 
-TODO: Delete this and the text below, and describe your gem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cdss/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://github.com/mgm702/cdss-ruby/actions/workflows/main.yml/badge.svg)](https://github.com/mgm702/cdss-ruby/actions)
+[![Gem Version](https://badge.fury.io/rb/cdss-ruby.svg)](https://badge.fury.io/rb/cdss-ruby)
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-## Installation
+[**« CDSS »**](https://dwr.state.co.us/Tools)
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+[**CDSS REST Web**](https://dwr.state.co.us/Rest/GET/Help)
 
-Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+The goal of [**`cdss-ruby`**](https://rubygems.org/gems/cdss-ruby) is to provide functions that help Ruby users to navigate, explore, and make requests to the CDSS REST API web service. 
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+The Colorado's Decision Support Systems (CDSS) is a water management system created and developed by the Colorado Water Conservation Board (CWCB) and the Colorado Division of Water Resources (DWR).
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+Thank you to those at CWCB and DWR for providing an accessible and well documented REST API!
 
-## Usage
 
-TODO: Write usage instructions here
+> See [**`cdssr`**](https://github.com/anguswg-ucsb/cdssr), for the **R** version of this package
 
-## Development
+> See [**`cdsspy`**](https://github.com/anguswg-ucsb/cdsspy), for the **Python** version of this package
+
+---
+
+- [**cdssr (R)**](https://github.com/anguswg-ucsb/cdssr)
+
+- [**cdssr documentation**](https://anguswg-ucsb.github.io/cdssr/)
+
+- [**cdsspy (Python)**](https://github.com/anguswg-ucsb/cdsspy)
+
+- [**cdsspy documentation**](https://pypi.org/project/cdsspy/)
+
+- [**cdss-ruby (Ruby)**](https://github.com/mgm702/cdss-ruby)
+
+- [**cdss-ruby documentation**](https://mgm702.com/cdss-ruby/)
+
+---
+
+
+
+## **Installation**
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'cdss-ruby'
+```
+and then execute
+```ruby
+bundle install
+```
+
+or install it yourself as:
+```bash
+gem install cdss-ruby
+```
+
+## **Getting Started**
+
+Using the gem is simple. Create a client and start making requests:
+
+```ruby
+irb(main):001:0> @client = Cdss.client
+=> #<Cdss::Client:0x0000000103f757c0 @api_key=nil, @options={}>
+irb(main):002:0> @client.get_sw_stations
+```
+
+## **Available Endpoints**
+
+The `cdss-ruby` gem provides access to all CDSS API endpoints through an intuitive interface. For detailed documentation on each endpoint and its methods, please visit our [documentation site](https://mgm702.com/cdss-ruby).
+Here are some key modules:
+
+* [Cdss::AdminCalls](https://mgm702.com/cdss-ruby/Cdss/AdminCalls.html) - Access administrative calls and structure data
+* [Cdss::Climate](https://mgm702.com/cdss-ruby/Cdss/Climate.html) - Get climate station data and time series
+* [Cdss::Groundwater](https://mgm702.com/cdss-ruby/Cdss/GroundWater.html) - Access groundwater well data and measurements
+* [Cdss::ReferenceTables](https://mgm702.com/cdss-ruby/Cdss/ReferenceTables.html) - Get reference tables
+* [Cdss::SurfaceWater](https://mgm702.com/cdss-ruby/Cdss/SurfaceWater.html) - Access surface water stations and time series
+* [Cdss::Telemetry](https://mgm702.com/cdss-ruby/Cdss/Telemetry.html) - Get telemetry station data and time series
+* [Cdss::WaterRights](https://mgm702.com/cdss-ruby/Cdss/WaterRights.html) - Access water rights net amounts and transactions
+* [Cdss::Analysis](https://mgm702.com/cdss-ruby/Cdss/Analysis.html) - Perform call analysis and get source route frameworks
+
+## **Development**
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
@@ -28,8 +88,14 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/mgm702/cdss-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/mgm702/cdss-ruby/blob/main/CODE_OF_CONDUCT.md).
+If you would like to contribute to this plugin, submit a Pull Request with an excellent commit message. 
+Contributions are more then welcome, however please make sure that your commit message is clear and understandable. 
 
-## Code of Conduct
+## License
 
-Everyone interacting in the Cdss::Ruby project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/mgm702/cdss-ruby/blob/main/CODE_OF_CONDUCT.md).
+The cdss-ruby gem is licensed under the MIT license.
+
+## Like The Gem?
+
+If you like Tabtastic.vim follow the repository on [Github](https://github.com/mgm702/vim-tabtastic) and if you are feeling extra nice, follow the author [mgm702](http://mgm702.com) on [Twitter](https://twitter.com/mgm702) or [Github](https://github.com/mgm702).
+
