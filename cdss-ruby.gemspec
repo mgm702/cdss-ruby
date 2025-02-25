@@ -16,10 +16,10 @@ Gem::Specification.new do |spec|
 
   spec.metadata = {
     "allowed_push_host" => "https://rubygems.org",
-    # keep your other metadata intact
     "homepage_uri" => spec.homepage,
     "source_code_uri" => "https://github.com/mgm702/cdss-ruby",
-    "changelog_uri" => "https://github.com/mgm702/cdss-ruby/blob/main/CHANGELOG.md"
+    "changelog_uri" => "https://github.com/mgm702/cdss-ruby/blob/main/CHANGELOG.md",
+    "rubygems_mfa_required" => "true"
   }
 
   # Specify which files should be added to the gem when it is released.
