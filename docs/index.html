@@ -57,48 +57,120 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'>
-<h1 id="label-Cdss-3A-3ARuby">Cdss::Ruby</h1>
+      <div id="content"><div id='filecontents'><h1 id="cdss-ruby"><strong>cdss-ruby</strong></h1>
 
-<p>TODO: Delete this and the text below, and describe your gem</p>
+<p><a href="https://github.com/mgm702/cdss-ruby/actions"><img src="https://github.com/mgm702/cdss-ruby/actions/workflows/main.yml/badge.svg" alt="Build Status" /></a>
+<a href="https://badge.fury.io/rb/cdss-ruby"><img src="https://badge.fury.io/rb/cdss-ruby.svg" alt="Gem Version" /></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT license" /></a></p>
 
-<p>Welcome to your new gem! In this directory, you’ll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file <code>lib/cdss/ruby</code>. To experiment with that code, run <code>bin/console</code> for an interactive prompt.</p>
+<p><a href="https://dwr.state.co.us/Tools"><strong>« CDSS »</strong></a></p>
 
-<h2 id="label-Installation">Installation</h2>
+<p><a href="https://dwr.state.co.us/Rest/GET/Help"><strong>CDSS REST Web</strong></a></p>
 
-<p>TODO: Replace <code>UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG</code> with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don’t plan to release to RubyGems.org.</p>
+<p>The goal of <a href="https://rubygems.org/gems/cdss-ruby"><strong><code>cdss-ruby</code></strong></a> is to provide functions that help Ruby users to navigate, explore, and make requests to the CDSS REST API web service.</p>
 
-<p>Install the gem and add to the application’s Gemfile by executing:</p>
+<p>The Colorado’s Decision Support Systems (CDSS) is a water management system created and developed by the Colorado Water Conservation Board (CWCB) and the Colorado Division of Water Resources (DWR).</p>
 
-<pre class="code ruby"><code class="ruby">$ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-</code></pre>
+<p>Thank you to those at CWCB and DWR for providing an accessible and well documented REST API!</p>
 
-<p>If bundler is not being used to manage dependencies, install the gem by executing:</p>
+<blockquote>
+  <p>See <a href="https://github.com/anguswg-ucsb/cdssr"><strong><code>cdssr</code></strong></a>, for the <strong>R</strong> version of this package</p>
+</blockquote>
 
-<pre class="code ruby"><code class="ruby">$ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-</code></pre>
+<blockquote>
+  <p>See <a href="https://github.com/anguswg-ucsb/cdsspy"><strong><code>cdsspy</code></strong></a>, for the <strong>Python</strong> version of this package</p>
+</blockquote>
 
-<h2 id="label-Usage">Usage</h2>
+<hr />
 
-<p>TODO: Write usage instructions here</p>
+<ul>
+  <li>
+    <p><a href="https://github.com/anguswg-ucsb/cdssr"><strong>cdssr (R)</strong></a></p>
+  </li>
+  <li>
+    <p><a href="https://anguswg-ucsb.github.io/cdssr/"><strong>cdssr documentation</strong></a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/anguswg-ucsb/cdsspy"><strong>cdsspy (Python)</strong></a></p>
+  </li>
+  <li>
+    <p><a href="https://pypi.org/project/cdsspy/"><strong>cdsspy documentation</strong></a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/mgm702/cdss-ruby"><strong>cdss-ruby (Ruby)</strong></a></p>
+  </li>
+  <li>
+    <p><a href="https://mgm702.com/cdss-ruby/"><strong>cdss-ruby documentation</strong></a></p>
+  </li>
+</ul>
 
-<h2 id="label-Development">Development</h2>
+<hr />
+
+<h2 id="installation"><strong>Installation</strong></h2>
+
+<p>Add this line to your application’s Gemfile:</p>
+
+<p><code>ruby
+gem 'cdss-ruby'
+</code>
+and then execute
+<code>ruby
+bundle install
+</code></p>
+
+<p>or install it yourself as:
+<code>bash
+gem install cdss-ruby
+</code></p>
+
+<h2 id="getting-started"><strong>Getting Started</strong></h2>
+
+<p>Using the gem is simple. Create a client and start making requests:</p>
+
+<p><code>ruby
+irb(main):001:0&gt; @client = Cdss.client
+=&gt; #&lt;Cdss::Client:0x0000000103f757c0 @api_key=nil, @options={}&gt;
+irb(main):002:0&gt; @client.get_sw_stations
+</code></p>
+
+<h2 id="available-endpoints"><strong>Available Endpoints</strong></h2>
+
+<p>The <code>cdss-ruby</code> gem provides access to all CDSS API endpoints through an intuitive interface. For detailed documentation on each endpoint and its methods, please visit our <a href="https://mgm702.com/cdss-ruby">documentation site</a>.
+Here are some key modules:</p>
+
+<ul>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/AdminCalls.html">Cdss::AdminCalls</a> - Access administrative calls and structure data</li>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/Climate.html">Cdss::Climate</a> - Get climate station data and time series</li>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/GroundWater.html">Cdss::Groundwater</a> - Access groundwater well data and measurements</li>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/ReferenceTables.html">Cdss::ReferenceTables</a> - Get reference tables</li>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/SurfaceWater.html">Cdss::SurfaceWater</a> - Access surface water stations and time series</li>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/Telemetry.html">Cdss::Telemetry</a> - Get telemetry station data and time series</li>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/WaterRights.html">Cdss::WaterRights</a> - Access water rights net amounts and transactions</li>
+  <li><a href="https://mgm702.com/cdss-ruby/Cdss/Analysis.html">Cdss::Analysis</a> - Perform call analysis and get source route frameworks</li>
+</ul>
+
+<h2 id="development"><strong>Development</strong></h2>
 
 <p>After checking out the repo, run <code>bin/setup</code> to install dependencies. Then, run <code>rake test</code> to run the tests. You can also run <code>bin/console</code> for an interactive prompt that will allow you to experiment.</p>
 
 <p>To install this gem onto your local machine, run <code>bundle exec rake install</code>. To release a new version, update the version number in <code>version.rb</code>, and then run <code>bundle exec rake release</code>, which will create a git tag for the version, push git commits and the created tag, and push the <code>.gem</code> file to <a href="https://rubygems.org">rubygems.org</a>.</p>
 
-<h2 id="label-Contributing">Contributing</h2>
+<h2 id="contributing">Contributing</h2>
 
-<p>Bug reports and pull requests are welcome on GitHub at <a href="https://github.com/mgm702/cdss-ruby">github.com/mgm702/cdss-ruby</a>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the <a href="https://github.com/mgm702/cdss-ruby/blob/main/CODE_OF_CONDUCT.md">code of conduct</a>.</p>
+<p>If you would like to contribute to this plugin, submit a Pull Request with an excellent commit message. 
+Contributions are more then welcome, however please make sure that your commit message is clear and understandable.</p>
 
-<h2 id="label-Code+of+Conduct">Code of Conduct</h2>
+<h2 id="license">License</h2>
 
-<p>Everyone interacting in the Cdss::Ruby project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the <a href="https://github.com/mgm702/cdss-ruby/blob/main/CODE_OF_CONDUCT.md">code of conduct</a>.</p>
+<p>The cdss-ruby gem is licensed under the MIT license.</p>
+
+<h2 id="like-the-gem">Like The Gem?</h2>
+
+<p>If you like Tabtastic.vim follow the repository on <a href="https://github.com/mgm702/vim-tabtastic">Github</a> and if you are feeling extra nice, follow the author <a href="http://mgm702.com">mgm702</a> on <a href="https://twitter.com/mgm702">Twitter</a> or <a href="https://github.com/mgm702">Github</a>.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Thu Feb 20 21:19:08 2025 by
+  Generated on Thu Feb 27 21:52:29 2025 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.37 (ruby-3.2.2).
 </div>
