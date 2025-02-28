@@ -7,11 +7,10 @@ Gem::Specification.new do |spec|
   spec.version = Cdss::VERSION
   spec.authors = ["Matt Michnal "]
   spec.email = ["mattm3646@gmail.com"]
-
-  spec.summary       = "Ruby wrapper for various water resource APIs"
-  spec.description   = "Access water station data from USGS, Colorado DWR, TWDB, and other water agencies"
-  spec.homepage      = "https://github.com/mgm702/cdss-ruby"
-  spec.license       = "MIT"
+  spec.summary = "Ruby wrapper for various water resource APIs"
+  spec.description = "Access water station data from USGS, Colorado DWR, TWDB, and other water agencies"
+  spec.homepage = "https://github.com/mgm702/cdss-ruby"
+  spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata = {
@@ -19,17 +18,17 @@ Gem::Specification.new do |spec|
     "homepage_uri" => spec.homepage,
     "source_code_uri" => "https://github.com/mgm702/cdss-ruby",
     "changelog_uri" => "https://github.com/mgm702/cdss-ruby/blob/main/CHANGELOG.md",
+    "documentation_uri" => "https://github.com/mgm702/cdss-ruby/blob/main/README.md",
     "rubygems_mfa_required" => "true"
   }
 
   # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files = Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject do |f|
-      (File.expand_path(f) == __FILE__) ||
-        f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor Gemfile])
+      f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor Gemfile])
     end
   end
+
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
@@ -45,5 +44,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "vcr", "~> 6.0"
   spec.add_development_dependency "webmock", "~> 3.18"
-  spec.metadata["rubygems_mfa_required"] = "true"
 end
