@@ -97,5 +97,5 @@ The cdss-ruby gem is licensed under the MIT license.
 
 ## Like The Gem?
 
-If you like Tabtastic.vim follow the repository on [Github](https://github.com/mgm702/vim-tabtastic) and if you are feeling extra nice, follow the author [mgm702](http://mgm702.com) on [Twitter](https://twitter.com/mgm702) or [Github](https://github.com/mgm702).
+If you like Tabtastic.vim follow the repository on [Github](https://github.com/mgm702/cdss-ruby) and if you are feeling extra nice, follow the author [mgm702](http://mgm702.com) on [Twitter](https://twitter.com/mgm702) or [Github](https://github.com/mgm702).
 
