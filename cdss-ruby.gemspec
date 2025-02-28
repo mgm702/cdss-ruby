@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     "homepage_uri" => spec.homepage,
     "source_code_uri" => "https://github.com/mgm702/cdss-ruby",
     "changelog_uri" => "https://github.com/mgm702/cdss-ruby/blob/main/CHANGELOG.md",
-    "documentation_uri" => "https://github.com/mgm702/cdss-ruby/blob/main/README.md",
+    "documentation_uri" => "https://mgm702.com/cdss-ruby/",
     "rubygems_mfa_required" => "true"
   }
 
