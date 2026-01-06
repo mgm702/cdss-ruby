@@ -11,6 +11,7 @@ module Cdss
   #   client.get_climate_stations(county: "Denver")
   class Client
     include HTTParty
+
     base_uri Cdss.config.base_url
 
     include AdminCalls

@@ -4,6 +4,7 @@ module Cdss
   module Parsers
     module AdminCallsParser
       extend BaseParser
+
       class << self
         def parse_admin_calls(response)
           parse_collection(response) { |data| build_call(data) }

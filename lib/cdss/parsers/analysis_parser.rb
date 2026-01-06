@@ -27,10 +27,10 @@ module Cdss
 
         private
 
-        def parse_collection(response, &block)
+        def parse_collection(response, &)
           return [] unless response && response["ResultList"]
 
-          response["ResultList"].map(&block)
+          response["ResultList"].map(&)
         end
 
         def parse_timestamp(value)

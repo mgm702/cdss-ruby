@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.description = "Access water station data from USGS, Colorado DWR, TWDB, and other water agencies"
   spec.homepage = "https://github.com/mgm702/cdss-ruby"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata = {
     "allowed_push_host" => "https://rubygems.org",
@@ -38,10 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "zeitwerk", "~> 2.6"
 
   # Development dependencies
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "minitest-reporters", "~> 1.5"
-  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "vcr", "~> 6.0"
   spec.add_development_dependency "webmock", "~> 3.18"
 end
