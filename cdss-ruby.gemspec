@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "dry-configurable", "~> 1.0"
-  spec.add_dependency "httparty", "~> 0.21.0"
+  spec.add_dependency "httparty", "~> 0.21"
   spec.add_dependency "zeitwerk", "~> 2.6"
 
   # Development dependencies
